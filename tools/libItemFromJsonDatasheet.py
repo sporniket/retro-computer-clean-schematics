@@ -209,6 +209,22 @@ sectionBidis = createSectionFromCollectionOfGroups(pins,groupsBidiOnLeft,groupsB
 totalLineHeight += sectionBidis['size']
 totalMinimalWidth = max(totalMinimalWidth,sectionBidis['left']['width'] + sectionBidis['right']['width'])
 
+
+def separatePins(pins,separator):
+    return reduce(lambda a,b:a + separator + b, map(lambda p:[p], pins))
+
+# create the section for the power and ground pins
+sectionPwr=newSectionPower()
+pinsPwr=separatePins(collectPinsOfGroup(pins,'__PWR'),[None,None])
+pinsGnd=separatePins(collectPinsOfGroup(pins,'__GND'),[None,None])
+if len(pinsPwr) > 0:
+    setSectionEndItems(sectionPwr['power'],pinsPwr)
+if len(pinsGnd) > 0:
+    setSectionEndItems(sectionPwr['ground'],pinsGnd)
+updateSectionSize(sectionPwr,'power','ground')
+
+totalMinimalWidth += sectionPwr['size']
+
 # Generate symbol description according to kicad format
 fmtBeginSymbol='DEF {} U 0 50 Y Y 1 L N\n' # name
 fmtAlias='ALIAS {}\n' # names (ssv)
@@ -239,12 +255,13 @@ pinTypeToElecType={
 }
 
 # output symbol
-halfWidth=metrics['font']['glyphWidthLastDecile'] * totalMinimalWidth / 2 + metrics['common']['margin']
+halfWidth=metrics['font']['glyphWidthLastDecile'] * totalMinimalWidth / 2 + metrics['power']['margin']
 halfWidth += 50 - (halfWidth % 50) # snap to grid
 pinStartH=halfWidth + 300
 halfHeight=metrics['font']['line-height'] * totalLineHeight / 2 + metrics['common']['margin']
 halfHeight += 50 - (halfHeight % 50)
 ySection = halfHeight - metrics['common']['margin'] / 2
+pinStartV=halfHeight + 300
 
 def outputPinsOfSectionEndHoriz(pins, fmt, yStart,outfile):
     yLine = yStart
@@ -252,6 +269,13 @@ def outputPinsOfSectionEndHoriz(pins, fmt, yStart,outfile):
         if not pin == None:
             outfile.write(fmt.format(pin['name'], pin['index'], pinStartH, yLine, pinTypeToElecType[pin['type']]))
         yLine -= metrics['font']['line-height']
+
+def outputPinsOfSectionEndVertical(pins, fmt, xStart, y ,outfile):
+    xLine = xStart
+    for pin in pins:
+        if not pin == None:
+            outfile.write(fmt.format(pin['name'], pin['index'], xLine, y, pinTypeToElecType[pin['type']]))
+        xLine += metrics['font']['line-height']
 
 with open(comArgs['output'], 'w') as outfile:
     outfile.write(fmtBeginSymbol.format(srcDatasheet['meta']['name'].upper()))
@@ -279,6 +303,11 @@ with open(comArgs['output'], 'w') as outfile:
     outputPinsOfSectionEndHoriz(sectionBidis['left']['items'],fmtPinWest,ySection,outfile)
     outputPinsOfSectionEndHoriz(sectionBidis['right']['items'],fmtPinEast,ySection,outfile)
     ySection -= (sectionBidis['size'] + 1) * metrics['font']['line-height']
+
+    # draw power pins
+    xStart = halfWidth - (totalMinimalWidth - sectionPwr['size']) * metrics['font']['line-height'] / 2 - metrics['power']['margin'] / 2
+    outputPinsOfSectionEndVertical(sectionPwr['power']['items'],fmtPinNorth,-xStart,pinStartV, outfile)
+    outputPinsOfSectionEndVertical(sectionPwr['ground']['items'],fmtPinSouth,-xStart,pinStartV, outfile)
 
     outfile.write(fmtEndDraw)
     outfile.write(fmtEndSymbol)
