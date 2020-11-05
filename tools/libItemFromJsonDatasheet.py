@@ -149,8 +149,11 @@ def collectPinsOfGroup(pins, groupName):
     # done
     return result
 
+def collectPinsOfGroupsUsingSeparator(pins, groups, separator):
+    return reduce(lambda a, b : a + separator + b, map(lambda g:collectPinsOfGroup(pins, g['name']), groups))
+
 def collectPinsOfGroups(pins, groups):
-    return reduce(lambda a, b : a + [None] + b, map(lambda g:collectPinsOfGroup(pins, g['name']), groups))
+    return collectPinsOfGroupsUsingSeparator(pins, groups, [None])
 
 def widthOfSectionEnd(items):
     return reduce(max, map(lambda i: len(i['name']), filter(lambda i: not i == None, items)))
