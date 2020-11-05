@@ -27,20 +27,6 @@ comArgs['output']=sys.argv[2]
 srcFile = open(comArgs['input'], 'r')
 srcDatasheet = json.load(srcFile)
 
-# Each pin is stored as a "slot item"
-# A slot contains slot items, either pins or empty space
-slotInputs=[]
-slotOutputs=[]
-slotMixed=[]
-slotBusLeft=[]
-slotBusRight=[]
-slotPower=[]
-slotGround=[]
-# final layout
-slotOnLeft=[]
-slotOnRight=[]
-#
-
 def qualifyGroup(g):
     typeKey = 0;
     if g['I']>0:
@@ -123,14 +109,14 @@ def newSection():
     return {
         'left':newSectionEnd(),
         'right':newSectionEnd(),
-        'height':0
+        'size':0
     }
 
 def newSectionPower():
     return {
         'power':newSectionEnd(),
         'ground':newSectionEnd(),
-        'width':0
+        'size':0
     }
 
 reBusWireIndexInName=re.compile('[0-9]+$')
@@ -165,8 +151,8 @@ def setSectionEndItems(sectionEnd, items):
         sectionEnd['items'].extend(list(items))
         sectionEnd['width'] = widthOfSectionEnd(sectionEnd['items'])
 
-def updateSectionHeight(section,end1,end2):
-    section['height']=max(len(section[end1]['items']), len(section[end2]['items']))
+def updateSectionSize(section,end1,end2):
+    section['size']=max(len(section[end1]['items']), len(section[end2]['items']))
 
 pins = srcDatasheet['pins']
 totalLineHeight=0
@@ -178,7 +164,7 @@ def createSectionFromCollectionOfGroups(pins,groupsOnEnd1,groupsOnEnd2,endName1,
         setSectionEndItems(section[endName1],collectPinsOfGroups(pins, groupsOnEnd1))
     if len(groupsOnEnd2) >0:
         setSectionEndItems(section[endName2],collectPinsOfGroups(pins, groupsOnEnd2))
-    updateSectionHeight(section,endName1,endName2)
+    updateSectionSize(section,endName1,endName2)
     return section
 
 # section of pure input groups and pure output groups
@@ -197,7 +183,7 @@ def dispatchIoPinsIntoSectionEnds(pins,section,endInput,endOutput):
         setSectionEndItems(section[endInput],inputs)
     if len(outputs) > 0:
         setSectionEndItems(section[endOutput],outputs)
-    updateSectionHeight(section,endInput,endOutput)
+    updateSectionSize(section,endInput,endOutput)
 
 def createSectionFromMixedIoPinsGroup(pins,group,endName1,endName2):
     result = newSection()
@@ -207,7 +193,7 @@ def createSectionFromMixedIoPinsGroup(pins,group,endName1,endName2):
 
 
 sectionsOfMixedPinsGroups = map(lambda g:createSectionFromMixedIoPinsGroup(pins,g,'left','right'), groupMixeds)
-totalLineHeight += reduce(lambda a,b:a + b + 1, map(lambda s: s['height'],sectionsOfMixedPinsGroups))
+totalLineHeight += reduce(lambda a,b:a + b + 1, map(lambda s: s['size'],sectionsOfMixedPinsGroups))
 totalMinimalWidth = reduce(lambda a,b:max(a,b), map(lambda s:s['left']['width'] + s['right']['width'], sectionsOfMixedPinsGroups))
 
 
@@ -220,7 +206,7 @@ groupsBidiOnLeft = filter(keepOddGroups,groupBidis)
 groupsBidiOnRight = filter(keepEvenGroups,groupBidis)
 
 sectionBidis = createSectionFromCollectionOfGroups(pins,groupsBidiOnLeft,groupsBidiOnRight,'left','right')
-totalLineHeight += sectionBidis['height']
+totalLineHeight += sectionBidis['size']
 totalMinimalWidth = max(totalMinimalWidth,sectionBidis['left']['width'] + sectionBidis['right']['width'])
 
 # Generate symbol description according to kicad format
@@ -283,7 +269,7 @@ with open(comArgs['output'], 'w') as outfile:
     for s in sectionsOfMixedPinsGroups:
         outputPinsOfSectionEndHoriz(s['left']['items'],fmtPinWest,ySection,outfile)
         outputPinsOfSectionEndHoriz(s['right']['items'],fmtPinEast,ySection,outfile)
-        ySection -= (s['height'] + 1) * metrics['font']['line-height']
+        ySection -= (s['size'] + 1) * metrics['font']['line-height']
 
     # draw output pins only groups
     outputPinsOfSectionEndHoriz(sectionPureUnidirectionGroups['right']['items'],fmtPinEast,ySection,outfile)
@@ -292,7 +278,7 @@ with open(comArgs['output'], 'w') as outfile:
     # draw bidis bins groups
     outputPinsOfSectionEndHoriz(sectionBidis['left']['items'],fmtPinWest,ySection,outfile)
     outputPinsOfSectionEndHoriz(sectionBidis['right']['items'],fmtPinEast,ySection,outfile)
-    ySection -= (sectionBidis['height'] + 1) * metrics['font']['line-height']
+    ySection -= (sectionBidis['size'] + 1) * metrics['font']['line-height']
 
     outfile.write(fmtEndDraw)
     outfile.write(fmtEndSymbol)
