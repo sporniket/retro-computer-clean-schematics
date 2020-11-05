@@ -228,7 +228,7 @@ totalMinimalWidth += sectionPwr['size']
 # Generate symbol description according to kicad format
 fmtBeginSymbol='DEF {} U 0 50 Y Y 1 L N\n' # name
 fmtAlias='ALIAS {}\n' # names (ssv)
-fmtField='F{} "{}" {} {} 50 H V C CNN\n' # field index, name, x, y
+fmtField='F{} "{}" {} {} 50 H V L T{}\n' # field index, name, x, y, style (NN, IN, NB, RB)
 fmtBeginDraw='DRAW\n'
 fmtSurface='S -{0} {1} {0} -{1} 0 1 10 f\n' # half width, half height
 fmtPinWest='X {} {} -{} {} 300 R 50 50 0 0 {}\n' # name, index, half width + 300, y, pin type
@@ -280,8 +280,8 @@ def outputPinsOfSectionEndVertical(pins, fmt, xStart, y ,outfile):
 with open(comArgs['output'], 'w') as outfile:
     outfile.write(fmtBeginSymbol.format(srcDatasheet['meta']['name'].upper()))
     outfile.write(fmtAlias.format(reduce(lambda a,b:a + ' ' + b, srcDatasheet['meta']['aliases'])))
-    outfile.write(fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidth + 300, halfHeight + 400))
-    outfile.write(fmtField.format(1,srcDatasheet['meta']['name'], -halfWidth + 300, halfHeight + 300))
+    outfile.write(fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidth + 300, halfHeight + 400, 'NN'))
+    outfile.write(fmtField.format(1,srcDatasheet['meta']['name'], -halfWidth + 300, halfHeight + 300, 'NB'))
     outfile.write(fmtBeginDraw)
     outfile.write(fmtSurface.format(halfWidth,halfHeight))
 
