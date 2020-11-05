@@ -280,8 +280,8 @@ def outputPinsOfSectionEndVertical(pins, fmt, xStart, y ,outfile):
 with open(comArgs['output'], 'w') as outfile:
     outfile.write(fmtBeginSymbol.format(srcDatasheet['meta']['name'].upper()))
     outfile.write(fmtAlias.format(reduce(lambda a,b:a + ' ' + b, srcDatasheet['meta']['aliases'])))
-    outfile.write(fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidth + 300, halfHeight + 400, 'NN'))
-    outfile.write(fmtField.format(1,srcDatasheet['meta']['name'], -halfWidth + 300, halfHeight + 300, 'NB'))
+    outfile.write(fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidth , halfHeight + 200, 'NN'))
+    outfile.write(fmtField.format(1,srcDatasheet['meta']['name'], -halfWidth , halfHeight + 100, 'NB'))
     outfile.write(fmtBeginDraw)
     outfile.write(fmtSurface.format(halfWidth,halfHeight))
 
