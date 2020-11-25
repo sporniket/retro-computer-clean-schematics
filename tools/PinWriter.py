@@ -57,3 +57,11 @@ class PinWriter:
             if not pin == None:
                 outfile.write(fmt.format(pin['name'], pin['index'], xLine, y, unit, PinWriter.pinTypeToElecType[pin['type']], PinWriter.pinTypeToShapeType[pin['type']]))
             xLine += metrics['font']['line-height']
+
+    @staticmethod
+    def outputSectionsHorizontalMonoUnit(metrics, sections, endName1, endName2, xRef, yRef, outfile):
+        ySection = yRef
+        for s in sections:
+            PinWriter.outputPinsOfSectionEndHoriz(metrics, s[endName1]['items'],PinWriter.fmtPinWest,xRef,ySection,0,outfile)
+            PinWriter.outputPinsOfSectionEndHoriz(metrics, s[endName2]['items'],PinWriter.fmtPinEast,xRef,ySection,0,outfile)
+            ySection -= (s['size'] + 1) * metrics['font']['line-height']

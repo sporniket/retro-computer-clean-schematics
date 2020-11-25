@@ -210,6 +210,26 @@ sectionBidis = createSectionFromCollectionOfGroups(pins,groupsBidiOnLeft,groupsB
 totalLineHeight += sectionBidis['size']
 totalMinimalWidth = max(totalMinimalWidth,sectionBidis['left']['width'] + sectionBidis['right']['width'])
 
+#split sectionPureUnidirectionGroups into section of inputs, section of outputs
+def extractSectionEndIntoOwnSection(source,endNameSource,endNameOther):
+    s = newSection()
+    s[endNameSource] = source[endNameSource]
+    updateSectionSize(s,endNameSource,endNameOther)
+    return s
+
+def splitSectionEndsIntoSections(source,endName1,endName2):
+    s1 = extractSectionEndIntoOwnSection(source,endName1,endName2)
+    s2 = extractSectionEndIntoOwnSection(source,endName2,endName1)
+    return [s1,s2]
+
+splitPureSections=splitSectionEndsIntoSections(sectionPureUnidirectionGroups,'left','right')
+
+#accumulate all vertical sections (mono unit)
+allVertSections=[]
+allVertSections.extend([splitPureSections[0]])
+allVertSections.extend(sectionsOfMixedPinsGroups)
+allVertSections.extend([splitPureSections[1]])
+allVertSections.extend([sectionBidis])
 
 def separatePins(pins,separator):
     return reduce(lambda a,b:a + separator + b, map(lambda p:[p], pins))
@@ -252,24 +272,8 @@ with open(comArgs['output'], 'w') as outfile:
     outfile.write(fmtBeginDraw)
     outfile.write(fmtSurface.format(halfWidth,halfHeight))
 
-    # draw input pins only groups
-    PinWriter.outputPinsOfSectionEndHoriz(metrics, sectionPureUnidirectionGroups['left']['items'],pinStartH,PinWriter.fmtPinWest,ySection,0,outfile)
-    ySection -= (len(sectionPureUnidirectionGroups['left']['items'])+1) * metrics['font']['line-height']
-
-    # draw io pins groups
-    for s in sectionsOfMixedPinsGroups:
-        PinWriter.outputPinsOfSectionEndHoriz(metrics, s['left']['items'],PinWriter.fmtPinWest,pinStartH,ySection,0,outfile)
-        PinWriter.outputPinsOfSectionEndHoriz(metrics, s['right']['items'],PinWriter.fmtPinEast,pinStartH,ySection,0,outfile)
-        ySection -= (s['size'] + 1) * metrics['font']['line-height']
-
-    # draw output pins only groups
-    PinWriter.outputPinsOfSectionEndHoriz(metrics, sectionPureUnidirectionGroups['right']['items'],PinWriter.fmtPinEast,pinStartH,ySection,0,outfile)
-    ySection -= (len(sectionPureUnidirectionGroups['right']['items'])+1) * metrics['font']['line-height']
-
-    # draw bidis bins groups
-    PinWriter.outputPinsOfSectionEndHoriz(metrics, sectionBidis['left']['items'],PinWriter.fmtPinWest,pinStartH,ySection,0,outfile)
-    PinWriter.outputPinsOfSectionEndHoriz(metrics, sectionBidis['right']['items'],PinWriter.fmtPinEast,pinStartH,ySection,0,outfile)
-    ySection -= (sectionBidis['size'] + 1) * metrics['font']['line-height']
+    # draw pins
+    PinWriter.outputSectionsHorizontalMonoUnit(metrics, allVertSections, 'left', 'right', pinStartH, ySection, outfile)
 
     # draw power pins
     xStart = halfWidth - (totalMinimalWidth - sectionPwr['size']) * metrics['font']['line-height'] / 2 - metrics['power']['margin'] / 2
