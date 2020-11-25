@@ -42,7 +42,7 @@
 |31||DNC|||
 |32||DNC|||
 |33|Vcc|PWR|||
-|34|CLK|I|SYSCTL||
+|34|CLK|ICLK|SYSCTL||
 |35|GND|GND|||
 |36||DNC|||
 |37|/BGO|O|DMACON||
