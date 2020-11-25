@@ -11,6 +11,7 @@ import sys
 import re
 import json
 
+from PinWriter import PinWriter
 
 # check usage
 if len(sys.argv) < 3:
@@ -231,43 +232,8 @@ fmtAlias='ALIAS {}\n' # names (ssv)
 fmtField='F{} "{}" {} {} 50 H V L T{}\n' # field index, name, x, y, style (NN, IN, NB, RB)
 fmtBeginDraw='DRAW\n'
 fmtSurface='S -{0} {1} {0} -{1} 0 1 10 f\n' # half width, half height
-fmtPinWest='X {} {} -{} {} 300 R 50 50 {} 0 {} {}\n' # name, index, half width + 300, y, unit, pin type, pin shape
-fmtPinEast='X {} {} {} {} 300 L 50 50 {} 0 {} {}\n' # name, index, half width + 300, y, unit, pin type, pin shape
-fmtPinNorth='X {} {} {} {} 300 D 50 50 {} 0 {} {}\n' # name, index, x, half height + 300, unit, pin type, pin shape
-fmtPinSouth='X {} {} {} -{} 300 U 50 50 {} 0 {} {}\n' # name, index, x, half height + 300, unit, y, pin type, pin shape
 fmtEndDraw='ENDDRAW\n'
 fmtEndSymbol='ENDDEF\n'
-
-# pin type to kicad type
-pinTypeToElecType={
-    'PWR' : 'W',
-    'GND' : 'w',
-    'DNC' : 'N',
-    'I' : 'I',
-    'ICLK' : 'I',
-    'O' : 'O',
-    'OCLK' : 'O',
-    'O3' : 'T',
-    'OCOL' : 'C',
-    'OEMT' : 'E',
-    'OPWR' : 'w',
-    'B' : 'B'
-}
-
-pinTypeToShapeType={
-    'PWR' : '',
-    'GND' : '',
-    'DNC' : '',
-    'I' : '',
-    'ICLK' : 'C',
-    'O' : '',
-    'OCLK' : 'C',
-    'O3' : '',
-    'OCOL' : '',
-    'OEMT' : '',
-    'OPWR' : '',
-    'B' : ''
-}
 
 # output symbol
 halfWidth=metrics['font']['glyphWidthLastDecile'] * totalMinimalWidth / 2 + metrics['power']['margin']
@@ -278,20 +244,6 @@ halfHeight += 50 - (halfHeight % 50)
 ySection = halfHeight - metrics['common']['margin'] / 2
 pinStartV=halfHeight + 300
 
-def outputPinsOfSectionEndHoriz(pins, fmt, x, yStart, unit, outfile):
-    yLine = yStart
-    for pin in pins:
-        if not pin == None:
-            outfile.write(fmt.format(pin['name'], pin['index'], x, yLine, unit, pinTypeToElecType[pin['type']], pinTypeToShapeType[pin['type']]))
-        yLine -= metrics['font']['line-height']
-
-def outputPinsOfSectionEndVertical(pins, fmt, xStart, y, unit, outfile):
-    xLine = xStart
-    for pin in pins:
-        if not pin == None:
-            outfile.write(fmt.format(pin['name'], pin['index'], xLine, y, unit, pinTypeToElecType[pin['type']], pinTypeToShapeType[pin['type']]))
-        xLine += metrics['font']['line-height']
-
 with open(comArgs['output'], 'w') as outfile:
     outfile.write(fmtBeginSymbol.format(srcDatasheet['meta']['name'].upper()))
     outfile.write(fmtAlias.format(reduce(lambda a,b:a + ' ' + b, srcDatasheet['meta']['aliases'])))
@@ -301,28 +253,28 @@ with open(comArgs['output'], 'w') as outfile:
     outfile.write(fmtSurface.format(halfWidth,halfHeight))
 
     # draw input pins only groups
-    outputPinsOfSectionEndHoriz(sectionPureUnidirectionGroups['left']['items'],pinStartH,fmtPinWest,ySection,0,outfile)
+    PinWriter.outputPinsOfSectionEndHoriz(metrics, sectionPureUnidirectionGroups['left']['items'],pinStartH,PinWriter.fmtPinWest,ySection,0,outfile)
     ySection -= (len(sectionPureUnidirectionGroups['left']['items'])+1) * metrics['font']['line-height']
 
     # draw io pins groups
     for s in sectionsOfMixedPinsGroups:
-        outputPinsOfSectionEndHoriz(s['left']['items'],fmtPinWest,pinStartH,ySection,0,outfile)
-        outputPinsOfSectionEndHoriz(s['right']['items'],fmtPinEast,pinStartH,ySection,0,outfile)
+        PinWriter.outputPinsOfSectionEndHoriz(metrics, s['left']['items'],PinWriter.fmtPinWest,pinStartH,ySection,0,outfile)
+        PinWriter.outputPinsOfSectionEndHoriz(metrics, s['right']['items'],PinWriter.fmtPinEast,pinStartH,ySection,0,outfile)
         ySection -= (s['size'] + 1) * metrics['font']['line-height']
 
     # draw output pins only groups
-    outputPinsOfSectionEndHoriz(sectionPureUnidirectionGroups['right']['items'],fmtPinEast,pinStartH,ySection,0,outfile)
+    PinWriter.outputPinsOfSectionEndHoriz(metrics, sectionPureUnidirectionGroups['right']['items'],PinWriter.fmtPinEast,pinStartH,ySection,0,outfile)
     ySection -= (len(sectionPureUnidirectionGroups['right']['items'])+1) * metrics['font']['line-height']
 
     # draw bidis bins groups
-    outputPinsOfSectionEndHoriz(sectionBidis['left']['items'],fmtPinWest,pinStartH,ySection,0,outfile)
-    outputPinsOfSectionEndHoriz(sectionBidis['right']['items'],fmtPinEast,pinStartH,ySection,0,outfile)
+    PinWriter.outputPinsOfSectionEndHoriz(metrics, sectionBidis['left']['items'],PinWriter.fmtPinWest,pinStartH,ySection,0,outfile)
+    PinWriter.outputPinsOfSectionEndHoriz(metrics, sectionBidis['right']['items'],PinWriter.fmtPinEast,pinStartH,ySection,0,outfile)
     ySection -= (sectionBidis['size'] + 1) * metrics['font']['line-height']
 
     # draw power pins
     xStart = halfWidth - (totalMinimalWidth - sectionPwr['size']) * metrics['font']['line-height'] / 2 - metrics['power']['margin'] / 2
-    outputPinsOfSectionEndVertical(sectionPwr['power']['items'],fmtPinNorth,-xStart,pinStartV,0, outfile)
-    outputPinsOfSectionEndVertical(sectionPwr['ground']['items'],fmtPinSouth,-xStart,pinStartV,0, outfile)
+    PinWriter.outputPinsOfSectionEndVertical(metrics, sectionPwr['power']['items'],PinWriter.fmtPinNorth,-xStart,pinStartV,0, outfile)
+    PinWriter.outputPinsOfSectionEndVertical(metrics, sectionPwr['ground']['items'],PinWriter.fmtPinSouth,-xStart,pinStartV,0, outfile)
 
     outfile.write(fmtEndDraw)
     outfile.write(fmtEndSymbol)
