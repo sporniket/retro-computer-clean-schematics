@@ -19,7 +19,7 @@ class SymbolWriter:
     fmtSubSectionTitle='# --- --- --- ---\n# {}\n#\n'
 
     @staticmethod
-    def outputMonoUnitSymbol(srcDatasheet,allVertSections,sectionPwr,metrics,halfWidth,halfHeight,totalMinimalWidth,pinStartH,pinStartV,ySection,outfile):
+    def outputMonoUnitSymbol(srcDatasheet,allVertSections,sectionPwr,metrics,halfWidth,halfHeight,halfWidthPwr,pinStartH,pinStartV,ySection,outfile):
         # Mono unit symbol
         outfile.write(SymbolWriter.fmtSectionTitle.format(srcDatasheet['meta']['name'] + ' -- Single unit symbol'))
         outfile.write(SymbolWriter.fmtBeginSymbol.format(srcDatasheet['meta']['name'].upper(),1))
@@ -33,7 +33,7 @@ class SymbolWriter:
         PinWriter.outputSectionsHorizontalMonoUnit(metrics, allVertSections, 'left', 'right', pinStartH, ySection, outfile)
 
         # draw power pins
-        xStart = halfWidth - (totalMinimalWidth - sectionPwr['size']) * metrics['font']['line-height'] / 2 - metrics['power']['margin'] / 2
+        xStart = halfWidthPwr - metrics['power']['margin']
         PinWriter.outputPinsOfSectionEndVertical(metrics, sectionPwr['power']['items'],PinWriter.fmtPinNorth,-xStart,pinStartV,0, outfile)
         PinWriter.outputPinsOfSectionEndVertical(metrics, sectionPwr['ground']['items'],PinWriter.fmtPinSouth,-xStart,pinStartV,0, outfile)
 

@@ -174,7 +174,8 @@ sectionPureUnidirectionGroups = createSectionFromCollectionOfGroups(pins,groupIn
 totalLineHeight += len(sectionPureUnidirectionGroups['left']['items']) + 1
 totalLineHeight += len(sectionPureUnidirectionGroups['right']['items'])
 
-totalMinimalWidth = max(totalMinimalWidth, sectionPureUnidirectionGroups['left']['width'] + sectionPureUnidirectionGroups['right']['width'])
+totalMinimalWidth = max(totalMinimalWidth, sectionPureUnidirectionGroups['left']['width'])
+totalMinimalWidth = max(totalMinimalWidth, sectionPureUnidirectionGroups['right']['width'])
 
 # for each groups of mixed input/output pins, create a section
 def dispatchIoPinsIntoSectionEnds(pins,section,endInput,endOutput):
@@ -195,7 +196,7 @@ def createSectionFromMixedIoPinsGroup(pins,group,endName1,endName2):
 
 sectionsOfMixedPinsGroups = map(lambda g:createSectionFromMixedIoPinsGroup(pins,g,'left','right'), groupMixeds)
 totalLineHeight += reduce(lambda a,b:a + b + 1, map(lambda s: s['size'],sectionsOfMixedPinsGroups))
-totalMinimalWidth = reduce(lambda a,b:max(a,b), map(lambda s:s['left']['width'] + s['right']['width'], sectionsOfMixedPinsGroups))
+totalMinimalWidth = max(totalMinimalWidth,reduce(lambda a,b:max(a,b), map(lambda s:s['left']['width'] + s['right']['width'], sectionsOfMixedPinsGroups)))
 
 
 # create a section with bidi groups dispatched between the left and the right side. The first group is on the left,
@@ -244,12 +245,12 @@ if len(pinsGnd) > 0:
     setSectionEndItems(sectionPwr['ground'],pinsGnd)
 updateSectionSize(sectionPwr,'power','ground')
 
-totalMinimalWidth += sectionPwr['size']
 
 # Generate symbol description according to kicad format
 
 # output symbol
-halfWidth=metrics['font']['glyphWidthLastDecile'] * totalMinimalWidth / 2 + metrics['power']['margin']
+halfWidthPwr=(sectionPwr['size']-1)* metrics['font']['line-height'] / 2 + metrics['power']['margin']
+halfWidth=metrics['font']['glyphWidthLastDecile'] * totalMinimalWidth / 2 + halfWidthPwr
 halfWidth += 50 - (halfWidth % 50) # snap to grid
 pinStartH=halfWidth + 300
 halfHeight=metrics['font']['line-height'] * totalLineHeight / 2 + metrics['common']['margin']
@@ -258,6 +259,6 @@ ySection = halfHeight - metrics['common']['margin'] / 2
 pinStartV=halfHeight + 300
 
 with open(comArgs['output'], 'w') as outfile:
-    SymbolWriter.outputMonoUnitSymbol(srcDatasheet,allVertSections,sectionPwr,metrics,halfWidth,halfHeight,totalMinimalWidth,pinStartH,pinStartV,ySection,outfile)
+    SymbolWriter.outputMonoUnitSymbol(srcDatasheet,allVertSections,sectionPwr,metrics,halfWidth,halfHeight,halfWidthPwr,pinStartH,pinStartV,ySection,outfile)
 
     # Multi unit symbol
