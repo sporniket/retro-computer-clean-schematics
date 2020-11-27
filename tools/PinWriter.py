@@ -5,6 +5,7 @@ class PinWriter:
     Generates lines of pins description in Kicad eeschema lib format.
     """
 
+    # Line templates
     fmtPinWest='X {} {} -{} {} 300 R 50 50 {} 0 {} {}\n' # name, index, half width + 300, y, unit, pin type, pin shape
     fmtPinEast='X {} {} {} {} 300 L 50 50 {} 0 {} {}\n' # name, index, half width + 300, y, unit, pin type, pin shape
     fmtPinNorth='X {} {} {} {} 300 D 50 50 {} 0 {} {}\n' # name, index, x, half height + 300, unit, pin type, pin shape

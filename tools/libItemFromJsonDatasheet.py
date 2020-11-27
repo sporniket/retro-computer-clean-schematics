@@ -11,7 +11,7 @@ import sys
 import re
 import json
 
-from PinWriter import PinWriter
+from SymbolWriter import SymbolWriter
 
 # check usage
 if len(sys.argv) < 3:
@@ -247,13 +247,6 @@ updateSectionSize(sectionPwr,'power','ground')
 totalMinimalWidth += sectionPwr['size']
 
 # Generate symbol description according to kicad format
-fmtBeginSymbol='DEF {} U 0 50 Y Y 1 L N\n' # name
-fmtAlias='ALIAS {}\n' # names (ssv)
-fmtField='F{} "{}" {} {} 50 H V L T{}\n' # field index, name, x, y, style (NN, IN, NB, RB)
-fmtBeginDraw='DRAW\n'
-fmtSurface='S -{0} {1} {0} -{1} 0 1 10 f\n' # half width, half height
-fmtEndDraw='ENDDRAW\n'
-fmtEndSymbol='ENDDEF\n'
 
 # output symbol
 halfWidth=metrics['font']['glyphWidthLastDecile'] * totalMinimalWidth / 2 + metrics['power']['margin']
@@ -265,20 +258,6 @@ ySection = halfHeight - metrics['common']['margin'] / 2
 pinStartV=halfHeight + 300
 
 with open(comArgs['output'], 'w') as outfile:
-    outfile.write(fmtBeginSymbol.format(srcDatasheet['meta']['name'].upper()))
-    outfile.write(fmtAlias.format(reduce(lambda a,b:a + ' ' + b, srcDatasheet['meta']['aliases'])))
-    outfile.write(fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidth , halfHeight + 200, 'NN'))
-    outfile.write(fmtField.format(1,srcDatasheet['meta']['name'], -halfWidth , halfHeight + 100, 'NB'))
-    outfile.write(fmtBeginDraw)
-    outfile.write(fmtSurface.format(halfWidth,halfHeight))
+    SymbolWriter.outputMonoUnitSymbol(srcDatasheet,allVertSections,sectionPwr,metrics,halfWidth,halfHeight,totalMinimalWidth,pinStartH,pinStartV,ySection,outfile)
 
-    # draw pins
-    PinWriter.outputSectionsHorizontalMonoUnit(metrics, allVertSections, 'left', 'right', pinStartH, ySection, outfile)
-
-    # draw power pins
-    xStart = halfWidth - (totalMinimalWidth - sectionPwr['size']) * metrics['font']['line-height'] / 2 - metrics['power']['margin'] / 2
-    PinWriter.outputPinsOfSectionEndVertical(metrics, sectionPwr['power']['items'],PinWriter.fmtPinNorth,-xStart,pinStartV,0, outfile)
-    PinWriter.outputPinsOfSectionEndVertical(metrics, sectionPwr['ground']['items'],PinWriter.fmtPinSouth,-xStart,pinStartV,0, outfile)
-
-    outfile.write(fmtEndDraw)
-    outfile.write(fmtEndSymbol)
+    # Multi unit symbol
