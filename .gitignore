@@ -27,3 +27,6 @@ fp-info-cache
 
 # Build dir
 /build
+
+# Python
+*.pyc
