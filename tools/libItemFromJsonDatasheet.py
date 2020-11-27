@@ -77,7 +77,7 @@ groupBidis = collectGroupsBySameQualifier(100, groupsRanked, groupsUnranked)
 metrics = {
     'font':{
         'line-height':100,
-        'glyphWidthLastDecile':75 # 90% of the glyphes are less broad or equal to 75 mil
+        'glyphWidthLastDecile':50 # 90% of the glyphes are less broad or equal to this width (mils)
     },
     'common':{
         'margin':100,
