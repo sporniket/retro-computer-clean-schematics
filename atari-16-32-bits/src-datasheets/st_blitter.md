@@ -83,7 +83,7 @@
 
 |Group id|Rank|Comment|
 |---|---|---|
-|SYSCTL|1|System control signals (clock,reset,...)|
+|SYSCTL|1|System control signals|
 |IRQ|2|Interruption request|
 |DMACON|3|Bus arbitration control|
 |BUSCON|4|Asynchronous bus control|

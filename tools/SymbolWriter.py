@@ -13,6 +13,8 @@ class SymbolWriter:
     fmtField='F{} "{}" {} {} 50 H V L T{}\n' # field index, name, x, y, style (NN, IN, NB, RB)
     fmtBeginDraw='DRAW\n'
     fmtSurface='S -{0} {1} {0} -{1} {2} 0 10 f\n' # half width, half height, unit (0 : all ; >= 1 : unit)
+    fmtSurfaceMulti='S -{0} 0 {0} -{1} {2} 0 10 f\n' # half width, y bottom, unit (0 : all ; >= 1 : unit)
+    fmtTextMulti='T 0 {0} {1} 50 1 {2} 0 "{3}" Normal 0 L C\n' # x, y, unit (0 : all ; >= 1 : unit), text
     fmtEndDraw='ENDDRAW\n'
     fmtEndSymbol='ENDDEF\n'
     fmtSectionTitle='### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###\n# {}\n#\n'

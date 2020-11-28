@@ -258,7 +258,53 @@ halfHeight += 50 - (halfHeight % 50)
 ySection = halfHeight - metrics['common']['margin'] / 2
 pinStartV=halfHeight + 300
 
+
+### Multi unit stuff
+# decorate meta data
+srcDatasheet['meta']['name_common']=srcDatasheet['meta']['name']+'_mu'
+# find the common width for multi units
+muWidth = len(srcDatasheet['meta']['name_common'])
+# decorate the groups with the text line in the process
+for g in srcDatasheet['pinGroups'].values():
+    text=g['name'] if None == g['comment'] or 0 == len(g['comment']) else g['comment']
+    g['subtitle']=text
+    muWidth = max(muWidth,len(text))
+
+# cap the width to around 1 inch (1000 mils)
+muWidth=muWidth * metrics['font']['glyphWidthLastDecile']
+muWidth+=100 - (muWidth % 100)
+muWidth=min(1000,muWidth)
+
 with open(comArgs['output'], 'w') as outfile:
     SymbolWriter.outputMonoUnitSymbol(srcDatasheet,allVertSections,sectionPwr,metrics,halfWidth,halfHeight,halfWidthPwr,pinStartH,pinStartV,ySection,outfile)
 
     # Multi unit symbol
+
+    # recompute common metrics
+    halfWidthText = muWidth / 2
+
+    # The layout will not follow the KLC, to accomodate various size.
+    # The text will be in a centered box, and a supplemental text line will be rendered with the group name unless it is empty, then it will be the group code.
+    # The power pins would be rendered specially : the text will be surrounded by the specific surface and pins.
+    outfile.write(SymbolWriter.fmtSectionTitle.format(srcDatasheet['meta']['name'] + ' -- Multiple units symbol'))
+    outfile.write(SymbolWriter.fmtBeginSymbol.format(srcDatasheet['meta']['name_common'].upper(),len(srcDatasheet['pinGroups'].values())+1)) # One unit for each group + the power supply (Vxx, Gnd)
+    outfile.write(SymbolWriter.fmtAlias.format(reduce(lambda a,b:a + ' ' + b, map(lambda a:a + '_mu',srcDatasheet['meta']['aliases']))))
+
+    outfile.write(SymbolWriter.fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidthText , 300, 'NN'))
+    outfile.write(SymbolWriter.fmtField.format(1,srcDatasheet['meta']['name_common']+'_mu', -halfWidthText , 200, 'NB'))
+    outfile.write(SymbolWriter.fmtBeginDraw)
+
+    # now for each group
+    unit=1
+    for g in srcDatasheet['pinGroups'].values():
+        outfile.write(SymbolWriter.fmtSubSectionTitle.format(g['subtitle']))
+        outfile.write(SymbolWriter.fmtTextMulti.format(-halfWidthText,100,unit,g['subtitle']))
+        #outfile.write(SymbolWriter.fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidthText , 300, 'NN'))
+        unit += 1
+
+    # the power supply unit
+    outfile.write(SymbolWriter.fmtSubSectionTitle.format('Power supply'))
+    outfile.write(SymbolWriter.fmtTextMulti.format(-halfWidthText,100,unit,'Power supply'))
+    
+    outfile.write(SymbolWriter.fmtEndDraw)
+    outfile.write(SymbolWriter.fmtEndSymbol)
