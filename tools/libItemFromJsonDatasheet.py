@@ -28,6 +28,25 @@ comArgs['output']=sys.argv[2]
 srcFile = open(comArgs['input'], 'r')
 srcDatasheet = json.load(srcFile)
 
+
+#
+# metrics settings (to be loaded in the future) in mils (1000 mil = 1 inch)
+metrics = {
+    'font':{
+        'line-height':100,
+        'glyphWidthLastDecile':50 # 90% of the glyphes are less broad or equal to this width (mils)
+    },
+    'common':{
+        'margin':100,
+        'padding':0
+    },
+    'power':{
+        # power pins should be connected to decoupling capacitor, make some clearance for them.
+        'margin':200,
+        'padding':400
+    }
+}
+
 def qualifyGroup(g):
     typeKey = 0;
     if g['I']>0:
@@ -41,8 +60,31 @@ def qualifyGroup(g):
 def computeGroupSortKey(g):
     return '{:03d}'.format(g['qualifier'])+'_'+'{:04d}'.format(g['rank'])+'_'+g['name']
 
-# first, do the sorting of groups for effective rank
 srcGroups = srcDatasheet['pinGroups'].values()
+
+### Multi unit stuff
+# decorate meta data
+srcDatasheet['meta']['name_common']=srcDatasheet['meta']['name']+'_mu'
+# find the common width for multi units
+muWidth = len(srcDatasheet['meta']['name_common'])
+# decorate the groups with the text line in the process
+for g in srcDatasheet['pinGroups'].values():
+    text=g['name'] if None == g['comment'] or 0 == len(g['comment']) else g['comment']
+    g['subtitle']=text
+    muWidth = max(muWidth,len(text))
+
+# cap the width to around 1 inch (1000 mils)
+muWidth=muWidth * metrics['font']['glyphWidthLastDecile']
+muWidth+=100 - (muWidth % 100)
+muWidth=min(1000,muWidth)
+
+# group list (exclude power, ground and dnc)
+muGroups = []
+muGroups.extend(sorted(filter(lambda g:g['rank']>=0, srcGroups), key=lambda g:g['rank']))
+muGroups.extend(sorted(filter(lambda g:g['rank']<0, srcGroups), key=lambda g:g['name']))
+
+### Mono-unit stuff
+# first, do the sorting of groups for effective rank
 for g in srcGroups:
     qualifyGroup(g)
 
@@ -71,24 +113,6 @@ groupInputs = collectGroupsBySameQualifier(1, groupsRanked, groupsUnranked)
 groupOutputs = collectGroupsBySameQualifier(10, groupsRanked, groupsUnranked)
 groupMixeds = collectGroupsBySameQualifier(11, groupsRanked, groupsUnranked)
 groupBidis = collectGroupsBySameQualifier(100, groupsRanked, groupsUnranked)
-
-#
-# metrics settings (to be loaded in the future) in mils (1000 mil = 1 inch)
-metrics = {
-    'font':{
-        'line-height':100,
-        'glyphWidthLastDecile':50 # 90% of the glyphes are less broad or equal to this width (mils)
-    },
-    'common':{
-        'margin':100,
-        'padding':0
-    },
-    'power':{
-        # power pins should be connected to decoupling capacitor, make some clearance for them.
-        'margin':200,
-        'padding':400
-    }
-}
 
 # fill sections of pins
 isInputPin=lambda p:'I' == p['type'][0:1]
@@ -259,22 +283,6 @@ ySection = halfHeight - metrics['common']['margin'] / 2
 pinStartV=halfHeight + 300
 
 
-### Multi unit stuff
-# decorate meta data
-srcDatasheet['meta']['name_common']=srcDatasheet['meta']['name']+'_mu'
-# find the common width for multi units
-muWidth = len(srcDatasheet['meta']['name_common'])
-# decorate the groups with the text line in the process
-for g in srcDatasheet['pinGroups'].values():
-    text=g['name'] if None == g['comment'] or 0 == len(g['comment']) else g['comment']
-    g['subtitle']=text
-    muWidth = max(muWidth,len(text))
-
-# cap the width to around 1 inch (1000 mils)
-muWidth=muWidth * metrics['font']['glyphWidthLastDecile']
-muWidth+=100 - (muWidth % 100)
-muWidth=min(1000,muWidth)
-
 with open(comArgs['output'], 'w') as outfile:
     SymbolWriter.outputMonoUnitSymbol(srcDatasheet,allVertSections,sectionPwr,metrics,halfWidth,halfHeight,halfWidthPwr,pinStartH,pinStartV,ySection,outfile)
 
@@ -296,7 +304,7 @@ with open(comArgs['output'], 'w') as outfile:
 
     # now for each group
     unit=1
-    for g in srcDatasheet['pinGroups'].values():
+    for g in muGroups:
         outfile.write(SymbolWriter.fmtSubSectionTitle.format(g['subtitle']))
         outfile.write(SymbolWriter.fmtTextMulti.format(-halfWidthText,100,unit,g['subtitle']))
         #outfile.write(SymbolWriter.fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidthText , 300, 'NN'))
@@ -305,6 +313,6 @@ with open(comArgs['output'], 'w') as outfile:
     # the power supply unit
     outfile.write(SymbolWriter.fmtSubSectionTitle.format('Power supply'))
     outfile.write(SymbolWriter.fmtTextMulti.format(-halfWidthText,100,unit,'Power supply'))
-    
+
     outfile.write(SymbolWriter.fmtEndDraw)
     outfile.write(SymbolWriter.fmtEndSymbol)
