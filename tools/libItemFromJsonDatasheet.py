@@ -12,6 +12,7 @@ import re
 import json
 
 from SymbolWriter import SymbolWriter
+from PinWriter import PinWriter
 
 # check usage
 if len(sys.argv) < 3:
@@ -46,6 +47,12 @@ metrics = {
         'padding':400
     }
 }
+
+# math : snap to grid value
+def snapToGrid(value,gridSize):
+    result = value + gridSize - 1
+    result -= (result % gridSize)
+    return result
 
 def qualifyGroup(g):
     typeKey = 0;
@@ -116,6 +123,7 @@ groupBidis = collectGroupsBySameQualifier(100, groupsRanked, groupsUnranked)
 
 # fill sections of pins
 isInputPin=lambda p:'I' == p['type'][0:1]
+isNotInputPin=lambda p:'I' != p['type'][0:1]
 isOutputPin=lambda p:'O' == p['type'][0:1]
 
 def min(a,b):
@@ -211,14 +219,24 @@ def dispatchIoPinsIntoSectionEnds(pins,section,endInput,endOutput):
         setSectionEndItems(section[endOutput],outputs)
     updateSectionSize(section,endInput,endOutput)
 
-def createSectionFromMixedIoPinsGroup(pins,group,endName1,endName2):
+# more generic version for any pins : separate input only
+def dispatchPinsIntoSectionEnds(pins,section,endInput,endOutput):
+    inputs=filter(isInputPin, pins)
+    outputs=filter(isNotInputPin, pins)
+    if len(inputs) > 0:
+        setSectionEndItems(section[endInput],inputs)
+    if len(outputs) > 0:
+        setSectionEndItems(section[endOutput],outputs)
+    updateSectionSize(section,endInput,endOutput)
+
+def createSectionFromPinsGroup(pins,group,endName1,endName2,dispatcher):
     result = newSection()
     pinsubset=collectPinsOfGroup(pins,group['name'])
-    dispatchIoPinsIntoSectionEnds(pinsubset,result,endName1,endName2)
+    dispatcher(pinsubset,result,endName1,endName2)
     return result
 
 
-sectionsOfMixedPinsGroups = map(lambda g:createSectionFromMixedIoPinsGroup(pins,g,'left','right'), groupMixeds)
+sectionsOfMixedPinsGroups = map(lambda g:createSectionFromPinsGroup(pins,g,'left','right',dispatchIoPinsIntoSectionEnds), groupMixeds)
 totalLineHeight += reduce(lambda a,b:a + b + 1, map(lambda s: s['size'],sectionsOfMixedPinsGroups))
 totalMinimalWidth = max(totalMinimalWidth,reduce(lambda a,b:max(a,b), map(lambda s:s['left']['width'] + s['right']['width'], sectionsOfMixedPinsGroups)))
 
@@ -307,7 +325,23 @@ with open(comArgs['output'], 'w') as outfile:
     for g in muGroups:
         outfile.write(SymbolWriter.fmtSubSectionTitle.format(g['subtitle']))
         outfile.write(SymbolWriter.fmtTextMulti.format(-halfWidthText,100,unit,g['subtitle']))
-        #outfile.write(SymbolWriter.fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidthText , 300, 'NN'))
+
+        #Dispatch pins between left and right hand side
+        section = createSectionFromPinsGroup(pins,g,'left','right',dispatchPinsIntoSectionEnds)
+        #Compute metrics
+        totalMinimalWidth = section['left']['width']+section['right']['width']
+        halfWidth=metrics['font']['glyphWidthLastDecile'] * totalMinimalWidth / 2 + metrics['common']['margin'] / 2
+        halfWidth = snapToGrid(halfWidth,50)
+        pinStartH=halfWidth + 300
+        totalLineHeight = section['size']-1
+        fullHeight=metrics['font']['line-height'] * totalLineHeight + 2 * metrics['common']['margin']
+        fullHeight = snapToGrid(fullHeight,100)
+        ySection = -metrics['common']['margin']
+        # draw surface
+        outfile.write(SymbolWriter.fmtSurfaceMulti.format(halfWidth,fullHeight,unit))
+        # draw pins
+        PinWriter.outputPinsOfSectionEndHoriz(metrics, section['left']['items'],PinWriter.fmtPinWest,pinStartH,ySection,unit,outfile)
+        PinWriter.outputPinsOfSectionEndHoriz(metrics, section['right']['items'],PinWriter.fmtPinEast,pinStartH,ySection,unit,outfile)
         unit += 1
 
     # the power supply unit

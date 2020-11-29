@@ -18,7 +18,7 @@ class SymbolWriter:
     fmtEndDraw='ENDDRAW\n'
     fmtEndSymbol='ENDDEF\n'
     fmtSectionTitle='### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###\n# {}\n#\n'
-    fmtSubSectionTitle='# --- --- --- ---\n# {}\n#\n'
+    fmtSubSectionTitle='#\n# --- --- --- ---\n# {}\n#\n'
 
     @staticmethod
     def outputMonoUnitSymbol(srcDatasheet,allVertSections,sectionPwr,metrics,halfWidth,halfHeight,halfWidthPwr,pinStartH,pinStartV,ySection,outfile):
