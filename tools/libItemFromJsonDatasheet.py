@@ -347,6 +347,18 @@ with open(comArgs['output'], 'w') as outfile:
     # the power supply unit
     outfile.write(SymbolWriter.fmtSubSectionTitle.format('Power supply'))
     outfile.write(SymbolWriter.fmtTextMulti.format(-halfWidthText,100,unit,'Power supply'))
+    # reuse the power section to compute the metrics
+    totalMinimalWidth = sectionPwr['power']['width'] * metrics['font']['glyphWidthLastDecile'] + (len(sectionPwr['ground']['items']) - 1) * metrics['font']['line-height'] + 2*metrics['common']['margin']
+    halfWidth=snapToGrid(totalMinimalWidth,100)/2
+    pinStartH=halfWidth + 300
+    fullHeight = max(metrics['font']['line-height'] * (len(sectionPwr['power']['items']) -1),metrics['font']['glyphWidthLastDecile'] * (len(sectionPwr['ground']['items']) - 1))+metrics['common']['margin']
+    fullHeight = snapToGrid(fullHeight,100)
+    ySection = -metrics['common']['margin']
+    xStart = -halfWidth + metrics['common']['margin'] + sectionPwr['power']['width'] * metrics['font']['glyphWidthLastDecile']
+    xStart = snapToGrid(xStart,100)
+    pinStartV=fullHeight + 300
+    PinWriter.outputPinsOfSectionEndHoriz(metrics, sectionPwr['power']['items'],PinWriter.fmtPinWest,pinStartH,ySection,unit,outfile)
+    PinWriter.outputPinsOfSectionEndVertical(metrics, sectionPwr['ground']['items'],PinWriter.fmtPinSouth,xStart,pinStartV,unit, outfile)
 
     outfile.write(SymbolWriter.fmtEndDraw)
     outfile.write(SymbolWriter.fmtEndSymbol)
