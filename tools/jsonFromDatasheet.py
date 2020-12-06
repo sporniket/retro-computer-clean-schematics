@@ -106,7 +106,7 @@ def handlePinoutData(line,state):
         pin={
             'index':int(fields[1]),
             'name':formatSignalNames(fields[2]),
-            'type':fields[3].upper(),
+            'type':fields[3].replace("?","").upper(),
             'group':fields[4].upper(),
             'comment':fields[5]
         }
