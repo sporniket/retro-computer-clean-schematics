@@ -31,24 +31,24 @@
 |20|D1|B|DATA||
 |21|D0|B|DATA||
 |22||DNC|||
-|23|/AS|O|BUSCON||
-|24|/UDS|O|BUSCON||
-|25|/LDS|O|BUSCON||
-|26|R /W|O|BUSCON|High=Read ; Low=Write|
-|27|/DTACK|O|BUSCON||
-|28|/BGI|I|DMACON||
-|29|/BGACK|O|DMACON||
-|30|/BR|O|DMACON||
+|23|/AS|O|BUSCTL||
+|24|/UDS|O|BUSCTL||
+|25|/LDS|O|BUSCTL||
+|26|R /W|O|BUSCTL|High=Read ; Low=Write|
+|27|/DTACK|O|BUSCTL||
+|28|/BGI|I|BUSARB||
+|29|/BGACK|O|BUSARB||
+|30|/BR|O|BUSARB||
 |31||DNC|||
 |32||DNC|||
 |33|Vcc|PWR|||
-|34|CLK|ICLK|SYSCTL||
+|34|CLK|ICLK|CLKSYS||
 |35|GND|GND|||
 |36||DNC|||
-|37|/BGO|O|DMACON||
+|37|/BGO|O|BUSARB||
 |38|/RESET|I|SYSCTL||
 |39|/BERR|O|SYSCTL||
-|40|/BGKI|I|DMACON||
+|40|/BGKI|I|BUSARB||
 |41|/INT|O|IRQ||
 |42||DNC|||
 |43|FC2|O|FNCODE||
@@ -83,11 +83,14 @@
 
 |Group id|Rank|Comment|
 |---|---|---|
-|SYSCTL|1|System control signals|
-|IRQ|2|Interruption request|
-|DMACON|3|Bus arbitration control|
-|BUSCON|4|Asynchronous bus control|
-|FNCODE|5|Function Code|
+|CLKSYS|1|Clocking system|
+|SYSCTL|2|System control|
+|IRQ|3|Interruption request|
+|BUSARB|4|Bus arbitration control|
+|BUSCTL|5|Asynchronous bus control|
+|FNCODE|6|Function Code|
+|ADDR|100|Bus address|
+|DATA|101|Bus data|
 
 
 ## References

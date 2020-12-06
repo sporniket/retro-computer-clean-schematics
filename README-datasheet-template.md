@@ -15,6 +15,7 @@
 
 * Aliases : AKA1, AKA2
 * Reference : U
+* Datasheet : http://...
 
 ## Pinout
 
