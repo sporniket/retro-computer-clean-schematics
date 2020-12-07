@@ -318,6 +318,7 @@ with open(comArgs['output'], 'w') as outfile:
 
     outfile.write(SymbolWriter.fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidthText , 300, 'NN'))
     outfile.write(SymbolWriter.fmtField.format(1,srcDatasheet['meta']['name_common']+'_mu', -halfWidthText , 200, 'NB'))
+    outfile.write(SymbolWriter.fmtFieldInvisible.format(3,srcDatasheet['meta']['datasheet'], -halfWidthText , 500, 'NN'))
     outfile.write(SymbolWriter.fmtBeginDraw)
 
     # now for each group
@@ -356,7 +357,7 @@ with open(comArgs['output'], 'w') as outfile:
     ySection = -metrics['common']['margin']
     xStart = sectionPwr['power']['width'] * metrics['font']['glyphWidthLastDecile']
     xStart = snapToGrid(xStart,100)
-    xStart += -halfWidth + metrics['common']['margin'] 
+    xStart += -halfWidth + metrics['common']['margin']
     pinStartV=fullHeight + 300
     # draw surface
     outfile.write(SymbolWriter.fmtSurfaceMulti.format(halfWidth,fullHeight,unit))

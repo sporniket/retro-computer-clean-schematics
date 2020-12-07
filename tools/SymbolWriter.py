@@ -11,10 +11,11 @@ class SymbolWriter:
     fmtBeginSymbol='DEF {} U 0 50 Y Y {} L N\n' # name, unit count (>= 1)
     fmtAlias='ALIAS {}\n' # names (ssv)
     fmtField='F{} "{}" {} {} 50 H V L T{}\n' # field index, name, x, y, style (NN, IN, NB, RB)
+    fmtFieldInvisible='F{} "{}" {} {} 50 H I L T{}\n' # field index, name, x, y, style (NN, IN, NB, RB)
     fmtBeginDraw='DRAW\n'
     fmtSurface='S -{0} {1} {0} -{1} {2} 0 10 f\n' # half width, half height, unit (0 : all ; >= 1 : unit)
     fmtSurfaceMulti='S -{0} 0 {0} -{1} {2} 0 10 f\n' # half width, y bottom, unit (0 : all ; >= 1 : unit)
-    fmtTextMulti='T 0 {0} {1} 50 1 {2} 0 "{3}" Normal 0 L C\n' # x, y, unit (0 : all ; >= 1 : unit), text
+    fmtTextMulti='T 0 {0} {1} 50 1 {2} 0 "{3}" Normal 0 L T\n' # x, y, unit (0 : all ; >= 1 : unit), text
     fmtEndDraw='ENDDRAW\n'
     fmtEndSymbol='ENDDEF\n'
     fmtSectionTitle='### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###\n# {}\n#\n'
@@ -28,6 +29,7 @@ class SymbolWriter:
         outfile.write(SymbolWriter.fmtAlias.format(reduce(lambda a,b:a + ' ' + b, srcDatasheet['meta']['aliases'])))
         outfile.write(SymbolWriter.fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidth , halfHeight + 200, 'NN'))
         outfile.write(SymbolWriter.fmtField.format(1,srcDatasheet['meta']['name'], -halfWidth , halfHeight + 100, 'NB'))
+        outfile.write(SymbolWriter.fmtFieldInvisible.format(3,srcDatasheet['meta']['datasheet'], -halfWidth , halfHeight + 400, 'NN'))
         outfile.write(SymbolWriter.fmtBeginDraw)
         outfile.write(SymbolWriter.fmtSurface.format(halfWidth,halfHeight,0))
 

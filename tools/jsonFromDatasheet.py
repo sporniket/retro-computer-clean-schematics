@@ -28,6 +28,7 @@ srcLines = srcFile.readlines()
 # parse source
 reDefineAliases=re.compile('^aliases[ ]*\:.*', re.I)
 reDefineReference=re.compile('^reference[ ]*\:.*', re.I)
+reDefineDatasheet=re.compile('^datasheet[ ]*\:.*', re.I)
 reSectionPinout=re.compile('^pinout',re.I)
 reSectionPinGroup=re.compile('^pin groups',re.I)
 reTableHeadMark=re.compile('^\|[-]{3,}\|.*')
@@ -72,6 +73,9 @@ def handleHeaderLine(line,state):
             return state
         if reDefineReference.match(line):
             symMeta['reference']=line.split(':',1)[1].strip()
+            return state
+        if reDefineDatasheet.match(line):
+            symMeta['datasheet']=line.split(':',1)[1].strip()
             return state
     if line.startswith('## '):
         line = line[3:].strip()
