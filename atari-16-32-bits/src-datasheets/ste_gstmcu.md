@@ -6,6 +6,7 @@
 * Aliases : C300589-001
 * Reference : U
 * Datasheet : https://info-coach.fr/atari/hardware/STE-HW.php#mcu
+* Footprint : Package_QFP:PQFP-144_28x28mm_P0.65mm
 
 
 ## Pinout

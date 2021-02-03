@@ -6,6 +6,7 @@
 * Aliases : MC6850
 * Reference : U
 * Datasheet : https://docs.dev-docs.org/htm/search.php?find=%28ACIA%29+%5B1985%5D
+* Footprint : Package_DIP:DIP-24_W15.24mm_LongPads
 
 ## Pinout
 

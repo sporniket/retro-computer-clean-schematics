@@ -4,6 +4,7 @@
 
 * Aliases : C101643,I60611,MM9092V
 * Reference : U
+* Footprint : Package_LCC:LCC-68_THT-Socket
 
 ## Pinout
 

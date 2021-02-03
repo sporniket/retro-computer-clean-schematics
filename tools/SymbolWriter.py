@@ -29,7 +29,10 @@ class SymbolWriter:
         outfile.write(SymbolWriter.fmtAlias.format(reduce(lambda a,b:a + ' ' + b, srcDatasheet['meta']['aliases'])))
         outfile.write(SymbolWriter.fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidth , halfHeight + 200, 'NN'))
         outfile.write(SymbolWriter.fmtField.format(1,srcDatasheet['meta']['name'], -halfWidth , halfHeight + 100, 'NB'))
-        outfile.write(SymbolWriter.fmtFieldInvisible.format(3,srcDatasheet['meta']['datasheet'], -halfWidth , halfHeight + 400, 'NN'))
+        if 'footprint' in srcDatasheet['meta']:
+            outfile.write(SymbolWriter.fmtFieldInvisible.format(2,srcDatasheet['meta']['footprint'], -halfWidth , halfHeight + 300, 'NB'))
+        if 'datasheet' in srcDatasheet['meta']:
+            outfile.write(SymbolWriter.fmtFieldInvisible.format(3,srcDatasheet['meta']['datasheet'], -halfWidth , halfHeight + 400, 'NN'))
         outfile.write(SymbolWriter.fmtBeginDraw)
         outfile.write(SymbolWriter.fmtSurface.format(halfWidth,halfHeight,0))
 
