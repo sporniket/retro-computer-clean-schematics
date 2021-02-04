@@ -36,8 +36,8 @@
 |21|/RTCRD|O?|RTCCTL|Real Time Clock – ReaD|
 |22|/RTCCS|O?|RTCCTL|Real Time Clock – Chip Select|
 |23|/BERR|O|SYSCTL|Bus ERRor|
-|24|/VMA|I|SBSCTL|Valid Memory Address|
-|25|/VPA|O|SBSCTL|Valid Penpheral Address (also used to indicate to the processor an auto-interruption – auto-vectors 25 to 31)|
+|24|/VMA|I|MC6800CTL|Valid Memory Address|
+|25|/VPA|O|MC6800CTL|Valid Penpheral Address (also used to indicate to the processor an auto-interruption – auto-vectors 25 to 31)|
 |26|/BGACK|O|BUSARB|Bus Grant ACKnowledge|
 |27|/BGO|O|BUSARB|Bus Grant Output|
 |28|/BGI|I|BUSARB|Bus Grant Input|
@@ -61,7 +61,7 @@
 |46|A18|B|ADDR||
 |47|A17|B|ADDR||
 |48|A16|B|ADDR||
-|49|6850|O?|ACIACTL|Acia selection|
+|49|6850|O?|MC6800CTL|Acia selection|
 |50|A15|B|ADDR||
 |51|A14|B|ADDR||
 |52|A13|B|ADDR||
@@ -181,7 +181,7 @@
 |DMSNDCTL|130|DMA Sound control|
 |BLTCTL|140|Blitter control|
 |DMACTL|150|DMA chip control|
-|ACIACTL|160|ACIA control|
+|MC6800CTL|160|MC6800 Peripheral control|
 |PSGCTL|170|Programmable Sound Generator control|
 |RTCCTL|180|Real Time Clock control|
 |JOYPAD|190|Extended joysticks and paddles ports|
