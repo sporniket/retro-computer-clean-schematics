@@ -16,6 +16,7 @@
 * Aliases : AKA1, AKA2
 * Reference : U
 * Datasheet : http://...
+* Footprint : package_name:footprint_id
 
 ## Pinout
 
