@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 #
 # Convert a markdown document following the format of datasheet into a json model of the IC.
 #
@@ -97,7 +97,6 @@ for g in srcGroups:
 
 groupsRanked = sorted(filter(lambda g:g['rank']>=0, srcGroups), key=lambda g:computeGroupSortKey(g))
 groupsUnranked = sorted(filter(lambda g:g['rank']<0, srcGroups), key=lambda g:computeGroupSortKey(g))
-
 
 # Regroup groups by types
 def collectGroupsBySameQualifier(qualifier, rankeds, unrankeds):

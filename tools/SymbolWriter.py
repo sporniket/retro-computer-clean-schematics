@@ -1,3 +1,4 @@
+#!/usr/bin/python2
 
 from PinWriter import PinWriter
 

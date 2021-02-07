@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 #
 # Convert a markdown document following the format of datasheet into a json model of the IC.
 #
