@@ -235,9 +235,9 @@ def createSectionFromPinsGroup(pins,group,endName1,endName2,dispatcher):
     return result
 
 
-sectionsOfMixedPinsGroups = map(lambda g:createSectionFromPinsGroup(pins,g,'left','right',dispatchIoPinsIntoSectionEnds), groupMixeds)
-totalLineHeight += reduce(lambda a,b:a + b + 1, map(lambda s: s['size'],sectionsOfMixedPinsGroups))
-totalMinimalWidth = max(totalMinimalWidth,reduce(lambda a,b:max(a,b), map(lambda s:s['left']['width'] + s['right']['width'], sectionsOfMixedPinsGroups)))
+sectionsOfMixedPinsGroups = [] if 0 == len(groupMixeds) else map(lambda g:createSectionFromPinsGroup(pins,g,'left','right',dispatchIoPinsIntoSectionEnds), groupMixeds)
+totalLineHeight += 0 if 0 == len(sectionsOfMixedPinsGroups) else reduce(lambda a,b:a + b + 1, map(lambda s: s['size'],sectionsOfMixedPinsGroups))
+totalMinimalWidth = totalMinimalWidth if 0 == len(sectionsOfMixedPinsGroups) else max(totalMinimalWidth,reduce(lambda a,b:max(a,b), map(lambda s:s['left']['width'] + s['right']['width'], sectionsOfMixedPinsGroups)))
 
 
 # create a section with bidi groups dispatched between the left and the right side. The first group is on the left,
@@ -313,7 +313,8 @@ with open(comArgs['output'], 'w') as outfile:
     # The power pins would be rendered specially : the text will be surrounded by the specific surface and pins.
     outfile.write(SymbolWriter.fmtSectionTitle.format(srcDatasheet['meta']['name'] + ' -- Multiple units symbol'))
     outfile.write(SymbolWriter.fmtBeginSymbol.format(srcDatasheet['meta']['name_common'].upper(),len(srcDatasheet['pinGroups'].values())+1)) # One unit for each group + the power supply (Vxx, Gnd)
-    outfile.write(SymbolWriter.fmtAlias.format(reduce(lambda a,b:a + ' ' + b, map(lambda a:a + '_mu',srcDatasheet['meta']['aliases']))))
+    if 'aliases' in srcDatasheet['meta']:
+        outfile.write(SymbolWriter.fmtAlias.format(reduce(lambda a,b:a + ' ' + b, map(lambda a:a + '_mu',srcDatasheet['meta']['aliases']))))
 
     outfile.write(SymbolWriter.fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidthText , 300, 'NN'))
     outfile.write(SymbolWriter.fmtField.format(1,srcDatasheet['meta']['name_common']+'_mu', -halfWidthText , 200, 'NB'))

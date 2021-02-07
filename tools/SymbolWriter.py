@@ -27,7 +27,8 @@ class SymbolWriter:
         # Mono unit symbol
         outfile.write(SymbolWriter.fmtSectionTitle.format(srcDatasheet['meta']['name'] + ' -- Single unit symbol'))
         outfile.write(SymbolWriter.fmtBeginSymbol.format(srcDatasheet['meta']['name'].upper(),1))
-        outfile.write(SymbolWriter.fmtAlias.format(reduce(lambda a,b:a + ' ' + b, srcDatasheet['meta']['aliases'])))
+        if 'aliases' in srcDatasheet['meta']:
+            outfile.write(SymbolWriter.fmtAlias.format(reduce(lambda a,b:a + ' ' + b, srcDatasheet['meta']['aliases'])))
         outfile.write(SymbolWriter.fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidth , halfHeight + 200, 'NN'))
         outfile.write(SymbolWriter.fmtField.format(1,srcDatasheet['meta']['name'], -halfWidth , halfHeight + 100, 'NB'))
         if 'footprint' in srcDatasheet['meta']:
