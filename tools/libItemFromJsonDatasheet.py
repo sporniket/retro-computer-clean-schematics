@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 #
 # Convert a markdown document following the format of datasheet into a json model of the IC.
 #
@@ -10,13 +10,15 @@
 import sys
 import re
 import json
+#from pprint import pprint
 
 from SymbolWriter import SymbolWriter
 from PinWriter import PinWriter
+from utils import flatJoin
 
 # check usage
 if len(sys.argv) < 3:
-    print 'Usage : symbolsetFromDatasheet.py input_file output_file'
+    print('Usage : symbolsetFromDatasheet.py input_file output_file')
     exit()
     pass
 
@@ -87,22 +89,22 @@ muWidth=min(1000,muWidth)
 
 # group list (exclude power, ground and dnc)
 muGroups = []
-muGroups.extend(sorted(filter(lambda g:g['rank']>=0, srcGroups), key=lambda g:g['rank']))
-muGroups.extend(sorted(filter(lambda g:g['rank']<0, srcGroups), key=lambda g:g['name']))
+muGroups.extend(sorted([g for g in srcGroups if g['rank']>=0], key=lambda g:g['rank']))
+muGroups.extend(sorted([g for g in srcGroups if g['rank']<0], key=lambda g:g['name']))
 
 ### Mono-unit stuff
 # first, do the sorting of groups for effective rank
 for g in srcGroups:
     qualifyGroup(g)
 
-groupsRanked = sorted(filter(lambda g:g['rank']>=0, srcGroups), key=lambda g:computeGroupSortKey(g))
-groupsUnranked = sorted(filter(lambda g:g['rank']<0, srcGroups), key=lambda g:computeGroupSortKey(g))
+groupsRanked = sorted([g for g in srcGroups if g['rank']>=0], key=lambda g:computeGroupSortKey(g))
+groupsUnranked = sorted([g for g in srcGroups if g['rank']<0], key=lambda g:computeGroupSortKey(g))
 
 # Regroup groups by types
 def collectGroupsBySameQualifier(qualifier, rankeds, unrankeds):
     result = []
-    result.extend(filter(lambda g:g['qualifier']==qualifier,rankeds))
-    result.extend(filter(lambda g:g['qualifier']==qualifier,unrankeds))
+    result.extend([g for g in rankeds if g['qualifier']==qualifier])
+    result.extend([g for g in unrankeds if g['qualifier']==qualifier])
     # reorder elements
     rerank=1
     for g in result:
@@ -111,9 +113,9 @@ def collectGroupsBySameQualifier(qualifier, rankeds, unrankeds):
     return result
 
 def dumpJson(obj,title):
-    print '========<[ {} ]>========'.format(title)
+    print('========<[ {} ]>========'.format(title))
     print(json.dumps(obj,indent=2))
-    print '================================'
+    print('================================')
 
 groupInputs = collectGroupsBySameQualifier(1, groupsRanked, groupsUnranked)
 groupOutputs = collectGroupsBySameQualifier(10, groupsRanked, groupsUnranked)
@@ -124,12 +126,6 @@ groupBidis = collectGroupsBySameQualifier(100, groupsRanked, groupsUnranked)
 isInputPin=lambda p:'I' == p['type'][0:1]
 isNotInputPin=lambda p:'I' != p['type'][0:1]
 isOutputPin=lambda p:'O' == p['type'][0:1]
-
-def min(a,b):
-    return a if a < b else b
-
-def max(a,b):
-    return a if a > b else b
 
 def newSectionEnd():
     return {
@@ -154,7 +150,7 @@ def newSectionPower():
 reBusWireIndexInName=re.compile('[0-9]+$')
 
 def collectPinsOfGroup(pins, groupName):
-    result = filter(lambda p:p['group'] == groupName,pins)
+    result = [p for p in pins if p['group'] == groupName]
     # If the group of pins looks like a bus, the pin are sorted by descending index extracted from pin names
     isBusGroup = True
     for p in result:
@@ -168,13 +164,16 @@ def collectPinsOfGroup(pins, groupName):
     return result
 
 def collectPinsOfGroupsUsingSeparator(pins, groups, separator):
-    return reduce(lambda a, b : a + separator + b, map(lambda g:collectPinsOfGroup(pins, g['name']), groups))
+    return flatJoin([collectPinsOfGroup(pins,g['name']) for g in groups], separator)
 
 def collectPinsOfGroups(pins, groups):
     return collectPinsOfGroupsUsingSeparator(pins, groups, [None])
 
 def widthOfSectionEnd(items):
-    return reduce(max, map(lambda i: len(i['name']), filter(lambda i: not i == None, items)))
+    result = 0
+    for w in [len(i['name']) for i in items if not i == None]:
+        result = max(result,w)
+    return result
 
 
 
@@ -210,8 +209,8 @@ totalMinimalWidth = max(totalMinimalWidth, sectionPureUnidirectionGroups['right'
 
 # for each groups of mixed input/output pins, create a section
 def dispatchIoPinsIntoSectionEnds(pins,section,endInput,endOutput):
-    inputs=filter(isInputPin, pins)
-    outputs=filter(isOutputPin, pins)
+    inputs=[p for p in pins if isInputPin(p)]
+    outputs=[p for p in pins if isOutputPin(p)]
     if len(inputs) > 0:
         setSectionEndItems(section[endInput],inputs)
     if len(outputs) > 0:
@@ -220,8 +219,8 @@ def dispatchIoPinsIntoSectionEnds(pins,section,endInput,endOutput):
 
 # more generic version for any pins : separate input only
 def dispatchPinsIntoSectionEnds(pins,section,endInput,endOutput):
-    inputs=filter(isInputPin, pins)
-    outputs=filter(isNotInputPin, pins)
+    inputs=[p for p in pins if isInputPin(p)]
+    outputs=[p for p in pins if isNotInputPin(p)]
     if len(inputs) > 0:
         setSectionEndItems(section[endInput],inputs)
     if len(outputs) > 0:
@@ -235,9 +234,10 @@ def createSectionFromPinsGroup(pins,group,endName1,endName2,dispatcher):
     return result
 
 
-sectionsOfMixedPinsGroups = [] if 0 == len(groupMixeds) else map(lambda g:createSectionFromPinsGroup(pins,g,'left','right',dispatchIoPinsIntoSectionEnds), groupMixeds)
-totalLineHeight += 0 if 0 == len(sectionsOfMixedPinsGroups) else reduce(lambda a,b:a + b + 1, map(lambda s: s['size'],sectionsOfMixedPinsGroups))
-totalMinimalWidth = totalMinimalWidth if 0 == len(sectionsOfMixedPinsGroups) else max(totalMinimalWidth,reduce(lambda a,b:max(a,b), map(lambda s:s['left']['width'] + s['right']['width'], sectionsOfMixedPinsGroups)))
+sectionsOfMixedPinsGroups = [] if 0 == len(groupMixeds) else [createSectionFromPinsGroup(pins,g,'left','right',dispatchIoPinsIntoSectionEnds) for g in groupMixeds]
+totalLineHeight += 0 if 0 == len(sectionsOfMixedPinsGroups) else sum([s['size'] + 1 for s in sectionsOfMixedPinsGroups])
+if len(sectionsOfMixedPinsGroups) > 0:
+    totalMinimalWidth = max(totalMinimalWidth, max([s['left']['width'] + s['right']['width'] for s in sectionsOfMixedPinsGroups]))
 
 
 # create a section with bidi groups dispatched between the left and the right side. The first group is on the left,
@@ -245,8 +245,8 @@ totalMinimalWidth = totalMinimalWidth if 0 == len(sectionsOfMixedPinsGroups) els
 keepEvenGroups = lambda g:0 == (g['rank'] % 2)
 keepOddGroups = lambda g:not keepEvenGroups(g)
 
-groupsBidiOnLeft = filter(keepOddGroups,groupBidis)
-groupsBidiOnRight = filter(keepEvenGroups,groupBidis)
+groupsBidiOnLeft = [g for g in groupBidis if keepOddGroups(g)]
+groupsBidiOnRight = [g for g in groupBidis if keepEvenGroups(g)]
 
 sectionBidis = createSectionFromCollectionOfGroups(pins,groupsBidiOnLeft,groupsBidiOnRight,'left','right')
 totalLineHeight += sectionBidis['size']
@@ -274,7 +274,7 @@ allVertSections.extend([splitPureSections[1]])
 allVertSections.extend([sectionBidis])
 
 def separatePins(pins,separator):
-    return reduce(lambda a,b:a + separator + b, map(lambda p:[p], pins))
+    return flatJoin([[p] for p in pins], separator)
 
 # create the section for the power and ground pins
 sectionPwr=newSectionPower()
@@ -314,7 +314,7 @@ with open(comArgs['output'], 'w') as outfile:
     outfile.write(SymbolWriter.fmtSectionTitle.format(srcDatasheet['meta']['name'] + ' -- Multiple units symbol'))
     outfile.write(SymbolWriter.fmtBeginSymbol.format(srcDatasheet['meta']['name_common'].upper(),len(srcDatasheet['pinGroups'].values())+1)) # One unit for each group + the power supply (Vxx, Gnd)
     if 'aliases' in srcDatasheet['meta']:
-        outfile.write(SymbolWriter.fmtAlias.format(reduce(lambda a,b:a + ' ' + b, map(lambda a:a + '_mu',srcDatasheet['meta']['aliases']))))
+        outfile.write(SymbolWriter.fmtAlias.format(' '.join([a + '_mu' for a in srcDatasheet['meta']['aliases']])))
 
     outfile.write(SymbolWriter.fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidthText , 300, 'NN'))
     outfile.write(SymbolWriter.fmtField.format(1,srcDatasheet['meta']['name_common']+'_mu', -halfWidthText , 200, 'NB'))
