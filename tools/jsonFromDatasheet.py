@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 #
 # Convert a markdown document following the format of datasheet into a json model of the IC.
 #
@@ -13,7 +13,7 @@ import json
 
 # check usage
 if len(sys.argv) < 3:
-    print 'Usage : symbolsetFromDatasheet.py input_file output_file'
+    print('Usage : symbolsetFromDatasheet.py input_file output_file')
     exit()
     pass
 
