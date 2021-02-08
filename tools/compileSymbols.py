@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 #
 # Collect a list of symbol description files into a kicad symbol library.
 #
@@ -12,7 +12,7 @@ import json
 
 # check usage
 if len(sys.argv) < 3:
-    print 'Usage : compileSymbols.py input_file output_file'
+    print('Usage : compileSymbols.py input_file output_file')
     exit()
     pass
 
