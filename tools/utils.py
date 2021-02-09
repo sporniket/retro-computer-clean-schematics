@@ -14,3 +14,17 @@ def flatJoin(groups,separator):
     for g in [x for x in groups if len(x) > 0]:
         result += g if len(result) == 0 else separator + g
     return result
+
+# math : snap to grid value
+def snapToGrid(value,gridSize):
+    """
+    Snap a integer value to the closest multiple of gridSize with value <= gridSizeself.
+
+    Behaviour:
+    snapToGrid(44,25) => 50
+    snapToGrid(50,25) => 50
+    snapToGrid(51,25) => 50
+    """
+    result = value + gridSize - 1
+    result -= (result % gridSize)
+    return result

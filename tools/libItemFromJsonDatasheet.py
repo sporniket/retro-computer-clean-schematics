@@ -14,7 +14,9 @@ import json
 
 from SymbolWriter import SymbolWriter
 from PinWriter import PinWriter
+
 from utils import flatJoin
+from utils import snapToGrid
 
 # check usage
 if len(sys.argv) < 3:
@@ -49,12 +51,6 @@ metrics = {
         'padding':400
     }
 }
-
-# math : snap to grid value
-def snapToGrid(value,gridSize):
-    result = value + gridSize - 1
-    result -= (result % gridSize)
-    return result
 
 def qualifyGroup(g):
     typeKey = 0;
