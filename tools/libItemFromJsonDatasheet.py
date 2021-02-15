@@ -12,6 +12,7 @@ import re
 import json
 #from pprint import pprint
 
+from metrics import metrics
 from SymbolWriter import SymbolWriter
 from PinWriter import PinWriter
 
@@ -20,7 +21,7 @@ from utils import snapToGrid
 
 # check usage
 if len(sys.argv) < 3:
-    print('Usage : symbolsetFromDatasheet.py input_file output_file')
+    print('Usage : libItemFromFromDatasheet.py input_file output_file')
     exit()
     pass
 
@@ -32,25 +33,6 @@ comArgs['output']=sys.argv[2]
 # Using readlines()
 srcFile = open(comArgs['input'], 'r')
 srcDatasheet = json.load(srcFile)
-
-
-#
-# metrics settings (to be loaded in the future) in mils (1000 mil = 1 inch)
-metrics = {
-    'font':{
-        'line-height':100,
-        'glyphWidthLastDecile':50 # 90% of the glyphes are less broad or equal to this width (mils)
-    },
-    'common':{
-        'margin':100,
-        'padding':0
-    },
-    'power':{
-        # power pins should be connected to decoupling capacitor, make some clearance for them.
-        'margin':200,
-        'padding':400
-    }
-}
 
 def qualifyGroup(g):
     typeKey = 0;
@@ -286,13 +268,13 @@ updateSectionSize(sectionPwr,'power','ground')
 # Generate symbol description according to kicad format
 
 # output symbol
-halfWidthPwr=(sectionPwr['size']-1)* metrics['font']['line-height'] / 2 + metrics['power']['margin']
-halfWidth=metrics['font']['glyphWidthLastDecile'] * totalMinimalWidth / 2 + halfWidthPwr
+halfWidthPwr=int((sectionPwr['size']-1)* metrics['font']['line-height'] / 2 + metrics['power']['margin'])
+halfWidth=int(metrics['font']['glyphWidthLastDecile'] * totalMinimalWidth / 2 + halfWidthPwr)
 halfWidth += 50 - (halfWidth % 50) # snap to grid
 pinStartH=halfWidth + 300
-halfHeight=metrics['font']['line-height'] * totalLineHeight / 2 + metrics['common']['margin']
+halfHeight=int(metrics['font']['line-height'] * totalLineHeight / 2 + metrics['common']['margin'])
 halfHeight += 50 - (halfHeight % 50)
-ySection = halfHeight - metrics['common']['margin'] / 2
+ySection = int(halfHeight - metrics['common']['margin'] / 2)
 pinStartV=halfHeight + 300
 
 
@@ -302,7 +284,7 @@ with open(comArgs['output'], 'w') as outfile:
     # Multi unit symbol
 
     # recompute common metrics
-    halfWidthText = muWidth / 2
+    halfWidthText = int(muWidth / 2)
 
     # The layout will not follow the KLC, to accomodate various size.
     # The text will be in a centered box, and a supplemental text line will be rendered with the group name unless it is empty, then it will be the group code.
@@ -330,7 +312,7 @@ with open(comArgs['output'], 'w') as outfile:
         section = createSectionFromPinsGroup(pins,g,'left','right',dispatchPinsIntoSectionEnds)
         #Compute metrics
         totalMinimalWidth = section['left']['width']+section['right']['width']
-        halfWidth=metrics['font']['glyphWidthLastDecile'] * totalMinimalWidth / 2 + metrics['common']['margin'] / 2
+        halfWidth=int(metrics['font']['glyphWidthLastDecile'] * totalMinimalWidth / 2 + metrics['common']['margin'] / 2)
         halfWidth = snapToGrid(halfWidth,50)
         pinStartH=halfWidth + 300
         totalLineHeight = section['size']-1
@@ -348,8 +330,8 @@ with open(comArgs['output'], 'w') as outfile:
     outfile.write(SymbolWriter.fmtSubSectionTitle.format('Power supply'))
     outfile.write(SymbolWriter.fmtTextMulti.format(-halfWidthText,100,unit,'Power supply'))
     # reuse the power section to compute the metrics
-    totalMinimalWidth = sectionPwr['power']['width'] * metrics['font']['glyphWidthLastDecile'] + (len(sectionPwr['ground']['items']) - 1) * metrics['font']['line-height'] + 2*metrics['common']['margin']
-    halfWidth=snapToGrid(totalMinimalWidth,100)/2
+    totalMinimalWidth = int(sectionPwr['power']['width'] * metrics['font']['glyphWidthLastDecile'] + (len(sectionPwr['ground']['items']) - 1) * metrics['font']['line-height'] + 2*metrics['common']['margin'])
+    halfWidth=int(snapToGrid(totalMinimalWidth,100)/2)
     pinStartH=halfWidth + 300
     fullHeight = max(metrics['font']['line-height'] * (len(sectionPwr['power']['items'])),metrics['font']['glyphWidthLastDecile'] * (len(sectionPwr['ground']['items'])))+metrics['common']['margin']
     fullHeight = snapToGrid(fullHeight,100)

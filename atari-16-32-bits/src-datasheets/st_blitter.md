@@ -5,6 +5,7 @@
 * Aliases : C101643,I60611,MM9092V
 * Reference : U
 * Footprint : Package_LCC:LCC-68_THT-Socket
+* Pins layout : LCC
 
 ## Pinout
 
@@ -31,7 +32,7 @@
 |19|D2|B|DATA||
 |20|D1|B|DATA||
 |21|D0|B|DATA||
-|22||DNC|||
+|22|NC|DNC|||
 |23|/AS|O|BUSCTL||
 |24|/UDS|O|BUSCTL||
 |25|/LDS|O|BUSCTL||
@@ -40,22 +41,22 @@
 |28|/BGI|I|BUSARB||
 |29|/BGACK|O|BUSARB||
 |30|/BR|O|BUSARB||
-|31||DNC|||
-|32||DNC|||
+|31|NC|DNC|||
+|32|NC|DNC|||
 |33|Vcc|PWR|||
 |34|CLK|ICLK|CLKSYS||
 |35|GND|GND|||
-|36||DNC|||
+|36|NC|DNC|||
 |37|/BGO|O|BUSARB||
 |38|/RESET|I|SYSCTL||
 |39|/BERR|O|SYSCTL||
 |40|/BGKI|I|BUSARB||
 |41|/INT|O|IRQ||
-|42||DNC|||
+|42|NC|DNC|||
 |43|FC2|O|FNCODE||
 |44|FC1|O|FNCODE||
 |45|FC0|O|FNCODE||
-|46||DNC|||
+|46|NC|DNC|||
 |47|A1|B|ADDR||
 |48|A2|B|ADDR||
 |49|A3|B|ADDR||
@@ -69,7 +70,7 @@
 |57|A11|B|ADDR||
 |58|A12|B|ADDR||
 |59|A13|B|ADDR||
-|60||DNC|||
+|60|NC|DNC|||
 |61|A14|B|ADDR||
 |62|A15|B|ADDR||
 |63|A16|B|ADDR||
@@ -77,7 +78,7 @@
 |65|A18|B|ADDR||
 |66|A19|B|ADDR||
 |67|A20|B|ADDR||
-|68||DNC|||
+|68|NC|DNC|||
 
 
 ### Pin groups

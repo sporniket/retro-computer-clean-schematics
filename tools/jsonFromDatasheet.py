@@ -30,6 +30,7 @@ reDefineAliases=re.compile('^aliases[ ]*\:.*', re.I)
 reDefineReference=re.compile('^reference[ ]*\:.*', re.I)
 reDefineDatasheet=re.compile('^datasheet[ ]*\:.*', re.I)
 reDefineFootprint=re.compile('^footprint[ ]*\:.*', re.I)
+reDefinePhysical=re.compile('^pins[ ]+layout[ ]*\:.*', re.I)
 reSectionPinout=re.compile('^pinout',re.I)
 reSectionPinGroup=re.compile('^pin groups',re.I)
 reTableHeadMark=re.compile('^\|[-]{3,}\|.*')
@@ -80,6 +81,9 @@ def handleHeaderLine(line,state):
             return state
         if reDefineFootprint.match(line):
             symMeta['footprint']=line.split(':',1)[1].strip()
+            return state
+        if reDefinePhysical.match(line):
+            symMeta['physical']=line.split(':',1)[1].strip()
             return state
     if line.startswith('## '):
         line = line[3:].strip()

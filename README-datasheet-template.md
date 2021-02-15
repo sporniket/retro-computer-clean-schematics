@@ -17,6 +17,9 @@
 * Reference : U
 * Datasheet : http://...
 * Footprint : package_name:footprint_id
+* Pins layout : DIP
+
+> pins layout : DIP (default), BRD, LCC, QFP
 
 ## Pinout
 

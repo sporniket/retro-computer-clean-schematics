@@ -4,8 +4,14 @@ class PinWriter:
     """
     Generates lines of pins description in Kicad eeschema lib format.
     """
+    # Line templates - position as specified
+    # FIXME give control for pin length instead of 300
+    fmtPinLeft='X {} {} {} {} 300 R 50 50 {} 0 {} {}\n' # name, index, x - 300, y, unit, pin type, pin shape
+    fmtPinRight='X {} {} {} {} 300 L 50 50 {} 0 {} {}\n' # name, index, x + 300, y, unit, pin type, pin shape
+    fmtPinTop='X {} {} {} {} 300 D 50 50 {} 0 {} {}\n' # name, index, x, y + 300, unit, pin type, pin shape
+    fmtPinBottom='X {} {} {} {} 300 U 50 50 {} 0 {} {}\n' # name, index, x, y - 300, unit, y, pin type, pin shape
 
-    # Line templates
+    # Line templates - centered logic, given coordinates are always positive, negated as appropriate
     fmtPinWest='X {} {} -{} {} 300 R 50 50 {} 0 {} {}\n' # name, index, half width + 300, y, unit, pin type, pin shape
     fmtPinEast='X {} {} {} {} 300 L 50 50 {} 0 {} {}\n' # name, index, half width + 300, y, unit, pin type, pin shape
     fmtPinNorth='X {} {} {} {} 300 D 50 50 {} 0 {} {}\n' # name, index, x, half height + 300, unit, pin type, pin shape
@@ -44,6 +50,7 @@ class PinWriter:
     }
 
     @staticmethod
+    # FIXME : confusing method names -- the pins are generated along the vertical axis...
     def outputPinsOfSectionEndHoriz(metrics, pins, fmt, x, yStart, unit, outfile):
         yLine = yStart
         for pin in pins:
@@ -52,6 +59,7 @@ class PinWriter:
             yLine -= metrics['font']['line-height']
 
     @staticmethod
+    # FIXME : confusing method names -- the pins are generated along the horizontal axis...
     def outputPinsOfSectionEndVertical(metrics, pins, fmt, xStart, y, unit, outfile):
         xLine = xStart
         for pin in pins:

@@ -7,6 +7,7 @@
 * Reference : U
 * Datasheet : https://info-coach.fr/atari/hardware/STE-HW.php#mcu
 * Footprint : Package_QFP:PQFP-144_28x28mm_P0.65mm
+* Pins layout : QFP
 
 
 ## Pinout
@@ -26,7 +27,7 @@
 |11|/ROM4|O|ROMSEL|[$FA0000–$FB0000[ - Cartridge 64kB segment|
 |12|/ROM5|O|ROMSEL|[$E40000–$E80000[ - Unused 256kB segment|
 |13|/ROM6|O|ROMSEL|[$E80000–$EB0000[ - Unused 256kB segment|
-|14||DNC|||
+|14|NC|DNC|||
 |15|/HDINT|I|DRVINT|HD interrupt|
 |16|FDINT|I|DRVINT|FD interrupt|
 |17|/DISKINT|O|DRVINT|Interrupt to MFP|
@@ -116,7 +117,7 @@
 |101|/JOYWE|O|JOYPAD|JOYstick Write Enable|
 |102|JOYWL|O|JOYPAD|JOYstick Write Low|
 |103|/BUTTON|O|JOYPAD||
-|104||DNC|||
+|104|NC|DNC|||
 |105|/SINT|O|DMSNDCTL|emitted by the GST MCU to the Shifter –through a 74LS164 8 bit counter as delayer– at the end of a sample|
 |106|/SLOAD|O|DMSNDCTL|emitted by the GST MCU to indicate to the Shifter that the address of a data (16 bits) in RAM is present|
 |107|SREQ|I|DMSNDCTL|sent by the Shifter to the GST MCU to request it to address a word in RAM|

@@ -14,6 +14,7 @@ class SymbolWriter:
     fmtField='F{} "{}" {} {} 50 H V L T{}\n' # field index, name, x, y, style (NN, IN, NB, RB)
     fmtFieldInvisible='F{} "{}" {} {} 50 H I L T{}\n' # field index, name, x, y, style (NN, IN, NB, RB)
     fmtBeginDraw='DRAW\n'
+    fmtSurfaceGen='S {0} {1} {2} {3} {4} 0 10 f\n' # x1, y1, x2, y2, unit (0 : all ; >= 1 : unit)
     fmtSurface='S -{0} {1} {0} -{1} {2} 0 10 f\n' # half width, half height, unit (0 : all ; >= 1 : unit)
     fmtSurfaceMulti='S -{0} 0 {0} -{1} {2} 0 10 f\n' # half width, y bottom, unit (0 : all ; >= 1 : unit)
     fmtTextMulti='T 0 {0} {1} 50 1 {2} 0 "{3}" Normal 0 L T\n' # x, y, unit (0 : all ; >= 1 : unit), text
@@ -28,7 +29,7 @@ class SymbolWriter:
         outfile.write(SymbolWriter.fmtSectionTitle.format(srcDatasheet['meta']['name'] + ' -- Single unit symbol'))
         outfile.write(SymbolWriter.fmtBeginSymbol.format(srcDatasheet['meta']['name'].upper(),1))
         if 'aliases' in srcDatasheet['meta']:
-            outfile.write(SymbolWriter.fmtAlias.format(' '.join([a + '_mu' for a in srcDatasheet['meta']['aliases']])))
+            outfile.write(SymbolWriter.fmtAlias.format(' '.join([a for a in srcDatasheet['meta']['aliases']])))
         outfile.write(SymbolWriter.fmtField.format(0,srcDatasheet['meta']['reference'], -halfWidth , halfHeight + 200, 'NN'))
         outfile.write(SymbolWriter.fmtField.format(1,srcDatasheet['meta']['name'], -halfWidth , halfHeight + 100, 'NB'))
         if 'footprint' in srcDatasheet['meta']:
