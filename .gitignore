@@ -31,3 +31,6 @@ fp-info-cache
 
 # Python
 *.pyc
+
+# Kicad
+sym-lib-table
