@@ -20,7 +20,7 @@ class PinWriter:
     # pin type to kicad type
     pinTypeToElecType={
         'PWR' : 'W',
-        'GND' : 'w',
+        'GND' : 'W',
         'DNC' : 'N',
         'I' : 'I',
         'ICLK' : 'I',
