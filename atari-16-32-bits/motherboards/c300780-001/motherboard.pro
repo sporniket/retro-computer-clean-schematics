@@ -1,4 +1,4 @@
-update=ven. 16 avril 2021 18:25:51 CEST
+update=dim. 18 avril 2021 22:24:29 CEST
 version=1
 last_client=kicad
 [general]
@@ -34,10 +34,10 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=export
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=
+NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1
