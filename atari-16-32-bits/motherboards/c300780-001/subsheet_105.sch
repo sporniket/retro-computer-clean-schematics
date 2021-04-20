@@ -110,28 +110,6 @@ F 3 "~" H 3000 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C113
-U 1 1 607A54F5
-P 5800 4150
-F 0 "C113" H 5825 4250 50  0000 L CNN
-F 1 "0.1uF" H 5825 4050 50  0000 L CNN
-F 2 "" H 5838 4000 50  0001 C CNN
-F 3 "~" H 5800 4150 50  0001 C CNN
-	1    5800 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C114
-U 1 1 607A590E
-P 6700 4150
-F 0 "C114" H 6725 4250 50  0000 L CNN
-F 1 "0.1uF" H 6725 4050 50  0000 L CNN
-F 2 "" H 6738 4000 50  0001 C CNN
-F 3 "~" H 6700 4150 50  0001 C CNN
-	1    6700 4150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP1 C110
 U 1 1 607A6B48
 P 3500 4150
@@ -144,10 +122,6 @@ F 3 "~" H 3500 4150 50  0001 C CNN
 $EndComp
 Text Notes 3150 4700 0    50   ~ 0
 J103
-Text Notes 5700 4700 0    50   ~ 0
-U102
-Text Notes 6600 4700 0    50   ~ 0
-U103
 Text Notes 3350 3500 0    100  ~ 0
 Bypass capacitors
 $Comp
@@ -209,17 +183,9 @@ Text Label 3000 4300 3    50   ~ 0
 GND
 Text Label 3500 4300 3    50   ~ 0
 GND
-Text Label 5800 4300 3    50   ~ 0
-GND
-Text Label 6700 4300 3    50   ~ 0
-GND
 Text Label 3000 4000 1    50   ~ 0
 VCC
 Text Label 3500 4000 1    50   ~ 0
-VCC
-Text Label 5800 4000 1    50   ~ 0
-VCC
-Text Label 6700 4000 1    50   ~ 0
 VCC
 $Comp
 L power:PWR_FLAG #FLG0101
