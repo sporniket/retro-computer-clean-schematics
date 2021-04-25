@@ -46,13 +46,13 @@ $EndSheet
 $Sheet
 S 1000 8500 2500 1000
 U 6078774E
-F0 "J100 -- Power connector, bypass capacitors and pull-ups" 50
+F0 "J100 -- Power connector" 50
 F1 "subsheet_105.sch" 50
 $EndSheet
 $Sheet
 S 4500 7000 2500 2500
 U 60787796
-F0 "32 MHz source" 50
+F0 "32 MHz clock and video clocks" 50
 F1 "subsheet_106.sch" 50
 $EndSheet
 $EndSCHEMATC

@@ -142,7 +142,7 @@ Text GLabel 1850 3600 0    50   Output ~ 0
 E
 Text GLabel 1850 3500 0    50   Output ~ 0
 XVMA
-Text GLabel 1850 3400 0    50   Output ~ 0
+Text GLabel 1850 3400 0    50   BiDi ~ 0
 XRESET
 Text GLabel 1850 3300 0    50   Output ~ 0
 XHALT

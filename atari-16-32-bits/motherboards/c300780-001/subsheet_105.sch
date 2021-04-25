@@ -99,32 +99,6 @@ GND
 Text Notes 1200 1150 0    100  ~ 0
 Collect power from PSU
 $Comp
-L Device:C C109
-U 1 1 607A48CD
-P 3000 4150
-F 0 "C109" H 3025 4250 50  0000 L CNN
-F 1 "0.1uF" H 3025 4050 50  0000 L CNN
-F 2 "" H 3038 4000 50  0001 C CNN
-F 3 "~" H 3000 4150 50  0001 C CNN
-	1    3000 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C110
-U 1 1 607A6B48
-P 3500 4150
-F 0 "C110" H 3525 4250 50  0000 L CNN
-F 1 "100uF" H 3525 4050 50  0000 L CNN
-F 2 "" H 3500 4150 50  0001 C CNN
-F 3 "~" H 3500 4150 50  0001 C CNN
-	1    3500 4150
-	1    0    0    -1  
-$EndComp
-Text Notes 3150 4700 0    50   ~ 0
-J103
-Text Notes 3350 3500 0    100  ~ 0
-Bypass capacitors
-$Comp
 L power:GND #PWR0103
 U 1 1 607C25E0
 P 7300 2000
@@ -179,14 +153,6 @@ F 3 "" H 7300 1500 50  0001 C CNN
 	1    7300 1500
 	1    0    0    -1  
 $EndComp
-Text Label 3000 4300 3    50   ~ 0
-GND
-Text Label 3500 4300 3    50   ~ 0
-GND
-Text Label 3000 4000 1    50   ~ 0
-VCC
-Text Label 3500 4000 1    50   ~ 0
-VCC
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 607A87E9
