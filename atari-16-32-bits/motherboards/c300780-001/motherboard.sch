@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 1 14
+Sheet 1 8
 Title "Converted schematics of Atari STE"
 Date ""
 Rev "2021-04-15"
@@ -14,39 +14,49 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1300 1000 2500 2500
-U 60786F27
-F0 "Sheet 1 of 6" 50
-F1 "sheet_1.sch" 50
+S 800  1800 2000 150 
+U 6089D0BA
+F0 "U101 — Blitter" 79
+F1 "subsheet_101.sch" 50
 $EndSheet
 $Sheet
-S 4500 1000 2500 2500
-U 607870B5
-F0 "Sheet 2 of 6" 50
-F1 "sheet_2.sch" 50
+S 800  2200 2000 150 
+U 6089D0BC
+F0 "U102 U103 — EPROMs" 79
+F1 "subsheet_102.sch" 50
 $EndSheet
 $Sheet
-S 1300 4000 2500 2500
-U 60787135
-F0 "Sheet 3 of 6" 50
-F1 "sheet_3.sch" 50
+S 800  2600 2000 150 
+U 6089D0BE
+F0 "J103 - Cartridge port" 79
+F1 "subsheet_103.sch" 50
 $EndSheet
 $Sheet
-S 4500 4000 2500 2500
-U 607871F4
-F0 "Sheet 4 of 6" 50
-F1 "sheet_4.sch" 50
+S 800  3000 2000 150 
+U 6089D0C0
+F0 "U104 — Reset circuit" 79
+F1 "subsheet_104.sch" 50
 $EndSheet
 $Sheet
-S 1300 7000 2500 2500
-U 60787330
-F0 "Sheet 5 of 6" 50
-F1 "sheet_5.sch" 50
+S 800  3400 2000 150 
+U 6089D0C2
+F0 "J100 — Power connector" 79
+F1 "subsheet_105.sch" 50
 $EndSheet
 $Sheet
-S 4500 7000 2500 2500
-U 60787392
-F0 "Sheet 6 of 6" 50
-F1 "sheet_6.sch" 50
+S 800  3800 2000 150 
+U 6089D0C4
+F0 "32MHz + PAL subcarrier" 79
+F1 "subsheet_106.sch" 50
 $EndSheet
+Text Notes 750  1200 0    157  ~ 0
+Sheet 1
+$Sheet
+S 800  1400 2000 150 
+U 6089D0C6
+F0 "U100 — MC68000" 79
+F1 "subsheet_100.sch" 50
+$EndSheet
+Text Notes 3150 1200 0    157  ~ 0
+Sheet 2
 $EndSCHEMATC
