@@ -1,0 +1,538 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 9 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L acia:MC6850_PHY U200
+U 1 1 608A272E
+P 2400 2450
+F 0 "U200" H 2050 3300 50  0000 L TNN
+F 1 "MC6850_PHY" H 2050 3200 50  0000 L TNB
+F 2 "Package_DIP:DIP-24_W15.24mm_LongPads" H 2050 3400 50  0001 L TNN
+F 3 "" H 2050 3500 50  0001 L TNN
+	1    2400 2450
+	1    0    0    -1  
+$EndComp
+Text Label 1550 1900 0    50   ~ 0
+GND
+Text Label 1400 2000 0    50   ~ 0
+rx
+Text Label 1400 2400 0    50   ~ 0
+tx
+Text Label 1550 3000 0    50   ~ 0
+VCC
+Text Label 3250 1900 2    50   ~ 0
+GND
+Text Label 3250 2000 2    50   ~ 0
+GND
+NoConn ~ 1750 2300
+Text GLabel 1350 2100 0    50   Input ~ 0
+KHZ500
+Text GLabel 1350 2500 0    50   Output ~ 0
+ACIA_IRQ
+Text GLabel 1350 2600 0    50   Input ~ 0
+N6850
+Text Label 1550 2700 0    50   ~ 0
+GND
+Text Label 1550 2800 0    50   ~ 0
+A2
+Text Label 1550 2900 0    50   ~ 0
+A1
+Text GLabel 3300 3000 2    50   Input ~ 0
+RXW
+Text GLabel 3300 2900 2    50   Input ~ 0
+E
+Text GLabel 1500 1000 0    50   Input ~ 0
+ADDR[1..23]
+Text GLabel 6750 1000 2    50   Input ~ 0
+DATA[0..15]
+Wire Bus Line
+	1500 1000 1750 1000
+Wire Bus Line
+	6500 1000 6750 1000
+Text Label 1750 1000 0    50   ~ 0
+A[1..23]
+Text Label 6500 1000 2    50   ~ 0
+D[0..15]
+Text Label 3250 2100 2    50   ~ 0
+D8
+Text Label 3250 2200 2    50   ~ 0
+D9
+Text Label 3250 2300 2    50   ~ 0
+D10
+Text Label 3250 2400 2    50   ~ 0
+D11
+Text Label 3250 2500 2    50   ~ 0
+D12
+Text Label 3250 2600 2    50   ~ 0
+D13
+Text Label 3250 2700 2    50   ~ 0
+D14
+Text Label 3250 2800 2    50   ~ 0
+D15
+Wire Wire Line
+	1550 1900 1750 1900
+Wire Wire Line
+	1400 2000 1750 2000
+Wire Wire Line
+	1350 2100 1650 2100
+Wire Wire Line
+	1650 2100 1650 2200
+Wire Wire Line
+	1650 2200 1750 2200
+Connection ~ 1650 2100
+Wire Wire Line
+	1650 2100 1750 2100
+Wire Wire Line
+	1400 2400 1750 2400
+Wire Wire Line
+	1350 2500 1750 2500
+Wire Wire Line
+	1350 2600 1750 2600
+Wire Wire Line
+	1550 2700 1750 2700
+Wire Wire Line
+	1550 2800 1750 2800
+Wire Wire Line
+	1550 2900 1750 2900
+Wire Wire Line
+	1550 3000 1750 3000
+Wire Wire Line
+	3050 1900 3250 1900
+Wire Wire Line
+	3050 2000 3250 2000
+Wire Wire Line
+	3050 2100 3250 2100
+Wire Wire Line
+	3050 2200 3250 2200
+Wire Wire Line
+	3050 2300 3250 2300
+Wire Wire Line
+	3050 2400 3250 2400
+Wire Wire Line
+	3050 2500 3250 2500
+Wire Wire Line
+	3050 2600 3250 2600
+Wire Wire Line
+	3050 2700 3250 2700
+Wire Wire Line
+	3050 2800 3250 2800
+Wire Wire Line
+	3050 2900 3300 2900
+Wire Wire Line
+	3050 3000 3300 3000
+$Comp
+L 74x06:7406_PHY U210
+U 1 1 608A9811
+P 5150 2200
+F 0 "U210" H 4900 2800 50  0000 L TNN
+F 1 "7406_PHY" H 4900 2700 50  0000 L TNB
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 4900 2900 50  0001 L TNN
+F 3 "" H 4900 3000 50  0001 L TNN
+	1    5150 2200
+	1    0    0    -1  
+$EndComp
+Text Label 5900 1900 2    50   ~ 0
+VCC
+Text Label 4400 2500 0    50   ~ 0
+GND
+Text Label 4300 2300 0    50   ~ 0
+tx
+Text Label 6000 2000 2    50   ~ 0
+rx
+Text Label 4300 2400 0    50   ~ 0
+not_tx
+Text Label 6000 2400 2    50   ~ 0
+not_tx
+Text Label 6000 2100 2    50   ~ 0
+not_rx
+Text Label 6150 2500 2    50   ~ 0
+not_not_tx
+Text Label 6150 2300 2    50   ~ 0
+not_not_rx
+Text GLabel 4500 1900 0    50   Input ~ 0
+RESET
+Text GLabel 4500 2100 0    50   Input ~ 0
+RESET
+Text GLabel 4150 2000 0    50   Output ~ 0
+XRESET
+Text GLabel 4150 2200 0    50   Output ~ 0
+XHALT
+Wire Wire Line
+	4300 2300 4600 2300
+Wire Wire Line
+	4300 2400 4600 2400
+Wire Wire Line
+	4400 2500 4600 2500
+Wire Wire Line
+	5700 1900 5900 1900
+Wire Wire Line
+	5700 2000 6000 2000
+Wire Wire Line
+	5700 2400 6000 2400
+$Comp
+L Connector:Conn_01x05_Female J200
+U 1 1 608B3DDE
+P 6500 4400
+F 0 "J200" H 6500 4700 50  0000 C CNN
+F 1 "DIN5 — MIDI OUT" H 6500 4100 50  0000 C CNN
+F 2 "" H 6500 4400 50  0001 C CNN
+F 3 "~" H 6500 4400 50  0001 C CNN
+	1    6500 4400
+	1    0    0    -1  
+$EndComp
+Text Label 6100 4300 0    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x05_Female J201
+U 1 1 608B9CFD
+P 6500 5900
+F 0 "J201" H 6500 6200 50  0000 C CNN
+F 1 "DIN5 — MIDI IN" H 6500 5600 50  0000 C CNN
+F 2 "" H 6500 5900 50  0001 C CNN
+F 3 "~" H 6500 5900 50  0001 C CNN
+	1    6500 5900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6300 5700
+NoConn ~ 6300 5800
+NoConn ~ 6300 5900
+$Comp
+L pc900-dip6:PC900_PHY U208
+U 1 1 608AFA25
+P 3950 6100
+F 0 "U208" H 3500 6500 50  0000 L TNN
+F 1 "PC900_PHY" H 3500 6400 50  0000 L TNB
+F 2 "Package_DIP:DIP-6_W7.62mm_LongPads" H 3500 6600 50  0001 L TNN
+F 3 "" H 3500 6700 50  0001 L TNN
+	1    3950 6100
+	-1   0    0    -1  
+$EndComp
+Text Label 3000 6000 0    50   ~ 0
+VCC
+Text Label 3000 6100 0    50   ~ 0
+GND
+NoConn ~ 4700 6200
+Text Label 3000 6200 0    50   ~ 0
+rx
+Wire Wire Line
+	6100 2200 6100 2100
+Wire Wire Line
+	5700 2200 6100 2200
+Wire Wire Line
+	5700 2100 6100 2100
+$Comp
+L misc:T_FILTER_2PINS L200
+U 1 1 608C1FDC
+P 5950 4200
+F 0 "L200" H 5850 4200 50  0000 L CNN
+F 1 "T_FILTER_2PINS" H 5950 4350 50  0001 C CNN
+F 2 "" H 5950 4200 50  0001 C CNN
+F 3 "" H 5950 4200 50  0001 C CNN
+	1    5950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L misc:T_FILTER_2PINS L201
+U 1 1 608C2541
+P 5950 4400
+F 0 "L201" H 5850 4400 50  0000 L CNN
+F 1 "T_FILTER_2PINS" H 5950 4550 50  0001 C CNN
+F 2 "" H 5950 4400 50  0001 C CNN
+F 3 "" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L misc:T_FILTER_2PINS L202
+U 1 1 608C2754
+P 5950 4500
+F 0 "L202" H 5850 4500 50  0000 L CNN
+F 1 "T_FILTER_2PINS" H 5950 4650 50  0001 C CNN
+F 2 "" H 5950 4500 50  0001 C CNN
+F 3 "" H 5950 4500 50  0001 C CNN
+	1    5950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L misc:T_FILTER_2PINS L204
+U 1 1 608C28DF
+P 5950 4600
+F 0 "L204" H 5850 4600 50  0000 L CNN
+F 1 "T_FILTER_2PINS" H 5950 4750 50  0001 C CNN
+F 2 "" H 5950 4600 50  0001 C CNN
+F 3 "" H 5950 4600 50  0001 C CNN
+	1    5950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L misc:T_FILTER_2PINS L205
+U 1 1 608C2B02
+P 5950 6000
+F 0 "L205" H 5850 6000 50  0000 L CNN
+F 1 "T_FILTER_2PINS" H 5950 6150 50  0001 C CNN
+F 2 "" H 5950 6000 50  0001 C CNN
+F 3 "" H 5950 6000 50  0001 C CNN
+	1    5950 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L misc:T_FILTER_2PINS L206
+U 1 1 608C32A0
+P 5950 6100
+F 0 "L206" H 5850 6100 50  0000 L CNN
+F 1 "T_FILTER_2PINS" H 5950 6250 50  0001 C CNN
+F 2 "" H 5950 6100 50  0001 C CNN
+F 3 "" H 5950 6100 50  0001 C CNN
+	1    5950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R207
+U 1 1 608C5FE1
+P 5000 6000
+F 0 "R207" V 4900 6000 50  0000 C CNN
+F 1 "220" V 4800 6000 50  0000 C CNN
+F 2 "" H 5000 6000 50  0001 C CNN
+F 3 "~" H 5000 6000 50  0001 C CNN
+	1    5000 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D202
+U 1 1 608C6C78
+P 5450 6100
+F 0 "D202" H 5450 6000 50  0000 C CNN
+F 1 "1N914" H 5450 5900 50  0000 C CNN
+F 2 "" H 5450 6100 50  0001 C CNN
+F 3 "~" H 5450 6100 50  0001 C CNN
+	1    5450 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 6000 6100 6000
+Wire Wire Line
+	5800 6000 5200 6000
+Wire Wire Line
+	4900 6000 4700 6000
+Wire Wire Line
+	5300 6100 5200 6100
+Wire Wire Line
+	5200 6100 5200 6000
+Connection ~ 5200 6000
+Wire Wire Line
+	5200 6000 5100 6000
+Text Label 5750 6100 2    50   ~ 0
+in_5
+Text Label 4900 6100 2    50   ~ 0
+in_5
+Wire Wire Line
+	4700 6100 4900 6100
+Wire Wire Line
+	5600 6100 5800 6100
+Wire Wire Line
+	6100 6100 6300 6100
+Wire Wire Line
+	3000 6000 3200 6000
+Wire Wire Line
+	3000 6100 3200 6100
+Wire Wire Line
+	3000 6200 3200 6200
+$Comp
+L Device:R_Small_US R200
+U 1 1 608F0CAD
+P 5050 3800
+F 0 "R200" V 4950 3800 50  0000 C CNN
+F 1 "220" V 5150 3800 50  0000 C CNN
+F 2 "" H 5050 3800 50  0001 C CNN
+F 3 "~" H 5050 3800 50  0001 C CNN
+	1    5050 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R205
+U 1 1 608F1C5A
+P 5050 4150
+F 0 "R205" V 4950 4150 50  0000 C CNN
+F 1 "220" V 5150 4150 50  0000 C CNN
+F 2 "" H 5050 4150 50  0001 C CNN
+F 3 "~" H 5050 4150 50  0001 C CNN
+	1    5050 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R202
+U 1 1 608F1FF8
+P 5050 4500
+F 0 "R202" V 4950 4500 50  0000 C CNN
+F 1 "220" V 5150 4500 50  0000 C CNN
+F 2 "" H 5050 4500 50  0001 C CNN
+F 3 "~" H 5050 4500 50  0001 C CNN
+	1    5050 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R204
+U 1 1 608F24EF
+P 5050 4850
+F 0 "R204" V 4950 4850 50  0000 C CNN
+F 1 "220" V 5150 4850 50  0000 C CNN
+F 2 "" H 5050 4850 50  0001 C CNN
+F 3 "~" H 5050 4850 50  0001 C CNN
+	1    5050 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 4200 5700 4200
+Wire Wire Line
+	5800 4400 5600 4400
+Wire Wire Line
+	5800 4600 5700 4600
+Wire Wire Line
+	5700 4600 5700 4850
+Wire Wire Line
+	5700 4850 5150 4850
+Wire Wire Line
+	5150 4500 5800 4500
+Wire Wire Line
+	5150 4150 5600 4150
+Wire Wire Line
+	5600 4150 5600 4400
+Wire Wire Line
+	5150 3800 5700 3800
+Wire Wire Line
+	5700 3800 5700 4200
+Text Label 4750 3800 0    50   ~ 0
+VCC
+Text Label 4750 4500 0    50   ~ 0
+VCC
+Text Label 4500 4150 0    50   ~ 0
+not_not_rx
+Text Label 4500 4850 0    50   ~ 0
+not_not_tx
+Wire Wire Line
+	5700 2300 6150 2300
+Wire Wire Line
+	5700 2500 6150 2500
+Wire Wire Line
+	4750 3800 4950 3800
+Wire Wire Line
+	4500 4150 4950 4150
+Wire Wire Line
+	4750 4500 4950 4500
+Wire Wire Line
+	4500 4850 4950 4850
+Wire Wire Line
+	6100 4300 6300 4300
+$Comp
+L Device:R_Small_US R201
+U 1 1 608C885E
+P 4500 3000
+F 0 "R201" V 4400 3000 50  0000 C CNN
+F 1 "4K7" V 4600 3000 50  0000 C CNN
+F 2 "" H 4500 3000 50  0001 C CNN
+F 3 "~" H 4500 3000 50  0001 C CNN
+	1    4500 3000
+	0    1    1    0   
+$EndComp
+Text Label 4200 3000 0    50   ~ 0
+VCC
+Text Label 4750 3000 2    50   ~ 0
+rx
+$Comp
+L Device:R_Small_US R218
+U 1 1 608C9942
+P 5300 3000
+F 0 "R218" V 5200 3000 50  0000 C CNN
+F 1 "4K7" V 5400 3000 50  0000 C CNN
+F 2 "" H 5300 3000 50  0001 C CNN
+F 3 "~" H 5300 3000 50  0001 C CNN
+	1    5300 3000
+	0    1    1    0   
+$EndComp
+Text Label 5000 3000 0    50   ~ 0
+VCC
+$Comp
+L Device:R_Small_US R219
+U 1 1 608CBCCA
+P 6300 3000
+F 0 "R219" V 6200 3000 50  0000 C CNN
+F 1 "4K7" V 6400 3000 50  0000 C CNN
+F 2 "" H 6300 3000 50  0001 C CNN
+F 3 "~" H 6300 3000 50  0001 C CNN
+	1    6300 3000
+	0    1    1    0   
+$EndComp
+Text Label 6000 3000 0    50   ~ 0
+VCC
+Text Label 5700 3000 2    50   ~ 0
+not_tx
+Text Label 6700 3000 2    50   ~ 0
+not_rx
+$Comp
+L Device:C C?
+U 1 1 608CEFE6
+P 6650 2150
+AR Path="/60786F27/6078774E/608CEFE6" Ref="C?"  Part="1" 
+AR Path="/60786F27/607875AF/608CEFE6" Ref="C?"  Part="1" 
+AR Path="/6089D0BA/608CEFE6" Ref="C?"  Part="1" 
+AR Path="/608A2359/608CEFE6" Ref="C200"  Part="1" 
+F 0 "C200" H 6675 2250 50  0000 L CNN
+F 1 "0.1uF" H 6675 2050 50  0000 L CNN
+F 2 "" H 6688 2000 50  0001 C CNN
+F 3 "~" H 6650 2150 50  0001 C CNN
+	1    6650 2150
+	1    0    0    -1  
+$EndComp
+Text Label 6650 2500 1    50   ~ 0
+GND
+Text Label 6650 1800 3    50   ~ 0
+VCC
+Wire Wire Line
+	6100 4200 6300 4200
+Wire Wire Line
+	6100 4400 6300 4400
+Wire Wire Line
+	6100 4500 6300 4500
+Wire Wire Line
+	6100 4600 6300 4600
+Text Notes 5800 4100 0    50   ~ 0
+T Filters
+Text Notes 5800 5900 0    50   ~ 0
+T Filters
+Wire Wire Line
+	4150 2000 4600 2000
+Wire Wire Line
+	4150 2200 4600 2200
+Wire Wire Line
+	4500 1900 4600 1900
+Wire Wire Line
+	4500 2100 4600 2100
+Wire Wire Line
+	6650 1800 6650 2000
+Wire Wire Line
+	6650 2300 6650 2500
+Wire Wire Line
+	4200 3000 4400 3000
+Wire Wire Line
+	4600 3000 4750 3000
+Wire Wire Line
+	5000 3000 5200 3000
+Wire Wire Line
+	5400 3000 5700 3000
+Wire Wire Line
+	6000 3000 6200 3000
+Wire Wire Line
+	6400 3000 6700 3000
+$EndSCHEMATC
