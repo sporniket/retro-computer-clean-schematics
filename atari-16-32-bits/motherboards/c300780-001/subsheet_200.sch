@@ -184,47 +184,47 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x05_Female J200
 U 1 1 608B3DDE
-P 6500 4400
-F 0 "J200" H 6500 4700 50  0000 C CNN
-F 1 "DIN5 — MIDI OUT" H 6500 4100 50  0000 C CNN
-F 2 "" H 6500 4400 50  0001 C CNN
-F 3 "~" H 6500 4400 50  0001 C CNN
-	1    6500 4400
+P 6250 4450
+F 0 "J200" H 6250 4750 50  0000 C CNN
+F 1 "DIN5 — MIDI OUT" H 6250 4150 50  0000 C CNN
+F 2 "" H 6250 4450 50  0001 C CNN
+F 3 "~" H 6250 4450 50  0001 C CNN
+	1    6250 4450
 	1    0    0    -1  
 $EndComp
-Text Label 6100 4300 0    50   ~ 0
+Text Label 5850 4350 0    50   ~ 0
 GND
 $Comp
 L Connector:Conn_01x05_Female J201
 U 1 1 608B9CFD
-P 6500 5900
-F 0 "J201" H 6500 6200 50  0000 C CNN
-F 1 "DIN5 — MIDI IN" H 6500 5600 50  0000 C CNN
-F 2 "" H 6500 5900 50  0001 C CNN
-F 3 "~" H 6500 5900 50  0001 C CNN
-	1    6500 5900
+P 6700 6200
+F 0 "J201" H 6700 6500 50  0000 C CNN
+F 1 "DIN5 — MIDI IN" H 6700 5900 50  0000 C CNN
+F 2 "" H 6700 6200 50  0001 C CNN
+F 3 "~" H 6700 6200 50  0001 C CNN
+	1    6700 6200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6300 5700
-NoConn ~ 6300 5800
-NoConn ~ 6300 5900
+NoConn ~ 6500 6000
+NoConn ~ 6500 6100
+NoConn ~ 6500 6200
 $Comp
 L pc900-dip6:PC900_PHY U208
 U 1 1 608AFA25
-P 3950 6100
-F 0 "U208" H 3500 6500 50  0000 L TNN
-F 1 "PC900_PHY" H 3500 6400 50  0000 L TNB
-F 2 "Package_DIP:DIP-6_W7.62mm_LongPads" H 3500 6600 50  0001 L TNN
-F 3 "" H 3500 6700 50  0001 L TNN
-	1    3950 6100
+P 2250 6200
+F 0 "U208" H 1800 6600 50  0000 L TNN
+F 1 "PC900_PHY" H 1800 6500 50  0000 L TNB
+F 2 "Package_DIP:DIP-6_W7.62mm_LongPads" H 1800 6700 50  0001 L TNN
+F 3 "" H 1800 6800 50  0001 L TNN
+	1    2250 6200
 	-1   0    0    -1  
 $EndComp
-Text Label 3000 6000 0    50   ~ 0
+Text Label 1300 6100 0    50   ~ 0
 VCC
-Text Label 3000 6100 0    50   ~ 0
+Text Label 1300 6200 0    50   ~ 0
 GND
-NoConn ~ 4700 6200
-Text Label 3000 6200 0    50   ~ 0
+NoConn ~ 3000 6300
+Text Label 1300 6300 0    50   ~ 0
 rx
 Wire Wire Line
 	6100 2200 6100 2100
@@ -233,208 +233,92 @@ Wire Wire Line
 Wire Wire Line
 	5700 2100 6100 2100
 $Comp
-L misc:T_FILTER_2PINS L200
-U 1 1 608C1FDC
-P 5950 4200
-F 0 "L200" H 5850 4200 50  0000 L CNN
-F 1 "T_FILTER_2PINS" H 5950 4350 50  0001 C CNN
-F 2 "" H 5950 4200 50  0001 C CNN
-F 3 "" H 5950 4200 50  0001 C CNN
-	1    5950 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L misc:T_FILTER_2PINS L201
-U 1 1 608C2541
-P 5950 4400
-F 0 "L201" H 5850 4400 50  0000 L CNN
-F 1 "T_FILTER_2PINS" H 5950 4550 50  0001 C CNN
-F 2 "" H 5950 4400 50  0001 C CNN
-F 3 "" H 5950 4400 50  0001 C CNN
-	1    5950 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L misc:T_FILTER_2PINS L202
-U 1 1 608C2754
-P 5950 4500
-F 0 "L202" H 5850 4500 50  0000 L CNN
-F 1 "T_FILTER_2PINS" H 5950 4650 50  0001 C CNN
-F 2 "" H 5950 4500 50  0001 C CNN
-F 3 "" H 5950 4500 50  0001 C CNN
-	1    5950 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L misc:T_FILTER_2PINS L204
-U 1 1 608C28DF
-P 5950 4600
-F 0 "L204" H 5850 4600 50  0000 L CNN
-F 1 "T_FILTER_2PINS" H 5950 4750 50  0001 C CNN
-F 2 "" H 5950 4600 50  0001 C CNN
-F 3 "" H 5950 4600 50  0001 C CNN
-	1    5950 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L misc:T_FILTER_2PINS L205
-U 1 1 608C2B02
-P 5950 6000
-F 0 "L205" H 5850 6000 50  0000 L CNN
-F 1 "T_FILTER_2PINS" H 5950 6150 50  0001 C CNN
-F 2 "" H 5950 6000 50  0001 C CNN
-F 3 "" H 5950 6000 50  0001 C CNN
-	1    5950 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L misc:T_FILTER_2PINS L206
-U 1 1 608C32A0
-P 5950 6100
-F 0 "L206" H 5850 6100 50  0000 L CNN
-F 1 "T_FILTER_2PINS" H 5950 6250 50  0001 C CNN
-F 2 "" H 5950 6100 50  0001 C CNN
-F 3 "" H 5950 6100 50  0001 C CNN
-	1    5950 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R207
-U 1 1 608C5FE1
-P 5000 6000
-F 0 "R207" V 4900 6000 50  0000 C CNN
-F 1 "220" V 4800 6000 50  0000 C CNN
-F 2 "" H 5000 6000 50  0001 C CNN
-F 3 "~" H 5000 6000 50  0001 C CNN
-	1    5000 6000
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:D D202
 U 1 1 608C6C78
-P 5450 6100
-F 0 "D202" H 5450 6000 50  0000 C CNN
-F 1 "1N914" H 5450 5900 50  0000 C CNN
-F 2 "" H 5450 6100 50  0001 C CNN
-F 3 "~" H 5450 6100 50  0001 C CNN
-	1    5450 6100
-	1    0    0    -1  
+P 5000 6250
+F 0 "D202" V 4950 6050 50  0000 C CNN
+F 1 "1N914" V 5050 6050 50  0000 C CNN
+F 2 "" H 5000 6250 50  0001 C CNN
+F 3 "~" H 5000 6250 50  0001 C CNN
+	1    5000 6250
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6300 6000 6100 6000
+	6500 6300 6300 6300
 Wire Wire Line
-	5800 6000 5200 6000
+	6300 6400 6500 6400
 Wire Wire Line
-	4900 6000 4700 6000
+	1300 6100 1500 6100
 Wire Wire Line
-	5300 6100 5200 6100
+	1300 6200 1500 6200
 Wire Wire Line
-	5200 6100 5200 6000
-Connection ~ 5200 6000
-Wire Wire Line
-	5200 6000 5100 6000
-Text Label 5750 6100 2    50   ~ 0
-in_5
-Text Label 4900 6100 2    50   ~ 0
-in_5
-Wire Wire Line
-	4700 6100 4900 6100
-Wire Wire Line
-	5600 6100 5800 6100
-Wire Wire Line
-	6100 6100 6300 6100
-Wire Wire Line
-	3000 6000 3200 6000
-Wire Wire Line
-	3000 6100 3200 6100
-Wire Wire Line
-	3000 6200 3200 6200
+	1300 6300 1500 6300
 $Comp
 L Device:R_Small_US R200
 U 1 1 608F0CAD
-P 5050 3800
-F 0 "R200" V 4950 3800 50  0000 C CNN
-F 1 "220" V 5150 3800 50  0000 C CNN
-F 2 "" H 5050 3800 50  0001 C CNN
-F 3 "~" H 5050 3800 50  0001 C CNN
-	1    5050 3800
+P 2150 4250
+F 0 "R200" V 2050 4250 50  0000 C CNN
+F 1 "220" V 2250 4250 50  0000 C CNN
+F 2 "" H 2150 4250 50  0001 C CNN
+F 3 "~" H 2150 4250 50  0001 C CNN
+	1    2150 4250
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small_US R205
 U 1 1 608F1C5A
-P 5050 4150
-F 0 "R205" V 4950 4150 50  0000 C CNN
-F 1 "220" V 5150 4150 50  0000 C CNN
-F 2 "" H 5050 4150 50  0001 C CNN
-F 3 "~" H 5050 4150 50  0001 C CNN
-	1    5050 4150
+P 2150 4750
+F 0 "R205" V 2050 4750 50  0000 C CNN
+F 1 "220" V 2250 4750 50  0000 C CNN
+F 2 "" H 2150 4750 50  0001 C CNN
+F 3 "~" H 2150 4750 50  0001 C CNN
+	1    2150 4750
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small_US R202
 U 1 1 608F1FF8
-P 5050 4500
-F 0 "R202" V 4950 4500 50  0000 C CNN
-F 1 "220" V 5150 4500 50  0000 C CNN
-F 2 "" H 5050 4500 50  0001 C CNN
-F 3 "~" H 5050 4500 50  0001 C CNN
-	1    5050 4500
+P 4150 4250
+F 0 "R202" V 4050 4250 50  0000 C CNN
+F 1 "220" V 4250 4250 50  0000 C CNN
+F 2 "" H 4150 4250 50  0001 C CNN
+F 3 "~" H 4150 4250 50  0001 C CNN
+	1    4150 4250
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small_US R204
 U 1 1 608F24EF
-P 5050 4850
-F 0 "R204" V 4950 4850 50  0000 C CNN
-F 1 "220" V 5150 4850 50  0000 C CNN
-F 2 "" H 5050 4850 50  0001 C CNN
-F 3 "~" H 5050 4850 50  0001 C CNN
-	1    5050 4850
+P 4150 4750
+F 0 "R204" V 4050 4750 50  0000 C CNN
+F 1 "220" V 4250 4750 50  0000 C CNN
+F 2 "" H 4150 4750 50  0001 C CNN
+F 3 "~" H 4150 4750 50  0001 C CNN
+	1    4150 4750
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5800 4200 5700 4200
-Wire Wire Line
-	5800 4400 5600 4400
-Wire Wire Line
-	5800 4600 5700 4600
-Wire Wire Line
-	5700 4600 5700 4850
-Wire Wire Line
-	5700 4850 5150 4850
-Wire Wire Line
-	5150 4500 5800 4500
-Wire Wire Line
-	5150 4150 5600 4150
-Wire Wire Line
-	5600 4150 5600 4400
-Wire Wire Line
-	5150 3800 5700 3800
-Wire Wire Line
-	5700 3800 5700 4200
-Text Label 4750 3800 0    50   ~ 0
+Text Label 1850 4250 0    50   ~ 0
 VCC
-Text Label 4750 4500 0    50   ~ 0
+Text Label 3850 4250 0    50   ~ 0
 VCC
-Text Label 4500 4150 0    50   ~ 0
+Text Label 1600 4750 0    50   ~ 0
 not_not_rx
-Text Label 4500 4850 0    50   ~ 0
+Text Label 3600 4750 0    50   ~ 0
 not_not_tx
 Wire Wire Line
 	5700 2300 6150 2300
 Wire Wire Line
 	5700 2500 6150 2500
 Wire Wire Line
-	4750 3800 4950 3800
+	1850 4250 2050 4250
 Wire Wire Line
-	4500 4150 4950 4150
+	1600 4750 2050 4750
 Wire Wire Line
-	4750 4500 4950 4500
+	3850 4250 4050 4250
 Wire Wire Line
-	4500 4850 4950 4850
+	3600 4750 4050 4750
 Wire Wire Line
-	6100 4300 6300 4300
+	5850 4350 6050 4350
 $Comp
 L Device:R_Small_US R201
 U 1 1 608C885E
@@ -500,17 +384,13 @@ GND
 Text Label 6650 1800 3    50   ~ 0
 VCC
 Wire Wire Line
-	6100 4200 6300 4200
+	5850 4250 6050 4250
 Wire Wire Line
-	6100 4400 6300 4400
+	5850 4450 6050 4450
 Wire Wire Line
-	6100 4500 6300 4500
+	5850 4550 6050 4550
 Wire Wire Line
-	6100 4600 6300 4600
-Text Notes 5800 4100 0    50   ~ 0
-T Filters
-Text Notes 5800 5900 0    50   ~ 0
-T Filters
+	5850 4650 6050 4650
 Wire Wire Line
 	4150 2000 4600 2000
 Wire Wire Line
@@ -535,4 +415,165 @@ Wire Wire Line
 	6000 3000 6200 3000
 Wire Wire Line
 	6400 3000 6700 3000
+Text Label 3300 4250 2    50   ~ 0
+out_1
+Text Label 3300 4750 2    50   ~ 0
+out_3
+Text Label 5300 4250 2    50   ~ 0
+out_4
+Text Label 5300 4750 2    50   ~ 0
+out_5
+$Comp
+L Device:EMI_Filter_LCL L200
+U 1 1 608CB580
+P 2750 4350
+F 0 "L200" H 2750 4625 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 2750 4550 50  0000 C CNN
+F 2 "" V 2750 4350 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 2750 4350 50  0001 C CNN
+	1    2750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4250 3050 4250
+Text Label 5850 4250 0    50   ~ 0
+out_1
+Text Label 5850 4450 0    50   ~ 0
+out_3
+Text Label 5850 4550 0    50   ~ 0
+out_4
+Text Label 5850 4650 0    50   ~ 0
+out_5
+Wire Wire Line
+	2250 4250 2450 4250
+$Comp
+L Device:EMI_Filter_LCL L201
+U 1 1 608F28E5
+P 2750 4850
+F 0 "L201" H 2750 5125 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 2750 5050 50  0000 C CNN
+F 2 "" V 2750 4850 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 2750 4850 50  0001 C CNN
+	1    2750 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4750 2450 4750
+$Comp
+L Device:EMI_Filter_LCL L202
+U 1 1 608F52CA
+P 4750 4350
+F 0 "L202" H 4750 4625 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 4750 4550 50  0000 C CNN
+F 2 "" V 4750 4350 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4750 4350 50  0001 C CNN
+	1    4750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4250 4450 4250
+$Comp
+L Device:EMI_Filter_LCL L204
+U 1 1 608F7E74
+P 4750 4850
+F 0 "L204" H 4750 5125 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 4750 5050 50  0000 C CNN
+F 2 "" V 4750 4850 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4750 4850 50  0001 C CNN
+	1    4750 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4750 4450 4750
+Wire Wire Line
+	3050 4750 3300 4750
+Wire Wire Line
+	5050 4250 5300 4250
+Text Label 2750 4450 0    50   ~ 0
+GND
+Text Label 2750 4950 0    50   ~ 0
+GND
+Text Label 4750 4450 0    50   ~ 0
+GND
+Text Label 4750 4950 0    50   ~ 0
+GND
+Wire Wire Line
+	5050 4750 5300 4750
+$Comp
+L Device:R_Small_US R207
+U 1 1 60927CA7
+P 4500 6000
+F 0 "R207" V 4400 6000 50  0000 C CNN
+F 1 "220" V 4600 6000 50  0000 C CNN
+F 2 "" H 4500 6000 50  0001 C CNN
+F 3 "~" H 4500 6000 50  0001 C CNN
+	1    4500 6000
+	0    1    1    0   
+$EndComp
+Text Label 6050 6000 2    50   ~ 0
+in_4
+$Comp
+L Device:EMI_Filter_LCL L205
+U 1 1 60927CAE
+P 5500 6100
+F 0 "L205" H 5500 6375 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 5500 6300 50  0000 C CNN
+F 2 "" V 5500 6100 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5500 6100 50  0001 C CNN
+	1    5500 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6000 6050 6000
+Text Label 5500 6200 0    50   ~ 0
+GND
+$Comp
+L Device:EMI_Filter_LCL L206
+U 1 1 609336A0
+P 5500 6600
+F 0 "L206" H 5500 6875 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 5500 6800 50  0000 C CNN
+F 2 "" V 5500 6600 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5500 6600 50  0001 C CNN
+	1    5500 6600
+	1    0    0    -1  
+$EndComp
+Text Label 5500 6700 0    50   ~ 0
+GND
+Text Label 6050 6500 2    50   ~ 0
+in_5
+Wire Wire Line
+	5800 6500 6050 6500
+Text Label 6300 6300 0    50   ~ 0
+in_4
+Text Label 6300 6400 0    50   ~ 0
+in_5
+Text Label 4250 6500 0    50   ~ 0
+in_5_filtered
+Text Label 3800 6000 0    50   ~ 0
+in_4_filtered
+Wire Wire Line
+	3800 6000 4400 6000
+Wire Wire Line
+	4600 6000 5000 6000
+Wire Wire Line
+	4250 6500 5000 6500
+Wire Wire Line
+	5000 6000 5000 6100
+Connection ~ 5000 6000
+Wire Wire Line
+	5000 6000 5200 6000
+Wire Wire Line
+	5000 6400 5000 6500
+Connection ~ 5000 6500
+Wire Wire Line
+	5000 6500 5200 6500
+Text Label 3500 6100 2    50   ~ 0
+in_4_filtered
+Text Label 3500 6200 2    50   ~ 0
+in_5_filtered
+Wire Wire Line
+	3000 6100 3500 6100
+Wire Wire Line
+	3000 6200 3500 6200
 $EndSCHEMATC
