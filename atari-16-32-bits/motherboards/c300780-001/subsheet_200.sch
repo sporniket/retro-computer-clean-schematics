@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 9 9
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -33,8 +33,6 @@ tx
 Text Label 1550 3000 0    50   ~ 0
 VCC
 Text Label 3250 1900 2    50   ~ 0
-GND
-Text Label 3250 2000 2    50   ~ 0
 GND
 NoConn ~ 1750 2300
 Text GLabel 1350 2100 0    50   Input ~ 0
@@ -108,10 +106,6 @@ Wire Wire Line
 	1550 2900 1750 2900
 Wire Wire Line
 	1550 3000 1750 3000
-Wire Wire Line
-	3050 1900 3250 1900
-Wire Wire Line
-	3050 2000 3250 2000
 Wire Wire Line
 	3050 2100 3250 2100
 Wire Wire Line
@@ -576,4 +570,33 @@ Wire Wire Line
 	3000 6100 3500 6100
 Wire Wire Line
 	3000 6200 3500 6200
+$Comp
+L Device:C C?
+U 1 1 608CAEAC
+P 1250 3250
+AR Path="/60786F27/6078774E/608CAEAC" Ref="C?"  Part="1" 
+AR Path="/60786F27/607875AF/608CAEAC" Ref="C?"  Part="1" 
+AR Path="/6089D0BA/608CAEAC" Ref="C?"  Part="1" 
+AR Path="/608A2359/608CAEAC" Ref="C201"  Part="1" 
+F 0 "C201" H 1275 3350 50  0000 L CNN
+F 1 "0.1uF" H 1275 3150 50  0000 L CNN
+F 2 "" H 1288 3100 50  0001 C CNN
+F 3 "~" H 1250 3250 50  0001 C CNN
+	1    1250 3250
+	1    0    0    -1  
+$EndComp
+Text Label 1250 3600 1    50   ~ 0
+GND
+Text Label 1250 2900 3    50   ~ 0
+VCC
+Wire Wire Line
+	1250 2900 1250 3100
+Wire Wire Line
+	1250 3400 1250 3600
+Wire Wire Line
+	3050 1900 3350 1900
+Wire Wire Line
+	3050 2000 3350 2000
+Wire Wire Line
+	3350 2000 3350 1900
 $EndSCHEMATC
