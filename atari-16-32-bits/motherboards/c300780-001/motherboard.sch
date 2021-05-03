@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 1 10
+Sheet 1 11
 Title "Converted schematics of Atari STE"
 Date ""
 Rev "2021-04-15"
@@ -70,5 +70,11 @@ S 3200 1800 2000 150
 U 608C2344
 F0 "U201 — Acia 2 to IKBD IO" 79
 F1 "subsheet_201.sch" 50
+$EndSheet
+$Sheet
+S 3200 2200 2000 150 
+U 608EA3C9
+F0 "U202 — PSG and Parallel IO" 79
+F1 "subsheet_202.sch" 50
 $EndSheet
 $EndSCHEMATC

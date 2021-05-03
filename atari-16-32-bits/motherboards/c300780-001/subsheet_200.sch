@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 9 10
+Sheet 9 11
 Title ""
 Date ""
 Rev ""
@@ -53,7 +53,7 @@ Text GLabel 3300 2900 2    50   Input ~ 0
 E
 Text GLabel 1500 1000 0    50   Input ~ 0
 ADDR[1..23]
-Text GLabel 6750 1000 2    50   Input ~ 0
+Text GLabel 6750 1000 2    50   BiDi ~ 0
 DATA[0..15]
 Wire Bus Line
 	1500 1000 1750 1000
