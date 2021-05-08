@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 11 11
+Sheet 11 12
 Title ""
 Date ""
 Rev ""
@@ -374,92 +374,32 @@ L Connector_Generic:Conn_01x25 J203
 U 1 1 60964926
 P 6950 3200
 F 0 "J203" H 6950 4500 50  0000 C CNN
-F 1 "DB25 Serial port" H 6950 1900 50  0000 C CNN
+F 1 "DB25 Parallel port" H 6950 1900 50  0000 C CNN
 F 2 "" H 6950 3200 50  0001 C CNN
 F 3 "~" H 6950 3200 50  0001 C CNN
 	1    6950 3200
 	1    0    0    -1  
 $EndComp
-Text Label 6400 2000 0    50   ~ 0
-serial1
-Text Label 6400 2100 0    50   ~ 0
-serial2
-Text Label 6400 2200 0    50   ~ 0
-serial3
-Text Label 6400 2300 0    50   ~ 0
-serial4
-Text Label 6400 2400 0    50   ~ 0
-serial5
-Text Label 6400 2500 0    50   ~ 0
-serial6
-Text Label 6400 2600 0    50   ~ 0
-serial7
-Text Label 6400 2700 0    50   ~ 0
-serial8
-Text Label 6400 2800 0    50   ~ 0
-serial9
-Text Label 6400 3000 0    50   ~ 0
-serial11
-Text Label 5850 2000 2    50   ~ 0
-serial1
-Wire Wire Line
-	5550 2000 5850 2000
-Wire Wire Line
-	5550 2500 5850 2500
-Wire Wire Line
-	5550 3000 5850 3000
-Wire Wire Line
-	5550 3500 5850 3500
-Wire Wire Line
-	5550 4000 5850 4000
-Wire Wire Line
-	5550 4500 5850 4500
-Wire Wire Line
-	5550 5000 5850 5000
-Wire Wire Line
-	5550 5500 5850 5500
-Wire Wire Line
-	5550 6000 5850 6000
-Wire Wire Line
-	5550 6500 5850 6500
-Text Label 5850 2500 2    50   ~ 0
-serial2
-Text Label 5850 3000 2    50   ~ 0
-serial3
-Text Label 5850 3500 2    50   ~ 0
-serial4
-Text Label 5850 4000 2    50   ~ 0
-serial5
-Text Label 5850 4500 2    50   ~ 0
-serial6
-Text Label 5850 5000 2    50   ~ 0
-serial7
-Text Label 5850 5500 2    50   ~ 0
-serial8
-Text Label 5850 6000 2    50   ~ 0
-serial9
-Text Label 5850 6500 2    50   ~ 0
-serial11
-Wire Wire Line
-	6400 2000 6750 2000
-Wire Wire Line
-	6400 2100 6750 2100
-Wire Wire Line
-	6400 2200 6750 2200
-Wire Wire Line
-	6400 2300 6750 2300
-Wire Wire Line
-	6400 2400 6750 2400
-Wire Wire Line
-	6400 2500 6750 2500
-Wire Wire Line
-	6400 2600 6750 2600
-Wire Wire Line
-	6400 2700 6750 2700
-Wire Wire Line
-	6400 2800 6750 2800
-Wire Wire Line
-	6400 3000 6750 3000
+Text Label 5700 2000 0    50   ~ 0
+parallel1
+Text Label 5700 2500 0    50   ~ 0
+parallel2
+Text Label 5700 3000 0    50   ~ 0
+parallel3
+Text Label 5700 3500 0    50   ~ 0
+parallel4
+Text Label 5700 4000 0    50   ~ 0
+parallel5
+Text Label 5700 4500 0    50   ~ 0
+parallel6
+Text Label 5700 5000 0    50   ~ 0
+parallel7
+Text Label 5700 5500 0    50   ~ 0
+parallel8
+Text Label 5700 6000 0    50   ~ 0
+parallel9
+Text Label 5700 6500 0    50   ~ 0
+parallel11
 Text Label 6400 4400 0    50   ~ 0
 GND
 Wire Wire Line
@@ -583,4 +523,64 @@ Wire Wire Line
 	2200 5500 2400 5500
 Wire Wire Line
 	2600 5500 2800 5500
+Wire Wire Line
+	5550 2000 5700 2000
+Wire Wire Line
+	5550 2500 5700 2500
+Wire Wire Line
+	5550 3000 5700 3000
+Wire Wire Line
+	5550 3500 5700 3500
+Wire Wire Line
+	5550 4000 5700 4000
+Wire Wire Line
+	5550 4500 5700 4500
+Wire Wire Line
+	5550 5000 5700 5000
+Wire Wire Line
+	5550 5500 5700 5500
+Wire Wire Line
+	5550 6000 5700 6000
+Wire Wire Line
+	5550 6500 5700 6500
+Text Label 6600 2000 2    50   ~ 0
+parallel1
+Text Label 6600 2100 2    50   ~ 0
+parallel2
+Text Label 6600 2200 2    50   ~ 0
+parallel3
+Text Label 6600 2300 2    50   ~ 0
+parallel4
+Text Label 6600 2400 2    50   ~ 0
+parallel5
+Text Label 6600 2500 2    50   ~ 0
+parallel6
+Text Label 6600 2600 2    50   ~ 0
+parallel7
+Text Label 6600 2700 2    50   ~ 0
+parallel8
+Text Label 6600 2800 2    50   ~ 0
+parallel9
+Text Label 6600 3000 2    50   ~ 0
+parallel11
+Wire Wire Line
+	6600 2000 6750 2000
+Wire Wire Line
+	6600 2100 6750 2100
+Wire Wire Line
+	6600 2200 6750 2200
+Wire Wire Line
+	6600 2300 6750 2300
+Wire Wire Line
+	6600 2400 6750 2400
+Wire Wire Line
+	6600 2500 6750 2500
+Wire Wire Line
+	6600 2600 6750 2600
+Wire Wire Line
+	6600 2700 6750 2700
+Wire Wire Line
+	6600 2800 6750 2800
+Wire Wire Line
+	6600 3000 6750 3000
 $EndSCHEMATC
