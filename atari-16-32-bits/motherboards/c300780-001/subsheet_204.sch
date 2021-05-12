@@ -40,7 +40,7 @@ G12V
 Text Label 3500 2400 0    50   ~ 0
 GND
 Text GLabel 3100 1800 0    50   Input ~ 0
-MC1488_VEE
+-12V
 Text GLabel 3100 2100 0    50   Input ~ 0
 SERIAL_TX
 Text GLabel 3100 1900 0    50   Input ~ 0
