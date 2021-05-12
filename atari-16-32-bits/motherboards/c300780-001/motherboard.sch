@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 1 12
+Sheet 1 13
 Title "Converted schematics of Atari STE"
 Date ""
 Rev "2021-04-15"
@@ -80,7 +80,13 @@ $EndSheet
 $Sheet
 S 3200 2600 2000 150 
 U 60964369
-F0 "U203 — MFP 68901" 50
+F0 "U203 — MFP 68901" 79
 F1 "subsheet_203.sch" 50
+$EndSheet
+$Sheet
+S 3200 3000 2000 150 
+U 609B5A51
+F0 "J204 — RS-232 IO" 79
+F1 "subsheet_204.sch" 50
 $EndSheet
 $EndSCHEMATC
