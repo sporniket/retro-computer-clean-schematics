@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 13 13
+Sheet 13 14
 Title ""
 Date ""
 Rev ""
@@ -505,4 +505,23 @@ F 3 "~" H 5500 6850 50  0001 C CNN
 	1    5500 6850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C206
+U 1 1 609CC7B6
+P 6500 2050
+F 0 "C206" H 6525 2150 50  0000 L CNN
+F 1 "0.1uF" H 6525 1950 50  0000 L CNN
+F 2 "" H 6538 1900 50  0001 C CNN
+F 3 "~" H 6500 2050 50  0001 C CNN
+	1    6500 2050
+	1    0    0    -1  
+$EndComp
+Text Label 6500 2400 1    50   ~ 0
+GND
+Wire Wire Line
+	6500 2200 6500 2400
+Wire Wire Line
+	6500 1700 6500 1900
+Text GLabel 6500 1700 1    50   Input ~ 0
+G12V
 $EndSCHEMATC
