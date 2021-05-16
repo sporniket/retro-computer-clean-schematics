@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 1 14
+Sheet 1 15
 Title "Converted schematics of Atari STE"
 Date ""
 Rev "2021-04-15"
@@ -57,42 +57,50 @@ U 6089D0C6
 F0 "U100 — MC68000" 71
 F1 "subsheet_100.sch" 50
 $EndSheet
-Text Notes 3150 1200 0    157  ~ 0
+Text Notes 3100 1200 0    157  ~ 0
 Sheet 2
 $Sheet
-S 3200 1400 2000 150 
+S 3150 1400 2000 150 
 U 608A2359
 F0 "U200 — Acia 1 to MIDI IO" 71
 F1 "subsheet_200.sch" 50
 $EndSheet
 $Sheet
-S 3200 1800 2000 150 
+S 3150 1800 2000 150 
 U 608C2344
 F0 "U201 — Acia 2 to IKBD IO" 71
 F1 "subsheet_201.sch" 50
 $EndSheet
 $Sheet
-S 3200 2200 2000 150 
+S 3150 2200 2000 150 
 U 608EA3C9
 F0 "U202 — PSG and Parallel IO" 71
 F1 "subsheet_202.sch" 50
 $EndSheet
 $Sheet
-S 3200 2600 2000 150 
+S 3150 2600 2000 150 
 U 60964369
 F0 "U203 — MFP 68901" 71
 F1 "subsheet_203.sch" 50
 $EndSheet
 $Sheet
-S 3200 3000 2000 150 
+S 3150 3000 2000 150 
 U 609B5A51
 F0 "J204 — RS-232 IO" 71
 F1 "subsheet_204.sch" 50
 $EndSheet
 $Sheet
-S 3200 3400 2000 150 
+S 3150 3400 2000 150 
 U 609D3E52
 F0 "U204 U205 — G12V -12V -5V" 71
 F1 "subsheet_205.sch" 50
+$EndSheet
+Text Notes 5500 1200 0    157  ~ 0
+Sheet 3
+$Sheet
+S 5500 1400 2000 150 
+U 60A1445F
+F0 "U300 — DMA" 71
+F1 "subsheet_300.sch" 50
 $EndSheet
 $EndSCHEMATC
