@@ -25,10 +25,10 @@ F 3 "https://docs.dev-docs.org/htm/search.php?find=Atari+STBook+Schematic+" H 18
 	1    0    0    -1  
 $EndComp
 $Comp
-L st_dma_plcc44:ST_DMA_PLCC44_PHY U?
+L st_dma_plcc44:ST_DMA_PLCC44_PHY U300_PLCC44
 U 1 1 60A14649
 P 5700 3450
-F 0 "U?" H 6300 4550 50  0000 L TNN
+F 0 "U300_PLCC44" H 6300 4550 50  0000 L TNN
 F 1 "ST_DMA_PLCC44_PHY" H 6300 4450 50  0000 L TNB
 F 2 "Package_LCC:LCC-44_THT-Socket" H 6300 4650 50  0001 L TNN
 F 3 "https://docs.dev-docs.org/htm/search.php?find=Atari+STBook+Schematic+" H 6300 4750 50  0001 L TNN
