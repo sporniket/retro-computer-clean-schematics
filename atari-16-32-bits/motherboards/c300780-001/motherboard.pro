@@ -1,4 +1,4 @@
-update=dim. 25 avril 2021 14:18:50 CEST
+update=dim. 23 mai 2021 15:43:05 CEST
 version=1
 last_client=kicad
 [general]
@@ -33,7 +33,7 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=page-description.kicad_wks
 PlotDirectoryName=export
 SubpartIdSeparator=0
 SubpartFirstId=65

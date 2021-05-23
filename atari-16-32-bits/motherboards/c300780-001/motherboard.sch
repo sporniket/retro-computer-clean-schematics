@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 1 16
+Sheet 1 17
 Title "Converted schematics of Atari STE"
 Date ""
 Rev "2021-04-15"
@@ -108,5 +108,11 @@ S 5500 1800 2000 150
 U 60A73CDE
 F0 "J301 — ACSI Port" 71
 F1 "subsheet_301.sch" 50
+$EndSheet
+$Sheet
+S 5500 2200 2000 150 
+U 60AD8617
+F0 "U301 — WD1772 and port" 71
+F1 "subsheet_302.sch" 50
 $EndSheet
 $EndSCHEMATC
