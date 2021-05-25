@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 1 18
+Sheet 1 20
 Title "Converted schematics of Atari STE"
 Date ""
 Rev "2021-04-15"
@@ -120,5 +120,19 @@ S 5500 2600 2000 150
 U 60ABB05E
 F0 "U303 — SCLK & CLK2 clocks" 71
 F1 "subsheet_303.sch" 50
+$EndSheet
+Text Notes 750  4700 0    157  ~ 0
+Sheet 4
+$Sheet
+S 800  4900 2000 150 
+U 60AD332C
+F0 "U400 — GSTMCU" 71
+F1 "subsheet_400.sch" 50
+$EndSheet
+$Sheet
+S 800  5300 2000 150 
+U 60AD33B6
+F0 "U401 — GST Shifter" 71
+F1 "subsheet_401.sch" 50
 $EndSheet
 $EndSCHEMATC
