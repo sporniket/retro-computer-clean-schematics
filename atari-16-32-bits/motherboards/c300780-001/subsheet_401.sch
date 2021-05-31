@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 20 20
+Sheet 20 21
 Title ""
 Date ""
 Rev ""
@@ -759,7 +759,7 @@ r0
 Text GLabel 3350 7500 2    50   Output ~ 0
 SHIFTER_GREEN
 Text GLabel 4850 7500 2    50   Output ~ 0
-SHIFTER_BLUE
+SHIFTER_RED
 $Comp
 L Device:R_Small_US R?
 U 1 1 60BDFD77

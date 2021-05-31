@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 1 20
+Sheet 1 21
 Title "Converted schematics of Atari STE"
 Date ""
 Rev "2021-04-15"
@@ -134,5 +134,11 @@ S 800  5300 2000 150
 U 60AD33B6
 F0 "U401 — GST Shifter" 71
 F1 "subsheet_401.sch" 50
+$EndSheet
+$Sheet
+S 800  5700 2000 150 
+U 60B3D9E3
+F0 "J400 — Video Port" 71
+F1 "subsheet_402.sch" 50
 $EndSheet
 $EndSCHEMATC
