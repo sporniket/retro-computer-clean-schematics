@@ -182,8 +182,8 @@ AR Path="/60A73CDE/60B56C44" Ref="R?"  Part="1"
 AR Path="/60AD8617/60B56C44" Ref="R?"  Part="1" 
 AR Path="/60AD332C/60B56C44" Ref="R?"  Part="1" 
 AR Path="/60AD33B6/60B56C44" Ref="R?"  Part="1" 
-AR Path="/60B3D9E3/60B56C44" Ref="R?"  Part="1" 
-F 0 "R?" V 3650 3400 50  0000 C CNN
+AR Path="/60B3D9E3/60B56C44" Ref="R406"  Part="1" 
+F 0 "R406" V 3650 3400 50  0000 C CNN
 F 1 "1K" V 3850 3400 50  0000 C CNN
 F 2 "" H 3750 3400 50  0001 C CNN
 F 3 "~" H 3750 3400 50  0001 C CNN
@@ -202,8 +202,8 @@ AR Path="/60A73CDE/60B56D28" Ref="R?"  Part="1"
 AR Path="/60AD8617/60B56D28" Ref="R?"  Part="1" 
 AR Path="/60AD332C/60B56D28" Ref="R?"  Part="1" 
 AR Path="/60AD33B6/60B56D28" Ref="R?"  Part="1" 
-AR Path="/60B3D9E3/60B56D28" Ref="R?"  Part="1" 
-F 0 "R?" V 4150 4000 50  0000 C CNN
+AR Path="/60B3D9E3/60B56D28" Ref="R407"  Part="1" 
+F 0 "R407" V 4150 4000 50  0000 C CNN
 F 1 "75" V 4350 4000 50  0000 C CNN
 F 2 "" H 4250 4000 50  0001 C CNN
 F 3 "~" H 4250 4000 50  0001 C CNN
@@ -231,10 +231,10 @@ Wire Wire Line
 Wire Wire Line
 	4000 4000 4150 4000
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R409
 U 1 1 60B5B7C9
 P 4000 4300
-F 0 "R?" H 4030 4320 50  0000 L CNN
+F 0 "R409" H 4030 4320 50  0000 L CNN
 F 1 "75" H 4030 4260 50  0000 L CNN
 F 2 "" H 4000 4300 50  0001 C CNN
 F 3 "~" H 4000 4300 50  0001 C CNN
@@ -242,10 +242,10 @@ F 3 "~" H 4000 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R410
 U 1 1 60B5C054
 P 4000 4800
-F 0 "R?" H 4030 4820 50  0000 L CNN
+F 0 "R410" H 4030 4820 50  0000 L CNN
 F 1 "75" H 4030 4760 50  0000 L CNN
 F 2 "" H 4000 4800 50  0001 C CNN
 F 3 "~" H 4000 4800 50  0001 C CNN
@@ -253,10 +253,10 @@ F 3 "~" H 4000 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R408
 U 1 1 60B5CB62
 P 3500 3950
-F 0 "R?" H 3530 3970 50  0000 L CNN
+F 0 "R408" H 3530 3970 50  0000 L CNN
 F 1 "2K" H 3530 3910 50  0000 L CNN
 F 2 "" H 3500 3950 50  0001 C CNN
 F 3 "~" H 3500 3950 50  0001 C CNN
@@ -300,8 +300,8 @@ AR Path="/60A73CDE/60B611CC" Ref="R?"  Part="1"
 AR Path="/60AD8617/60B611CC" Ref="R?"  Part="1" 
 AR Path="/60AD332C/60B611CC" Ref="R?"  Part="1" 
 AR Path="/60AD33B6/60B611CC" Ref="R?"  Part="1" 
-AR Path="/60B3D9E3/60B611CC" Ref="R?"  Part="1" 
-F 0 "R?" V 6150 3400 50  0000 C CNN
+AR Path="/60B3D9E3/60B611CC" Ref="R413"  Part="1" 
+F 0 "R413" V 6150 3400 50  0000 C CNN
 F 1 "1K" V 6350 3400 50  0000 C CNN
 F 2 "" H 6250 3400 50  0001 C CNN
 F 3 "~" H 6250 3400 50  0001 C CNN
@@ -318,10 +318,10 @@ Connection ~ 6100 3700
 Wire Wire Line
 	6100 3700 6200 3700
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R423
 U 1 1 60B611D7
 P 6000 3950
-F 0 "R?" H 6030 3970 50  0000 L CNN
+F 0 "R423" H 6030 3970 50  0000 L CNN
 F 1 "2K" H 6030 3910 50  0000 L CNN
 F 2 "" H 6000 3950 50  0001 C CNN
 F 3 "~" H 6000 3950 50  0001 C CNN
@@ -354,8 +354,8 @@ AR Path="/60A73CDE/60B64C4E" Ref="R?"  Part="1"
 AR Path="/60AD8617/60B64C4E" Ref="R?"  Part="1" 
 AR Path="/60AD332C/60B64C4E" Ref="R?"  Part="1" 
 AR Path="/60AD33B6/60B64C4E" Ref="R?"  Part="1" 
-AR Path="/60B3D9E3/60B64C4E" Ref="R?"  Part="1" 
-F 0 "R?" V 6650 4000 50  0000 C CNN
+AR Path="/60B3D9E3/60B64C4E" Ref="R420"  Part="1" 
+F 0 "R420" V 6650 4000 50  0000 C CNN
 F 1 "75" V 6850 4000 50  0000 C CNN
 F 2 "" H 6750 4000 50  0001 C CNN
 F 3 "~" H 6750 4000 50  0001 C CNN
@@ -367,10 +367,10 @@ Wire Wire Line
 Wire Wire Line
 	6500 4000 6650 4000
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R425
 U 1 1 60B64C56
 P 6500 4300
-F 0 "R?" H 6530 4320 50  0000 L CNN
+F 0 "R425" H 6530 4320 50  0000 L CNN
 F 1 "75" H 6530 4260 50  0000 L CNN
 F 2 "" H 6500 4300 50  0001 C CNN
 F 3 "~" H 6500 4300 50  0001 C CNN
@@ -378,10 +378,10 @@ F 3 "~" H 6500 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R427
 U 1 1 60B64C5C
 P 6500 4800
-F 0 "R?" H 6530 4820 50  0000 L CNN
+F 0 "R427" H 6530 4820 50  0000 L CNN
 F 1 "75" H 6530 4760 50  0000 L CNN
 F 2 "" H 6500 4800 50  0001 C CNN
 F 3 "~" H 6500 4800 50  0001 C CNN
@@ -412,8 +412,8 @@ AR Path="/60A73CDE/60B69F0D" Ref="R?"  Part="1"
 AR Path="/60AD8617/60B69F0D" Ref="R?"  Part="1" 
 AR Path="/60AD332C/60B69F0D" Ref="R?"  Part="1" 
 AR Path="/60AD33B6/60B69F0D" Ref="R?"  Part="1" 
-AR Path="/60B3D9E3/60B69F0D" Ref="R?"  Part="1" 
-F 0 "R?" V 2400 5400 50  0000 C CNN
+AR Path="/60B3D9E3/60B69F0D" Ref="R429"  Part="1" 
+F 0 "R429" V 2400 5400 50  0000 C CNN
 F 1 "1K" V 2600 5400 50  0000 C CNN
 F 2 "" H 2500 5400 50  0001 C CNN
 F 3 "~" H 2500 5400 50  0001 C CNN
@@ -430,10 +430,10 @@ Connection ~ 2350 5700
 Wire Wire Line
 	2350 5700 2450 5700
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R433
 U 1 1 60B69F18
 P 2250 5950
-F 0 "R?" H 2280 5970 50  0000 L CNN
+F 0 "R433" H 2280 5970 50  0000 L CNN
 F 1 "2K" H 2280 5910 50  0000 L CNN
 F 2 "" H 2250 5950 50  0001 C CNN
 F 3 "~" H 2250 5950 50  0001 C CNN
@@ -466,8 +466,8 @@ AR Path="/60A73CDE/60B69F27" Ref="R?"  Part="1"
 AR Path="/60AD8617/60B69F27" Ref="R?"  Part="1" 
 AR Path="/60AD332C/60B69F27" Ref="R?"  Part="1" 
 AR Path="/60AD33B6/60B69F27" Ref="R?"  Part="1" 
-AR Path="/60B3D9E3/60B69F27" Ref="R?"  Part="1" 
-F 0 "R?" V 2900 6000 50  0000 C CNN
+AR Path="/60B3D9E3/60B69F27" Ref="R432"  Part="1" 
+F 0 "R432" V 2900 6000 50  0000 C CNN
 F 1 "75" V 3100 6000 50  0000 C CNN
 F 2 "" H 3000 6000 50  0001 C CNN
 F 3 "~" H 3000 6000 50  0001 C CNN
@@ -479,10 +479,10 @@ Wire Wire Line
 Wire Wire Line
 	2750 6000 2900 6000
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R434
 U 1 1 60B69F2F
 P 2750 6300
-F 0 "R?" H 2780 6320 50  0000 L CNN
+F 0 "R434" H 2780 6320 50  0000 L CNN
 F 1 "75" H 2780 6260 50  0000 L CNN
 F 2 "" H 2750 6300 50  0001 C CNN
 F 3 "~" H 2750 6300 50  0001 C CNN
@@ -490,10 +490,10 @@ F 3 "~" H 2750 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R436
 U 1 1 60B69F35
 P 2750 6800
-F 0 "R?" H 2780 6820 50  0000 L CNN
+F 0 "R436" H 2780 6820 50  0000 L CNN
 F 1 "75" H 2780 6760 50  0000 L CNN
 F 2 "" H 2750 6800 50  0001 C CNN
 F 3 "~" H 2750 6800 50  0001 C CNN
@@ -517,10 +517,10 @@ Wire Wire Line
 Wire Wire Line
 	4650 5700 4750 5700
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R440
 U 1 1 60B6D7E9
 P 4750 5950
-F 0 "R?" H 4780 5970 50  0000 L CNN
+F 0 "R440" H 4780 5970 50  0000 L CNN
 F 1 "1K" H 4780 5910 50  0000 L CNN
 F 2 "" H 4750 5950 50  0001 C CNN
 F 3 "~" H 4750 5950 50  0001 C CNN
@@ -544,8 +544,8 @@ AR Path="/60A73CDE/60B6D7F8" Ref="R?"  Part="1"
 AR Path="/60AD8617/60B6D7F8" Ref="R?"  Part="1" 
 AR Path="/60AD332C/60B6D7F8" Ref="R?"  Part="1" 
 AR Path="/60AD33B6/60B6D7F8" Ref="R?"  Part="1" 
-AR Path="/60B3D9E3/60B6D7F8" Ref="R?"  Part="1" 
-F 0 "R?" V 5400 6000 50  0000 C CNN
+AR Path="/60B3D9E3/60B6D7F8" Ref="R438"  Part="1" 
+F 0 "R438" V 5400 6000 50  0000 C CNN
 F 1 "27" V 5600 6000 50  0000 C CNN
 F 2 "" H 5500 6000 50  0001 C CNN
 F 3 "~" H 5500 6000 50  0001 C CNN
@@ -557,10 +557,10 @@ Wire Wire Line
 Wire Wire Line
 	5250 6000 5400 6000
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R441
 U 1 1 60B6D800
 P 5250 6300
-F 0 "R?" H 5280 6320 50  0000 L CNN
+F 0 "R441" H 5280 6320 50  0000 L CNN
 F 1 "100" H 5280 6260 50  0000 L CNN
 F 2 "" H 5250 6300 50  0001 C CNN
 F 3 "~" H 5250 6300 50  0001 C CNN
@@ -639,10 +639,10 @@ Wire Wire Line
 Text GLabel 1300 1600 0    50   Input ~ 0
 AUDIO
 $Comp
-L Device:CP1_Small C?
+L Device:CP1_Small C416
 U 1 1 60BDD743
 P 1550 1600
-F 0 "C?" V 1700 1550 50  0000 L CNN
+F 0 "C416" V 1700 1550 50  0000 L CNN
 F 1 "47uF" V 1400 1500 50  0000 L CNN
 F 2 "" H 1550 1600 50  0001 C CNN
 F 3 "~" H 1550 1600 50  0001 C CNN
@@ -657,8 +657,8 @@ AR Path="/608A2359/60BE55F1" Ref="L?"  Part="1"
 AR Path="/608C2344/60BE55F1" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/60BE55F1" Ref="L?"  Part="1" 
 AR Path="/609B5A51/60BE55F1" Ref="L?"  Part="1" 
-AR Path="/60B3D9E3/60BE55F1" Ref="L?"  Part="1" 
-F 0 "L?" H 2100 1975 50  0000 C CNN
+AR Path="/60B3D9E3/60BE55F1" Ref="L409"  Part="1" 
+F 0 "L409" H 2100 1975 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 2100 1900 50  0000 C CNN
 F 2 "" V 2100 1700 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 2100 1700 50  0001 C CNN
@@ -687,8 +687,8 @@ AR Path="/608A2359/60BEFC7B" Ref="L?"  Part="1"
 AR Path="/608C2344/60BEFC7B" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/60BEFC7B" Ref="L?"  Part="1" 
 AR Path="/609B5A51/60BEFC7B" Ref="L?"  Part="1" 
-AR Path="/60B3D9E3/60BEFC7B" Ref="L?"  Part="1" 
-F 0 "L?" H 2100 2475 50  0000 C CNN
+AR Path="/60B3D9E3/60BEFC7B" Ref="L407"  Part="1" 
+F 0 "L407" H 2100 2475 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 2100 2400 50  0000 C CNN
 F 2 "" V 2100 2200 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 2100 2200 50  0001 C CNN
@@ -711,8 +711,8 @@ AR Path="/608A2359/60BF301D" Ref="L?"  Part="1"
 AR Path="/608C2344/60BF301D" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/60BF301D" Ref="L?"  Part="1" 
 AR Path="/609B5A51/60BF301D" Ref="L?"  Part="1" 
-AR Path="/60B3D9E3/60BF301D" Ref="L?"  Part="1" 
-F 0 "L?" H 4100 2475 50  0000 C CNN
+AR Path="/60B3D9E3/60BF301D" Ref="L406"  Part="1" 
+F 0 "L406" H 4100 2475 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 4100 2400 50  0000 C CNN
 F 2 "" V 4100 2200 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4100 2200 50  0001 C CNN
@@ -739,8 +739,8 @@ AR Path="/60A73CDE/60BF7A4F" Ref="R?"  Part="1"
 AR Path="/60AD8617/60BF7A4F" Ref="R?"  Part="1" 
 AR Path="/60AD332C/60BF7A4F" Ref="R?"  Part="1" 
 AR Path="/60AD33B6/60BF7A4F" Ref="R?"  Part="1" 
-AR Path="/60B3D9E3/60BF7A4F" Ref="R?"  Part="1" 
-F 0 "R?" V 3450 2100 50  0000 C CNN
+AR Path="/60B3D9E3/60BF7A4F" Ref="R431"  Part="1" 
+F 0 "R431" V 3450 2100 50  0000 C CNN
 F 1 "1K2" V 3650 2100 50  0000 C CNN
 F 2 "" H 3550 2100 50  0001 C CNN
 F 3 "~" H 3550 2100 50  0001 C CNN
@@ -759,8 +759,8 @@ AR Path="/608A2359/60BFA2E8" Ref="L?"  Part="1"
 AR Path="/608C2344/60BFA2E8" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/60BFA2E8" Ref="L?"  Part="1" 
 AR Path="/609B5A51/60BFA2E8" Ref="L?"  Part="1" 
-AR Path="/60B3D9E3/60BFA2E8" Ref="L?"  Part="1" 
-F 0 "L?" H 2100 2975 50  0000 C CNN
+AR Path="/60B3D9E3/60BFA2E8" Ref="L405"  Part="1" 
+F 0 "L405" H 2100 2975 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 2100 2900 50  0000 C CNN
 F 2 "" V 2100 2700 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 2100 2700 50  0001 C CNN
@@ -785,8 +785,8 @@ AR Path="/60A73CDE/60BFC7E4" Ref="R?"  Part="1"
 AR Path="/60AD8617/60BFC7E4" Ref="R?"  Part="1" 
 AR Path="/60AD332C/60BFC7E4" Ref="R?"  Part="1" 
 AR Path="/60AD33B6/60BFC7E4" Ref="R?"  Part="1" 
-AR Path="/60B3D9E3/60BFC7E4" Ref="R?"  Part="1" 
-F 0 "R?" V 1450 2600 50  0000 C CNN
+AR Path="/60B3D9E3/60BFC7E4" Ref="R437"  Part="1" 
+F 0 "R437" V 1450 2600 50  0000 C CNN
 F 1 "33" V 1650 2600 50  0000 C CNN
 F 2 "" H 1550 2600 50  0001 C CNN
 F 3 "~" H 1550 2600 50  0001 C CNN
@@ -803,8 +803,8 @@ AR Path="/608A2359/60BFDA33" Ref="L?"  Part="1"
 AR Path="/608C2344/60BFDA33" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/60BFDA33" Ref="L?"  Part="1" 
 AR Path="/609B5A51/60BFDA33" Ref="L?"  Part="1" 
-AR Path="/60B3D9E3/60BFDA33" Ref="L?"  Part="1" 
-F 0 "L?" H 4100 2975 50  0000 C CNN
+AR Path="/60B3D9E3/60BFDA33" Ref="L404"  Part="1" 
+F 0 "L404" H 4100 2975 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 4100 2900 50  0000 C CNN
 F 2 "" V 4100 2700 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4100 2700 50  0001 C CNN
@@ -829,8 +829,8 @@ AR Path="/60A73CDE/60BFDA3D" Ref="R?"  Part="1"
 AR Path="/60AD8617/60BFDA3D" Ref="R?"  Part="1" 
 AR Path="/60AD332C/60BFDA3D" Ref="R?"  Part="1" 
 AR Path="/60AD33B6/60BFDA3D" Ref="R?"  Part="1" 
-AR Path="/60B3D9E3/60BFDA3D" Ref="R?"  Part="1" 
-F 0 "R?" V 3450 2600 50  0000 C CNN
+AR Path="/60B3D9E3/60BFDA3D" Ref="R435"  Part="1" 
+F 0 "R435" V 3450 2600 50  0000 C CNN
 F 1 "33" V 3650 2600 50  0000 C CNN
 F 2 "" H 3550 2600 50  0001 C CNN
 F 3 "~" H 3550 2600 50  0001 C CNN
@@ -851,8 +851,8 @@ AR Path="/608A2359/60B6D826" Ref="L?"  Part="1"
 AR Path="/608C2344/60B6D826" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/60B6D826" Ref="L?"  Part="1" 
 AR Path="/609B5A51/60B6D826" Ref="L?"  Part="1" 
-AR Path="/60B3D9E3/60B6D826" Ref="L?"  Part="1" 
-F 0 "L?" H 4100 1975 50  0000 C CNN
+AR Path="/60B3D9E3/60B6D826" Ref="L408"  Part="1" 
+F 0 "L408" H 4100 1975 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 4100 1900 50  0000 C CNN
 F 2 "" V 4100 1700 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4100 1700 50  0001 C CNN
@@ -863,32 +863,14 @@ Text Label 4100 1800 0    50   ~ 0
 GND
 Wire Wire Line
 	4400 1600 4650 1600
-$Comp
-L Device:R_Small_US R?
-U 1 1 60B6D830
-P 3350 1600
-AR Path="/608A2359/60B6D830" Ref="R?"  Part="1" 
-AR Path="/60A1445F/60B6D830" Ref="R?"  Part="1" 
-AR Path="/60A73CDE/60B6D830" Ref="R?"  Part="1" 
-AR Path="/60AD8617/60B6D830" Ref="R?"  Part="1" 
-AR Path="/60AD332C/60B6D830" Ref="R?"  Part="1" 
-AR Path="/60AD33B6/60B6D830" Ref="R?"  Part="1" 
-AR Path="/60B3D9E3/60B6D830" Ref="R?"  Part="1" 
-F 0 "R?" V 3250 1600 50  0000 C CNN
-F 1 "4K7" V 3450 1600 50  0000 C CNN
-F 2 "" H 3350 1600 50  0001 C CNN
-F 3 "~" H 3350 1600 50  0001 C CNN
-	1    3350 1600
-	0    1    1    0   
-$EndComp
 Text Label 4650 1600 2    50   ~ 0
 vid3
-Text Label 3050 1600 0    50   ~ 0
+Text Label 3650 1000 3    50   ~ 0
 VCC
-Text Label 3650 1250 3    50   ~ 0
+Text Label 3250 1600 0    50   ~ 0
 genlock
 Wire Wire Line
-	3050 1600 3250 1600
+	3650 1000 3650 1200
 Text Label 5900 2400 0    50   ~ 0
 vid12
 $Comp
@@ -967,12 +949,27 @@ Wire Wire Line
 Wire Wire Line
 	2650 8400 3450 8400
 Text Notes 2400 9100 0    50   ~ 0
-Genlock is active low. \n -> When asserted (low), vid4 is the external video  clock of the genlock,\n      and sent as main clock to the shifter ; Monomon is forced to high (color display).\n -> When negated (high), the 32MHz clock is sent as main clock to the shifter ; vid4 is \n      the detection of monochrome displays.
-Wire Wire Line
-	3450 1600 3650 1600
-Wire Wire Line
-	3650 1250 3650 1600
+Genlock is active low. \n -> When asserted (low), vid4 is the external video  clock of the genlock,\n      and sent as the main clock MC to the shifter ; MONOMON is forced to high (color display).\n -> When negated (high), the 32MHz clock is sent as the main clock MC to the shifter ; vid4 is \n      the detection of monochrome displays and sent as MONOMON.
 Connection ~ 3650 1600
 Wire Wire Line
 	3650 1600 3800 1600
+Wire Wire Line
+	3250 1600 3650 1600
+$Comp
+L Device:R_Small_US R472
+U 1 1 60B80400
+P 3650 1300
+F 0 "R472" H 3680 1320 50  0000 L CNN
+F 1 "4K7" H 3680 1260 50  0000 L CNN
+F 2 "" H 3650 1300 50  0001 C CNN
+F 3 "~" H 3650 1300 50  0001 C CNN
+	1    3650 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1400 3650 1600
+Text GLabel 6700 4550 2    50   Output ~ 0
+G
+Text GLabel 2950 6550 2    50   Output ~ 0
+B
 $EndSCHEMATC
