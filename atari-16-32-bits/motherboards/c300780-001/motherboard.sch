@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 1 22
+Sheet 1 24
 Title "Converted schematics of Atari STE"
 Date ""
 Rev "2021-04-15"
@@ -146,5 +146,19 @@ S 800  6100 2000 150
 U 60B8B7AD
 F0 "PAL/NTSC encoding or CSYNC" 71
 F1 "subsheet_403.sch" 50
+$EndSheet
+Text Notes 3100 4700 0    157  ~ 0
+Sheet 5
+$Sheet
+S 3150 4900 2000 150 
+U 60C451BA
+F0 "J500 J501 — Gamepad ports" 71
+F1 "subsheet_500.sch" 50
+$EndSheet
+$Sheet
+S 3150 5300 2000 150 
+U 60C60FDB
+F0 "U509 ~~ U512 — Gamepad control" 63
+F1 "subsheet_501.sch" 50
 $EndSheet
 $EndSCHEMATC
