@@ -913,7 +913,7 @@ fvcc
 Wire Wire Line
 	1400 4600 1400 4850
 Text Notes 700  9750 0    50   ~ 0
-About L403 and DL1 : I used some built-in look alike symbols, as I could not find for sure an exact reference about those components.\n\n* L403 : L403 - part C100210 - variable coil 24uH (NTSC ?)\n* DL1 - part C100209 - Delay line 3.58MHz (NTSC) - Maybe 4.43MHz (PAL) \n\nPinout and footprint of 403 seems to be like Mitsumi M5-H1 (see https://pdf1.alldatasheet.fr/datasheet-pdf/view/176526/MITSUMI/M5-H1.html) (same shape, same kind of \nmarking on my computer)\n\nFootprint of DL1 seems to be like Toko LC Filters type 5VSW (see https://datasheet.datasheetarchive.com/originals/library/Datasheet-057/DSA0076053.pdf). On my computer, \nthis component is marked from Mitsumi in a resin case, but I am unable to find a matching reference.\n\nI am sad that I could not get those component right, I wish you good luck if you need to replace those components or remake a pcb !\n
+About L403 and DL1 : I used some built-in look alike symbols, as I could not find for sure an exact reference about those components.\n\n* L403 : \n    NTSC => part C100210 - variable coil 24uH \n    PAL  => part C100214 - variable coil 14uH\n* DL1 :\n    NTSC => part C100209 - Delay line 3.58MHz \n    PAL  => part C100213 - Delay line 4.43MHz\n\nPinout and footprint of 403 seems to be like http://www.gekade.com/downloads/to_conscheme.pdf for a 7mm square component. \n\nFootprint of DL1 seems to be like two of coils side by side, with finer pitch.\n\nI am sad that I could not get those component right, I wish you good luck if you need to replace those components or remake a pcb !\n
 $Comp
 L Connector_Generic_Shielded:Conn_01x03_Shielded MOD
 U 1 1 60C184D5
