@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 1 25
+Sheet 1 27
 Title "Converted schematics of Atari STE"
 Date ""
 Rev "2021-04-15"
@@ -158,13 +158,25 @@ $EndSheet
 $Sheet
 S 3150 5300 2000 150 
 U 60C60FDB
-F0 "U509 ~~ U512 — Gamepad control" 63
+F0 "U509~~U512 — Gamepad control" 63
 F1 "subsheet_501.sch" 50
 $EndSheet
 $Sheet
 S 3150 5700 2000 150 
 U 60C95DE8
-F0 "U502 U503 - DMA Sound DAC" 71
+F0 "U500~~U503 - DMA Sound DAC" 63
 F1 "subsheet_502.sch" 50
+$EndSheet
+$Sheet
+S 3150 6100 2000 150 
+U 60CC3B10
+F0 "U504~~U507 — Sound amp. & filter" 63
+F1 "subsheet_503.sch" 50
+$EndSheet
+$Sheet
+S 3150 6500 2000 150 
+U 60CD36E9
+F0 "U508 — Sound mix and output" 71
+F1 "subsheet_504.sch" 50
 $EndSheet
 $EndSCHEMATC
