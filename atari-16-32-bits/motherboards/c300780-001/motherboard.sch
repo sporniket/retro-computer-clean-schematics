@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 1 28
+Sheet 1 29
 Title "Converted schematics of Atari STE"
 Date ""
 Rev "2021-04-15"
@@ -186,5 +186,11 @@ S 5500 4900 2000 150
 U 60CE6C60
 F0 "U600~~U603 – RAM modules" 71
 F1 "subsheet_600.sch" 50
+$EndSheet
+$Sheet
+S 5500 5300 2000 150 
+U 60D5A91C
+F0 "E[0..7] — Jumper pads" 71
+F1 "subsheet_601.sch" 50
 $EndSheet
 $EndSCHEMATC
