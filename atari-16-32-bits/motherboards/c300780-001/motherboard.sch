@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 1 27
+Sheet 1 28
 Title "Converted schematics of Atari STE"
 Date ""
 Rev "2021-04-15"
@@ -178,5 +178,13 @@ S 3150 6500 2000 150
 U 60CD36E9
 F0 "U508 — Sound mix and output" 71
 F1 "subsheet_504.sch" 50
+$EndSheet
+Text Notes 5500 4700 0    157  ~ 0
+Sheet 6
+$Sheet
+S 5500 4900 2000 150 
+U 60CE6C60
+F0 "U600~~U603 – RAM modules" 71
+F1 "subsheet_600.sch" 50
 $EndSheet
 $EndSCHEMATC
