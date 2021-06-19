@@ -12,17 +12,20 @@ class PinsOrganizerPhysical:
     Four strategies are available :
     * BRD (board) : pins are on the left and the right of the symbol, the first half on the left, the second half on the right,
         each side starting from the top to the bottom.
+    * DIM : DIMM (Dual Inline Memory Module), left side are odd pins, right side are even pins. Could also work for
+        pcb edge connectors.
     * DIP : pins are on the left and the right of the symbol, laid out counter-clock-wise starting with the first pin
         at the top left position.
     * LCC : pins are on the four sides of the symbol, laid out counter-clock-wise starting with the first pin at the
         middle of the top side. (Some manufacturers may deviate from this convention)
     * QFP : pins are on the four sides of the symbol, laid out counter-clock-wise starting with the first pin at the
         top of the left side. (Some manufacturers may deviate from this convention)
+    * SIM : SIMM (Single Inline Memory Module), pins are all on the left.
 
     This version for plcc/qfp strategies, only sides with the same number of pins is supported.
     """
 
-    validOrganizationCode = ['DIP','BRD','LCC','QFP']
+    validOrganizationCode = ['DIP','BRD','LCC','QFP','DIM','SIM']
     defaultCode = 'DIP'
 
     @staticmethod
@@ -40,6 +43,10 @@ class PinsOrganizerPhysical:
             return PinsOrganizerPhysical.organizeIntoQfp(datasheet)
         if code == 'LCC':
             return PinsOrganizerPhysical.organizeIntoLcc(datasheet)
+        if code == 'DIM':
+            return PinsOrganizerPhysical.organizeIntoDimm(datasheet)
+        if code == 'SIM':
+            return PinsOrganizerPhysical.organizeIntoSimm(datasheet)
 
 
     @staticmethod
@@ -101,4 +108,22 @@ class PinsOrganizerPhysical:
         result=ChipSymbolUnit()
         result.appendVertically(leftPins,rightPins)
         result.appendHorizontally(topPins,bottomPins)
+        return result
+
+    @staticmethod
+    def organizeIntoSimm(datasheet):
+        sortedPins=sorted(datasheet['pins'],key=pinIndex)
+
+        result=ChipSymbolUnit()
+        result.appendVertically(sortedPins,[])
+        return result
+
+    @staticmethod
+    def organizeIntoDimm(datasheet):
+        sortedPins=sorted(datasheet['pins'],key=pinIndex)
+
+        leftPins=sortedPins[0::2]
+        rightPins=sortedPins[1::2]
+        result=ChipSymbolUnit()
+        result.appendVertically(leftPins,rightPins)
         return result
