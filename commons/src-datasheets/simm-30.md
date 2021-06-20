@@ -1,5 +1,8 @@
 # SIMM-30 Single Inline Memory Module
 
+> This datasheet is marked with CC0 1.0
+> Universal. To view a copy of this license, visit
+> http://creativecommons.org/publicdomain/zero/1.0
 
 ## Symbol
 
