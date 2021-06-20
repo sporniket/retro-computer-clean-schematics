@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
 Sheet 7 29
-Title ""
-Date ""
-Rev ""
+Title "Converted schematics of Atari STE"
+Date "2021-06-20"
+Rev "1.0.0-alpha"
 Comp ""
-Comment1 ""
+Comment1 "Reference : C300780-001"
 Comment2 ""
 Comment3 ""
 Comment4 ""
