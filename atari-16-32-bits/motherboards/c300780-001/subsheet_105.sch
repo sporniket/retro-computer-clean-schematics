@@ -27,74 +27,68 @@ $EndComp
 $Comp
 L Device:CP1 C103
 U 1 1 6079D92A
-P 2000 2000
-F 0 "C103" H 2025 2100 50  0000 L CNN
-F 1 "4700uF" H 2025 1900 50  0000 L CNN
-F 2 "" H 2000 2000 50  0001 C CNN
-F 3 "~" H 2000 2000 50  0001 C CNN
-	1    2000 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C107
-U 1 1 6079EFD5
-P 3000 2000
-F 0 "C107" H 3025 2100 50  0000 L CNN
-F 1 "100uF" H 3025 1900 50  0000 L CNN
-F 2 "" H 3000 2000 50  0001 C CNN
-F 3 "~" H 3000 2000 50  0001 C CNN
-	1    3000 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C104
-U 1 1 6079F96C
 P 2500 2000
-F 0 "C104" H 2525 2100 50  0000 L CNN
-F 1 "0.1uF" H 2525 1900 50  0000 L CNN
-F 2 "" H 2538 1850 50  0001 C CNN
+F 0 "C103" H 2525 2100 50  0000 L CNN
+F 1 "4700uF" H 2525 1900 50  0000 L CNN
+F 2 "" H 2500 2000 50  0001 C CNN
 F 3 "~" H 2500 2000 50  0001 C CNN
 	1    2500 2000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C108
-U 1 1 6079FF6E
-P 3500 2000
-F 0 "C108" H 3525 2100 50  0000 L CNN
-F 1 "0.1uF" H 3525 1900 50  0000 L CNN
-F 2 "" H 3538 1850 50  0001 C CNN
-F 3 "~" H 3500 2000 50  0001 C CNN
-	1    3500 2000
+L Device:CP1 C107
+U 1 1 6079EFD5
+P 3750 2000
+F 0 "C107" H 3775 2100 50  0000 L CNN
+F 1 "100uF" H 3775 1900 50  0000 L CNN
+F 2 "" H 3750 2000 50  0001 C CNN
+F 3 "~" H 3750 2000 50  0001 C CNN
+	1    3750 2000
 	1    0    0    -1  
 $EndComp
-Text Label 1500 1700 0    50   ~ 0
+$Comp
+L Device:C C104
+U 1 1 6079F96C
+P 3000 2000
+F 0 "C104" H 3025 2100 50  0000 L CNN
+F 1 "0.1uF" H 3025 1900 50  0000 L CNN
+F 2 "" H 3038 1850 50  0001 C CNN
+F 3 "~" H 3000 2000 50  0001 C CNN
+	1    3000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C108
+U 1 1 6079FF6E
+P 4250 2000
+F 0 "C108" H 4275 2100 50  0000 L CNN
+F 1 "0.1uF" H 4275 1900 50  0000 L CNN
+F 2 "" H 4288 1850 50  0001 C CNN
+F 3 "~" H 4250 2000 50  0001 C CNN
+	1    4250 2000
+	1    0    0    -1  
+$EndComp
+Text Label 1800 1700 2    50   ~ 0
 VCC
-Text Label 1500 1800 0    50   ~ 0
-VCC
-Text Label 1500 1900 0    50   ~ 0
+Text Label 1800 2100 2    50   ~ 0
 GND
-Text Label 1500 2000 0    50   ~ 0
-GND
-Text Label 1500 2100 0    50   ~ 0
-GND
-Text Label 1500 2200 0    50   ~ 0
+Text Label 1800 2200 2    50   ~ 0
 +12V
-Text Label 2000 1850 1    50   ~ 0
+Text Label 3000 1600 3    50   ~ 0
 VCC
-Text Label 2500 1850 1    50   ~ 0
+Text Label 2500 1600 3    50   ~ 0
 VCC
-Text Label 3000 1850 1    50   ~ 0
+Text Label 4250 1600 3    50   ~ 0
 +12V
-Text Label 3500 1850 1    50   ~ 0
+Text Label 3750 1600 3    50   ~ 0
 +12V
-Text Label 2000 2150 3    50   ~ 0
+Text Label 4250 2350 1    50   ~ 0
 GND
-Text Label 2500 2150 3    50   ~ 0
+Text Label 3750 2350 1    50   ~ 0
 GND
-Text Label 3000 2150 3    50   ~ 0
+Text Label 3000 2350 1    50   ~ 0
 GND
-Text Label 3500 2150 3    50   ~ 0
+Text Label 2500 2350 1    50   ~ 0
 GND
 Text Notes 1200 1150 0    100  ~ 0
 Collect power from PSU
@@ -164,4 +158,45 @@ F 3 "~" H 7300 2000 50  0001 C CNN
 	1    7300 2000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1500 1700 1600 1700
+Wire Wire Line
+	1500 1800 1600 1800
+Wire Wire Line
+	1600 1800 1600 1700
+Connection ~ 1600 1700
+Wire Wire Line
+	1600 1700 1800 1700
+Wire Wire Line
+	1500 1900 1600 1900
+Wire Wire Line
+	1600 2100 1800 2100
+Wire Wire Line
+	1500 2000 1600 2000
+Wire Wire Line
+	1600 1900 1600 2000
+Connection ~ 1600 2000
+Wire Wire Line
+	1600 2000 1600 2100
+Wire Wire Line
+	1500 2100 1600 2100
+Connection ~ 1600 2100
+Wire Wire Line
+	1500 2200 1800 2200
+Wire Wire Line
+	2500 1850 2500 1600
+Wire Wire Line
+	3000 1850 3000 1600
+Wire Wire Line
+	3750 1850 3750 1600
+Wire Wire Line
+	4250 1850 4250 1600
+Wire Wire Line
+	2500 2350 2500 2150
+Wire Wire Line
+	3000 2350 3000 2150
+Wire Wire Line
+	3750 2350 3750 2150
+Wire Wire Line
+	4250 2350 4250 2150
 $EndSCHEMATC

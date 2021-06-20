@@ -13,17 +13,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 5300 3200 2    50   ~ 0
+Text Label 5350 3200 2    50   ~ 0
 VCC
-Text Label 5300 2800 2    50   ~ 0
+Text Label 5350 2800 2    50   ~ 0
 GND
-Text Label 5300 2700 2    50   ~ 0
+Text Label 5350 2700 2    50   ~ 0
 GND
-Text Label 1900 2800 0    50   ~ 0
+Text Label 1850 2800 0    50   ~ 0
 VCC
-Text Label 1900 3000 0    50   ~ 0
-GND
-Text Label 1900 3100 0    50   ~ 0
+Text Label 1750 3100 0    50   ~ 0
 GND
 $Comp
 L mc_68000_plcc68:MC68000_PLCC_68_PHY U100
@@ -36,37 +34,37 @@ F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 4500 4750 50 
 	1    3600 3200
 	1    0    0    -1  
 $EndComp
-Text Label 3150 1650 3    50   ~ 0
+Text Label 3150 1550 3    50   ~ 0
 D0
-Text Label 3250 1650 3    50   ~ 0
+Text Label 3250 1550 3    50   ~ 0
 D1
-Text Label 3350 1650 3    50   ~ 0
+Text Label 3350 1550 3    50   ~ 0
 D2
-Text Label 3450 1650 3    50   ~ 0
+Text Label 3450 1550 3    50   ~ 0
 D3
-Text Label 3550 1650 3    50   ~ 0
+Text Label 3550 1550 3    50   ~ 0
 D4
-Text Label 3650 1650 3    50   ~ 0
+Text Label 3650 1550 3    50   ~ 0
 D5
-Text Label 3750 1650 3    50   ~ 0
+Text Label 3750 1550 3    50   ~ 0
 D6
-Text Label 3850 1650 3    50   ~ 0
+Text Label 3850 1550 3    50   ~ 0
 D7
-Text Label 3950 1650 3    50   ~ 0
+Text Label 3950 1550 3    50   ~ 0
 D8
-Text Label 4050 1650 3    50   ~ 0
+Text Label 4050 1550 3    50   ~ 0
 D9
-Text Label 4150 1600 3    50   ~ 0
+Text Label 4150 1550 3    50   ~ 0
 D10
-Text Label 4250 1600 3    50   ~ 0
+Text Label 4250 1550 3    50   ~ 0
 D11
-Text Label 4350 1600 3    50   ~ 0
+Text Label 4350 1550 3    50   ~ 0
 D12
-Text Label 5300 2400 2    50   ~ 0
+Text Label 5350 2400 2    50   ~ 0
 D13
-Text Label 5300 2500 2    50   ~ 0
+Text Label 5350 2500 2    50   ~ 0
 D14
-Text Label 5300 2600 2    50   ~ 0
+Text Label 5350 2600 2    50   ~ 0
 D15
 Text Label 5250 1000 2    50   ~ 0
 D[0..15]
@@ -76,92 +74,72 @@ Text Label 3750 1000 2    50   ~ 0
 A[1..23]
 Text GLabel 4000 1000 2    50   Output ~ 0
 ADDR[1..23]
-Text Label 5300 2900 2    50   ~ 0
+Text Label 5350 2900 2    50   ~ 0
 A23
-Text Label 5300 3000 2    50   ~ 0
+Text Label 5350 3000 2    50   ~ 0
 A22
-Text Label 5300 3100 2    50   ~ 0
+Text Label 5350 3100 2    50   ~ 0
 A21
-Text Label 5300 3300 2    50   ~ 0
+Text Label 5350 3300 2    50   ~ 0
 A20
-Text Label 5300 3400 2    50   ~ 0
+Text Label 5350 3400 2    50   ~ 0
 A19
-Text Label 5300 3500 2    50   ~ 0
+Text Label 5350 3500 2    50   ~ 0
 A18
-Text Label 5300 3600 2    50   ~ 0
+Text Label 5350 3600 2    50   ~ 0
 A17
-Text Label 5300 3700 2    50   ~ 0
+Text Label 5350 3700 2    50   ~ 0
 A16
-Text Label 5300 3800 2    50   ~ 0
+Text Label 5350 3800 2    50   ~ 0
 A15
-Text Label 5300 3900 2    50   ~ 0
+Text Label 5350 3900 2    50   ~ 0
 A14
-Text Label 5300 4000 2    50   ~ 0
+Text Label 5350 4000 2    50   ~ 0
 A13
-Text Label 3250 4750 1    50   ~ 0
+Text Label 3250 4850 1    50   ~ 0
 A1
-Text Label 3350 4750 1    50   ~ 0
+Text Label 3350 4850 1    50   ~ 0
 A2
-Text Label 3450 4750 1    50   ~ 0
+Text Label 3450 4850 1    50   ~ 0
 A3
-Text Label 3550 4750 1    50   ~ 0
+Text Label 3550 4850 1    50   ~ 0
 A4
-Text Label 3650 4750 1    50   ~ 0
+Text Label 3650 4850 1    50   ~ 0
 A5
-Text Label 3750 4750 1    50   ~ 0
+Text Label 3750 4850 1    50   ~ 0
 A6
-Text Label 3850 4750 1    50   ~ 0
+Text Label 3850 4850 1    50   ~ 0
 A7
-Text Label 3950 4750 1    50   ~ 0
+Text Label 3950 4850 1    50   ~ 0
 A8
-Text Label 4050 4750 1    50   ~ 0
+Text Label 4050 4850 1    50   ~ 0
 A9
-Text Label 4150 4800 1    50   ~ 0
+Text Label 4150 4850 1    50   ~ 0
 A10
-Text Label 4250 4800 1    50   ~ 0
+Text Label 4250 4850 1    50   ~ 0
 A11
-Text Label 4350 4800 1    50   ~ 0
+Text Label 4350 4850 1    50   ~ 0
 A12
 Text GLabel 1300 1000 0    50   Input ~ 0
 XIPL[0..2]
 Text GLabel 7000 1000 2    50   Output ~ 0
 FC[0..2]
-Text GLabel 1850 3700 0    50   Input ~ 0
-XVPA
-Text GLabel 1850 3800 0    50   Input ~ 0
-XBERR
-Text GLabel 1850 2400 0    50   Input ~ 0
-XDTACK
-Text GLabel 1850 2700 0    50   Input ~ 0
-XBR
-Text GLabel 1850 2600 0    50   Input ~ 0
-XBGACK
-Text GLabel 1850 2900 0    50   Input ~ 0
-CLK8
-Text GLabel 1850 3600 0    50   Output ~ 0
+Text GLabel 1800 3600 0    50   Output ~ 0
 E
-Text GLabel 1850 3500 0    50   Output ~ 0
+Text GLabel 1800 3500 0    50   Output ~ 0
 XVMA
-Text GLabel 1850 3400 0    50   BiDi ~ 0
-XRESET
-Text GLabel 1850 3300 0    50   Output ~ 0
+Text GLabel 1800 3300 0    50   Output ~ 0
 XHALT
-Text GLabel 3050 1600 1    50   Output ~ 0
+Text GLabel 3050 1500 1    50   Output ~ 0
 XAS
-Text GLabel 2750 1600 1    50   Output ~ 0
+Text GLabel 2750 1500 1    50   Output ~ 0
 RXW
-Text GLabel 2950 1600 1    50   Output ~ 0
+Text GLabel 2950 1500 1    50   Output ~ 0
 XUDS
-Text GLabel 2850 1600 1    50   Output ~ 0
+Text GLabel 2850 1500 1    50   Output ~ 0
 XLDS
-Text GLabel 1850 2500 0    50   Output ~ 0
+Text GLabel 1800 2500 0    50   Output ~ 0
 XCPUBG
-Wire Wire Line
-	3050 1750 3050 1600
-Wire Wire Line
-	1850 2700 2050 2700
-Wire Wire Line
-	1850 2900 2050 2900
 Wire Bus Line
 	1300 1000 1550 1000
 Wire Bus Line
@@ -174,144 +152,18 @@ Text Label 6750 1000 2    50   ~ 0
 FC[0..2]
 Text Label 1550 1000 0    50   ~ 0
 IPL[0..2]
-Text Label 1900 3900 0    50   ~ 0
+Text Label 1850 3900 0    50   ~ 0
 IPL2
-Text Label 1900 4000 0    50   ~ 0
+Text Label 1850 4000 0    50   ~ 0
 IPL1
-Text Label 2750 4800 1    50   ~ 0
+Text Label 2750 4850 1    50   ~ 0
 IPL0
-Text Label 2850 4800 1    50   ~ 0
+Text Label 2850 4850 1    50   ~ 0
 FC2
-Text Label 2950 4800 1    50   ~ 0
+Text Label 2950 4850 1    50   ~ 0
 FC1
-Text Label 3050 4800 1    50   ~ 0
+Text Label 3050 4850 1    50   ~ 0
 FC0
-Wire Wire Line
-	1850 3800 2050 3800
-Wire Wire Line
-	3150 1750 3150 1650
-Wire Wire Line
-	3250 1750 3250 1650
-Wire Wire Line
-	3350 1750 3350 1650
-Wire Wire Line
-	3450 1750 3450 1650
-Wire Wire Line
-	3550 1750 3550 1650
-Wire Wire Line
-	3650 1750 3650 1650
-Wire Wire Line
-	3750 1750 3750 1650
-Wire Wire Line
-	3850 1750 3850 1650
-Wire Wire Line
-	3950 1750 3950 1650
-Wire Wire Line
-	4050 1750 4050 1650
-Wire Wire Line
-	4150 1750 4150 1600
-Wire Wire Line
-	4250 1750 4250 1600
-Wire Wire Line
-	4350 1750 4350 1600
-Wire Wire Line
-	5150 2400 5300 2400
-Wire Wire Line
-	5150 2500 5300 2500
-Wire Wire Line
-	5150 2600 5300 2600
-Wire Wire Line
-	5150 2700 5300 2700
-Wire Wire Line
-	5150 2800 5300 2800
-Wire Wire Line
-	5150 2900 5300 2900
-Wire Wire Line
-	5150 3000 5300 3000
-Wire Wire Line
-	5150 3100 5300 3100
-Wire Wire Line
-	5150 3200 5300 3200
-Wire Wire Line
-	5150 3300 5300 3300
-Wire Wire Line
-	5150 3400 5300 3400
-Wire Wire Line
-	5150 3500 5300 3500
-Wire Wire Line
-	5150 3600 5300 3600
-Wire Wire Line
-	5150 3700 5300 3700
-Wire Wire Line
-	5150 3800 5300 3800
-Wire Wire Line
-	5150 3900 5300 3900
-Wire Wire Line
-	5150 4000 5300 4000
-Wire Wire Line
-	2750 4650 2750 4800
-Wire Wire Line
-	2850 4650 2850 4800
-Wire Wire Line
-	2950 4650 2950 4800
-Wire Wire Line
-	3050 4650 3050 4800
-Wire Wire Line
-	3250 4650 3250 4750
-Wire Wire Line
-	3350 4650 3350 4750
-Wire Wire Line
-	3450 4650 3450 4750
-Wire Wire Line
-	3550 4650 3550 4750
-Wire Wire Line
-	3650 4650 3650 4750
-Wire Wire Line
-	3750 4650 3750 4750
-Wire Wire Line
-	3850 4650 3850 4750
-Wire Wire Line
-	3950 4650 3950 4750
-Wire Wire Line
-	4050 4650 4050 4750
-Wire Wire Line
-	4150 4650 4150 4800
-Wire Wire Line
-	4250 4650 4250 4800
-Wire Wire Line
-	4350 4650 4350 4800
-Wire Wire Line
-	2050 4000 1900 4000
-Wire Wire Line
-	2050 3900 1900 3900
-Wire Wire Line
-	2050 3100 1900 3100
-Wire Wire Line
-	2050 3000 1900 3000
-Wire Wire Line
-	2050 2800 1900 2800
-Wire Wire Line
-	2750 1750 2750 1600
-Wire Wire Line
-	2850 1750 2850 1600
-Wire Wire Line
-	2950 1750 2950 1600
-Wire Wire Line
-	2050 2400 1850 2400
-Wire Wire Line
-	1850 2500 2050 2500
-Wire Wire Line
-	2050 2600 1850 2600
-Wire Wire Line
-	1850 3300 2050 3300
-Wire Wire Line
-	2050 3400 1850 3400
-Wire Wire Line
-	2050 3500 1850 3500
-Wire Wire Line
-	2050 3600 1850 3600
-Wire Wire Line
-	1850 3700 2050 3700
 $Comp
 L Device:C C?
 U 1 1 607ECFCE
@@ -679,38 +531,22 @@ F 3 "~" H 5600 6650 50  0001 C CNN
 	1    5600 6650
 	0    1    1    0   
 $EndComp
-Text Label 5900 5850 2    50   ~ 0
+Text Label 5950 5850 2    50   ~ 0
 VCC
-Text Label 5900 6250 2    50   ~ 0
+Text Label 5950 6250 2    50   ~ 0
 VCC
-Text Label 6900 5850 2    50   ~ 0
+Text Label 6950 5850 2    50   ~ 0
 VCC
-Text Label 5900 6650 2    50   ~ 0
+Text Label 5950 6650 2    50   ~ 0
 VCC
-Text Label 6150 5850 0    50   ~ 0
+Text Label 6100 5850 0    50   ~ 0
 XDTACK
-Text Label 5300 5850 0    50   ~ 0
+Text Label 5250 5850 0    50   ~ 0
 FC2
-Text Label 5300 6250 0    50   ~ 0
+Text Label 5250 6250 0    50   ~ 0
 FC1
-Text Label 5300 6650 0    50   ~ 0
+Text Label 5250 6650 0    50   ~ 0
 FC0
-Wire Wire Line
-	6150 5850 6450 5850
-Wire Wire Line
-	6750 5850 6900 5850
-Wire Wire Line
-	5300 5850 5450 5850
-Wire Wire Line
-	5750 5850 5900 5850
-Wire Wire Line
-	5300 6250 5450 6250
-Wire Wire Line
-	5750 6250 5900 6250
-Wire Wire Line
-	5300 6650 5450 6650
-Wire Wire Line
-	5750 6650 5900 6650
 $Comp
 L Device:R_US R107
 U 1 1 6093D9ED
@@ -744,28 +580,195 @@ F 3 "~" H 6600 7050 50  0001 C CNN
 	1    6600 7050
 	0    1    1    0   
 $EndComp
-Text Label 6900 6250 2    50   ~ 0
+Text Label 6950 6250 2    50   ~ 0
 VCC
-Text Label 6900 6650 2    50   ~ 0
+Text Label 6950 6650 2    50   ~ 0
 VCC
-Text Label 6900 7050 2    50   ~ 0
+Text Label 6950 7050 2    50   ~ 0
 VCC
-Wire Wire Line
-	6750 6250 6900 6250
-Wire Wire Line
-	6750 6650 6900 6650
-Wire Wire Line
-	6750 7050 6900 7050
 Text Label 6100 6250 0    50   ~ 0
 XRESET
-Text Label 6250 6650 0    50   ~ 0
+Text Label 6200 6650 0    50   ~ 0
 XVPA
-Text Label 6250 7050 0    50   ~ 0
+Text Label 6200 7050 0    50   ~ 0
 XVMA
 Wire Wire Line
-	6450 7050 6250 7050
-Wire Wire Line
-	6450 6650 6250 6650
-Wire Wire Line
 	6450 6250 6100 6250
+Text GLabel 1850 3800 0    50   Input ~ 0
+XBERR
+Wire Wire Line
+	1850 3800 2050 3800
+Text GLabel 1850 3700 0    50   Input ~ 0
+XVPA
+Wire Wire Line
+	1850 3700 2050 3700
+Text GLabel 1850 3400 0    50   BiDi ~ 0
+XRESET
+Wire Wire Line
+	2050 3400 1850 3400
+Text GLabel 1850 2900 0    50   Input ~ 0
+CLK8
+Wire Wire Line
+	1850 2900 2050 2900
+Text GLabel 1850 2700 0    50   Input ~ 0
+XBR
+Text GLabel 1850 2600 0    50   Input ~ 0
+XBGACK
+Text GLabel 1850 2400 0    50   Input ~ 0
+XDTACK
+Wire Wire Line
+	1850 2700 2050 2700
+Wire Wire Line
+	2050 2600 1850 2600
+Wire Wire Line
+	2050 2400 1850 2400
+Wire Wire Line
+	1800 2500 2050 2500
+Wire Wire Line
+	1800 3300 2050 3300
+Wire Wire Line
+	1800 3500 2050 3500
+Wire Wire Line
+	1800 3600 2050 3600
+Wire Wire Line
+	1850 2800 2050 2800
+Wire Wire Line
+	1750 3100 1950 3100
+Wire Wire Line
+	1950 3100 1950 3000
+Wire Wire Line
+	1950 3000 2050 3000
+Connection ~ 1950 3100
+Wire Wire Line
+	1950 3100 2050 3100
+Wire Wire Line
+	1850 3900 2050 3900
+Wire Wire Line
+	1850 4000 2050 4000
+Wire Wire Line
+	2750 4650 2750 4850
+Wire Wire Line
+	2850 4650 2850 4850
+Wire Wire Line
+	2950 4650 2950 4850
+Wire Wire Line
+	3050 4650 3050 4850
+Wire Wire Line
+	4150 4650 4150 4850
+Wire Wire Line
+	4250 4650 4250 4850
+Wire Wire Line
+	4350 4650 4350 4850
+Wire Wire Line
+	5150 2400 5350 2400
+Wire Wire Line
+	5150 2500 5350 2500
+Wire Wire Line
+	5150 2600 5350 2600
+Wire Wire Line
+	5150 2700 5350 2700
+Wire Wire Line
+	5150 2800 5350 2800
+Wire Wire Line
+	5150 2900 5350 2900
+Wire Wire Line
+	5150 3000 5350 3000
+Wire Wire Line
+	5150 3100 5350 3100
+Wire Wire Line
+	5150 3200 5350 3200
+Wire Wire Line
+	5150 3300 5350 3300
+Wire Wire Line
+	5150 3400 5350 3400
+Wire Wire Line
+	5150 3500 5350 3500
+Wire Wire Line
+	5150 3600 5350 3600
+Wire Wire Line
+	5150 3700 5350 3700
+Wire Wire Line
+	5150 3800 5350 3800
+Wire Wire Line
+	5150 3900 5350 3900
+Wire Wire Line
+	5150 4000 5350 4000
+Wire Wire Line
+	4150 1550 4150 1750
+Wire Wire Line
+	4250 1550 4250 1750
+Wire Wire Line
+	4350 1550 4350 1750
+Wire Wire Line
+	5250 5850 5450 5850
+Wire Wire Line
+	5250 6250 5450 6250
+Wire Wire Line
+	5250 6650 5450 6650
+Wire Wire Line
+	5750 5850 5950 5850
+Wire Wire Line
+	5750 6250 5950 6250
+Wire Wire Line
+	5750 6650 5950 6650
+Wire Wire Line
+	6100 5850 6450 5850
+Wire Wire Line
+	6200 6650 6450 6650
+Wire Wire Line
+	6200 7050 6450 7050
+Wire Wire Line
+	6750 5850 6950 5850
+Wire Wire Line
+	6750 6250 6950 6250
+Wire Wire Line
+	6750 6650 6950 6650
+Wire Wire Line
+	6750 7050 6950 7050
+Wire Wire Line
+	3250 4650 3250 4850
+Wire Wire Line
+	3350 4650 3350 4850
+Wire Wire Line
+	3450 4650 3450 4850
+Wire Wire Line
+	3550 4650 3550 4850
+Wire Wire Line
+	3650 4650 3650 4850
+Wire Wire Line
+	3750 4650 3750 4850
+Wire Wire Line
+	3850 4650 3850 4850
+Wire Wire Line
+	3950 4650 3950 4850
+Wire Wire Line
+	4050 4650 4050 4850
+Wire Wire Line
+	3150 1550 3150 1750
+Wire Wire Line
+	3250 1550 3250 1750
+Wire Wire Line
+	3350 1550 3350 1750
+Wire Wire Line
+	3450 1550 3450 1750
+Wire Wire Line
+	3550 1550 3550 1750
+Wire Wire Line
+	3650 1550 3650 1750
+Wire Wire Line
+	3750 1550 3750 1750
+Wire Wire Line
+	3850 1550 3850 1750
+Wire Wire Line
+	3950 1550 3950 1750
+Wire Wire Line
+	4050 1550 4050 1750
+Wire Wire Line
+	3050 1500 3050 1750
+Wire Wire Line
+	2750 1500 2750 1750
+Wire Wire Line
+	2850 1500 2850 1750
+Wire Wire Line
+	2950 1500 2950 1750
 $EndSCHEMATC

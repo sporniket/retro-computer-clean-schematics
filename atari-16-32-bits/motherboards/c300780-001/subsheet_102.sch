@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 3450 3000 2    50   Input ~ 0
+Text GLabel 3550 3000 2    50   Input ~ 0
 XROM2
 Text GLabel 1500 1000 0    50   Input ~ 0
 ADDR[1..23]
@@ -53,11 +53,7 @@ Text Label 1900 2000 0    50   ~ 0
 VCC
 Text Label 4900 2000 0    50   ~ 0
 VCC
-Text Label 3400 2000 2    50   ~ 0
-VCC
-Text Label 3400 2100 2    50   ~ 0
-VCC
-Text Label 3400 2200 2    50   ~ 0
+Text Label 3500 2000 2    50   ~ 0
 VCC
 Text Label 6400 2000 2    50   ~ 0
 VCC
@@ -67,12 +63,6 @@ Text Label 6400 2200 2    50   ~ 0
 VCC
 Wire Wire Line
 	1900 2000 2100 2000
-Wire Wire Line
-	3200 2000 3400 2000
-Wire Wire Line
-	3200 2100 3400 2100
-Wire Wire Line
-	3200 2200 3400 2200
 Wire Wire Line
 	4900 2000 5100 2000
 Wire Wire Line
@@ -111,25 +101,25 @@ Text Label 1900 3000 0    50   ~ 0
 A2
 Text Label 1900 3100 0    50   ~ 0
 A1
-Text Label 1900 3200 0    50   ~ 0
+Text Label 1900 3200 2    50   ~ 0
 D8
-Text Label 1900 3300 0    50   ~ 0
+Text Label 1900 3300 2    50   ~ 0
 D9
-Text Label 1900 3400 0    50   ~ 0
+Text Label 1900 3400 2    50   ~ 0
 D10
 Text Label 1900 3500 0    50   ~ 0
 GND
 Text Label 4900 3500 0    50   ~ 0
 GND
-Text Label 3400 3500 2    50   ~ 0
+Text Label 3400 3500 0    50   ~ 0
 D11
-Text Label 3400 3400 2    50   ~ 0
+Text Label 3400 3400 0    50   ~ 0
 D12
-Text Label 3400 3300 2    50   ~ 0
+Text Label 3400 3300 0    50   ~ 0
 D13
-Text Label 3400 3200 2    50   ~ 0
+Text Label 3400 3200 0    50   ~ 0
 D14
-Text Label 3400 3100 2    50   ~ 0
+Text Label 3400 3100 0    50   ~ 0
 D15
 Text Label 4900 2300 0    50   ~ 0
 A13
@@ -161,21 +151,21 @@ Text Label 6400 2700 2    50   ~ 0
 A12
 Text Label 6400 2900 2    50   ~ 0
 A11
-Text Label 6400 3100 2    50   ~ 0
+Text Label 6400 3100 0    50   ~ 0
 D7
-Text Label 6400 3200 2    50   ~ 0
+Text Label 6400 3200 0    50   ~ 0
 D6
-Text Label 6400 3300 2    50   ~ 0
+Text Label 6400 3300 0    50   ~ 0
 D5
-Text Label 6400 3400 2    50   ~ 0
+Text Label 6400 3400 0    50   ~ 0
 D4
-Text Label 6400 3500 2    50   ~ 0
+Text Label 6400 3500 0    50   ~ 0
 D3
-Text Label 4900 3200 0    50   ~ 0
+Text Label 4900 3200 2    50   ~ 0
 D0
-Text Label 4900 3300 0    50   ~ 0
+Text Label 4900 3300 2    50   ~ 0
 D1
-Text Label 4900 3400 0    50   ~ 0
+Text Label 4900 3400 2    50   ~ 0
 D2
 Wire Wire Line
 	1900 2300 2100 2300
@@ -273,12 +263,8 @@ Wire Wire Line
 	6200 3400 6400 3400
 Wire Wire Line
 	6200 3500 6400 3500
-Text GLabel 6450 3000 2    50   Input ~ 0
+Text GLabel 6500 3000 2    50   Input ~ 0
 XROM2
-Wire Wire Line
-	3200 3000 3450 3000
-Wire Wire Line
-	6200 3000 6450 3000
 $Comp
 L Device:C C?
 U 1 1 6083D581
@@ -354,30 +340,18 @@ Text Label 3500 4600 0    50   ~ 0
 A15_SELECT
 Text Label 5000 4600 0    50   ~ 0
 A16_SELECT
-Text Label 3600 2800 2    50   ~ 0
+Text Label 3400 2800 0    50   ~ 0
 G_SELECT
-Text Label 6600 2800 2    50   ~ 0
+Text Label 6400 2800 0    50   ~ 0
 G_SELECT
-Text Label 1600 2200 0    50   ~ 0
+Text Label 1900 2200 2    50   ~ 0
 A15_SELECT
-Text Label 1600 2100 0    50   ~ 0
+Text Label 1900 2100 2    50   ~ 0
 A16_SELECT
-Text Label 4600 2100 0    50   ~ 0
+Text Label 4900 2100 2    50   ~ 0
 A16_SELECT
-Text Label 4600 2200 0    50   ~ 0
+Text Label 4900 2200 2    50   ~ 0
 A15_SELECT
-Wire Wire Line
-	1600 2100 2100 2100
-Wire Wire Line
-	1600 2200 2100 2200
-Wire Wire Line
-	4600 2100 5100 2100
-Wire Wire Line
-	4600 2200 5100 2200
-Wire Wire Line
-	3200 2800 3600 2800
-Wire Wire Line
-	6200 2800 6600 2800
 Wire Wire Line
 	2050 4600 2450 4600
 Wire Wire Line
@@ -418,4 +392,34 @@ Text Notes 4700 6150 0    50   ~ 0
 W103\n\n1 and 2\n2 and 3\n2 and 3\n2 and 3
 Text Notes 5150 6150 0    50   ~ 0
 W104\n\nN/C\nN/C\n2 and 3\n1 and 2
+Wire Wire Line
+	1900 2100 2100 2100
+Wire Wire Line
+	1900 2200 2100 2200
+Wire Wire Line
+	3200 2000 3300 2000
+Wire Wire Line
+	3200 2200 3300 2200
+Wire Wire Line
+	3300 2200 3300 2100
+Connection ~ 3300 2000
+Wire Wire Line
+	3300 2000 3500 2000
+Wire Wire Line
+	3300 2100 3200 2100
+Connection ~ 3300 2100
+Wire Wire Line
+	3300 2100 3300 2000
+Wire Wire Line
+	3200 2800 3400 2800
+Wire Wire Line
+	6200 2800 6400 2800
+Wire Wire Line
+	4900 2100 5100 2100
+Wire Wire Line
+	4900 2200 5100 2200
+Wire Wire Line
+	6200 3000 6500 3000
+Wire Wire Line
+	3200 3000 3550 3000
 $EndSCHEMATC
