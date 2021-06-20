@@ -113,292 +113,272 @@ Wire Wire Line
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A7941B
-P 2400 6000
+P 2750 6000
 AR Path="/608A2359/60A7941B" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60A7941B" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60A7941B" Ref="R323"  Part="1" 
-F 0 "R323" V 2300 6000 50  0000 C CNN
-F 1 "68" V 2500 6000 50  0000 C CNN
-F 2 "" H 2400 6000 50  0001 C CNN
-F 3 "~" H 2400 6000 50  0001 C CNN
-	1    2400 6000
+F 0 "R323" V 2650 6000 50  0000 C CNN
+F 1 "68" V 2850 6000 50  0000 C CNN
+F 2 "" H 2750 6000 50  0001 C CNN
+F 3 "~" H 2750 6000 50  0001 C CNN
+	1    2750 6000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1900 6000 2300 6000
-Wire Wire Line
-	2500 6000 2900 6000
+	2250 6000 2650 6000
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A846FA
-P 2400 6500
+P 2750 6500
 AR Path="/608A2359/60A846FA" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60A846FA" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60A846FA" Ref="R321"  Part="1" 
-F 0 "R321" V 2300 6500 50  0000 C CNN
-F 1 "68" V 2500 6500 50  0000 C CNN
-F 2 "" H 2400 6500 50  0001 C CNN
-F 3 "~" H 2400 6500 50  0001 C CNN
-	1    2400 6500
+F 0 "R321" V 2650 6500 50  0000 C CNN
+F 1 "68" V 2850 6500 50  0000 C CNN
+F 2 "" H 2750 6500 50  0001 C CNN
+F 3 "~" H 2750 6500 50  0001 C CNN
+	1    2750 6500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1900 6500 2300 6500
-Wire Wire Line
-	2500 6500 2900 6500
+	2250 6500 2650 6500
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A848BE
-P 2400 7000
+P 2750 7000
 AR Path="/608A2359/60A848BE" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60A848BE" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60A848BE" Ref="R319"  Part="1" 
-F 0 "R319" V 2300 7000 50  0000 C CNN
-F 1 "68" V 2500 7000 50  0000 C CNN
-F 2 "" H 2400 7000 50  0001 C CNN
-F 3 "~" H 2400 7000 50  0001 C CNN
-	1    2400 7000
+F 0 "R319" V 2650 7000 50  0000 C CNN
+F 1 "68" V 2850 7000 50  0000 C CNN
+F 2 "" H 2750 7000 50  0001 C CNN
+F 3 "~" H 2750 7000 50  0001 C CNN
+	1    2750 7000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1900 7000 2300 7000
-Wire Wire Line
-	2500 7000 2900 7000
+	2250 7000 2650 7000
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A85538
-P 2400 7500
+P 2750 7500
 AR Path="/608A2359/60A85538" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60A85538" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60A85538" Ref="R317"  Part="1" 
-F 0 "R317" V 2300 7500 50  0000 C CNN
-F 1 "68" V 2500 7500 50  0000 C CNN
-F 2 "" H 2400 7500 50  0001 C CNN
-F 3 "~" H 2400 7500 50  0001 C CNN
-	1    2400 7500
+F 0 "R317" V 2650 7500 50  0000 C CNN
+F 1 "68" V 2850 7500 50  0000 C CNN
+F 2 "" H 2750 7500 50  0001 C CNN
+F 3 "~" H 2750 7500 50  0001 C CNN
+	1    2750 7500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1900 7500 2300 7500
-Wire Wire Line
-	2500 7500 2900 7500
+	2250 7500 2650 7500
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A85540
-P 2400 8000
+P 2750 8000
 AR Path="/608A2359/60A85540" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60A85540" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60A85540" Ref="R315"  Part="1" 
-F 0 "R315" V 2300 8000 50  0000 C CNN
-F 1 "68" V 2500 8000 50  0000 C CNN
-F 2 "" H 2400 8000 50  0001 C CNN
-F 3 "~" H 2400 8000 50  0001 C CNN
-	1    2400 8000
+F 0 "R315" V 2650 8000 50  0000 C CNN
+F 1 "68" V 2850 8000 50  0000 C CNN
+F 2 "" H 2750 8000 50  0001 C CNN
+F 3 "~" H 2750 8000 50  0001 C CNN
+	1    2750 8000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1900 8000 2300 8000
+	2250 8000 2650 8000
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A85548
-P 2400 8500
+P 2750 8500
 AR Path="/608A2359/60A85548" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60A85548" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60A85548" Ref="R313"  Part="1" 
-F 0 "R313" V 2300 8500 50  0000 C CNN
-F 1 "68" V 2500 8500 50  0000 C CNN
-F 2 "" H 2400 8500 50  0001 C CNN
-F 3 "~" H 2400 8500 50  0001 C CNN
-	1    2400 8500
+F 0 "R313" V 2650 8500 50  0000 C CNN
+F 1 "68" V 2850 8500 50  0000 C CNN
+F 2 "" H 2750 8500 50  0001 C CNN
+F 3 "~" H 2750 8500 50  0001 C CNN
+	1    2750 8500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1900 8500 2300 8500
+	2250 8500 2650 8500
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A864FD
-P 3900 6000
+P 3250 6250
 AR Path="/608A2359/60A864FD" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60A864FD" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60A864FD" Ref="R322"  Part="1" 
-F 0 "R322" V 3800 6000 50  0000 C CNN
-F 1 "68" V 4000 6000 50  0000 C CNN
-F 2 "" H 3900 6000 50  0001 C CNN
-F 3 "~" H 3900 6000 50  0001 C CNN
-	1    3900 6000
+F 0 "R322" V 3150 6250 50  0000 C CNN
+F 1 "68" V 3350 6250 50  0000 C CNN
+F 2 "" H 3250 6250 50  0001 C CNN
+F 3 "~" H 3250 6250 50  0001 C CNN
+	1    3250 6250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3400 6000 3800 6000
-Wire Wire Line
-	4000 6000 4400 6000
+	3350 6250 3750 6250
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A86505
-P 3900 6500
+P 3250 6750
 AR Path="/608A2359/60A86505" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60A86505" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60A86505" Ref="R320"  Part="1" 
-F 0 "R320" V 3800 6500 50  0000 C CNN
-F 1 "68" V 4000 6500 50  0000 C CNN
-F 2 "" H 3900 6500 50  0001 C CNN
-F 3 "~" H 3900 6500 50  0001 C CNN
-	1    3900 6500
+F 0 "R320" V 3150 6750 50  0000 C CNN
+F 1 "68" V 3350 6750 50  0000 C CNN
+F 2 "" H 3250 6750 50  0001 C CNN
+F 3 "~" H 3250 6750 50  0001 C CNN
+	1    3250 6750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3400 6500 3800 6500
-Wire Wire Line
-	4000 6500 4400 6500
+	3350 6750 3750 6750
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A8650D
-P 3900 7000
+P 3250 7250
 AR Path="/608A2359/60A8650D" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60A8650D" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60A8650D" Ref="R318"  Part="1" 
-F 0 "R318" V 3800 7000 50  0000 C CNN
-F 1 "68" V 4000 7000 50  0000 C CNN
-F 2 "" H 3900 7000 50  0001 C CNN
-F 3 "~" H 3900 7000 50  0001 C CNN
-	1    3900 7000
+F 0 "R318" V 3150 7250 50  0000 C CNN
+F 1 "68" V 3350 7250 50  0000 C CNN
+F 2 "" H 3250 7250 50  0001 C CNN
+F 3 "~" H 3250 7250 50  0001 C CNN
+	1    3250 7250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3400 7000 3800 7000
-Wire Wire Line
-	4000 7000 4400 7000
+	3350 7250 3750 7250
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A87953
-P 3900 7500
+P 3250 7750
 AR Path="/608A2359/60A87953" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60A87953" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60A87953" Ref="R316"  Part="1" 
-F 0 "R316" V 3800 7500 50  0000 C CNN
-F 1 "68" V 4000 7500 50  0000 C CNN
-F 2 "" H 3900 7500 50  0001 C CNN
-F 3 "~" H 3900 7500 50  0001 C CNN
-	1    3900 7500
+F 0 "R316" V 3150 7750 50  0000 C CNN
+F 1 "68" V 3350 7750 50  0000 C CNN
+F 2 "" H 3250 7750 50  0001 C CNN
+F 3 "~" H 3250 7750 50  0001 C CNN
+	1    3250 7750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3400 7500 3800 7500
-Wire Wire Line
-	4000 7500 4400 7500
+	3350 7750 3750 7750
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A8795B
-P 3900 8000
+P 3250 8250
 AR Path="/608A2359/60A8795B" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60A8795B" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60A8795B" Ref="R314"  Part="1" 
-F 0 "R314" V 3800 8000 50  0000 C CNN
-F 1 "68" V 4000 8000 50  0000 C CNN
-F 2 "" H 3900 8000 50  0001 C CNN
-F 3 "~" H 3900 8000 50  0001 C CNN
-	1    3900 8000
+F 0 "R314" V 3150 8250 50  0000 C CNN
+F 1 "68" V 3350 8250 50  0000 C CNN
+F 2 "" H 3250 8250 50  0001 C CNN
+F 3 "~" H 3250 8250 50  0001 C CNN
+	1    3250 8250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3400 8000 3800 8000
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A87963
-P 3900 8500
+P 3250 8750
 AR Path="/608A2359/60A87963" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60A87963" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60A87963" Ref="R312"  Part="1" 
-F 0 "R312" V 3800 8500 50  0000 C CNN
-F 1 "68" V 4000 8500 50  0000 C CNN
-F 2 "" H 3900 8500 50  0001 C CNN
-F 3 "~" H 3900 8500 50  0001 C CNN
-	1    3900 8500
+F 0 "R312" V 3150 8750 50  0000 C CNN
+F 1 "68" V 3350 8750 50  0000 C CNN
+F 2 "" H 3250 8750 50  0001 C CNN
+F 3 "~" H 3250 8750 50  0001 C CNN
+	1    3250 8750
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3400 8500 3800 8500
 $Comp
 L Connector_Generic:Conn_01x19 J301
 U 1 1 60A88574
-P 6400 6900
-F 0 "J301" H 6400 7900 50  0000 C CNN
-F 1 "ACSI Port" H 6400 5900 50  0000 C CNN
-F 2 "" H 6400 6900 50  0001 C CNN
-F 3 "~" H 6400 6900 50  0001 C CNN
-	1    6400 6900
+P 5650 7300
+F 0 "J301" H 5650 8300 50  0000 C CNN
+F 1 "DB-19S ACSI Port" H 5650 6300 50  0000 C CNN
+F 2 "" H 5650 7300 50  0001 C CNN
+F 3 "~" H 5650 7300 50  0001 C CNN
+	1    5650 7300
 	1    0    0    -1  
 $EndComp
-Text Label 5900 6100 2    50   ~ 0
+Text Label 5150 6500 2    50   ~ 0
 acsi_2
-Text Label 5900 6200 2    50   ~ 0
+Text Label 5150 6600 2    50   ~ 0
 acsi_3
-Text Label 5900 6400 2    50   ~ 0
+Text Label 5150 6800 2    50   ~ 0
 acsi_5
-Text Label 5900 6500 2    50   ~ 0
+Text Label 5150 6900 2    50   ~ 0
 acsi_6
-Text Label 5900 6600 2    50   ~ 0
+Text Label 5150 7000 2    50   ~ 0
 acsi_7
-Text Label 5900 6700 2    50   ~ 0
+Text Label 5150 7100 2    50   ~ 0
 acsi_8
-Text Label 5900 6800 2    50   ~ 0
-acsi_9_hdcs
-Text Label 5900 7100 2    50   ~ 0
-acsi_12_reset
-Text Label 5900 7300 2    50   ~ 0
-acsi_14_hdack
-Text Label 5900 7500 2    50   ~ 0
-acsi_16_a0
-Text Label 5900 7700 2    50   ~ 0
-acsi_18_rw
-Text Label 5900 6000 2    50   ~ 0
+Text Label 5150 7200 2    50   ~ 0
+acsi_9
+Text Label 5150 7500 2    50   ~ 0
+acsi_12
+Text Label 5150 7700 2    50   ~ 0
+acsi_14
+Text Label 5150 7900 2    50   ~ 0
+acsi_16
+Text Label 5150 8100 2    50   ~ 0
+acsi_18
+Text Label 5150 6400 2    50   ~ 0
 acsi_1
-Text GLabel 5600 7800 0    50   Output ~ 0
+Text GLabel 4850 8200 0    50   Output ~ 0
 ACSI_19_HDRQ
-Text Label 6000 7000 0    50   ~ 0
+Text Label 5250 7400 0    50   ~ 0
 GND
-Text Label 6000 7200 0    50   ~ 0
+Text Label 5250 7600 0    50   ~ 0
 GND
-Text Label 6000 7400 0    50   ~ 0
+Text Label 5250 7800 0    50   ~ 0
 GND
-Text Label 6000 7600 0    50   ~ 0
+Text Label 5250 8000 0    50   ~ 0
 GND
 Wire Wire Line
-	5900 6000 6200 6000
+	5150 6400 5450 6400
 Wire Wire Line
-	5900 6100 6200 6100
+	5150 6500 5450 6500
 Wire Wire Line
-	5900 6200 6200 6200
+	5150 6600 5450 6600
 Wire Wire Line
-	5900 6300 6200 6300
+	5150 6700 5450 6700
 Wire Wire Line
-	5900 6400 6200 6400
+	5150 6800 5450 6800
 Wire Wire Line
-	5900 6500 6200 6500
+	5150 6900 5450 6900
 Wire Wire Line
-	5900 6600 6200 6600
+	5150 7000 5450 7000
 Wire Wire Line
-	5900 6700 6200 6700
+	5150 7100 5450 7100
 Wire Wire Line
-	5900 6800 6200 6800
+	5150 7200 5450 7200
 Wire Wire Line
-	6000 7000 6200 7000
+	5250 7400 5450 7400
 Wire Wire Line
-	5900 7100 6200 7100
+	5150 7500 5450 7500
 Wire Wire Line
-	6000 7200 6200 7200
+	5250 7600 5450 7600
 Wire Wire Line
-	5900 7300 6200 7300
+	5150 7700 5450 7700
 Wire Wire Line
-	6000 7400 6200 7400
+	5250 7800 5450 7800
 Wire Wire Line
-	5900 7500 6200 7500
+	5150 7900 5450 7900
 Wire Wire Line
-	6000 7600 6200 7600
+	5250 8000 5450 8000
 Wire Wire Line
-	5900 7700 6200 7700
+	5150 8100 5450 8100
 Wire Wire Line
-	5600 7800 6200 7800
+	4850 8200 5450 8200
 Text GLabel 6750 1000 2    50   BiDi ~ 0
 CDATA[0..7]
 Wire Bus Line
@@ -449,10 +429,10 @@ Text Label 3150 3800 0    50   ~ 0
 HD6
 Text Label 3150 3900 0    50   ~ 0
 HD7
-Text GLabel 5600 6900 0    50   Output ~ 0
+Text GLabel 4850 7300 0    50   Output ~ 0
 XHDINT
 Wire Wire Line
-	5600 6900 6200 6900
+	4850 7300 5450 7300
 Text GLabel 4850 1800 2    50   Output ~ 0
 BD0SEL
 Text GLabel 2950 1700 0    50   Input ~ 0
@@ -570,65 +550,57 @@ Text Notes 5200 4850 0    50   ~ 0
 From subsheet 106 (Pal subcarrier)
 Text Notes 5500 5250 0    50   ~ 0
 To subsheet 106 \n(generate 32MHz clock for PAL systems)
-Text Label 2900 6000 2    50   ~ 0
+Text Label 3750 6000 2    50   ~ 0
 acsi_1
-Text Label 4400 6000 2    50   ~ 0
+Text Label 3750 6250 2    50   ~ 0
 acsi_2
-Text Label 2900 6500 2    50   ~ 0
+Text Label 3750 6500 2    50   ~ 0
 acsi_3
-Text Label 5900 6300 2    50   ~ 0
+Text Label 5150 6700 2    50   ~ 0
 acsi_4
-Text Label 4400 6500 2    50   ~ 0
+Text Label 3750 6750 2    50   ~ 0
 acsi_4
-Text Label 2900 7000 2    50   ~ 0
+Text Label 3750 7000 2    50   ~ 0
 acsi_5
-Text Label 4400 7000 2    50   ~ 0
+Text Label 3750 7250 2    50   ~ 0
 acsi_6
-Text Label 2900 7500 2    50   ~ 0
+Text Label 3750 7500 2    50   ~ 0
 acsi_7
-Text Label 4400 7500 2    50   ~ 0
+Text Label 3750 7750 2    50   ~ 0
 acsi_8
 Text Label 3200 2400 2    50   ~ 0
 acsi_12_reset
-Text Label 1900 6000 0    50   ~ 0
+Text Label 2250 6000 0    50   ~ 0
 HD0
-Text Label 3400 6000 0    50   ~ 0
+Text Label 2250 6250 0    50   ~ 0
 HD1
-Text Label 1900 6500 0    50   ~ 0
+Text Label 2250 6500 0    50   ~ 0
 HD2
-Text Label 3400 6500 0    50   ~ 0
+Text Label 2250 6750 0    50   ~ 0
 HD3
-Text Label 1900 7000 0    50   ~ 0
+Text Label 2250 7000 0    50   ~ 0
 HD4
-Text Label 3400 7000 0    50   ~ 0
+Text Label 2250 7250 0    50   ~ 0
 HD5
-Text Label 1900 7500 0    50   ~ 0
+Text Label 2250 7500 0    50   ~ 0
 HD6
-Text Label 3400 7500 0    50   ~ 0
+Text Label 2250 7750 0    50   ~ 0
 HD7
-Text Label 2700 8000 0    50   ~ 0
-acsi_9_hdcs
-Text Label 4200 8000 0    50   ~ 0
-acsi_14_hdack
-Text Label 2700 8500 0    50   ~ 0
-acsi_16_a0
-Text Label 4200 8500 0    50   ~ 0
-acsi_18_rw
-Wire Wire Line
-	2500 8000 2700 8000
-Wire Wire Line
-	2500 8500 2700 8500
-Wire Wire Line
-	4000 8000 4200 8000
-Wire Wire Line
-	4000 8500 4200 8500
-Text Label 1900 8000 0    50   ~ 0
+Text Label 3750 8000 2    50   ~ 0
+acsi_9
+Text Label 3750 8250 2    50   ~ 0
+acsi_14
+Text Label 3750 8500 2    50   ~ 0
+acsi_16
+Text Label 3750 8750 2    50   ~ 0
+acsi_18
+Text Label 2250 8000 0    50   ~ 0
 hdcs
-Text Label 3400 8000 0    50   ~ 0
+Text Label 2250 8250 0    50   ~ 0
 hdack
-Text Label 1900 8500 0    50   ~ 0
+Text Label 2250 8500 0    50   ~ 0
 hda0
-Text Label 3400 8500 0    50   ~ 0
+Text Label 2250 8750 0    50   ~ 0
 hdrw
 Text Label 4800 2400 0    50   ~ 0
 hdrw
@@ -692,4 +664,32 @@ Wire Wire Line
 	4600 2400 4800 2400
 Wire Wire Line
 	4600 2500 5000 2500
+Wire Wire Line
+	2850 6000 3750 6000
+Wire Wire Line
+	2250 6250 3150 6250
+Wire Wire Line
+	2850 6500 3750 6500
+Wire Wire Line
+	2250 6750 3150 6750
+Wire Wire Line
+	2850 7000 3750 7000
+Wire Wire Line
+	2250 7250 3150 7250
+Wire Wire Line
+	2850 7500 3750 7500
+Wire Wire Line
+	2250 7750 3150 7750
+Wire Wire Line
+	2850 8000 3750 8000
+Wire Wire Line
+	2250 8250 3150 8250
+Wire Wire Line
+	3350 8250 3750 8250
+Wire Wire Line
+	2850 8500 3750 8500
+Wire Wire Line
+	2250 8750 3150 8750
+Wire Wire Line
+	3350 8750 3750 8750
 $EndSCHEMATC

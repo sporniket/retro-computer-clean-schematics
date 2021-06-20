@@ -119,13 +119,13 @@ Text Label 1250 3700 0    50   ~ 0
 D15
 Text Label 1250 2000 0    50   ~ 0
 A1
-Text GLabel 1200 1900 0    50   Input ~ 0
+Text GLabel 1250 1900 0    50   Input ~ 0
 RXW
-Text GLabel 1200 2100 0    50   Input ~ 0
+Text GLabel 1250 2100 0    50   Input ~ 0
 XFCS
 Text GLabel 3200 2100 2    50   Output ~ 0
 RDY
-Text GLabel 3200 2000 2    50   Input ~ 0
+Text GLabel 3150 2000 2    50   Input ~ 0
 CLK8
 Text GLabel 3200 2200 2    50   Output ~ 0
 DMA_ACK
@@ -133,11 +133,11 @@ Text GLabel 3200 3400 2    50   Output ~ 0
 DMA_RW
 Text GLabel 3200 3500 2    50   Output ~ 0
 DMA_HDCS
-Text GLabel 3200 3600 2    50   Input ~ 0
+Text GLabel 3150 3600 2    50   Input ~ 0
 DMA_HDRQ
 Text GLabel 3200 3700 2    50   Output ~ 0
 DMA_FDCS
-Text GLabel 3200 3800 2    50   Input ~ 0
+Text GLabel 3150 3800 2    50   Input ~ 0
 DMA_FDRQ
 Wire Wire Line
 	1250 2000 1500 2000
@@ -200,12 +200,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 3300 3150 3300
 Wire Wire Line
-	1200 1900 1500 1900
-Wire Wire Line
-	1200 2100 1500 2100
-Wire Wire Line
-	2900 2000 3200 2000
-Wire Wire Line
 	2900 2100 3200 2100
 Wire Wire Line
 	2900 2200 3200 2200
@@ -214,18 +208,14 @@ Wire Wire Line
 Wire Wire Line
 	2900 3500 3200 3500
 Wire Wire Line
-	2900 3600 3200 3600
-Wire Wire Line
 	2900 3700 3200 3700
-Wire Wire Line
-	2900 3800 3200 3800
-Text GLabel 5650 1950 1    50   Input ~ 0
+Text GLabel 5650 2000 1    50   Input ~ 0
 RXW
-Text GLabel 5450 1950 1    50   Input ~ 0
+Text GLabel 5450 2000 1    50   Input ~ 0
 XFCS
 Text Label 5550 2000 3    50   ~ 0
 A1
-Text GLabel 5850 1950 1    50   Input ~ 0
+Text GLabel 5850 2000 1    50   Input ~ 0
 CLK8
 Text GLabel 6050 1950 1    50   Output ~ 0
 RDY
@@ -267,11 +257,11 @@ Text Label 5250 4900 1    50   ~ 0
 D14
 Text Label 5350 4900 1    50   ~ 0
 D15
-Text GLabel 5650 4950 3    50   Input ~ 0
+Text GLabel 5650 4900 3    50   Input ~ 0
 DMA_FDRQ
 Text GLabel 5750 4950 3    50   Output ~ 0
 DMA_FDCS
-Text GLabel 5850 4950 3    50   Input ~ 0
+Text GLabel 5850 4900 3    50   Input ~ 0
 DMA_HDRQ
 Text GLabel 5950 4950 3    50   Output ~ 0
 DMA_HDCS
@@ -358,15 +348,9 @@ Wire Wire Line
 Wire Wire Line
 	5350 2000 5350 2250
 Wire Wire Line
-	5450 1950 5450 2250
-Wire Wire Line
 	5550 2000 5550 2250
 Wire Wire Line
-	5650 1950 5650 2250
-Wire Wire Line
 	5750 2000 5750 2250
-Wire Wire Line
-	5850 1950 5850 2250
 Wire Wire Line
 	5950 2000 5950 2250
 Wire Wire Line
@@ -384,11 +368,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 4650 5550 4900
 Wire Wire Line
-	5650 4650 5650 4950
-Wire Wire Line
 	5750 4650 5750 4950
-Wire Wire Line
-	5850 4650 5850 4950
 Wire Wire Line
 	5950 4650 5950 4950
 Wire Wire Line
@@ -446,4 +426,24 @@ F 3 "~" H 4250 2000 50  0001 C CNN
 $EndComp
 Text GLabel 4500 2000 2    50   Output ~ 0
 RDY
+Wire Wire Line
+	1250 2100 1500 2100
+Wire Wire Line
+	1250 1900 1500 1900
+Wire Wire Line
+	3150 2000 2900 2000
+Wire Wire Line
+	2900 3600 3150 3600
+Wire Wire Line
+	2900 3800 3150 3800
+Wire Wire Line
+	5450 2000 5450 2250
+Wire Wire Line
+	5650 2250 5650 2000
+Wire Wire Line
+	5850 2000 5850 2250
+Wire Wire Line
+	5850 4900 5850 4650
+Wire Wire Line
+	5650 4650 5650 4900
 $EndSCHEMATC

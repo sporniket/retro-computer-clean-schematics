@@ -160,4 +160,6 @@ Text Notes 2750 1850 0    50   ~ 0
 To WD1772 \nand Shifter
 Text Notes 5850 2200 0    50   ~ 0
 To YM2149\nand MFP 68901
+Wire Wire Line
+	3900 2000 4150 2000
 $EndSCHEMATC

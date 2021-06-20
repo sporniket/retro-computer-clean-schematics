@@ -138,29 +138,29 @@ Text Label 2050 4150 0    50   ~ 0
 SND5
 Text Label 2050 4050 0    50   ~ 0
 SND6
-Text GLabel 5000 6100 3    50   Input ~ 0
+Text GLabel 5000 6050 3    50   Input ~ 0
 MC
 Text GLabel 4900 6100 3    50   Output ~ 0
 SHIFTER_16MHZ
 Text GLabel 3300 6100 3    50   Output ~ 0
 SHIFTER_SREQ
-Text GLabel 3200 6100 3    50   Input ~ 0
+Text GLabel 3200 6050 3    50   Input ~ 0
 MCU_SLOAD
-Text GLabel 3000 6100 3    50   Input ~ 0
+Text GLabel 3000 6050 3    50   Input ~ 0
 SCLK
 Text GLabel 3100 6100 3    50   Output ~ 0
 FCLK
-Text GLabel 3400 6100 3    50   Input ~ 0
+Text GLabel 3400 6050 3    50   Input ~ 0
 MCU_DCYC
-Text GLabel 6100 5050 2    50   Input ~ 0
+Text GLabel 6050 5050 2    50   Input ~ 0
 DE
-Text GLabel 6100 4950 2    50   Input ~ 0
+Text GLabel 6050 4950 2    50   Input ~ 0
 MCU_BLANK
-Text GLabel 6100 3250 2    50   Input ~ 0
+Text GLabel 6050 3250 2    50   Input ~ 0
 MCU_WDAT
-Text GLabel 4900 2000 1    50   Input ~ 0
+Text GLabel 4900 2050 1    50   Input ~ 0
 MCU_LATCH
-Text GLabel 4800 2000 1    50   Input ~ 0
+Text GLabel 4800 2050 1    50   Input ~ 0
 MCU_RDAT
 Text GLabel 4800 6100 3    50   Output ~ 0
 SHIFTER_COLOR
@@ -200,9 +200,9 @@ Text GLabel 2000 3750 0    50   Output ~ 0
 XLD
 Text GLabel 2000 3850 0    50   Output ~ 0
 XRD
-Text GLabel 2000 3650 0    50   Input ~ 0
+Text GLabel 2050 3650 0    50   Input ~ 0
 MCU_CMPCS
-Text GLabel 3100 2000 1    50   Input ~ 0
+Text GLabel 3100 2050 1    50   Input ~ 0
 RXW
 Text Label 3000 2050 3    50   ~ 0
 VCC
@@ -221,8 +221,6 @@ Wire Wire Line
 Connection ~ 5900 3050
 Wire Wire Line
 	5900 3050 6100 3050
-Wire Wire Line
-	5800 3250 6100 3250
 Wire Wire Line
 	5800 3350 6050 3350
 Wire Wire Line
@@ -292,12 +290,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 2300 5000 2050
 Wire Wire Line
-	3100 2000 3100 2300
-Wire Wire Line
-	4800 2000 4800 2300
-Wire Wire Line
-	4900 2000 4900 2300
-Wire Wire Line
 	2050 3050 2300 3050
 Wire Wire Line
 	2050 3150 2300 3150
@@ -325,8 +317,6 @@ Wire Wire Line
 	2050 4650 2300 4650
 Wire Wire Line
 	2050 5050 2300 5050
-Wire Wire Line
-	2000 3650 2300 3650
 Wire Wire Line
 	2000 3750 2300 3750
 Wire Wire Line
@@ -364,25 +354,13 @@ Wire Wire Line
 Wire Wire Line
 	4700 6050 4700 5800
 Wire Wire Line
-	3000 5800 3000 6100
-Wire Wire Line
 	3100 5800 3100 6100
 Wire Wire Line
-	3200 5800 3200 6100
-Wire Wire Line
 	3300 5800 3300 6100
-Wire Wire Line
-	3400 5800 3400 6100
 Wire Wire Line
 	4800 5800 4800 6100
 Wire Wire Line
 	4900 5800 4900 6100
-Wire Wire Line
-	5000 5800 5000 6100
-Wire Wire Line
-	5800 4950 6100 4950
-Wire Wire Line
-	5800 5050 6100 5050
 $Comp
 L Device:C C?
 U 1 1 60BA8357
@@ -787,4 +765,26 @@ Wire Wire Line
 	6200 7500 6350 7500
 Text Notes 5050 6250 0    50   ~ 0
 Master Clock\nfrom U405
+Wire Wire Line
+	2050 3650 2300 3650
+Wire Wire Line
+	3000 6050 3000 5800
+Wire Wire Line
+	3200 6050 3200 5800
+Wire Wire Line
+	3400 6050 3400 5800
+Wire Wire Line
+	5000 6050 5000 5800
+Wire Wire Line
+	5800 4950 6050 4950
+Wire Wire Line
+	5800 5050 6050 5050
+Wire Wire Line
+	6050 3250 5800 3250
+Wire Wire Line
+	4800 2050 4800 2300
+Wire Wire Line
+	4900 2300 4900 2050
+Wire Wire Line
+	3100 2050 3100 2300
 $EndSCHEMATC

@@ -59,9 +59,9 @@ F 3 "" H 2800 6150 50  0001 L TNN
 $EndComp
 Text GLabel 1950 6800 0    50   Input ~ 0
 XSINT
-Text Label 2000 6900 0    50   ~ 0
+Text Label 2300 6900 2    50   ~ 0
 not_xsint
-Text Label 3800 6900 0    50   ~ 0
+Text Label 3950 7300 2    50   ~ 0
 GND
 Wire Wire Line
 	3600 6800 3800 6800
@@ -71,9 +71,6 @@ Wire Wire Line
 	3700 6900 3700 7100
 Wire Wire Line
 	3700 7100 3600 7100
-Connection ~ 3700 6900
-Wire Wire Line
-	3700 6900 3800 6900
 Wire Wire Line
 	3700 7100 3700 7300
 Wire Wire Line
@@ -84,8 +81,6 @@ NoConn ~ 3600 7200
 NoConn ~ 3600 7000
 Wire Wire Line
 	1950 6800 2500 6800
-Wire Wire Line
-	2000 6900 2500 6900
 Text Label 3800 5150 0    50   ~ 0
 not_xsint
 Text GLabel 4350 5250 2    50   Input ~ 0
@@ -105,7 +100,7 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 6096E232
-P 4300 8950
+P 4550 8550
 AR Path="/60786F27/6078774E/6096E232" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/6096E232" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/6096E232" Ref="C?"  Part="1" 
@@ -113,25 +108,25 @@ AR Path="/608A2359/6096E232" Ref="C?"  Part="1"
 AR Path="/608C2344/6096E232" Ref="C?"  Part="1" 
 AR Path="/608EA3C9/6096E232" Ref="C?"  Part="1" 
 AR Path="/60964369/6096E232" Ref="C900"  Part="1" 
-F 0 "C900" H 4325 9050 50  0000 L CNN
-F 1 "0.1uF" H 4325 8850 50  0000 L CNN
-F 2 "" H 4338 8800 50  0001 C CNN
-F 3 "~" H 4300 8950 50  0001 C CNN
-	1    4300 8950
+F 0 "C900" H 4575 8650 50  0000 L CNN
+F 1 "0.1uF" H 4575 8450 50  0000 L CNN
+F 2 "" H 4588 8400 50  0001 C CNN
+F 3 "~" H 4550 8550 50  0001 C CNN
+	1    4550 8550
 	1    0    0    -1  
 $EndComp
-Text Label 4300 9300 1    50   ~ 0
+Text Label 4550 8900 1    50   ~ 0
 GND
-Text Label 4300 8600 3    50   ~ 0
+Text Label 4550 8200 3    50   ~ 0
 VCC
 Wire Wire Line
-	4300 8600 4300 8800
+	4550 8200 4550 8400
 Wire Wire Line
-	4300 9100 4300 9300
+	4550 8700 4550 8900
 $Comp
 L Device:C C?
 U 1 1 6096E7F9
-P 4050 7400
+P 4250 7100
 AR Path="/60786F27/6078774E/6096E7F9" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/6096E7F9" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/6096E7F9" Ref="C?"  Part="1" 
@@ -139,25 +134,25 @@ AR Path="/608A2359/6096E7F9" Ref="C?"  Part="1"
 AR Path="/608C2344/6096E7F9" Ref="C?"  Part="1" 
 AR Path="/608EA3C9/6096E7F9" Ref="C?"  Part="1" 
 AR Path="/60964369/6096E7F9" Ref="C230"  Part="1" 
-F 0 "C230" H 4075 7500 50  0000 L CNN
-F 1 "0.1uF" H 4075 7300 50  0000 L CNN
-F 2 "" H 4088 7250 50  0001 C CNN
-F 3 "~" H 4050 7400 50  0001 C CNN
-	1    4050 7400
+F 0 "C230" H 4275 7200 50  0000 L CNN
+F 1 "0.1uF" H 4275 7000 50  0000 L CNN
+F 2 "" H 4288 6950 50  0001 C CNN
+F 3 "~" H 4250 7100 50  0001 C CNN
+	1    4250 7100
 	1    0    0    -1  
 $EndComp
-Text Label 4050 7750 1    50   ~ 0
+Text Label 4250 7450 1    50   ~ 0
 GND
-Text Label 4050 7050 3    50   ~ 0
+Text Label 4250 6750 3    50   ~ 0
 VCC
 Wire Wire Line
-	4050 7050 4050 7250
+	4250 6750 4250 6950
 Wire Wire Line
-	4050 7550 4050 7750
+	4250 7250 4250 7450
 $Comp
 L Device:C C?
 U 1 1 6096F090
-P 4050 5950
+P 5250 5300
 AR Path="/60786F27/6078774E/6096F090" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/6096F090" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/6096F090" Ref="C?"  Part="1" 
@@ -165,33 +160,31 @@ AR Path="/608A2359/6096F090" Ref="C?"  Part="1"
 AR Path="/608C2344/6096F090" Ref="C?"  Part="1" 
 AR Path="/608EA3C9/6096F090" Ref="C?"  Part="1" 
 AR Path="/60964369/6096F090" Ref="C229"  Part="1" 
-F 0 "C229" H 4075 6050 50  0000 L CNN
-F 1 "0.1uF" H 4075 5850 50  0000 L CNN
-F 2 "" H 4088 5800 50  0001 C CNN
-F 3 "~" H 4050 5950 50  0001 C CNN
-	1    4050 5950
+F 0 "C229" H 5275 5400 50  0000 L CNN
+F 1 "0.1uF" H 5275 5200 50  0000 L CNN
+F 2 "" H 5288 5150 50  0001 C CNN
+F 3 "~" H 5250 5300 50  0001 C CNN
+	1    5250 5300
 	1    0    0    -1  
 $EndComp
-Text Label 4050 6300 1    50   ~ 0
+Text Label 5250 5650 1    50   ~ 0
 GND
-Text Label 4050 5600 3    50   ~ 0
+Text Label 5250 4950 3    50   ~ 0
 VCC
 Wire Wire Line
-	4050 5600 4050 5800
+	5250 4950 5250 5150
 Wire Wire Line
-	4050 6100 4050 6300
+	5250 5450 5250 5650
 NoConn ~ 2500 5550
 NoConn ~ 3600 5650
-Text Label 3800 5450 0    50   ~ 0
+Text Label 3950 5550 2    50   ~ 0
 GND
-Text Label 2300 5650 2    50   ~ 0
+Text Label 2150 5650 0    50   ~ 0
 GND
 Wire Wire Line
 	2400 5350 2500 5350
 Wire Wire Line
 	2400 5450 2500 5450
-Wire Wire Line
-	2300 5650 2400 5650
 Wire Wire Line
 	2400 5350 2400 5450
 Connection ~ 2400 5650
@@ -206,9 +199,6 @@ Wire Wire Line
 	3600 5550 3700 5550
 Wire Wire Line
 	3700 5550 3700 5450
-Connection ~ 3700 5450
-Wire Wire Line
-	3700 5450 3800 5450
 Text GLabel 2300 5050 0    50   Input ~ 0
 HSYNC
 Text GLabel 2300 5150 0    50   Input ~ 0
@@ -221,12 +211,10 @@ Text Label 1950 5250 2    50   ~ 0
 hsync_xor_vsync
 Wire Wire Line
 	1950 5250 2500 5250
-Text Label 2300 7200 2    50   ~ 0
+Text Label 1850 7200 0    50   ~ 0
 hsync_xor_vsync
 Text GLabel 2300 7300 0    50   Output ~ 0
 NOT__HSYNC_XOR_VSYNC
-Wire Wire Line
-	2300 7200 2500 7200
 Wire Wire Line
 	2300 7300 2500 7300
 Text Label 2350 7400 0    50   ~ 0
@@ -451,12 +439,10 @@ Wire Bus Line
 	5250 1000 5500 1000
 Text Label 5250 1000 2    50   ~ 0
 SND[0..7]
-Text GLabel 2300 7000 0    50   Input ~ 0
+Text GLabel 2100 7000 0    50   Input ~ 0
 SHIFTER_SD7
-Text Label 2300 7100 0    50   ~ 0
+Text Label 2300 7100 2    50   ~ 0
 SND7
-Wire Wire Line
-	2300 7000 2500 7000
 Wire Wire Line
 	2300 7100 2500 7100
 Wire Wire Line
@@ -621,4 +607,18 @@ Wire Wire Line
 	6750 1750 7000 1750
 Wire Wire Line
 	5500 1750 5750 1750
+Wire Wire Line
+	3700 7300 3950 7300
+Connection ~ 3700 7300
+Wire Wire Line
+	1850 7200 2500 7200
+Wire Wire Line
+	2300 6900 2500 6900
+Wire Wire Line
+	2100 7000 2500 7000
+Wire Wire Line
+	2150 5650 2400 5650
+Wire Wire Line
+	3950 5550 3700 5550
+Connection ~ 3700 5550
 $EndSCHEMATC

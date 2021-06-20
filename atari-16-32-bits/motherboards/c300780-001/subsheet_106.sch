@@ -285,7 +285,7 @@ Connection ~ 2500 5000
 Text Notes 1850 4000 0    200  ~ 0
 Installed ONLY in PAL systems
 Text Notes 1050 4450 0    100  ~ 0
-Generation of subcarrier clock ?? (CCLK)
+Generation of Pal sub-Carrier CLocK (CCLK)
 Wire Wire Line
 	6300 4750 6700 4750
 Wire Wire Line

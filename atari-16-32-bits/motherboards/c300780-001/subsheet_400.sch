@@ -456,42 +456,26 @@ Wire Wire Line
 Wire Wire Line
 	1250 5800 1450 5800
 Connection ~ 1450 5800
-Text GLabel 1200 5200 0    50   Input ~ 0
+Text GLabel 1250 5200 0    50   Input ~ 0
 XVMA
 Text GLabel 1200 5300 0    50   Output ~ 0
 XVPA
 Text GLabel 1200 5700 0    50   Output ~ 0
 XBR
-Text GLabel 1200 5600 0    50   Input ~ 0
+Text GLabel 1250 5600 0    50   Input ~ 0
 XBLTBG
 Text GLabel 1200 5400 0    50   Output ~ 0
 XBGK
 NoConn ~ 1550 5500
-Wire Wire Line
-	1200 5200 1550 5200
 Wire Wire Line
 	1200 5300 1550 5300
 Wire Wire Line
 	1200 5400 1550 5400
 Wire Wire Line
 	1200 5700 1550 5700
-Wire Wire Line
-	1200 5600 1550 5600
-Text GLabel 1250 3000 0    50   Input ~ 0
+Text GLabel 1300 3000 0    50   Input ~ 0
 SHIFTER_16MHZ
-Text GLabel 1250 3100 0    50   Output ~ 0
-CLK8
-Text GLabel 1250 3200 0    50   Output ~ 0
-CLK4
 NoConn ~ 1550 3300
-Wire Wire Line
-	1250 3000 1550 3000
-Wire Wire Line
-	1250 3100 1550 3100
-Wire Wire Line
-	1250 3200 1550 3200
-Text GLabel 1250 3400 0    50   Output ~ 0
-KHZ500
 Wire Wire Line
 	1250 3400 1550 3400
 Text GLabel 1250 3700 0    50   Output ~ 0
@@ -510,16 +494,12 @@ NoConn ~ 1550 3500
 NoConn ~ 1550 3600
 NoConn ~ 1550 4000
 NoConn ~ 1550 4100
-Text GLabel 1250 4300 0    50   Input ~ 0
+Text GLabel 1300 4300 0    50   Input ~ 0
 XHDINT
-Text GLabel 1250 4400 0    50   Input ~ 0
+Text GLabel 1300 4400 0    50   Input ~ 0
 FDINT
 Text GLabel 1250 4500 0    50   Output ~ 0
 XDISKINT
-Wire Wire Line
-	1250 4300 1550 4300
-Wire Wire Line
-	1250 4400 1550 4400
 Wire Wire Line
 	1250 4500 1550 4500
 Text GLabel 1250 4600 0    50   Output ~ 0
@@ -537,32 +517,20 @@ Wire Wire Line
 	1250 4600 1550 4600
 Wire Wire Line
 	1250 4700 1550 4700
-Text GLabel 4650 7450 3    50   Input ~ 0
+Text GLabel 4650 7400 3    50   Input ~ 0
 XBLTINT
-Wire Wire Line
-	4650 7150 4650 7450
-Text GLabel 5250 7450 3    50   Input ~ 0
+Text GLabel 5250 7400 3    50   Input ~ 0
 XRESET
-Text GLabel 5350 7450 3    50   Input ~ 0
+Text GLabel 5350 7400 3    50   Input ~ 0
 XAS
-Text GLabel 5450 7450 3    50   Input ~ 0
+Text GLabel 5450 7400 3    50   Input ~ 0
 XUDS
-Text GLabel 5550 7450 3    50   Input ~ 0
+Text GLabel 5550 7400 3    50   Input ~ 0
 XLDS
-Text GLabel 5650 7450 3    50   Input ~ 0
+Text GLabel 5650 7400 3    50   Input ~ 0
 RXW
 Text GLabel 5750 7450 3    50   Output ~ 0
 XDTACK
-Wire Wire Line
-	5250 7150 5250 7450
-Wire Wire Line
-	5350 7150 5350 7450
-Wire Wire Line
-	5450 7150 5450 7450
-Wire Wire Line
-	5550 7150 5550 7450
-Wire Wire Line
-	5650 7150 5650 7450
 Wire Wire Line
 	5750 7150 5750 7450
 Text GLabel 7050 5400 2    50   Output ~ 0
@@ -663,17 +631,17 @@ Text GLabel 7050 3700 2    50   Output ~ 0
 XJOYRL
 Text GLabel 7050 3800 2    50   Output ~ 0
 XJOYRH
-Text GLabel 7050 3900 2    50   Input ~ 0
+Text GLabel 7000 3900 2    50   Input ~ 0
 XPADRST
-Text GLabel 7050 4000 2    50   Input ~ 0
+Text GLabel 7000 4000 2    50   Input ~ 0
 XPAD1Y
-Text GLabel 7050 4100 2    50   Input ~ 0
+Text GLabel 7000 4100 2    50   Input ~ 0
 XPAD1X
-Text GLabel 7050 4200 2    50   Input ~ 0
+Text GLabel 7000 4200 2    50   Input ~ 0
 XPAD0Y
-Text GLabel 7050 4300 2    50   Input ~ 0
+Text GLabel 7000 4300 2    50   Input ~ 0
 XPAD0X
-Text GLabel 7050 4400 2    50   Input ~ 0
+Text GLabel 7000 4400 2    50   Input ~ 0
 XMFPINT
 Text GLabel 7050 4500 2    50   Output ~ 0
 XMFPCS
@@ -681,10 +649,8 @@ Text GLabel 7050 3200 2    50   Output ~ 0
 XSINT
 Text GLabel 7050 3100 2    50   Output ~ 0
 MCU_SLOAD
-Text GLabel 7050 3000 2    50   Input ~ 0
+Text GLabel 7000 3000 2    50   Input ~ 0
 SHIFTER_SREQ
-Wire Wire Line
-	6750 3000 7050 3000
 Wire Wire Line
 	6750 3100 7050 3100
 Wire Wire Line
@@ -700,34 +666,18 @@ Wire Wire Line
 Wire Wire Line
 	6750 3800 7050 3800
 Wire Wire Line
-	6750 3900 7050 3900
-Wire Wire Line
-	6750 4000 7050 4000
-Wire Wire Line
-	6750 4100 7050 4100
-Wire Wire Line
-	6750 4200 7050 4200
-Wire Wire Line
-	6750 4300 7050 4300
-Wire Wire Line
-	6750 4400 7050 4400
-Wire Wire Line
 	6750 4500 7050 4500
-Text GLabel 3050 1850 1    50   Input ~ 0
+Text GLabel 3050 1900 1    50   Input ~ 0
 XPEN
 Text GLabel 3150 1850 1    50   Output ~ 0
 XFCS
-Text GLabel 3250 1850 1    50   Input ~ 0
+Text GLabel 3250 1900 1    50   Input ~ 0
 RDY
 NoConn ~ 3350 2150
 NoConn ~ 3450 2150
 NoConn ~ 3550 2150
 Wire Wire Line
-	3050 1850 3050 2150
-Wire Wire Line
 	3150 2150 3150 1850
-Wire Wire Line
-	3250 1850 3250 2150
 $Comp
 L Device:R_Small_US R?
 U 1 1 60BAF51B
@@ -1160,4 +1110,54 @@ Text GLabel 6600 7500 0    50   Input ~ 0
 XHDINT
 Text Label 7250 7500 2    50   ~ 0
 VCC
+Wire Wire Line
+	1250 3200 1550 3200
+Wire Wire Line
+	1250 3100 1550 3100
+Text GLabel 1250 3400 0    50   Output ~ 0
+KHZ500
+Text GLabel 1250 3200 0    50   Output ~ 0
+CLK4
+Text GLabel 1250 3100 0    50   Output ~ 0
+CLK8
+Wire Wire Line
+	1300 3000 1550 3000
+Wire Wire Line
+	1300 4300 1550 4300
+Wire Wire Line
+	1300 4400 1550 4400
+Wire Wire Line
+	1250 5200 1550 5200
+Wire Wire Line
+	1550 5600 1250 5600
+Wire Wire Line
+	4650 7400 4650 7150
+Wire Wire Line
+	5250 7400 5250 7150
+Wire Wire Line
+	5350 7400 5350 7150
+Wire Wire Line
+	5450 7400 5450 7150
+Wire Wire Line
+	5550 7400 5550 7150
+Wire Wire Line
+	5650 7400 5650 7150
+Wire Wire Line
+	6750 3900 7000 3900
+Wire Wire Line
+	6750 4000 7000 4000
+Wire Wire Line
+	6750 4100 7000 4100
+Wire Wire Line
+	6750 4200 7000 4200
+Wire Wire Line
+	6750 4300 7000 4300
+Wire Wire Line
+	6750 4400 7000 4400
+Wire Wire Line
+	6750 3000 7000 3000
+Wire Wire Line
+	3250 1900 3250 2150
+Wire Wire Line
+	3050 1900 3050 2150
 $EndSCHEMATC

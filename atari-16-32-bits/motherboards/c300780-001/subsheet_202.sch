@@ -13,441 +13,429 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 1500 2100 0    50   ~ 0
+Text Label 3300 2100 0    50   ~ 0
 GND
-Text Label 3400 2100 2    50   ~ 0
+Text Label 5200 2100 2    50   ~ 0
 VCC
-Text Label 3400 3600 2    50   ~ 0
+Text Label 5200 3600 2    50   ~ 0
 VCC
-Text Label 3400 3300 2    50   ~ 0
+Text Label 5200 3300 2    50   ~ 0
 VCC
-Text Label 3400 3700 2    50   ~ 0
+Text Label 5200 3700 2    50   ~ 0
 GND
-Text GLabel 3450 3900 2    50   Input ~ 0
+Text GLabel 5250 3900 2    50   Input ~ 0
 CLK2
-Text GLabel 3450 3800 2    50   Input ~ 0
+Text GLabel 5250 3800 2    50   Input ~ 0
 XRESET
-Text GLabel 3450 3400 2    50   Input ~ 0
+Text GLabel 5250 3400 2    50   Input ~ 0
 SNDIR
-Text GLabel 3450 3200 2    50   Input ~ 0
+Text GLabel 5250 3200 2    50   Input ~ 0
 SNDCS
-Text GLabel 1450 2300 0    50   Output ~ 0
+Text GLabel 2600 2300 0    50   Output ~ 0
 AUDIOS
-Text GLabel 3450 2300 2    50   Output ~ 0
+Text GLabel 5250 2300 2    50   Output ~ 0
 AUDIOS
 $Comp
 L ym2149:YM2149_PHY U202
 U 1 1 608ED38D
-P 2450 3050
-F 0 "U202" H 2000 4300 50  0000 L TNN
-F 1 "YM2149_PHY" H 2000 4200 50  0000 L TNB
-F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 2000 4400 50  0001 L TNN
-F 3 "" H 2000 4500 50  0001 L TNN
-	1    2450 3050
+P 4250 3050
+F 0 "U202" H 3800 4300 50  0000 L TNN
+F 1 "YM2149_PHY" H 3800 4200 50  0000 L TNB
+F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 3800 4400 50  0001 L TNN
+F 3 "" H 3800 4500 50  0001 L TNN
+	1    4250 3050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1700 2200
-NoConn ~ 1700 2500
-NoConn ~ 3200 2200
-NoConn ~ 1700 3400
-NoConn ~ 1700 3500
-Text GLabel 1450 3700 0    50   Output ~ 0
+NoConn ~ 3500 2200
+NoConn ~ 3500 2500
+NoConn ~ 5000 2200
+NoConn ~ 3500 3400
+NoConn ~ 3500 3500
+Text GLabel 3250 3700 0    50   Output ~ 0
 SERIAL_DIR
-Text GLabel 1450 3800 0    50   Output ~ 0
+Text GLabel 3250 3800 0    50   Output ~ 0
 SERIAL_RTS
-Text Label 3400 2400 2    50   ~ 0
+Text Label 5200 2400 2    50   ~ 0
 D8
-Text Label 3400 2500 2    50   ~ 0
+Text Label 5200 2500 2    50   ~ 0
 D9
-Text Label 3400 2600 2    50   ~ 0
+Text Label 5200 2600 2    50   ~ 0
 D10
-Text Label 3400 2700 2    50   ~ 0
+Text Label 5200 2700 2    50   ~ 0
 D11
-Text Label 3400 2800 2    50   ~ 0
+Text Label 5200 2800 2    50   ~ 0
 D12
-Text Label 3400 2900 2    50   ~ 0
+Text Label 5200 2900 2    50   ~ 0
 D13
-Text Label 3400 3000 2    50   ~ 0
+Text Label 5200 3000 2    50   ~ 0
 D14
-Text Label 3400 3100 2    50   ~ 0
+Text Label 5200 3100 2    50   ~ 0
 D15
-Text GLabel 1450 3900 0    50   Output ~ 0
+Text GLabel 3250 3900 0    50   Output ~ 0
 D1SEL
-Text GLabel 1450 4000 0    50   Output ~ 0
+Text GLabel 3250 4000 0    50   Output ~ 0
 D0SEL
-Text GLabel 3450 4000 2    50   Output ~ 0
+Text GLabel 5250 4000 2    50   Output ~ 0
 S0SEL
-NoConn ~ 3200 3500
+NoConn ~ 5000 3500
 Wire Wire Line
-	1500 2100 1700 2100
+	3300 2100 3500 2100
 Wire Wire Line
-	1450 2300 1600 2300
+	3500 2400 3400 2400
 Wire Wire Line
-	1700 2400 1600 2400
+	3400 2400 3400 2300
+Connection ~ 3400 2300
 Wire Wire Line
-	1600 2400 1600 2300
-Connection ~ 1600 2300
+	3400 2300 3500 2300
 Wire Wire Line
-	1600 2300 1700 2300
+	3250 3700 3500 3700
 Wire Wire Line
-	1450 3700 1700 3700
+	3250 3800 3500 3800
 Wire Wire Line
-	1450 3800 1700 3800
+	3250 3900 3500 3900
 Wire Wire Line
-	1450 3900 1700 3900
+	3250 4000 3500 4000
 Wire Wire Line
-	1450 4000 1700 4000
+	5000 2100 5200 2100
 Wire Wire Line
-	3200 2100 3400 2100
+	5000 2300 5250 2300
 Wire Wire Line
-	3200 2300 3450 2300
+	5000 2400 5200 2400
 Wire Wire Line
-	3200 2400 3400 2400
+	5000 2500 5200 2500
 Wire Wire Line
-	3200 2500 3400 2500
+	5000 2600 5200 2600
 Wire Wire Line
-	3200 2600 3400 2600
+	5000 2700 5200 2700
 Wire Wire Line
-	3200 2700 3400 2700
+	5000 2800 5200 2800
 Wire Wire Line
-	3200 2800 3400 2800
+	5000 2900 5200 2900
 Wire Wire Line
-	3200 2900 3400 2900
+	5000 3000 5200 3000
 Wire Wire Line
-	3200 3000 3400 3000
+	5000 3100 5200 3100
 Wire Wire Line
-	3200 3100 3400 3100
+	5000 3200 5250 3200
 Wire Wire Line
-	3200 3200 3450 3200
+	5000 3300 5200 3300
 Wire Wire Line
-	3200 3300 3400 3300
+	5000 3400 5250 3400
 Wire Wire Line
-	3200 3400 3450 3400
+	5000 3600 5200 3600
 Wire Wire Line
-	3200 3600 3400 3600
+	5000 3700 5200 3700
 Wire Wire Line
-	3200 3700 3400 3700
+	5000 3800 5250 3800
 Wire Wire Line
-	3200 3800 3450 3800
+	5000 3900 5250 3900
 Wire Wire Line
-	3200 3900 3450 3900
-Wire Wire Line
-	3200 4000 3450 4000
-Text Label 1450 3600 0    50   ~ 0
+	5000 4000 5250 4000
+Text Label 3250 3600 0    50   ~ 0
 strobe
-Text Label 1450 3300 0    50   ~ 0
+Text Label 3250 3300 0    50   ~ 0
 pd0
-Text Label 1450 3200 0    50   ~ 0
+Text Label 3250 3200 0    50   ~ 0
 pd1
-Text Label 1450 3100 0    50   ~ 0
+Text Label 3250 3100 0    50   ~ 0
 pd2
-Text Label 1450 3000 0    50   ~ 0
+Text Label 3250 3000 0    50   ~ 0
 pd3
-Text Label 1450 2900 0    50   ~ 0
+Text Label 3250 2900 0    50   ~ 0
 pd4
-Text Label 1450 2800 0    50   ~ 0
+Text Label 3250 2800 0    50   ~ 0
 pd5
-Text Label 1450 2700 0    50   ~ 0
+Text Label 3250 2700 0    50   ~ 0
 pd6
-Text Label 1450 2600 0    50   ~ 0
+Text Label 3250 2600 0    50   ~ 0
 pd7
 Wire Wire Line
-	1450 2600 1700 2600
+	3250 2600 3500 2600
 Wire Wire Line
-	1450 2700 1700 2700
+	3250 2700 3500 2700
 Wire Wire Line
-	1450 2800 1700 2800
+	3250 2800 3500 2800
 Wire Wire Line
-	1450 2900 1700 2900
+	3250 2900 3500 2900
 Wire Wire Line
-	1450 3000 1700 3000
+	3250 3000 3500 3000
 Wire Wire Line
-	1450 3100 1700 3100
+	3250 3100 3500 3100
 Wire Wire Line
-	1450 3200 1700 3200
+	3250 3200 3500 3200
 Wire Wire Line
-	1450 3300 1700 3300
+	3250 3300 3500 3300
 Wire Wire Line
-	1450 3600 1700 3600
+	3250 3600 3500 3600
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 608FDAAE
-P 5250 2100
+P 3250 5350
 AR Path="/608A2359/608FDAAE" Ref="L?"  Part="1" 
 AR Path="/608C2344/608FDAAE" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/608FDAAE" Ref="L209"  Part="1" 
-F 0 "L209" H 5250 2375 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 5250 2300 50  0000 C CNN
-F 2 "" V 5250 2100 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5250 2100 50  0001 C CNN
-	1    5250 2100
+F 0 "L209" H 3250 5625 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 3250 5550 50  0000 C CNN
+F 2 "" V 3250 5350 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3250 5350 50  0001 C CNN
+	1    3250 5350
 	1    0    0    -1  
 $EndComp
-Text Label 5250 2200 0    50   ~ 0
+Text Label 3250 5450 0    50   ~ 0
 GND
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 608FED1E
-P 5250 2600
+P 4000 5600
 AR Path="/608A2359/608FED1E" Ref="L?"  Part="1" 
 AR Path="/608C2344/608FED1E" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/608FED1E" Ref="L210"  Part="1" 
-F 0 "L210" H 5250 2875 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 5250 2800 50  0000 C CNN
-F 2 "" V 5250 2600 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5250 2600 50  0001 C CNN
-	1    5250 2600
+F 0 "L210" H 4000 5875 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 4000 5800 50  0000 C CNN
+F 2 "" V 4000 5600 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4000 5600 50  0001 C CNN
+	1    4000 5600
 	1    0    0    -1  
 $EndComp
-Text Label 5250 2700 0    50   ~ 0
+Text Label 4000 5700 0    50   ~ 0
 GND
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 6090062F
-P 5250 3100
+P 3250 5850
 AR Path="/608A2359/6090062F" Ref="L?"  Part="1" 
 AR Path="/608C2344/6090062F" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/6090062F" Ref="L211"  Part="1" 
-F 0 "L211" H 5250 3375 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 5250 3300 50  0000 C CNN
-F 2 "" V 5250 3100 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5250 3100 50  0001 C CNN
-	1    5250 3100
+F 0 "L211" H 3250 6125 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 3250 6050 50  0000 C CNN
+F 2 "" V 3250 5850 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3250 5850 50  0001 C CNN
+	1    3250 5850
 	1    0    0    -1  
 $EndComp
-Text Label 5250 3200 0    50   ~ 0
+Text Label 3250 5950 0    50   ~ 0
 GND
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 609017E2
-P 5250 3600
+P 4000 6100
 AR Path="/608A2359/609017E2" Ref="L?"  Part="1" 
 AR Path="/608C2344/609017E2" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/609017E2" Ref="L212"  Part="1" 
-F 0 "L212" H 5250 3875 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 5250 3800 50  0000 C CNN
-F 2 "" V 5250 3600 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5250 3600 50  0001 C CNN
-	1    5250 3600
+F 0 "L212" H 4000 6375 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 4000 6300 50  0000 C CNN
+F 2 "" V 4000 6100 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4000 6100 50  0001 C CNN
+	1    4000 6100
 	1    0    0    -1  
 $EndComp
-Text Label 5250 3700 0    50   ~ 0
+Text Label 4000 6200 0    50   ~ 0
 GND
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 60902C06
-P 5250 4100
+P 3250 6350
 AR Path="/608A2359/60902C06" Ref="L?"  Part="1" 
 AR Path="/608C2344/60902C06" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/60902C06" Ref="L213"  Part="1" 
-F 0 "L213" H 5250 4375 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 5250 4300 50  0000 C CNN
-F 2 "" V 5250 4100 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5250 4100 50  0001 C CNN
-	1    5250 4100
+F 0 "L213" H 3250 6625 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 3250 6550 50  0000 C CNN
+F 2 "" V 3250 6350 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3250 6350 50  0001 C CNN
+	1    3250 6350
 	1    0    0    -1  
 $EndComp
-Text Label 5250 4200 0    50   ~ 0
+Text Label 3250 6450 0    50   ~ 0
 GND
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 6090599F
-P 5250 4600
+P 4000 6600
 AR Path="/608A2359/6090599F" Ref="L?"  Part="1" 
 AR Path="/608C2344/6090599F" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/6090599F" Ref="L214"  Part="1" 
-F 0 "L214" H 5250 4875 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 5250 4800 50  0000 C CNN
-F 2 "" V 5250 4600 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5250 4600 50  0001 C CNN
-	1    5250 4600
+F 0 "L214" H 4000 6875 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 4000 6800 50  0000 C CNN
+F 2 "" V 4000 6600 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4000 6600 50  0001 C CNN
+	1    4000 6600
 	1    0    0    -1  
 $EndComp
-Text Label 5250 4700 0    50   ~ 0
+Text Label 4000 6700 0    50   ~ 0
 GND
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 609070B4
-P 5250 5100
+P 3250 6850
 AR Path="/608A2359/609070B4" Ref="L?"  Part="1" 
 AR Path="/608C2344/609070B4" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/609070B4" Ref="L215"  Part="1" 
-F 0 "L215" H 5250 5375 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 5250 5300 50  0000 C CNN
-F 2 "" V 5250 5100 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5250 5100 50  0001 C CNN
-	1    5250 5100
+F 0 "L215" H 3250 7125 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 3250 7050 50  0000 C CNN
+F 2 "" V 3250 6850 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3250 6850 50  0001 C CNN
+	1    3250 6850
 	1    0    0    -1  
 $EndComp
-Text Label 5250 5200 0    50   ~ 0
+Text Label 3250 6950 0    50   ~ 0
 GND
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 60908A5C
-P 5250 5600
+P 4000 7100
 AR Path="/608A2359/60908A5C" Ref="L?"  Part="1" 
 AR Path="/608C2344/60908A5C" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/60908A5C" Ref="L216"  Part="1" 
-F 0 "L216" H 5250 5875 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 5250 5800 50  0000 C CNN
-F 2 "" V 5250 5600 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5250 5600 50  0001 C CNN
-	1    5250 5600
+F 0 "L216" H 4000 7375 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 4000 7300 50  0000 C CNN
+F 2 "" V 4000 7100 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4000 7100 50  0001 C CNN
+	1    4000 7100
 	1    0    0    -1  
 $EndComp
-Text Label 5250 5700 0    50   ~ 0
+Text Label 4000 7200 0    50   ~ 0
 GND
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 6090A5B8
-P 5250 6100
+P 3250 7350
 AR Path="/608A2359/6090A5B8" Ref="L?"  Part="1" 
 AR Path="/608C2344/6090A5B8" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/6090A5B8" Ref="L217"  Part="1" 
-F 0 "L217" H 5250 6375 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 5250 6300 50  0000 C CNN
-F 2 "" V 5250 6100 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5250 6100 50  0001 C CNN
-	1    5250 6100
+F 0 "L217" H 3250 7625 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 3250 7550 50  0000 C CNN
+F 2 "" V 3250 7350 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3250 7350 50  0001 C CNN
+	1    3250 7350
 	1    0    0    -1  
 $EndComp
-Text Label 5250 6200 0    50   ~ 0
+Text Label 3250 7450 0    50   ~ 0
 GND
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 6090C5EF
-P 5250 6600
+P 4000 7600
 AR Path="/608A2359/6090C5EF" Ref="L?"  Part="1" 
 AR Path="/608C2344/6090C5EF" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/6090C5EF" Ref="L218"  Part="1" 
-F 0 "L218" H 5250 6875 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 5250 6800 50  0000 C CNN
-F 2 "" V 5250 6600 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5250 6600 50  0001 C CNN
-	1    5250 6600
+F 0 "L218" H 4000 7875 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 4000 7800 50  0000 C CNN
+F 2 "" V 4000 7600 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4000 7600 50  0001 C CNN
+	1    4000 7600
 	1    0    0    -1  
 $EndComp
-Text Label 5250 6700 0    50   ~ 0
+Text Label 4000 7700 0    50   ~ 0
 GND
-Text Label 4700 2000 0    50   ~ 0
+Text Label 2700 5250 0    50   ~ 0
 strobe
-Text Label 4700 2500 0    50   ~ 0
+Text Label 2700 5500 0    50   ~ 0
 pd0
-Text Label 4700 3000 0    50   ~ 0
+Text Label 2700 5750 0    50   ~ 0
 pd1
-Text Label 4700 3500 0    50   ~ 0
+Text Label 2700 6000 0    50   ~ 0
 pd2
-Text Label 4700 4000 0    50   ~ 0
+Text Label 2700 6250 0    50   ~ 0
 pd3
-Text Label 4700 4500 0    50   ~ 0
+Text Label 2700 6500 0    50   ~ 0
 pd4
-Text Label 4700 5000 0    50   ~ 0
+Text Label 2700 6750 0    50   ~ 0
 pd5
-Text Label 4700 5500 0    50   ~ 0
+Text Label 2700 7000 0    50   ~ 0
 pd6
-Text Label 4700 6000 0    50   ~ 0
+Text Label 2700 7250 0    50   ~ 0
 pd7
-Text GLabel 4850 6500 0    50   Input ~ 0
+Text GLabel 2050 7500 0    50   Output ~ 0
 PARALLEL_BUSY
 Wire Wire Line
-	4700 2000 4950 2000
+	2700 5250 2950 5250
 Wire Wire Line
-	4700 2500 4950 2500
+	2700 5750 2950 5750
 Wire Wire Line
-	4700 3000 4950 3000
+	2700 6250 2950 6250
 Wire Wire Line
-	4700 3500 4950 3500
+	2700 6750 2950 6750
 Wire Wire Line
-	4700 4000 4950 4000
-Wire Wire Line
-	4700 4500 4950 4500
-Wire Wire Line
-	4700 5000 4950 5000
-Wire Wire Line
-	4700 5500 4950 5500
-Wire Wire Line
-	4700 6000 4950 6000
-Wire Wire Line
-	4850 6500 4950 6500
+	2700 7250 2950 7250
 $Comp
 L Connector_Generic:Conn_01x25 J203
 U 1 1 60964926
-P 6950 3200
-F 0 "J203" H 6950 4500 50  0000 C CNN
-F 1 "DB25 Parallel port" H 6950 1900 50  0000 C CNN
-F 2 "" H 6950 3200 50  0001 C CNN
-F 3 "~" H 6950 3200 50  0001 C CNN
-	1    6950 3200
+P 5950 6300
+F 0 "J203" H 5950 7600 50  0000 C CNN
+F 1 "DB-25S Parallel port" H 5950 5000 50  0000 C CNN
+F 2 "" H 5950 6300 50  0001 C CNN
+F 3 "~" H 5950 6300 50  0001 C CNN
+	1    5950 6300
 	1    0    0    -1  
 $EndComp
-Text Label 5700 2000 0    50   ~ 0
+Text Label 4450 5250 0    50   ~ 0
 parallel1
-Text Label 5700 2500 0    50   ~ 0
+Text Label 4450 5500 0    50   ~ 0
 parallel2
-Text Label 5700 3000 0    50   ~ 0
+Text Label 4450 5750 0    50   ~ 0
 parallel3
-Text Label 5700 3500 0    50   ~ 0
+Text Label 4450 6000 0    50   ~ 0
 parallel4
-Text Label 5700 4000 0    50   ~ 0
+Text Label 4450 6250 0    50   ~ 0
 parallel5
-Text Label 5700 4500 0    50   ~ 0
+Text Label 4450 6500 0    50   ~ 0
 parallel6
-Text Label 5700 5000 0    50   ~ 0
+Text Label 4450 6750 0    50   ~ 0
 parallel7
-Text Label 5700 5500 0    50   ~ 0
+Text Label 4450 7000 0    50   ~ 0
 parallel8
-Text Label 5700 6000 0    50   ~ 0
+Text Label 4450 7250 0    50   ~ 0
 parallel9
-Text Label 5700 6500 0    50   ~ 0
+Text Label 4450 7500 0    50   ~ 0
 parallel11
-Text Label 6400 4400 0    50   ~ 0
+Text Label 5400 7500 0    50   ~ 0
 GND
 Wire Wire Line
-	6650 3700 6750 3700
+	5650 6800 5750 6800
 Wire Wire Line
-	6650 3800 6750 3800
+	5650 6900 5750 6900
 Wire Wire Line
-	6650 3900 6750 3900
+	5650 7000 5750 7000
 Wire Wire Line
-	6650 4000 6750 4000
+	5650 7100 5750 7100
 Wire Wire Line
-	6650 4100 6750 4100
+	5650 7200 5750 7200
 Wire Wire Line
-	6650 4200 6750 4200
+	5650 7300 5750 7300
 Wire Wire Line
-	6650 4300 6750 4300
+	5650 7400 5750 7400
 Wire Wire Line
-	6400 4400 6650 4400
-Connection ~ 6650 4400
+	5400 7500 5650 7500
+Connection ~ 5650 7500
 Wire Wire Line
-	6650 4400 6750 4400
+	5650 7500 5750 7500
 Wire Wire Line
-	6650 3700 6650 3800
-Connection ~ 6650 3800
+	5650 6800 5650 6900
+Connection ~ 5650 6900
 Wire Wire Line
-	6650 3800 6650 3900
-Connection ~ 6650 3900
+	5650 6900 5650 7000
+Connection ~ 5650 7000
 Wire Wire Line
-	6650 3900 6650 4000
-Connection ~ 6650 4000
+	5650 7000 5650 7100
+Connection ~ 5650 7100
 Wire Wire Line
-	6650 4000 6650 4100
-Connection ~ 6650 4100
+	5650 7100 5650 7200
+Connection ~ 5650 7200
 Wire Wire Line
-	6650 4100 6650 4200
-Connection ~ 6650 4200
+	5650 7200 5650 7300
+Connection ~ 5650 7300
 Wire Wire Line
-	6650 4200 6650 4300
-Connection ~ 6650 4300
+	5650 7300 5650 7400
+Connection ~ 5650 7400
 Wire Wire Line
-	6650 4300 6650 4400
-NoConn ~ 6750 2900
-NoConn ~ 6750 3100
-NoConn ~ 6750 3200
-NoConn ~ 6750 3300
-NoConn ~ 6750 3400
-NoConn ~ 6750 3500
-NoConn ~ 6750 3600
+	5650 7400 5650 7500
+NoConn ~ 5750 6000
+NoConn ~ 5750 6200
+NoConn ~ 5750 6300
+NoConn ~ 5750 6400
+NoConn ~ 5750 6500
+NoConn ~ 5750 6600
+NoConn ~ 5750 6700
 Text GLabel 6750 1000 2    50   BiDi ~ 0
 DATA[0..15]
 Wire Bus Line
@@ -457,130 +445,148 @@ D[0..15]
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A1DA61
-P 2500 5000
+P 2800 2550
 AR Path="/608A2359/60A1DA61" Ref="R?"  Part="1" 
 AR Path="/608C2344/60A1DA61" Ref="R?"  Part="1" 
 AR Path="/608EA3C9/60A1DA61" Ref="R220"  Part="1" 
-F 0 "R220" V 2400 5000 50  0000 C CNN
-F 1 "1K" V 2600 5000 50  0000 C CNN
-F 2 "" H 2500 5000 50  0001 C CNN
-F 3 "~" H 2500 5000 50  0001 C CNN
-	1    2500 5000
-	0    1    1    0   
+F 0 "R220" V 2700 2550 50  0000 C CNN
+F 1 "1K" V 2900 2550 50  0000 C CNN
+F 2 "" H 2800 2550 50  0001 C CNN
+F 3 "~" H 2800 2550 50  0001 C CNN
+	1    2800 2550
+	-1   0    0    1   
 $EndComp
-Text Label 2750 5000 2    50   ~ 0
+Text Label 2800 2850 1    50   ~ 0
 GND
-Wire Wire Line
-	2200 5000 2400 5000
-Wire Wire Line
-	2600 5000 2750 5000
 $Comp
 L Device:C C?
 U 1 1 60A22D53
-P 4000 2000
+P 5800 2000
 AR Path="/60786F27/6078774E/60A22D53" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60A22D53" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60A22D53" Ref="C?"  Part="1" 
 AR Path="/608A2359/60A22D53" Ref="C?"  Part="1" 
 AR Path="/608C2344/60A22D53" Ref="C?"  Part="1" 
 AR Path="/608EA3C9/60A22D53" Ref="C214"  Part="1" 
-F 0 "C214" H 4025 2100 50  0000 L CNN
-F 1 "0.1uF" H 4025 1900 50  0000 L CNN
-F 2 "" H 4038 1850 50  0001 C CNN
-F 3 "~" H 4000 2000 50  0001 C CNN
-	1    4000 2000
+F 0 "C214" H 5825 2100 50  0000 L CNN
+F 1 "0.1uF" H 5825 1900 50  0000 L CNN
+F 2 "" H 5838 1850 50  0001 C CNN
+F 3 "~" H 5800 2000 50  0001 C CNN
+	1    5800 2000
 	1    0    0    -1  
 $EndComp
-Text Label 4000 2350 1    50   ~ 0
+Text Label 5800 2350 1    50   ~ 0
 GND
-Text Label 4000 1650 3    50   ~ 0
+Text Label 5800 1650 3    50   ~ 0
 VCC
 Wire Wire Line
-	4000 1650 4000 1850
+	5800 1650 5800 1850
 Wire Wire Line
-	4000 2150 4000 2350
-Text GLabel 2200 5000 0    50   Output ~ 0
-AUDIOS
+	5800 2150 5800 2350
 $Comp
 L Device:R_Small_US R?
 U 1 1 60A3221F
-P 2500 5500
+P 2250 7250
 AR Path="/608A2359/60A3221F" Ref="R?"  Part="1" 
 AR Path="/608C2344/60A3221F" Ref="R?"  Part="1" 
 AR Path="/608EA3C9/60A3221F" Ref="R212"  Part="1" 
-F 0 "R212" V 2400 5500 50  0000 C CNN
-F 1 "3K3" V 2600 5500 50  0000 C CNN
-F 2 "" H 2500 5500 50  0001 C CNN
-F 3 "~" H 2500 5500 50  0001 C CNN
-	1    2500 5500
-	0    1    1    0   
+F 0 "R212" H 2400 7300 50  0000 C CNN
+F 1 "3K3" H 2400 7200 50  0000 C CNN
+F 2 "" H 2250 7250 50  0001 C CNN
+F 3 "~" H 2250 7250 50  0001 C CNN
+	1    2250 7250
+	1    0    0    -1  
 $EndComp
-Text Label 2200 5500 0    50   ~ 0
+Text Label 2250 6950 3    50   ~ 0
 VCC
-Text GLabel 2800 5500 2    50   Input ~ 0
-PARALLEL_BUSY
 Wire Wire Line
-	2200 5500 2400 5500
+	2250 7150 2250 6950
 Wire Wire Line
-	2600 5500 2800 5500
+	4300 5500 4450 5500
 Wire Wire Line
-	5550 2000 5700 2000
+	4300 6000 4450 6000
 Wire Wire Line
-	5550 2500 5700 2500
+	4300 6500 4450 6500
 Wire Wire Line
-	5550 3000 5700 3000
+	4300 7000 4450 7000
 Wire Wire Line
-	5550 3500 5700 3500
-Wire Wire Line
-	5550 4000 5700 4000
-Wire Wire Line
-	5550 4500 5700 4500
-Wire Wire Line
-	5550 5000 5700 5000
-Wire Wire Line
-	5550 5500 5700 5500
-Wire Wire Line
-	5550 6000 5700 6000
-Wire Wire Line
-	5550 6500 5700 6500
-Text Label 6600 2000 2    50   ~ 0
+	4300 7500 4450 7500
+Text Label 5600 5100 2    50   ~ 0
 parallel1
-Text Label 6600 2100 2    50   ~ 0
+Text Label 5600 5200 2    50   ~ 0
 parallel2
-Text Label 6600 2200 2    50   ~ 0
+Text Label 5600 5300 2    50   ~ 0
 parallel3
-Text Label 6600 2300 2    50   ~ 0
+Text Label 5600 5400 2    50   ~ 0
 parallel4
-Text Label 6600 2400 2    50   ~ 0
+Text Label 5600 5500 2    50   ~ 0
 parallel5
-Text Label 6600 2500 2    50   ~ 0
+Text Label 5600 5600 2    50   ~ 0
 parallel6
-Text Label 6600 2600 2    50   ~ 0
+Text Label 5600 5700 2    50   ~ 0
 parallel7
-Text Label 6600 2700 2    50   ~ 0
+Text Label 5600 5800 2    50   ~ 0
 parallel8
-Text Label 6600 2800 2    50   ~ 0
+Text Label 5600 5900 2    50   ~ 0
 parallel9
-Text Label 6600 3000 2    50   ~ 0
+Text Label 5600 6100 2    50   ~ 0
 parallel11
 Wire Wire Line
-	6600 2000 6750 2000
+	5600 5100 5750 5100
 Wire Wire Line
-	6600 2100 6750 2100
+	5600 5200 5750 5200
 Wire Wire Line
-	6600 2200 6750 2200
+	5600 5300 5750 5300
 Wire Wire Line
-	6600 2300 6750 2300
+	5600 5400 5750 5400
 Wire Wire Line
-	6600 2400 6750 2400
+	5600 5500 5750 5500
 Wire Wire Line
-	6600 2500 6750 2500
+	5600 5600 5750 5600
 Wire Wire Line
-	6600 2600 6750 2600
+	5600 5700 5750 5700
 Wire Wire Line
-	6600 2700 6750 2700
+	5600 5800 5750 5800
 Wire Wire Line
-	6600 2800 6750 2800
+	5600 5900 5750 5900
 Wire Wire Line
-	6600 3000 6750 3000
+	5600 6100 5750 6100
+Wire Wire Line
+	3550 7250 4450 7250
+Wire Wire Line
+	3550 6750 4450 6750
+Wire Wire Line
+	3550 6250 4450 6250
+Wire Wire Line
+	3550 5750 4450 5750
+Wire Wire Line
+	3550 5250 4450 5250
+Wire Wire Line
+	2700 7000 3700 7000
+Wire Wire Line
+	2700 6500 3700 6500
+Wire Wire Line
+	2700 6000 3700 6000
+Wire Wire Line
+	2700 5500 3700 5500
+Wire Wire Line
+	2250 7350 2250 7500
+Wire Wire Line
+	2250 7500 3700 7500
+Wire Wire Line
+	2050 7500 2250 7500
+Connection ~ 2250 7500
+Wire Wire Line
+	2800 2650 2800 2850
+Wire Wire Line
+	2600 2300 2800 2300
+Wire Wire Line
+	2800 2300 2800 2450
+Connection ~ 2800 2300
+Wire Wire Line
+	2800 2300 3400 2300
+Text Notes 1500 7650 0    55   ~ 0
+To MFP
+Text Notes 2200 2250 0    55   ~ 0
+To LMC1992
 $EndSCHEMATC
