@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C100210
+D Variable coil 24uH
+K variable coil inductor
+F ~
+$ENDCMP
+#
+$CMP C100214
+D Variable coil 14uH
+K variable coil inductor
+F ~
+$ENDCMP
+#
+$CMP Variable_Coil_Shielded
+D Variable coil, DIL-6 with or without pin 5
+K variable coil inductor
+F ~
+$ENDCMP
+#
+#End Doc Library

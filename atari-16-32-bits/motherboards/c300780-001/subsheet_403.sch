@@ -624,7 +624,7 @@ L Device:Delay_Line DL1
 U 1 1 60C02EB9
 P 2000 6600
 F 0 "DL1" H 2100 6650 50  0000 L CNN
-F 1 "Delay_Line" H 2100 6550 50  0000 L CNN
+F 1 "Delay Line 3.58MHz" H 2100 6550 50  0000 L CNN
 F 2 "" H 2000 6600 50  0001 C CNN
 F 3 "~" H 2000 6600 50  0001 C CNN
 	1    2000 6600
@@ -879,17 +879,6 @@ F 3 "~" H 4400 7300 50  0001 C CNN
 $EndComp
 Text Label 5400 8050 1    50   ~ 0
 GND
-$Comp
-L Device:L_Core_Iron_Coupled L403
-U 1 1 60C25168
-P 4900 7650
-F 0 "L403" H 4900 7825 50  0000 C CNN
-F 1 "Variable Coil Inductor" H 4900 7450 50  0000 C CNN
-F 2 "" H 4900 7650 50  0001 C CNN
-F 3 "~" H 4900 7650 50  0001 C CNN
-	1    4900 7650
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3400 7150 3900 7150
 Wire Wire Line
@@ -912,8 +901,8 @@ Text Label 1400 4600 3    50   ~ 0
 fvcc
 Wire Wire Line
 	1400 4600 1400 4850
-Text Notes 700  9750 0    50   ~ 0
-About L403 and DL1 : I used some built-in look alike symbols, as I could not find for sure an exact reference about those components.\n\n* L403 : \n    NTSC => part C100210 - variable coil 24uH \n    PAL  => part C100214 - variable coil 14uH\n* DL1 :\n    NTSC => part C100209 - Delay line 3.58MHz \n    PAL  => part C100213 - Delay line 4.43MHz\n\nPinout and footprint of 403 seems to be like http://www.gekade.com/downloads/to_conscheme.pdf for a 7mm square component. \n\nFootprint of DL1 seems to be like two of coils side by side, with finer pitch.\n\nI am sad that I could not get those component right, I wish you good luck if you need to replace those components or remake a pcb !\n
+Text Notes 700  9900 0    50   ~ 0
+About L403 and DL1 : I made custom symbols to match the pins written on the schematics.\n\nFor DL1, I once again relied on the schematics of the Falcon030, that is more readable, and seems to have been reused from previous model (I took a chance that they followed \nthe principle 'do not change something that works')\n\nPinout and footprint of 403 seems to be like http://www.gekade.com/downloads/to_conscheme.pdf for a 7mm square component with no pin #5. \n\nFootprint of DL1 was made by looking at picture of motherboards without this component and the silk screen of the Atari STe found in a service manual. Because this circuit is \ninstalled on my STE, it would have been too cumbersome for me)\n\nI wish you good luck if you need to replace those components or remake this part of the pcb !\n
 $Comp
 L Connector_Generic_Shielded:Conn_01x03_Shielded MOD
 U 1 1 60C184D5
@@ -943,8 +932,8 @@ Text Notes 3600 6250 0    50   ~ 0
 Remove\nfor PAL
 Text Notes 6950 5250 0    50   ~ 0
 Remove\nfor PAL
-Text Notes 750  8350 0    50   ~ 0
-Change values for PAL : C421, DL1, L403, R451, R456, R483\n(TODO : check values for PAL)
+Text Notes 700  8900 0    50   ~ 0
+Change values for PAL (I took them from the Falcon030 service manual\nafter checking that this part of the schematics is the same as the\nSTe - lucky me)\n\n* C421 : 100pF\n* DL1  : 4.43MHz\n* L403 : 14uH\n* R451 : 22\n* R456 : 1K8 (PAL-I) ; 2K7 (PAL-B)\n* R463 : 1K2\n\nDid you know there was several PAL variant ? \n* PAL-I is for UK/Ireland\n* PAL-B is for Western Europe, Australia and New Zealand
 Text Notes 2150 2750 0    118  ~ 0
 Installed ONLY in systems with modulator
 Text Notes 3600 750  0    118  ~ 0
@@ -1100,4 +1089,15 @@ Wire Wire Line
 	4250 2000 4250 2200
 Text Notes 1150 750  0    118  ~ 0
 Common
+$Comp
+L variable_coil_shielded:Variable_Coil_Shielded L403
+U 1 1 60C25168
+P 4900 7650
+F 0 "L403" H 4900 7825 50  0000 C CNN
+F 1 "Variable Coil 24uH" H 4900 7450 50  0000 C CNN
+F 2 "" H 4900 7650 50  0001 C CNN
+F 3 "~" H 4900 7650 50  0001 C CNN
+	1    4900 7650
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
