@@ -620,7 +620,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 6000 5900 6200
 $Comp
-L Device:Delay_Line DL1
+L Delay_Line_Custom_Atari_ST:Delay_Line_Custom_Atari_ST DL1
 U 1 1 60C02EB9
 P 2000 6600
 F 0 "DL1" H 2100 6650 50  0000 L CNN
@@ -1100,4 +1100,6 @@ F 3 "~" H 4900 7650 50  0001 C CNN
 	1    4900 7650
 	-1   0    0    1   
 $EndComp
+NoConn ~ 1800 6450
+NoConn ~ 1800 6750
 $EndSCHEMATC
