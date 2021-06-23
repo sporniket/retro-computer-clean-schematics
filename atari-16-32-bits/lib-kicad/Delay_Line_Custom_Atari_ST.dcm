@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C100209
+D Delay line Custom for Atari ST computer family - NTSC - 3.58MHz
+K delay propagation retard impedance
+F ~
+$ENDCMP
+#
+$CMP C100213
+D Delay line Custom for Atari ST computer family - PAL - 4.43MHz
+K delay propagation retard impedance
+F ~
+$ENDCMP
+#
+$CMP Delay_Line_Custom_Atari_ST
+D Delay line Custom for Atari ST computer family
+K delay propagation retard impedance
+F ~
+$ENDCMP
+#
+#End Doc Library
