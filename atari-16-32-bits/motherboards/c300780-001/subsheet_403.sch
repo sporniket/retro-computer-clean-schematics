@@ -622,65 +622,65 @@ Wire Wire Line
 $Comp
 L Delay_Line_Custom_Atari_ST:Delay_Line_Custom_Atari_ST DL1
 U 1 1 60C02EB9
-P 2000 6600
-F 0 "DL1" H 2100 6650 50  0000 L CNN
-F 1 "Delay Line 3.58MHz" H 2100 6550 50  0000 L CNN
-F 2 "" H 2000 6600 50  0001 C CNN
-F 3 "~" H 2000 6600 50  0001 C CNN
-	1    2000 6600
+P 2000 6350
+F 0 "DL1" H 2050 6650 50  0000 L CNN
+F 1 "Delay Line 3.58MHz" H 2050 6050 50  0000 L CNN
+F 2 "" H 2000 6350 50  0001 C CNN
+F 3 "~" H 2000 6350 50  0001 C CNN
+	1    2000 6350
 	1    0    0    -1  
 $EndComp
-Text Label 1600 5750 0    50   ~ 0
+Text Label 1600 5500 0    50   ~ 0
 y_out
 $Comp
 L Device:R_Small_US R?
 U 1 1 60C054F5
-P 2000 6000
+P 2000 5750
 AR Path="/60B3D9E3/60C054F5" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60C054F5" Ref="R467"  Part="1" 
-F 0 "R467" H 2030 6020 50  0000 L CNN
-F 1 "1K2" H 2030 5960 50  0000 L CNN
-F 2 "" H 2000 6000 50  0001 C CNN
-F 3 "~" H 2000 6000 50  0001 C CNN
-	1    2000 6000
+F 0 "R467" H 2030 5770 50  0000 L CNN
+F 1 "1K2" H 2030 5710 50  0000 L CNN
+F 2 "" H 2000 5750 50  0001 C CNN
+F 3 "~" H 2000 5750 50  0001 C CNN
+	1    2000 5750
 	1    0    0    -1  
 $EndComp
-Text Label 1600 7050 0    50   ~ 0
+Text Label 1600 6800 0    50   ~ 0
 y_in
 $Comp
 L Device:R_Small_US R?
 U 1 1 60C05DC5
-P 2000 7300
+P 2000 7050
 AR Path="/60B3D9E3/60C05DC5" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60C05DC5" Ref="R468"  Part="1" 
-F 0 "R468" H 2030 7320 50  0000 L CNN
-F 1 "1K2" H 2030 7260 50  0000 L CNN
-F 2 "" H 2000 7300 50  0001 C CNN
-F 3 "~" H 2000 7300 50  0001 C CNN
-	1    2000 7300
+F 0 "R468" H 2030 7070 50  0000 L CNN
+F 1 "1K2" H 2030 7010 50  0000 L CNN
+F 2 "" H 2000 7050 50  0001 C CNN
+F 3 "~" H 2000 7050 50  0001 C CNN
+	1    2000 7050
 	1    0    0    -1  
 $EndComp
-Text Label 2000 7600 1    50   ~ 0
+Text Label 2000 7350 1    50   ~ 0
 GND
 Wire Wire Line
-	2000 7400 2000 7600
-Text Label 1600 6600 0    50   ~ 0
+	2000 7150 2000 7350
+Text Label 1600 6350 0    50   ~ 0
 GND
 Wire Wire Line
-	1600 6600 1800 6600
+	1600 6350 1800 6350
 Wire Wire Line
-	1600 5750 2000 5750
+	1600 5500 2000 5500
 Wire Wire Line
-	2000 5750 2000 5900
+	2000 5500 2000 5650
 Wire Wire Line
-	2000 6100 2000 6300
+	2000 5850 2000 6050
 Wire Wire Line
-	2000 6900 2000 7050
+	2000 6650 2000 6800
 Wire Wire Line
-	1600 7050 2000 7050
-Connection ~ 2000 7050
+	1600 6800 2000 6800
+Connection ~ 2000 6800
 Wire Wire Line
-	2000 7050 2000 7200
+	2000 6800 2000 6950
 $Comp
 L Device:Ferrite_Bead_Small L?
 U 1 1 60C12DAA
@@ -902,7 +902,7 @@ fvcc
 Wire Wire Line
 	1400 4600 1400 4850
 Text Notes 700  9900 0    50   ~ 0
-About L403 and DL1 : I made custom symbols to match the pins written on the schematics.\n\nFor DL1, I once again relied on the schematics of the Falcon030, that is more readable, and seems to have been reused from previous model (I took a chance that they followed \nthe principle 'do not change something that works')\n\nPinout and footprint of 403 seems to be like http://www.gekade.com/downloads/to_conscheme.pdf for a 7mm square component with no pin #5. \n\nFootprint of DL1 was made by looking at picture of motherboards without this component and the silk screen of the Atari STe found in a service manual. Because this circuit is \ninstalled on my STE, it would have been too cumbersome for me)\n\nI wish you good luck if you need to replace those components or remake this part of the pcb !\n
+About L403 and DL1 : I made custom symbols to match the pins written on the schematics.\n\nFor DL1 : \n\nI compared with the schematics of the Atari MegaSTe rev C and of the Falcon030. Pin 12 appears grounded on the former ; on the later, pin 9, 10 and 12 appears grounded, \nwith pin 10 taking the central position, while pin 3 and 6 are bridged together. \n\nIn the gerber of the sparrow (found as 'Falcon Gerber' on the Atari Document Archive site), pin 2 and 7 are wired as expected in the schematics, and the pin 3 and 6 are bridged \nlike on the schematics of the Falcon. The pins 9, 10, 12 seems bridged with a fine line (1 mil width).\n\nIn the end, I create a symbol with all the pin, and marked to not connect pins that are not of the STe schematics.\n\nI created the footprint of L403 and DL1 after the gerber.\n\nI wish you good luck if you need to replace those components or remake this part of the pcb !\n
 $Comp
 L Connector_Generic_Shielded:Conn_01x03_Shielded MOD
 U 1 1 60C184D5
@@ -932,7 +932,7 @@ Text Notes 3600 6250 0    50   ~ 0
 Remove\nfor PAL
 Text Notes 6950 5250 0    50   ~ 0
 Remove\nfor PAL
-Text Notes 700  8900 0    50   ~ 0
+Text Notes 700  8600 0    50   ~ 0
 Change values for PAL (I took them from the Falcon030 service manual\nafter checking that this part of the schematics is the same as the\nSTe - lucky me)\n\n* C421 : 100pF\n* DL1  : 4.43MHz\n* L403 : 14uH\n* R451 : 22\n* R456 : 1K8 (PAL-I) ; 2K7 (PAL-B)\n* R463 : 1K2\n\nDid you know there was several PAL variant ? \n* PAL-I is for UK/Ireland\n* PAL-B is for Western Europe, Australia and New Zealand
 Text Notes 2150 2750 0    118  ~ 0
 Installed ONLY in systems with modulator
@@ -1100,6 +1100,27 @@ F 3 "~" H 4900 7650 50  0001 C CNN
 	1    4900 7650
 	-1   0    0    1   
 $EndComp
-NoConn ~ 1800 6450
-NoConn ~ 1800 6750
+NoConn ~ 1800 6200
+NoConn ~ 1800 6500
+NoConn ~ 2150 6150
+NoConn ~ 2150 6250
+NoConn ~ 2150 6350
+NoConn ~ 2150 6450
+NoConn ~ 2150 6550
+Text Notes 750  6200 0    50   ~ 0
+maybe grounded
+Wire Notes Line
+	1800 6500 1500 6500
+Wire Notes Line
+	1500 6500 1500 6200
+Wire Notes Line
+	2150 6250 2250 6250
+Wire Notes Line
+	2250 6250 2250 6550
+Text Notes 2450 6550 0    50   ~ 0
+maybe bridged
+Wire Notes Line
+	1150 6200 1800 6200
+Wire Notes Line
+	2150 6550 2550 6550
 $EndSCHEMATC
