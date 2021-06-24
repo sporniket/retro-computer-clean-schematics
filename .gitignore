@@ -35,3 +35,4 @@ fp-info-cache
 # Kicad
 sym-lib-table
 export/
+libs.local/
