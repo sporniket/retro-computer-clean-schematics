@@ -33,6 +33,5 @@ fp-info-cache
 *.pyc
 
 # Kicad
-sym-lib-table
 export/
 libs.local/
