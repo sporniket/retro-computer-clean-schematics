@@ -972,4 +972,6 @@ Text GLabel 6700 4550 2    50   Output ~ 0
 G
 Text GLabel 2950 6550 2    50   Output ~ 0
 B
+Text Notes 4300 7650 0    50   ~ 0
+It may also be a 74F257
 $EndSCHEMATC
