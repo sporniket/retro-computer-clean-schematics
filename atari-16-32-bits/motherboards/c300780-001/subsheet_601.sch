@@ -35,7 +35,7 @@ L Device:R_Network08_US P600
 U 1 1 60D5E0A1
 P 5400 4400
 F 0 "P600" V 4900 4400 50  0000 C CNN
-F 1 "10K×8" V 5800 4400 50  0000 C CNN
+F 1 "10K ×8" V 5800 4400 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP9" V 5875 4400 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5400 4400 50  0001 C CNN
 	1    5400 4400
@@ -324,12 +324,12 @@ F 3 "~" H 7000 2500 50  0001 C CNN
 	1    7000 2500
 	1    0    0    -1  
 $EndComp
-Text Label 7000 2800 1    50   ~ 0
+Text Label 7000 2850 1    50   ~ 0
 GND
-Text Label 7000 2200 3    50   ~ 0
+Text Label 7000 2150 3    50   ~ 0
 VCC
 Wire Wire Line
-	7000 2200 7000 2350
+	7000 2150 7000 2350
 Wire Wire Line
-	7000 2650 7000 2800
+	7000 2650 7000 2850
 $EndSCHEMATC
