@@ -724,8 +724,6 @@ F 3 "~" H 5750 8000 50  0001 C CNN
 $EndComp
 Text Label 5750 6700 3    50   ~ 0
 VLL
-Text Label 5750 8300 1    50   ~ 0
-GND
 $Comp
 L Device:R_Small_US R128
 U 1 1 60933AC1
@@ -740,45 +738,45 @@ $EndComp
 $Comp
 L Device:R_Small_US R129
 U 1 1 60934947
-P 6250 8100
-F 0 "R129" H 6300 8150 50  0000 L CNN
-F 1 "3K6" H 6300 8050 50  0000 L CNN
-F 2 "" H 6250 8100 50  0001 C CNN
-F 3 "~" H 6250 8100 50  0001 C CNN
-	1    6250 8100
+P 6250 8500
+F 0 "R129" H 6300 8550 50  0000 L CNN
+F 1 "3K6" H 6300 8450 50  0000 L CNN
+F 2 "" H 6250 8500 50  0001 C CNN
+F 3 "~" H 6250 8500 50  0001 C CNN
+	1    6250 8500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Q_NPN_BCE Q104
 U 1 1 6093547F
-P 6650 7900
-F 0 "Q104" H 6850 7950 50  0000 L CNN
-F 1 "2N3904" H 6850 7850 50  0000 L CNN
-F 2 "" H 6850 8000 50  0001 C CNN
-F 3 "~" H 6650 7900 50  0001 C CNN
-	1    6650 7900
+P 6650 8000
+F 0 "Q104" H 6850 8050 50  0000 L CNN
+F 1 "2N3904" H 6850 7950 50  0000 L CNN
+F 2 "" H 6850 8100 50  0001 C CNN
+F 3 "~" H 6650 8000 50  0001 C CNN
+	1    6650 8000
 	1    0    0    -1  
 $EndComp
 Text Label 6250 7300 3    50   ~ 0
 VLL
-Text Label 6750 7500 3    50   ~ 0
+Text Label 6750 7600 3    50   ~ 0
 VLL
-Text Label 6250 8400 1    50   ~ 0
+Text Label 6250 8800 1    50   ~ 0
 GND
-Text Label 6750 8700 1    50   ~ 0
+Text Label 6750 8800 1    50   ~ 0
 GND
 $Comp
 L Device:R_Small_US R130
 U 1 1 609372ED
-P 6750 8400
-F 0 "R130" H 6800 8450 50  0000 L CNN
-F 1 "150" H 6800 8350 50  0000 L CNN
-F 2 "" H 6750 8400 50  0001 C CNN
-F 3 "~" H 6750 8400 50  0001 C CNN
-	1    6750 8400
+P 6750 8500
+F 0 "R130" H 6800 8550 50  0000 L CNN
+F 1 "150" H 6800 8450 50  0000 L CNN
+F 2 "" H 6750 8500 50  0001 C CNN
+F 3 "~" H 6750 8500 50  0001 C CNN
+	1    6750 8500
 	1    0    0    -1  
 $EndComp
-Text GLabel 7000 8200 2    50   Output ~ 0
+Text GLabel 7000 8300 2    50   Output ~ 0
 32MHZ
 Wire Wire Line
 	5750 6700 5750 6900
@@ -790,7 +788,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 7700 5750 7800
 Wire Wire Line
-	5750 8100 5750 8300
+	5750 8100 5750 8200
 Wire Wire Line
 	6250 7300 6250 7500
 Wire Wire Line
@@ -802,25 +800,20 @@ Wire Wire Line
 	5750 7800 5750 7900
 Connection ~ 6250 7800
 Wire Wire Line
-	6250 7800 6250 7900
+	6250 8000 6450 8000
 Wire Wire Line
-	6250 7900 6450 7900
-Connection ~ 6250 7900
-Wire Wire Line
-	6250 7900 6250 8000
-Wire Wire Line
-	6750 7500 6750 7700
-Wire Wire Line
-	6750 8100 6750 8200
-Wire Wire Line
-	6250 8200 6250 8400
-Wire Wire Line
-	6750 8500 6750 8700
-Wire Wire Line
-	6750 8200 7000 8200
-Connection ~ 6750 8200
+	6750 7600 6750 7800
 Wire Wire Line
 	6750 8200 6750 8300
+Wire Wire Line
+	6250 8600 6250 8800
+Wire Wire Line
+	6750 8600 6750 8800
+Wire Wire Line
+	6750 8300 7000 8300
+Connection ~ 6750 8300
+Wire Wire Line
+	6750 8300 6750 8400
 Wire Wire Line
 	5250 7300 5750 7300
 Wire Wire Line
@@ -915,4 +908,14 @@ Wire Wire Line
 	4300 2250 4700 2250
 Text Notes 750  9700 0    50   ~ 0
 Diode 1SV69 : Electronic tuning for UHF/VHF TV Tuner\nhttps://pdf1.alldatasheet.com/datasheet-pdf/view/107651/ETC/1SV69.html
+Wire Wire Line
+	5750 8200 6250 8200
+Connection ~ 6250 8200
+Wire Wire Line
+	6250 8200 6250 8400
+Connection ~ 6250 8000
+Wire Wire Line
+	6250 8000 6250 8200
+Wire Wire Line
+	6250 7800 6250 8000
 $EndSCHEMATC
