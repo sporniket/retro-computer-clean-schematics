@@ -35,3 +35,9 @@ fp-info-cache
 # Kicad
 export/
 libs.local/
+
+#archives
+*.tar
+*.zip
+*.tgz
+*.gz
