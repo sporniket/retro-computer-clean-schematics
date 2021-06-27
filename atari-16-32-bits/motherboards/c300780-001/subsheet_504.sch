@@ -16,424 +16,250 @@ $EndDescr
 $Comp
 L lmc1992:LMC1992CCN_PHY U508
 U 1 1 60CD3932
-P 4100 2650
-F 0 "U508" H 3200 3600 50  0000 L TNN
-F 1 "LMC1992CCN_PHY" H 3200 3500 50  0000 L TNB
-F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 3200 3700 50  0001 L TNN
-F 3 "" H 3200 3800 50  0001 L TNN
-	1    4100 2650
+P 4100 3750
+F 0 "U508" H 3200 4700 50  0000 L TNN
+F 1 "LMC1992CCN_PHY" H 3200 4600 50  0000 L TNB
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 3200 4800 50  0001 L TNN
+F 3 "" H 3200 4900 50  0001 L TNN
+	1    4100 3750
 	1    0    0    -1  
 $EndComp
-Text GLabel 2650 2000 0    50   Input ~ 0
+Text GLabel 2450 3100 0    50   Input ~ 0
 MWD
-Text GLabel 2650 2100 0    50   Input ~ 0
-MWD
-Text GLabel 2650 2200 0    50   Input ~ 0
+Text GLabel 2450 3200 0    50   Input ~ 0
+MWK
+Text GLabel 2450 3300 0    50   Input ~ 0
 XMWE
-Text Label 5550 3300 2    50   ~ 0
+Text Label 5550 4400 2    50   ~ 0
 GND
-$Comp
-L Regulator_Linear:LM78L05_TO92 Q500
-U 1 1 60CD8054
-P 1500 1000
-F 0 "Q500" H 1350 1125 50  0000 C CNN
-F 1 "LM78L82_TO92" H 1500 1125 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1500 1225 50  0001 C CIN
-F 3 "https://www.onsemi.com/pub/Collateral/MC78L06A-D.pdf" H 1500 950 50  0001 C CNN
-	1    1500 1000
-	1    0    0    -1  
-$EndComp
-Text Label 1500 1500 1    50   ~ 0
-GND
-Text Label 950  1000 0    50   ~ 0
-+12V
-Text GLabel 3000 1000 2    50   Output ~ 0
+Wire Wire Line
+	5300 4400 5550 4400
+Text GLabel 5650 3100 2    50   Input ~ 0
 +8.2V
-Wire Wire Line
-	950  1000 1200 1000
-Wire Wire Line
-	1500 1300 1500 1500
-$Comp
-L Device:CP1 C?
-U 1 1 60CDDF6A
-P 2000 1250
-AR Path="/6089D0C2/60CDDF6A" Ref="C?"  Part="1" 
-AR Path="/60B8B7AD/60CDDF6A" Ref="C?"  Part="1" 
-AR Path="/60C95DE8/60CDDF6A" Ref="C?"  Part="1" 
-AR Path="/60CD36E9/60CDDF6A" Ref="C564"  Part="1" 
-F 0 "C564" H 2025 1350 50  0000 L CNN
-F 1 "100uF" H 2025 1150 50  0000 L CNN
-F 2 "" H 2000 1250 50  0001 C CNN
-F 3 "~" H 2000 1250 50  0001 C CNN
-	1    2000 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60CDDF70
-P 2500 1250
-AR Path="/60786F27/6078774E/60CDDF70" Ref="C?"  Part="1" 
-AR Path="/60786F27/607875AF/60CDDF70" Ref="C?"  Part="1" 
-AR Path="/6089D0BA/60CDDF70" Ref="C?"  Part="1" 
-AR Path="/608A2359/60CDDF70" Ref="C?"  Part="1" 
-AR Path="/60A1445F/60CDDF70" Ref="C?"  Part="1" 
-AR Path="/60A73CDE/60CDDF70" Ref="C?"  Part="1" 
-AR Path="/60AD8617/60CDDF70" Ref="C?"  Part="1" 
-AR Path="/60AD332C/60CDDF70" Ref="C?"  Part="1" 
-AR Path="/60AD33B6/60CDDF70" Ref="C?"  Part="1" 
-AR Path="/60B8B7AD/60CDDF70" Ref="C?"  Part="1" 
-AR Path="/60C95DE8/60CDDF70" Ref="C?"  Part="1" 
-AR Path="/60CD36E9/60CDDF70" Ref="C565"  Part="1" 
-F 0 "C565" H 2525 1350 50  0000 L CNN
-F 1 "0.1uF" H 2525 1150 50  0000 L CNN
-F 2 "" H 2538 1100 50  0001 C CNN
-F 3 "~" H 2500 1250 50  0001 C CNN
-	1    2500 1250
-	1    0    0    -1  
-$EndComp
-Text Label 2000 1600 1    50   ~ 0
-GND
-Text Label 2500 1600 1    50   ~ 0
-GND
-Wire Wire Line
-	2000 1400 2000 1600
-Wire Wire Line
-	2500 1400 2500 1600
-Wire Wire Line
-	2500 1100 2500 1000
-Wire Wire Line
-	1800 1000 2000 1000
-Connection ~ 2500 1000
-Wire Wire Line
-	2500 1000 3000 1000
-Wire Wire Line
-	2000 1100 2000 1000
-Connection ~ 2000 1000
-Wire Wire Line
-	2000 1000 2500 1000
-Wire Wire Line
-	2650 2000 2900 2000
-Wire Wire Line
-	2650 2100 2900 2100
-Wire Wire Line
-	2650 2200 2900 2200
-Wire Wire Line
-	2650 2300 2900 2300
-Wire Wire Line
-	2650 2400 2900 2400
-Wire Wire Line
-	5300 2200 5550 2200
-Wire Wire Line
-	5300 2300 5550 2300
-Wire Wire Line
-	5300 3300 5550 3300
-Text GLabel 5650 2000 2    50   Input ~ 0
-+8.2V
-Text GLabel 6600 4000 2    50   Output ~ 0
+Text GLabel 7150 3700 2    50   Output ~ 0
 GIR
-Text GLabel 2100 4000 2    50   Output ~ 0
+Text GLabel 1050 3800 0    50   Output ~ 0
 GIL
-Text GLabel 3650 5000 0    50   Input ~ 0
+Text GLabel 2150 1250 0    50   Input ~ 0
 AUDIOS
-Text GLabel 3650 5500 0    50   Input ~ 0
+Text GLabel 2150 1750 0    50   Input ~ 0
 AUDIOI
-Text GLabel 2200 2800 0    50   Input ~ 0
-ASOUND_LEFT
-Text GLabel 6050 2700 2    50   Input ~ 0
-ASOUND_RIGHT
-NoConn ~ 2900 2500
-NoConn ~ 2900 2600
-NoConn ~ 5300 2400
-NoConn ~ 5300 2500
-NoConn ~ 2900 3200
-NoConn ~ 5300 3100
-Text Label 2650 2300 0    50   ~ 0
-lin1
-Text Label 2650 2400 0    50   ~ 0
-lin2
-Text Label 5550 2200 2    50   ~ 0
-rin1
-Text Label 5550 2300 2    50   ~ 0
-rin2
-Text Label 2200 2700 0    50   ~ 0
-left_select_out
-Text Label 6050 2600 2    50   ~ 0
-right_select_out
-Text Label 6050 2800 2    50   ~ 0
-right_tone_in
-Text Label 6050 2900 2    50   ~ 0
+NoConn ~ 2900 3600
+NoConn ~ 2900 3700
+NoConn ~ 5300 3500
+NoConn ~ 5300 3600
+NoConn ~ 2900 4300
+NoConn ~ 5300 4200
+Text Label 6050 4000 2    50   ~ 0
 right_tone_out
-Text Label 6050 3000 2    50   ~ 0
+Text Label 6050 4100 2    50   ~ 0
 right_op_amp_out
-Text Label 6050 3200 2    50   ~ 0
-right_front_out
 Wire Wire Line
-	2200 2700 2900 2700
+	5300 4000 6050 4000
 Wire Wire Line
-	2200 2800 2900 2800
-Wire Wire Line
-	5300 2600 6050 2600
-Wire Wire Line
-	5300 2700 6050 2700
-Wire Wire Line
-	5300 2800 6050 2800
-Wire Wire Line
-	5300 2900 6050 2900
-Wire Wire Line
-	5300 3000 6050 3000
-Wire Wire Line
-	5300 3200 6050 3200
+	5300 4100 6050 4100
 $Comp
 L Device:CP1 C?
 U 1 1 60CED58A
-P 5500 6300
+P 4500 2100
 AR Path="/6089D0C2/60CED58A" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60CED58A" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60CED58A" Ref="C?"  Part="1" 
 AR Path="/60CC3B10/60CED58A" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60CED58A" Ref="C535"  Part="1" 
-F 0 "C535" H 5550 6400 50  0000 L CNN
-F 1 "47uF" H 5550 6200 50  0000 L CNN
-F 2 "" H 5500 6300 50  0001 C CNN
-F 3 "~" H 5500 6300 50  0001 C CNN
-	1    5500 6300
+F 0 "C535" H 4550 2200 50  0000 L CNN
+F 1 "47uF" H 4550 2000 50  0000 L CNN
+F 2 "" H 4500 2100 50  0001 C CNN
+F 3 "~" H 4500 2100 50  0001 C CNN
+	1    4500 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 60CED590
-P 5000 6300
+P 4000 2100
 AR Path="/60B3D9E3/60CED590" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60CED590" Ref="R?"  Part="1" 
 AR Path="/60C95DE8/60CED590" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60CED590" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60CED590" Ref="R530"  Part="1" 
-F 0 "R530" H 5030 6320 50  0000 L CNN
-F 1 "10K" H 5030 6260 50  0000 L CNN
-F 2 "" H 5000 6300 50  0001 C CNN
-F 3 "~" H 5000 6300 50  0001 C CNN
-	1    5000 6300
+F 0 "R530" H 4050 2150 50  0000 L CNN
+F 1 "10K" H 4050 2050 50  0000 L CNN
+F 2 "" H 4000 2100 50  0001 C CNN
+F 3 "~" H 4000 2100 50  0001 C CNN
+	1    4000 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP1 C?
 U 1 1 60CEE43A
-P 6000 6300
+P 5000 2100
 AR Path="/6089D0C2/60CEE43A" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60CEE43A" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60CEE43A" Ref="C?"  Part="1" 
 AR Path="/60CC3B10/60CEE43A" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60CEE43A" Ref="C536"  Part="1" 
-F 0 "C536" H 6050 6400 50  0000 L CNN
-F 1 "0.1uF" H 6050 6200 50  0000 L CNN
-F 2 "" H 6000 6300 50  0001 C CNN
-F 3 "~" H 6000 6300 50  0001 C CNN
-	1    6000 6300
+F 0 "C536" H 5050 2200 50  0000 L CNN
+F 1 "0.1uF" H 5050 2000 50  0000 L CNN
+F 2 "" H 5000 2100 50  0001 C CNN
+F 3 "~" H 5000 2100 50  0001 C CNN
+	1    5000 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 6650 5500 6450
-Text Label 5500 6650 1    50   ~ 0
+	4500 2450 4500 2250
+Text Label 4500 2450 1    50   ~ 0
 GND
 Wire Wire Line
-	6000 6650 6000 6450
-Text Label 6000 6650 1    50   ~ 0
+	5000 2450 5000 2250
+Text Label 5000 2450 1    50   ~ 0
 GND
 $Comp
 L Device:CP1 C?
 U 1 1 60CF0999
-P 4000 5000
+P 2500 1250
 AR Path="/6089D0C2/60CF0999" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60CF0999" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60CF0999" Ref="C?"  Part="1" 
 AR Path="/60CC3B10/60CF0999" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60CF0999" Ref="C541"  Part="1" 
-F 0 "C541" V 3850 4900 50  0000 L CNN
-F 1 "47uF" V 4150 4900 50  0000 L CNN
-F 2 "" H 4000 5000 50  0001 C CNN
-F 3 "~" H 4000 5000 50  0001 C CNN
-	1    4000 5000
+F 0 "C541" V 2350 1150 50  0000 L CNN
+F 1 "47uF" V 2650 1150 50  0000 L CNN
+F 2 "" H 2500 1250 50  0001 C CNN
+F 3 "~" H 2500 1250 50  0001 C CNN
+	1    2500 1250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4150 5000 4350 5000
+	2650 1250 2850 1250
 Wire Wire Line
-	3650 5000 3850 5000
+	2150 1250 2350 1250
 $Comp
 L Device:CP1 C?
 U 1 1 60CF36CC
-P 4000 5500
+P 2500 1750
 AR Path="/6089D0C2/60CF36CC" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60CF36CC" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60CF36CC" Ref="C?"  Part="1" 
 AR Path="/60CC3B10/60CF36CC" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60CF36CC" Ref="C546"  Part="1" 
-F 0 "C546" V 3850 5400 50  0000 L CNN
-F 1 "47uF" V 4150 5400 50  0000 L CNN
-F 2 "" H 4000 5500 50  0001 C CNN
-F 3 "~" H 4000 5500 50  0001 C CNN
-	1    4000 5500
+F 0 "C546" V 2350 1650 50  0000 L CNN
+F 1 "47uF" V 2650 1650 50  0000 L CNN
+F 2 "" H 2500 1750 50  0001 C CNN
+F 3 "~" H 2500 1750 50  0001 C CNN
+	1    2500 1750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4150 5500 4350 5500
+	2650 1750 2850 1750
 Wire Wire Line
-	3650 5500 3850 5500
+	2150 1750 2350 1750
 $Comp
 L Device:CP1 C?
 U 1 1 60CF439B
-P 1750 4000
+P 1400 3800
 AR Path="/6089D0C2/60CF439B" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60CF439B" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60CF439B" Ref="C?"  Part="1" 
 AR Path="/60CC3B10/60CF439B" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60CF439B" Ref="C544"  Part="1" 
-F 0 "C544" V 1900 3900 50  0000 L CNN
-F 1 "47uF" V 1600 3900 50  0000 L CNN
-F 2 "" H 1750 4000 50  0001 C CNN
-F 3 "~" H 1750 4000 50  0001 C CNN
-	1    1750 4000
-	0    -1   -1   0   
+F 0 "C544" V 1350 3500 50  0000 L CNN
+F 1 "47uF" V 1350 3950 50  0000 L CNN
+F 2 "" H 1400 3800 50  0001 C CNN
+F 3 "~" H 1400 3800 50  0001 C CNN
+	1    1400 3800
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1600 4000 1400 4000
-Wire Wire Line
-	2100 4000 1900 4000
+	1050 3800 1250 3800
 $Comp
 L Device:CP1 C?
 U 1 1 60CF5477
-P 6250 4000
+P 6800 3700
 AR Path="/6089D0C2/60CF5477" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60CF5477" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60CF5477" Ref="C?"  Part="1" 
 AR Path="/60CC3B10/60CF5477" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60CF5477" Ref="C547"  Part="1" 
-F 0 "C547" V 6400 3900 50  0000 L CNN
-F 1 "47uF" V 6100 3900 50  0000 L CNN
-F 2 "" H 6250 4000 50  0001 C CNN
-F 3 "~" H 6250 4000 50  0001 C CNN
-	1    6250 4000
+F 0 "C547" V 6850 3800 50  0000 L CNN
+F 1 "47uF" V 6850 3450 50  0000 L CNN
+F 2 "" H 6800 3700 50  0001 C CNN
+F 3 "~" H 6800 3700 50  0001 C CNN
+	1    6800 3700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6100 4000 5900 4000
-Wire Wire Line
-	6600 4000 6400 4000
-Text Label 1400 4000 2    50   ~ 0
-left_select_out
-Text Label 5900 4000 2    50   ~ 0
-right_select_out
+	7150 3700 6950 3700
 $Comp
 L Device:R_Small_US R?
 U 1 1 60CF6F70
-P 5000 5800
+P 4500 1300
 AR Path="/60B3D9E3/60CF6F70" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60CF6F70" Ref="R?"  Part="1" 
 AR Path="/60C95DE8/60CF6F70" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60CF6F70" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60CF6F70" Ref="R525"  Part="1" 
-F 0 "R525" H 5030 5820 50  0000 L CNN
-F 1 "10K" H 5030 5760 50  0000 L CNN
-F 2 "" H 5000 5800 50  0001 C CNN
-F 3 "~" H 5000 5800 50  0001 C CNN
-	1    5000 5800
+F 0 "R525" H 4550 1350 50  0000 L CNN
+F 1 "10K" H 4550 1250 50  0000 L CNN
+F 2 "" H 4500 1300 50  0001 C CNN
+F 3 "~" H 4500 1300 50  0001 C CNN
+	1    4500 1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 5700 5000 5500
-Text Label 5000 6650 1    50   ~ 0
+	4500 1200 4500 1000
+Text Label 4000 2450 1    50   ~ 0
 GND
-Text GLabel 5000 5500 1    50   Input ~ 0
+Text GLabel 4300 1000 0    50   Input ~ 0
 +8.2V
 Wire Wire Line
-	5000 5900 5000 6000
+	5000 1800 5000 1950
 Wire Wire Line
-	5000 6000 5500 6000
-Wire Wire Line
-	5500 6000 6000 6000
-Connection ~ 5000 6000
-Wire Wire Line
-	5500 6000 5500 6150
-Wire Wire Line
-	6000 6000 6000 6150
-Wire Wire Line
-	5000 6400 5000 6650
-Text Notes 3700 4950 2    50   ~ 0
+	4000 2200 4000 2450
+Text Notes 2200 1200 2    50   ~ 0
 From YM2149
-Text Notes 3800 5450 2    50   ~ 0
+Text Notes 2300 1700 2    50   ~ 0
 From Video port
-Text Label 4650 5150 2    50   ~ 0
-lin1
-Text Label 4650 5350 2    50   ~ 0
-rin1
-Wire Wire Line
-	4650 5150 4350 5150
-Wire Wire Line
-	4650 5350 4350 5350
+Text Label 3300 1500 2    50   ~ 0
+audio_full
 $Comp
 L Device:R_Small_US R?
 U 1 1 60D12893
-P 4350 5750
+P 4100 1500
 AR Path="/60B3D9E3/60D12893" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60D12893" Ref="R?"  Part="1" 
 AR Path="/60C95DE8/60D12893" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60D12893" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60D12893" Ref="R531"  Part="1" 
-F 0 "R531" H 4380 5770 50  0000 L CNN
-F 1 "51K" H 4380 5710 50  0000 L CNN
-F 2 "" H 4350 5750 50  0001 C CNN
-F 3 "~" H 4350 5750 50  0001 C CNN
-	1    4350 5750
-	1    0    0    -1  
+F 0 "R531" V 4200 1400 50  0000 L CNN
+F 1 "51K" V 4000 1450 50  0000 L CNN
+F 2 "" H 4100 1500 50  0001 C CNN
+F 3 "~" H 4100 1500 50  0001 C CNN
+	1    4100 1500
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 60D13044
-P 4350 6250
+P 4900 1600
 AR Path="/60B3D9E3/60D13044" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60D13044" Ref="R?"  Part="1" 
 AR Path="/60C95DE8/60D13044" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60D13044" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60D13044" Ref="R539"  Part="1" 
-F 0 "R539" H 4380 6270 50  0000 L CNN
-F 1 "51K" H 4380 6210 50  0000 L CNN
-F 2 "" H 4350 6250 50  0001 C CNN
-F 3 "~" H 4350 6250 50  0001 C CNN
-	1    4350 6250
-	1    0    0    -1  
+F 0 "R539" V 5000 1500 50  0000 L CNN
+F 1 "51K" V 4800 1500 50  0000 L CNN
+F 2 "" H 4900 1600 50  0001 C CNN
+F 3 "~" H 4900 1600 50  0001 C CNN
+	1    4900 1600
+	0    -1   -1   0   
 $EndComp
-Text Label 4650 6700 2    50   ~ 0
-rin2
-Text Label 4650 6500 2    50   ~ 0
-lin2
-Wire Wire Line
-	4650 6500 4350 6500
-Wire Wire Line
-	4650 6700 4350 6700
-Wire Wire Line
-	4350 6000 4350 6150
-Wire Wire Line
-	4350 6000 4350 5850
-Connection ~ 4350 6000
-Wire Wire Line
-	4350 6350 4350 6500
-Connection ~ 4350 5350
-Connection ~ 4350 5150
-Wire Wire Line
-	4350 5150 4350 5350
-Wire Wire Line
-	4350 5000 4350 5150
-Connection ~ 4350 6500
-Wire Wire Line
-	4350 6500 4350 6700
-Wire Wire Line
-	5000 6000 5000 6200
-Wire Wire Line
-	4350 6000 5000 6000
+Text Label 6000 1600 2    50   ~ 0
+audio_bass
 $Comp
 L Device:C C?
 U 1 1 60D49A02
-P 1750 4500
+P 2000 4000
 AR Path="/60786F27/6078774E/60D49A02" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60D49A02" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60D49A02" Ref="C?"  Part="1" 
@@ -446,45 +272,31 @@ AR Path="/60AD33B6/60D49A02" Ref="C?"  Part="1"
 AR Path="/60B8B7AD/60D49A02" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60D49A02" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60D49A02" Ref="C528"  Part="1" 
-F 0 "C528" V 1900 4400 50  0000 L CNN
-F 1 "0.0082uF" V 1600 4300 50  0000 L CNN
-F 2 "" H 1788 4350 50  0001 C CNN
-F 3 "~" H 1750 4500 50  0001 C CNN
-	1    1750 4500
+F 0 "C528" V 1950 4050 50  0000 L CNN
+F 1 "0.0082uF" V 1850 3950 50  0000 L CNN
+F 2 "" H 2038 3850 50  0001 C CNN
+F 3 "~" H 2000 4000 50  0001 C CNN
+	1    2000 4000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2200 3300 2900 3300
+	2200 4200 2900 4200
 Wire Wire Line
-	2200 3100 2900 3100
-Wire Wire Line
-	2200 3000 2900 3000
-Wire Wire Line
-	2200 2900 2900 2900
-Text Label 2200 3300 0    50   ~ 0
-left_front_out
-Text Label 2200 3100 0    50   ~ 0
+	2200 4100 2900 4100
+Text Label 2200 4200 0    50   ~ 0
 left_op_amp_out
-Text Label 2200 3000 0    50   ~ 0
+Text Label 2200 4100 0    50   ~ 0
 left_tone_out
-Text Label 2200 2900 0    50   ~ 0
-left_tone_in
-Text GLabel 1400 4500 0    50   Input ~ 0
+Text GLabel 1550 4000 0    50   Input ~ 0
 ASOUND_LEFT
-Wire Wire Line
-	3700 7500 4400 7500
-Text Label 3700 7500 0    50   ~ 0
-left_front_out
-Text Label 850  5000 0    50   ~ 0
+Text Label 800  5850 1    50   ~ 0
 left_op_amp_out
-Text Label 2650 5000 2    50   ~ 0
+Text Label 800  4250 3    50   ~ 0
 left_tone_out
-Text Label 2650 4500 2    50   ~ 0
-left_tone_in
 $Comp
 L Device:C C?
 U 1 1 60D4E0B7
-P 1750 5000
+P 800 5000
 AR Path="/60786F27/6078774E/60D4E0B7" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60D4E0B7" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60D4E0B7" Ref="C?"  Part="1" 
@@ -497,17 +309,17 @@ AR Path="/60AD33B6/60D4E0B7" Ref="C?"  Part="1"
 AR Path="/60B8B7AD/60D4E0B7" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60D4E0B7" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60D4E0B7" Ref="C531"  Part="1" 
-F 0 "C531" V 1900 4900 50  0000 L CNN
-F 1 "0.0082uF" V 1600 4800 50  0000 L CNN
-F 2 "" H 1788 4850 50  0001 C CNN
-F 3 "~" H 1750 5000 50  0001 C CNN
-	1    1750 5000
-	0    -1   -1   0   
+F 0 "C531" H 500 4950 50  0000 L CNN
+F 1 "0.0082uF" H 350 5050 50  0000 L CNN
+F 2 "" H 838 4850 50  0001 C CNN
+F 3 "~" H 800 5000 50  0001 C CNN
+	1    800  5000
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 60D4E467
-P 6250 5000
+P 7450 5000
 AR Path="/60786F27/6078774E/60D4E467" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60D4E467" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60D4E467" Ref="C?"  Part="1" 
@@ -520,41 +332,27 @@ AR Path="/60AD33B6/60D4E467" Ref="C?"  Part="1"
 AR Path="/60B8B7AD/60D4E467" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60D4E467" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60D4E467" Ref="C534"  Part="1" 
-F 0 "C534" V 6400 4900 50  0000 L CNN
-F 1 "0.0082uF" V 6100 4800 50  0000 L CNN
-F 2 "" H 6288 4850 50  0001 C CNN
-F 3 "~" H 6250 5000 50  0001 C CNN
-	1    6250 5000
-	0    -1   -1   0   
+F 0 "C534" H 7600 4950 50  0000 L CNN
+F 1 "0.0082uF" H 7550 5050 50  0000 L CNN
+F 2 "" H 7488 4850 50  0001 C CNN
+F 3 "~" H 7450 5000 50  0001 C CNN
+	1    7450 5000
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1400 4500 1600 4500
-Text Label 7150 5000 2    50   ~ 0
+Text Label 7450 4200 3    50   ~ 0
 right_tone_out
-Text Label 5350 5000 0    50   ~ 0
+Text Label 7450 5900 1    50   ~ 0
 right_op_amp_out
 Wire Wire Line
-	6400 5000 7150 5000
+	7450 5150 7450 5900
 Wire Wire Line
-	6100 5000 5350 5000
-Wire Wire Line
-	2650 4500 1900 4500
-Wire Wire Line
-	850  5000 1600 5000
-Wire Wire Line
-	1900 5000 2650 5000
-Wire Wire Line
-	6100 4500 5950 4500
-Wire Wire Line
-	6400 4500 7150 4500
-Text Label 7150 4500 2    50   ~ 0
-right_tone_in
-Text GLabel 5950 4500 0    50   Input ~ 0
+	2900 4000 2150 4000
+Text GLabel 6700 3900 2    50   Input ~ 0
 ASOUND_RIGHT
 $Comp
 L Device:C C?
 U 1 1 60D4E923
-P 6250 4500
+P 6250 3900
 AR Path="/60786F27/6078774E/60D4E923" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60D4E923" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60D4E923" Ref="C?"  Part="1" 
@@ -567,17 +365,17 @@ AR Path="/60AD33B6/60D4E923" Ref="C?"  Part="1"
 AR Path="/60B8B7AD/60D4E923" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60D4E923" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60D4E923" Ref="C538"  Part="1" 
-F 0 "C538" V 6400 4400 50  0000 L CNN
-F 1 "0.0082uF" V 6100 4300 50  0000 L CNN
-F 2 "" H 6288 4350 50  0001 C CNN
-F 3 "~" H 6250 4500 50  0001 C CNN
-	1    6250 4500
-	0    -1   -1   0   
+F 0 "C538" V 6300 3950 50  0000 L CNN
+F 1 "0.0082uF" V 6400 3900 50  0000 L CNN
+F 2 "" H 6288 3750 50  0001 C CNN
+F 3 "~" H 6250 3900 50  0001 C CNN
+	1    6250 3900
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 60D89D1F
-P 6500 2000
+P 800 3000
 AR Path="/60786F27/6078774E/60D89D1F" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60D89D1F" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60D89D1F" Ref="C?"  Part="1" 
@@ -590,25 +388,25 @@ AR Path="/60AD33B6/60D89D1F" Ref="C?"  Part="1"
 AR Path="/60B8B7AD/60D89D1F" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60D89D1F" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60D89D1F" Ref="C524"  Part="1" 
-F 0 "C524" H 6525 2100 50  0000 L CNN
-F 1 "0.1uF" H 6525 1900 50  0000 L CNN
-F 2 "" H 6538 1850 50  0001 C CNN
-F 3 "~" H 6500 2000 50  0001 C CNN
-	1    6500 2000
+F 0 "C524" H 825 3100 50  0000 L CNN
+F 1 "0.1uF" H 825 2900 50  0000 L CNN
+F 2 "" H 838 2850 50  0001 C CNN
+F 3 "~" H 800 3000 50  0001 C CNN
+	1    800  3000
 	1    0    0    -1  
 $EndComp
-Text Label 6500 2350 1    50   ~ 0
+Text Label 800  3350 1    50   ~ 0
 GND
 Wire Wire Line
-	6500 2150 6500 2350
+	800  3150 800  3350
 Wire Wire Line
-	6500 1850 6500 1750
-Text GLabel 6500 1750 1    50   Input ~ 0
+	800  2850 800  2750
+Text GLabel 800  2750 1    50   Input ~ 0
 +8.2V
 $Comp
 L Device:R_Small_US R?
 U 1 1 60D900EB
-P 4500 7500
+P 1750 5500
 AR Path="/608A2359/60D900EB" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60D900EB" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60D900EB" Ref="R?"  Part="1" 
@@ -621,102 +419,98 @@ AR Path="/60C451BA/60D900EB" Ref="R?"  Part="1"
 AR Path="/60C95DE8/60D900EB" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60D900EB" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60D900EB" Ref="R520"  Part="1" 
-F 0 "R520" V 4400 7500 50  0000 C CNN
-F 1 "1K" V 4600 7500 50  0000 C CNN
-F 2 "" H 4500 7500 50  0001 C CNN
-F 3 "~" H 4500 7500 50  0001 C CNN
-	1    4500 7500
-	0    1    1    0   
+F 0 "R520" H 1900 5450 50  0000 C CNN
+F 1 "1K" H 1900 5550 50  0000 C CNN
+F 2 "" H 1750 5500 50  0001 C CNN
+F 3 "~" H 1750 5500 50  0001 C CNN
+	1    1750 5500
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:CP1 C?
 U 1 1 60D91985
-P 5000 7500
+P 1750 6000
 AR Path="/6089D0C2/60D91985" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60D91985" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60D91985" Ref="C?"  Part="1" 
 AR Path="/60CC3B10/60D91985" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60D91985" Ref="C525"  Part="1" 
-F 0 "C525" V 5150 7400 50  0000 L CNN
-F 1 "47uF" V 4850 7400 50  0000 L CNN
-F 2 "" H 5000 7500 50  0001 C CNN
-F 3 "~" H 5000 7500 50  0001 C CNN
-	1    5000 7500
-	0    -1   -1   0   
+F 0 "C525" H 1450 6050 50  0000 L CNN
+F 1 "47uF" H 1450 5950 50  0000 L CNN
+F 2 "" H 1750 6000 50  0001 C CNN
+F 3 "~" H 1750 6000 50  0001 C CNN
+	1    1750 6000
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 60D98994
-P 5750 7600
+P 1650 6750
 AR Path="/608A2359/60D98994" Ref="L?"  Part="1" 
 AR Path="/608C2344/60D98994" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/60D98994" Ref="L?"  Part="1" 
 AR Path="/609B5A51/60D98994" Ref="L?"  Part="1" 
 AR Path="/60B3D9E3/60D98994" Ref="L?"  Part="1" 
 AR Path="/60CD36E9/60D98994" Ref="L504"  Part="1" 
-F 0 "L504" H 5750 7875 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 5750 7800 50  0000 C CNN
-F 2 "" V 5750 7600 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5750 7600 50  0001 C CNN
-	1    5750 7600
-	1    0    0    -1  
+F 0 "L504" V 1750 6450 50  0000 C CNN
+F 1 "EMI_Filter_LCL" V 1850 6450 50  0000 C CNN
+F 2 "" V 1650 6750 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 1650 6750 50  0001 C CNN
+	1    1650 6750
+	0    1    1    0   
 $EndComp
-Text Label 5750 7700 0    50   ~ 0
+Text Label 1550 6750 2    50   ~ 0
 GND
 $Comp
 L Device:R_Small_US R?
 U 1 1 60D9A41B
-P 6500 7750
+P 1500 7500
 AR Path="/60B3D9E3/60D9A41B" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60D9A41B" Ref="R?"  Part="1" 
 AR Path="/60C95DE8/60D9A41B" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60D9A41B" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60D9A41B" Ref="R590"  Part="1" 
-F 0 "R590" H 6530 7770 50  0000 L CNN
-F 1 "270K" H 6530 7710 50  0000 L CNN
-F 2 "" H 6500 7750 50  0001 C CNN
-F 3 "~" H 6500 7750 50  0001 C CNN
-	1    6500 7750
-	1    0    0    -1  
+F 0 "R590" V 1400 7400 50  0000 L CNN
+F 1 "270K" V 1600 7400 50  0000 L CNN
+F 2 "" H 1500 7500 50  0001 C CNN
+F 3 "~" H 1500 7500 50  0001 C CNN
+	1    1500 7500
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector:Conn_Coaxial J502
 U 1 1 60D9C5BA
-P 7000 7500
-F 0 "J502" H 7010 7620 50  0000 C CNN
-F 1 "Phono LEFT" H 7000 7700 50  0000 C CNN
-F 2 "" H 7000 7500 50  0001 C CNN
-F 3 " ~" H 7000 7500 50  0001 C CNN
-	1    7000 7500
-	1    0    0    -1  
+P 1750 8000
+F 0 "J502" V 1900 8000 50  0000 C CNN
+F 1 "Phono LEFT" V 2000 8000 50  0000 C CNN
+F 2 "" H 1750 8000 50  0001 C CNN
+F 3 " ~" H 1750 8000 50  0001 C CNN
+	1    1750 8000
+	0    1    1    0   
 $EndComp
-Text Label 6500 8100 1    50   ~ 0
+Text Label 1150 7500 0    50   ~ 0
 GND
 Wire Wire Line
-	6500 7850 6500 8100
-Text Label 7000 8100 1    50   ~ 0
+	1400 7500 1150 7500
+Text Label 1150 8000 0    50   ~ 0
 GND
 Wire Wire Line
-	7000 7700 7000 8100
+	1550 8000 1150 8000
 Wire Wire Line
-	4600 7500 4850 7500
+	1750 5600 1750 5850
 Wire Wire Line
-	5150 7500 5450 7500
+	1750 6150 1750 6450
 Wire Wire Line
-	6050 7500 6500 7500
+	1750 7050 1750 7500
 Wire Wire Line
-	6500 7650 6500 7500
-Connection ~ 6500 7500
+	1600 7500 1750 7500
+Connection ~ 1750 7500
 Wire Wire Line
-	6500 7500 6800 7500
-Text Label 3700 8500 0    50   ~ 0
-right_front_out
-Wire Wire Line
-	3700 8500 4400 8500
+	1750 7500 1750 7800
 $Comp
 L Device:R_Small_US R?
 U 1 1 60DBE188
-P 4500 8500
+P 6500 5500
 AR Path="/608A2359/60DBE188" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60DBE188" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60DBE188" Ref="R?"  Part="1" 
@@ -729,114 +523,114 @@ AR Path="/60C451BA/60DBE188" Ref="R?"  Part="1"
 AR Path="/60C95DE8/60DBE188" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60DBE188" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60DBE188" Ref="R533"  Part="1" 
-F 0 "R533" V 4400 8500 50  0000 C CNN
-F 1 "1K" V 4600 8500 50  0000 C CNN
-F 2 "" H 4500 8500 50  0001 C CNN
-F 3 "~" H 4500 8500 50  0001 C CNN
-	1    4500 8500
-	0    1    1    0   
+F 0 "R533" H 6350 5450 50  0000 C CNN
+F 1 "1K" H 6350 5550 50  0000 C CNN
+F 2 "" H 6500 5500 50  0001 C CNN
+F 3 "~" H 6500 5500 50  0001 C CNN
+	1    6500 5500
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:CP1 C?
 U 1 1 60DBE18E
-P 5000 8500
+P 6500 6000
 AR Path="/6089D0C2/60DBE18E" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60DBE18E" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60DBE18E" Ref="C?"  Part="1" 
 AR Path="/60CC3B10/60DBE18E" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60DBE18E" Ref="C537"  Part="1" 
-F 0 "C537" V 5150 8400 50  0000 L CNN
-F 1 "47uF" V 4850 8400 50  0000 L CNN
-F 2 "" H 5000 8500 50  0001 C CNN
-F 3 "~" H 5000 8500 50  0001 C CNN
-	1    5000 8500
-	0    -1   -1   0   
+F 0 "C537" H 6600 6050 50  0000 L CNN
+F 1 "47uF" H 6600 5950 50  0000 L CNN
+F 2 "" H 6500 6000 50  0001 C CNN
+F 3 "~" H 6500 6000 50  0001 C CNN
+	1    6500 6000
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 60DBE194
-P 5750 8600
+P 6400 6750
 AR Path="/608A2359/60DBE194" Ref="L?"  Part="1" 
 AR Path="/608C2344/60DBE194" Ref="L?"  Part="1" 
 AR Path="/608EA3C9/60DBE194" Ref="L?"  Part="1" 
 AR Path="/609B5A51/60DBE194" Ref="L?"  Part="1" 
 AR Path="/60B3D9E3/60DBE194" Ref="L?"  Part="1" 
 AR Path="/60CD36E9/60DBE194" Ref="L505"  Part="1" 
-F 0 "L505" H 5750 8875 50  0000 C CNN
-F 1 "EMI_Filter_LCL" H 5750 8800 50  0000 C CNN
-F 2 "" V 5750 8600 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5750 8600 50  0001 C CNN
-	1    5750 8600
-	1    0    0    -1  
+F 0 "L505" V 6500 6450 50  0000 C CNN
+F 1 "EMI_Filter_LCL" V 6600 6450 50  0000 C CNN
+F 2 "" V 6400 6750 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 6400 6750 50  0001 C CNN
+	1    6400 6750
+	0    1    1    0   
 $EndComp
-Text Label 5750 8700 0    50   ~ 0
+Text Label 6300 6750 2    50   ~ 0
 GND
 $Comp
 L Device:R_Small_US R?
 U 1 1 60DBE19B
-P 6500 8750
+P 6250 7500
 AR Path="/60B3D9E3/60DBE19B" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60DBE19B" Ref="R?"  Part="1" 
 AR Path="/60C95DE8/60DBE19B" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60DBE19B" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60DBE19B" Ref="R591"  Part="1" 
-F 0 "R591" H 6530 8770 50  0000 L CNN
-F 1 "270K" H 6530 8710 50  0000 L CNN
-F 2 "" H 6500 8750 50  0001 C CNN
-F 3 "~" H 6500 8750 50  0001 C CNN
-	1    6500 8750
-	1    0    0    -1  
+F 0 "R591" V 6150 7400 50  0000 L CNN
+F 1 "270K" V 6350 7400 50  0000 L CNN
+F 2 "" H 6250 7500 50  0001 C CNN
+F 3 "~" H 6250 7500 50  0001 C CNN
+	1    6250 7500
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector:Conn_Coaxial J503
 U 1 1 60DBE1A1
-P 7000 8500
-F 0 "J503" H 7010 8620 50  0000 C CNN
-F 1 "Phono RIGHT" H 7000 8700 50  0000 C CNN
-F 2 "" H 7000 8500 50  0001 C CNN
-F 3 " ~" H 7000 8500 50  0001 C CNN
-	1    7000 8500
-	1    0    0    -1  
+P 6500 8000
+F 0 "J503" V 6650 8000 50  0000 C CNN
+F 1 "Phono RIGHT" V 6750 8000 50  0000 C CNN
+F 2 "" H 6500 8000 50  0001 C CNN
+F 3 " ~" H 6500 8000 50  0001 C CNN
+	1    6500 8000
+	0    1    1    0   
 $EndComp
-Text Label 6500 9100 1    50   ~ 0
+Text Label 5900 7500 0    50   ~ 0
 GND
 Wire Wire Line
-	6500 8850 6500 9100
-Text Label 7000 9100 1    50   ~ 0
+	6150 7500 5900 7500
+Text Label 5900 8000 0    50   ~ 0
 GND
 Wire Wire Line
-	7000 8700 7000 9100
+	6300 8000 5900 8000
 Wire Wire Line
-	4600 8500 4850 8500
+	6500 5600 6500 5850
 Wire Wire Line
-	5150 8500 5450 8500
+	6500 6150 6500 6450
 Wire Wire Line
-	6050 8500 6500 8500
+	6500 7050 6500 7500
 Wire Wire Line
-	6500 8650 6500 8500
-Connection ~ 6500 8500
+	6350 7500 6500 7500
+Connection ~ 6500 7500
 Wire Wire Line
-	6500 8500 6800 8500
+	6500 7500 6500 7800
 $Comp
 L Device:CP1 C?
 U 1 1 60DC0622
-P 1750 7500
+P 2250 5250
 AR Path="/6089D0C2/60DC0622" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60DC0622" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60DC0622" Ref="C?"  Part="1" 
 AR Path="/60CC3B10/60DC0622" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60DC0622" Ref="C529"  Part="1" 
-F 0 "C529" V 1900 7400 50  0000 L CNN
-F 1 "47uF" V 1600 7400 50  0000 L CNN
-F 2 "" H 1750 7500 50  0001 C CNN
-F 3 "~" H 1750 7500 50  0001 C CNN
-	1    1750 7500
-	0    -1   -1   0   
+F 0 "C529" H 2350 5300 50  0000 L CNN
+F 1 "47uF" H 2350 5200 50  0000 L CNN
+F 2 "" H 2250 5250 50  0001 C CNN
+F 3 "~" H 2250 5250 50  0001 C CNN
+	1    2250 5250
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 60DC0E1A
-P 2250 7500
+P 2250 5750
 AR Path="/608A2359/60DC0E1A" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60DC0E1A" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60DC0E1A" Ref="R?"  Part="1" 
@@ -849,37 +643,33 @@ AR Path="/60C451BA/60DC0E1A" Ref="R?"  Part="1"
 AR Path="/60C95DE8/60DC0E1A" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60DC0E1A" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60DC0E1A" Ref="R527"  Part="1" 
-F 0 "R527" V 2150 7500 50  0000 C CNN
-F 1 "10K" V 2350 7500 50  0000 C CNN
-F 2 "" H 2250 7500 50  0001 C CNN
-F 3 "~" H 2250 7500 50  0001 C CNN
-	1    2250 7500
-	0    1    1    0   
+F 0 "R527" H 2100 5700 50  0000 C CNN
+F 1 "10K" H 2100 5800 50  0000 C CNN
+F 2 "" H 2250 5750 50  0001 C CNN
+F 3 "~" H 2250 5750 50  0001 C CNN
+	1    2250 5750
+	-1   0    0    1   
 $EndComp
-Text GLabel 2650 7500 2    50   Output ~ 0
-MIX_LEFT
-Text GLabel 2350 8000 0    50   Input ~ 0
-AMP_MIX_LEFT
 $Comp
 L Device:R_Small_US R?
 U 1 1 60DC5540
-P 2500 7750
+P 2900 6050
 AR Path="/60B3D9E3/60DC5540" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60DC5540" Ref="R?"  Part="1" 
 AR Path="/60C95DE8/60DC5540" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60DC5540" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60DC5540" Ref="R524"  Part="1" 
-F 0 "R524" H 2530 7770 50  0000 L CNN
-F 1 "3K6" H 2530 7710 50  0000 L CNN
-F 2 "" H 2500 7750 50  0001 C CNN
-F 3 "~" H 2500 7750 50  0001 C CNN
-	1    2500 7750
-	1    0    0    -1  
+F 0 "R524" V 2850 5750 50  0000 L CNN
+F 1 "3K6" V 2850 6150 50  0000 L CNN
+F 2 "" H 2900 6050 50  0001 C CNN
+F 3 "~" H 2900 6050 50  0001 C CNN
+	1    2900 6050
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 60DC5E81
-P 2750 8000
+P 3550 6750
 AR Path="/608A2359/60DC5E81" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60DC5E81" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60DC5E81" Ref="R?"  Part="1" 
@@ -892,57 +682,41 @@ AR Path="/60C451BA/60DC5E81" Ref="R?"  Part="1"
 AR Path="/60C95DE8/60DC5E81" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60DC5E81" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60DC5E81" Ref="R540"  Part="1" 
-F 0 "R540" V 2650 8000 50  0000 C CNN
-F 1 "1K" V 2850 8000 50  0000 C CNN
-F 2 "" H 2750 8000 50  0001 C CNN
-F 3 "~" H 2750 8000 50  0001 C CNN
-	1    2750 8000
-	0    1    1    0   
+F 0 "R540" H 3400 6700 50  0000 C CNN
+F 1 "1K" H 3400 6800 50  0000 C CNN
+F 2 "" H 3550 6750 50  0001 C CNN
+F 3 "~" H 3550 6750 50  0001 C CNN
+	1    3550 6750
+	-1   0    0    1   
 $EndComp
-Text GLabel 3150 8000 2    50   Output ~ 0
+Text GLabel 4250 7250 2    50   Output ~ 0
 AUDIO
 Wire Wire Line
-	900  7500 1600 7500
-Text Label 900  7500 0    50   ~ 0
-left_front_out
+	2250 4400 2250 5100
 Wire Wire Line
-	1900 7500 2150 7500
+	2250 5400 2250 5650
 Wire Wire Line
-	2350 7500 2500 7500
-Wire Wire Line
-	2500 7500 2500 7650
-Connection ~ 2500 7500
-Wire Wire Line
-	2500 7500 2650 7500
-Wire Wire Line
-	2500 8000 2500 7850
-Wire Wire Line
-	2350 8000 2500 8000
-Wire Wire Line
-	2500 8000 2650 8000
-Connection ~ 2500 8000
-Wire Wire Line
-	2850 8000 3150 8000
+	3550 6850 3550 7000
 $Comp
 L Device:CP1 C?
 U 1 1 60DDE603
-P 1750 8500
+P 6000 5250
 AR Path="/6089D0C2/60DDE603" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60DDE603" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60DDE603" Ref="C?"  Part="1" 
 AR Path="/60CC3B10/60DDE603" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60DDE603" Ref="C543"  Part="1" 
-F 0 "C543" V 1900 8400 50  0000 L CNN
-F 1 "47uF" V 1600 8400 50  0000 L CNN
-F 2 "" H 1750 8500 50  0001 C CNN
-F 3 "~" H 1750 8500 50  0001 C CNN
-	1    1750 8500
-	0    -1   -1   0   
+F 0 "C543" H 6100 5300 50  0000 L CNN
+F 1 "47uF" H 6100 5200 50  0000 L CNN
+F 2 "" H 6000 5250 50  0001 C CNN
+F 3 "~" H 6000 5250 50  0001 C CNN
+	1    6000 5250
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 60DDE609
-P 2250 8500
+P 6000 5750
 AR Path="/608A2359/60DDE609" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60DDE609" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60DDE609" Ref="R?"  Part="1" 
@@ -955,37 +729,33 @@ AR Path="/60C451BA/60DDE609" Ref="R?"  Part="1"
 AR Path="/60C95DE8/60DDE609" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60DDE609" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60DDE609" Ref="R538"  Part="1" 
-F 0 "R538" V 2150 8500 50  0000 C CNN
-F 1 "10K" V 2350 8500 50  0000 C CNN
-F 2 "" H 2250 8500 50  0001 C CNN
-F 3 "~" H 2250 8500 50  0001 C CNN
-	1    2250 8500
-	0    1    1    0   
+F 0 "R538" H 5850 5700 50  0000 C CNN
+F 1 "10K" H 5850 5800 50  0000 C CNN
+F 2 "" H 6000 5750 50  0001 C CNN
+F 3 "~" H 6000 5750 50  0001 C CNN
+	1    6000 5750
+	-1   0    0    1   
 $EndComp
-Text GLabel 2650 8500 2    50   Output ~ 0
-MIX_RIGHT
-Text GLabel 2350 9000 0    50   Input ~ 0
-AMP_MIX_RIGHT
 $Comp
 L Device:R_Small_US R?
 U 1 1 60DDE611
-P 2500 8750
+P 5350 6050
 AR Path="/60B3D9E3/60DDE611" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60DDE611" Ref="R?"  Part="1" 
 AR Path="/60C95DE8/60DDE611" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60DDE611" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60DDE611" Ref="R537"  Part="1" 
-F 0 "R537" H 2530 8770 50  0000 L CNN
-F 1 "3K6" H 2530 8710 50  0000 L CNN
-F 2 "" H 2500 8750 50  0001 C CNN
-F 3 "~" H 2500 8750 50  0001 C CNN
-	1    2500 8750
-	1    0    0    -1  
+F 0 "R537" V 5400 6150 50  0000 L CNN
+F 1 "3K6" V 5400 5800 50  0000 L CNN
+F 2 "" H 5350 6050 50  0001 C CNN
+F 3 "~" H 5350 6050 50  0001 C CNN
+	1    5350 6050
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 60DDE617
-P 2750 9000
+P 4700 6750
 AR Path="/608A2359/60DDE617" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60DDE617" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60DDE617" Ref="R?"  Part="1" 
@@ -998,48 +768,18 @@ AR Path="/60C451BA/60DDE617" Ref="R?"  Part="1"
 AR Path="/60C95DE8/60DDE617" Ref="R?"  Part="1" 
 AR Path="/60CC3B10/60DDE617" Ref="R?"  Part="1" 
 AR Path="/60CD36E9/60DDE617" Ref="R541"  Part="1" 
-F 0 "R541" V 2650 9000 50  0000 C CNN
-F 1 "1K" V 2850 9000 50  0000 C CNN
-F 2 "" H 2750 9000 50  0001 C CNN
-F 3 "~" H 2750 9000 50  0001 C CNN
-	1    2750 9000
-	0    1    1    0   
+F 0 "R541" H 4550 6700 50  0000 C CNN
+F 1 "1K" H 4550 6800 50  0000 C CNN
+F 2 "" H 4700 6750 50  0001 C CNN
+F 3 "~" H 4700 6750 50  0001 C CNN
+	1    4700 6750
+	-1   0    0    1   
 $EndComp
-Text GLabel 3150 9000 2    50   Output ~ 0
-AUDIO
 Wire Wire Line
-	900  8500 1600 8500
+	6000 5400 6000 5650
 Wire Wire Line
-	1900 8500 2150 8500
-Wire Wire Line
-	2350 8500 2500 8500
-Wire Wire Line
-	2500 8500 2500 8650
-Connection ~ 2500 8500
-Wire Wire Line
-	2500 8500 2650 8500
-Wire Wire Line
-	2500 9000 2500 8850
-Wire Wire Line
-	2350 9000 2500 9000
-Wire Wire Line
-	2500 9000 2650 9000
-Connection ~ 2500 9000
-Wire Wire Line
-	2850 9000 3150 9000
-Text Label 900  8500 0    50   ~ 0
-right_front_out
-Text Notes 3000 7450 2    50   ~ 0
-To U504
-Text Notes 3050 8450 2    50   ~ 0
-To U504
-Text Notes 1800 7950 0    50   ~ 0
-From U504
-Text Notes 1750 8950 0    50   ~ 0
-From U504
-Text Notes 3450 8050 0    50   ~ 0
-To Video port
-Text Notes 3450 9050 0    50   ~ 0
+	4700 6850 4700 7000
+Text Notes 4250 7400 0    50   ~ 0
 To Video port
 Text Notes 3150 700  0    71   ~ 0
 Ground plane this area
@@ -1051,40 +791,212 @@ Wire Notes Line
 	550  550  7650 550 
 Wire Notes Line
 	550  9650 7650 9650
-Text Label 5650 2100 2    50   ~ 0
-bypass
 Wire Wire Line
-	5300 2000 5650 2000
-Wire Wire Line
-	5300 2100 5650 2100
+	5300 3100 5650 3100
 $Comp
 L Device:CP1 C?
 U 1 1 60E01C9D
-P 7000 2000
+P 6100 3200
 AR Path="/6089D0C2/60E01C9D" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60E01C9D" Ref="C?"  Part="1" 
 AR Path="/60C95DE8/60E01C9D" Ref="C?"  Part="1" 
 AR Path="/60CC3B10/60E01C9D" Ref="C?"  Part="1" 
 AR Path="/60CD36E9/60E01C9D" Ref="C542"  Part="1" 
-F 0 "C542" H 7050 2100 50  0000 L CNN
-F 1 "10uF" H 7050 1900 50  0000 L CNN
-F 2 "" H 7000 2000 50  0001 C CNN
-F 3 "~" H 7000 2000 50  0001 C CNN
-	1    7000 2000
-	1    0    0    -1  
+F 0 "C542" V 6150 2900 50  0000 L CNN
+F 1 "10uF" V 6050 2900 50  0000 L CNN
+F 2 "" H 6100 3200 50  0001 C CNN
+F 3 "~" H 6100 3200 50  0001 C CNN
+	1    6100 3200
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7000 2350 7000 2150
-Text Label 7000 2350 1    50   ~ 0
+	6550 3400 6550 3200
+Text Label 6550 3400 1    50   ~ 0
 GND
-Text Label 7000 1550 3    50   ~ 0
-bypass
+$Comp
+L lf347:LF347N_mu U?
+U 2 1 60DF2E8E
+P 2900 6550
+AR Path="/60CC3B10/60DF2E8E" Ref="U?"  Part="2" 
+AR Path="/60CD36E9/60DF2E8E" Ref="U504"  Part="2" 
+F 0 "U504" H 2650 6750 50  0000 L TNN
+F 1 "LF347N_mu" H 2650 6850 50  0000 L TNB
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 2400 6950 50  0001 L TNN
+F 3 "" H 2400 7050 50  0001 L TNN
+	2    2900 6550
+	1    0    0    1   
+$EndComp
+$Comp
+L lf347:LF347N_mu U?
+U 3 1 60DF2E94
+P 5350 6250
+AR Path="/60CC3B10/60DF2E94" Ref="U?"  Part="3" 
+AR Path="/60CD36E9/60DF2E94" Ref="U504"  Part="3" 
+F 0 "U504" H 5350 5900 50  0000 L TNN
+F 1 "LF347N_mu" H 5150 5800 50  0000 L TNB
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 4850 6650 50  0001 L TNN
+F 3 "" H 4850 6750 50  0001 L TNN
+	3    5350 6250
+	-1   0    0    -1  
+$EndComp
+Text Label 2450 3400 0    50   ~ 0
+audio_full
+Text Label 5750 3300 2    50   ~ 0
+audio_full
+Text Label 2450 3500 0    50   ~ 0
+audio_bass
+Text Label 5750 3400 2    50   ~ 0
+audio_bass
 Wire Wire Line
-	7000 1550 7000 1850
+	2450 3400 2900 3400
 Wire Wire Line
-	4350 5350 4350 5500
+	2450 3500 2900 3500
 Wire Wire Line
-	4350 5500 4350 5650
-Connection ~ 4350 5500
-Connection ~ 5500 6000
+	5300 3300 5750 3300
+Wire Wire Line
+	5300 3400 5750 3400
+Wire Wire Line
+	2450 3100 2900 3100
+Wire Wire Line
+	2450 3200 2900 3200
+Wire Wire Line
+	2450 3300 2900 3300
+Wire Wire Line
+	4500 1400 4500 1500
+Wire Wire Line
+	4200 1500 4500 1500
+Wire Wire Line
+	4300 1000 4500 1000
+Wire Wire Line
+	1550 4000 1650 4000
+Wire Wire Line
+	1650 4000 1650 3900
+Connection ~ 1650 4000
+Wire Wire Line
+	1650 4000 1850 4000
+Wire Wire Line
+	1650 3900 2900 3900
+Wire Wire Line
+	2850 1250 2850 1500
+Wire Wire Line
+	4500 1600 4800 1600
+Wire Wire Line
+	2850 1500 4000 1500
+Connection ~ 2850 1500
+Wire Wire Line
+	2850 1500 2850 1750
+Wire Wire Line
+	4000 1700 4500 1700
+Wire Wire Line
+	4500 1700 4500 1800
+Wire Wire Line
+	4500 1800 5000 1800
+Connection ~ 4500 1800
+Wire Wire Line
+	4500 1800 4500 1950
+Wire Wire Line
+	4000 1700 4000 2000
+Connection ~ 4500 1500
+Wire Wire Line
+	4500 1500 4500 1600
+Connection ~ 4500 1600
+Wire Wire Line
+	4500 1600 4500 1700
+Connection ~ 4500 1700
+Wire Wire Line
+	5000 1600 6000 1600
+Wire Wire Line
+	1550 3800 2900 3800
+Wire Wire Line
+	6400 3900 6600 3900
+Wire Wire Line
+	5300 3900 6100 3900
+Wire Wire Line
+	6600 3800 6600 3900
+Wire Wire Line
+	5300 3800 6600 3800
+Connection ~ 6600 3900
+Wire Wire Line
+	6600 3900 6700 3900
+Wire Wire Line
+	5300 3700 6650 3700
+Wire Wire Line
+	5300 3200 5950 3200
+Wire Wire Line
+	6550 3200 6250 3200
+Wire Wire Line
+	5300 4300 6000 4300
+Wire Wire Line
+	2250 6350 2350 6350
+Wire Wire Line
+	3550 6450 3450 6450
+Connection ~ 3550 6450
+Wire Wire Line
+	3550 6450 3550 6650
+Wire Wire Line
+	2250 5850 2250 6050
+Wire Wire Line
+	2250 6050 2800 6050
+Connection ~ 2250 6050
+Wire Wire Line
+	2250 6050 2250 6350
+Wire Wire Line
+	3000 6050 3550 6050
+Wire Wire Line
+	3550 6050 3550 6450
+Connection ~ 2250 4400
+Wire Wire Line
+	2250 4400 2900 4400
+Wire Wire Line
+	2050 6450 2350 6450
+Text Label 2050 6450 0    50   ~ 0
+GND
+Wire Wire Line
+	4700 6350 4700 6650
+Wire Wire Line
+	5900 6350 6000 6350
+Wire Wire Line
+	6200 6450 5900 6450
+Text Label 6200 6450 2    50   ~ 0
+GND
+Wire Wire Line
+	4800 6350 4700 6350
+Wire Wire Line
+	4700 6050 5250 6050
+Wire Wire Line
+	5450 6050 6000 6050
+Wire Wire Line
+	6000 5850 6000 6050
+Wire Wire Line
+	6000 6050 6000 6350
+Connection ~ 6000 6050
+Wire Wire Line
+	4700 6050 4700 6350
+Connection ~ 4700 6350
+Wire Wire Line
+	6000 4300 6000 5100
+Connection ~ 6000 4300
+Wire Wire Line
+	6000 4300 6500 4300
+Wire Wire Line
+	3550 7000 4100 7000
+Connection ~ 4100 7000
+Wire Wire Line
+	4100 7000 4700 7000
+Wire Wire Line
+	4100 7250 4250 7250
+Wire Wire Line
+	4100 7000 4100 7250
+Wire Wire Line
+	1750 4400 1750 5400
+Wire Wire Line
+	1750 4400 2250 4400
+Wire Wire Line
+	6500 4300 6500 5400
+Wire Wire Line
+	800  4850 800  4250
+Wire Wire Line
+	800  5850 800  5150
+Wire Wire Line
+	7450 4200 7450 4850
 $EndSCHEMATC
