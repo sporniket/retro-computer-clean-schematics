@@ -26,11 +26,11 @@ F 3 "https://pdf1.alldatasheet.fr/pdfjs/web/viewer.html?file=/datasheet-pdf/view
 $EndComp
 Text GLabel 2600 3200 0    50   Input ~ 0
 NOT__HSYNC_XOR_VSYNC
-Text GLabel 2900 5300 3    50   Input ~ 0
+Text GLabel 3150 5300 3    50   Input ~ 0
 R
-Text GLabel 3400 5300 3    50   Input ~ 0
+Text GLabel 3650 5300 3    50   Input ~ 0
 G
-Text GLabel 3900 5300 3    50   Input ~ 0
+Text GLabel 4150 5300 3    50   Input ~ 0
 B
 Text Label 5150 3600 2    50   ~ 0
 GND
@@ -118,7 +118,7 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 60B9B2D0
-P 4900 5000
+P 5150 5000
 AR Path="/60786F27/6078774E/60B9B2D0" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60B9B2D0" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60B9B2D0" Ref="C?"  Part="1" 
@@ -129,17 +129,17 @@ AR Path="/60AD8617/60B9B2D0" Ref="C?"  Part="1"
 AR Path="/60AD332C/60B9B2D0" Ref="C?"  Part="1" 
 AR Path="/60AD33B6/60B9B2D0" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60B9B2D0" Ref="C428"  Part="1" 
-F 0 "C428" H 4925 5100 50  0000 L CNN
-F 1 "0.1uF" H 4925 4900 50  0000 L CNN
-F 2 "" H 4938 4850 50  0001 C CNN
-F 3 "~" H 4900 5000 50  0001 C CNN
-	1    4900 5000
+F 0 "C428" H 5175 5100 50  0000 L CNN
+F 1 "0.1uF" H 5175 4900 50  0000 L CNN
+F 2 "" H 5188 4850 50  0001 C CNN
+F 3 "~" H 5150 5000 50  0001 C CNN
+	1    5150 5000
 	1    0    0    -1  
 $EndComp
-Text Label 4900 5350 1    50   ~ 0
+Text Label 5150 5350 1    50   ~ 0
 GND
 Wire Wire Line
-	4900 5150 4900 5350
+	5150 5150 5150 5350
 Text Label 5400 3900 2    50   ~ 0
 r_y_clamp
 Wire Wire Line
@@ -151,7 +151,7 @@ b_y_clamp
 $Comp
 L Device:C C?
 U 1 1 60B9E16C
-P 5400 5000
+P 5650 5000
 AR Path="/60786F27/6078774E/60B9E16C" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60B9E16C" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60B9E16C" Ref="C?"  Part="1" 
@@ -162,21 +162,21 @@ AR Path="/60AD8617/60B9E16C" Ref="C?"  Part="1"
 AR Path="/60AD332C/60B9E16C" Ref="C?"  Part="1" 
 AR Path="/60AD33B6/60B9E16C" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60B9E16C" Ref="C429"  Part="1" 
-F 0 "C429" H 5425 5100 50  0000 L CNN
-F 1 "0.1uF" H 5425 4900 50  0000 L CNN
-F 2 "" H 5438 4850 50  0001 C CNN
-F 3 "~" H 5400 5000 50  0001 C CNN
-	1    5400 5000
+F 0 "C429" H 5675 5100 50  0000 L CNN
+F 1 "0.1uF" H 5675 4900 50  0000 L CNN
+F 2 "" H 5688 4850 50  0001 C CNN
+F 3 "~" H 5650 5000 50  0001 C CNN
+	1    5650 5000
 	1    0    0    -1  
 $EndComp
-Text Label 5400 5350 1    50   ~ 0
+Text Label 5650 5350 1    50   ~ 0
 GND
 Wire Wire Line
-	5400 5150 5400 5350
+	5650 5150 5650 5350
 $Comp
 L Device:C C?
 U 1 1 60B9E777
-P 5900 5000
+P 6150 5000
 AR Path="/60786F27/6078774E/60B9E777" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60B9E777" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60B9E777" Ref="C?"  Part="1" 
@@ -187,21 +187,21 @@ AR Path="/60AD8617/60B9E777" Ref="C?"  Part="1"
 AR Path="/60AD332C/60B9E777" Ref="C?"  Part="1" 
 AR Path="/60AD33B6/60B9E777" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60B9E777" Ref="C430"  Part="1" 
-F 0 "C430" H 5925 5100 50  0000 L CNN
-F 1 "0.01uF" H 5925 4900 50  0000 L CNN
-F 2 "" H 5938 4850 50  0001 C CNN
-F 3 "~" H 5900 5000 50  0001 C CNN
-	1    5900 5000
+F 0 "C430" H 6175 5100 50  0000 L CNN
+F 1 "0.01uF" H 6175 4900 50  0000 L CNN
+F 2 "" H 6188 4850 50  0001 C CNN
+F 3 "~" H 6150 5000 50  0001 C CNN
+	1    6150 5000
 	1    0    0    -1  
 $EndComp
-Text Label 5900 5350 1    50   ~ 0
+Text Label 6150 5350 1    50   ~ 0
 GND
 Wire Wire Line
-	5900 5150 5900 5350
+	6150 5150 6150 5350
 $Comp
 L Device:C C?
 U 1 1 60B9ECAB
-P 6400 5000
+P 6650 5000
 AR Path="/60786F27/6078774E/60B9ECAB" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60B9ECAB" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60B9ECAB" Ref="C?"  Part="1" 
@@ -212,37 +212,37 @@ AR Path="/60AD8617/60B9ECAB" Ref="C?"  Part="1"
 AR Path="/60AD332C/60B9ECAB" Ref="C?"  Part="1" 
 AR Path="/60AD33B6/60B9ECAB" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60B9ECAB" Ref="C431"  Part="1" 
-F 0 "C431" H 6425 5100 50  0000 L CNN
-F 1 "0.01uF" H 6425 4900 50  0000 L CNN
-F 2 "" H 6438 4850 50  0001 C CNN
-F 3 "~" H 6400 5000 50  0001 C CNN
-	1    6400 5000
+F 0 "C431" H 6675 5100 50  0000 L CNN
+F 1 "0.01uF" H 6675 4900 50  0000 L CNN
+F 2 "" H 6688 4850 50  0001 C CNN
+F 3 "~" H 6650 5000 50  0001 C CNN
+	1    6650 5000
 	1    0    0    -1  
 $EndComp
-Text Label 6400 5350 1    50   ~ 0
+Text Label 6650 5350 1    50   ~ 0
 GND
 Wire Wire Line
-	6400 5150 6400 5350
+	6650 5150 6650 5350
 Wire Wire Line
-	4900 4850 4900 4350
-Text Label 4900 4350 3    50   ~ 0
+	5150 4850 5150 4350
+Text Label 5150 4350 3    50   ~ 0
 b_y_clamp
-Text Label 5400 4350 3    50   ~ 0
+Text Label 5650 4350 3    50   ~ 0
 r_y_clamp
 Wire Wire Line
-	5400 4850 5400 4350
-Text Label 5900 4350 3    50   ~ 0
+	5650 4850 5650 4350
+Text Label 6150 4350 3    50   ~ 0
 decoupler
 Wire Wire Line
-	5900 4850 5900 4350
-Text Label 6400 4350 3    50   ~ 0
+	6150 4850 6150 4350
+Text Label 6650 4350 3    50   ~ 0
 v_clamp
 Wire Wire Line
-	6400 4350 6400 4850
+	6650 4350 6650 4850
 $Comp
 L Device:C C?
 U 1 1 60BA13B0
-P 1900 5000
+P 2150 5000
 AR Path="/60786F27/6078774E/60BA13B0" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60BA13B0" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60BA13B0" Ref="C?"  Part="1" 
@@ -253,46 +253,46 @@ AR Path="/60AD8617/60BA13B0" Ref="C?"  Part="1"
 AR Path="/60AD332C/60BA13B0" Ref="C?"  Part="1" 
 AR Path="/60AD33B6/60BA13B0" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60BA13B0" Ref="C432"  Part="1" 
-F 0 "C432" H 1925 5100 50  0000 L CNN
-F 1 "0.001uF" H 1925 4900 50  0000 L CNN
-F 2 "" H 1938 4850 50  0001 C CNN
-F 3 "~" H 1900 5000 50  0001 C CNN
-	1    1900 5000
+F 0 "C432" H 2175 5100 50  0000 L CNN
+F 1 "0.001uF" H 2175 4900 50  0000 L CNN
+F 2 "" H 2188 4850 50  0001 C CNN
+F 3 "~" H 2150 5000 50  0001 C CNN
+	1    2150 5000
 	1    0    0    -1  
 $EndComp
-Text Label 1900 5350 1    50   ~ 0
+Text Label 2150 5350 1    50   ~ 0
 GND
 Wire Wire Line
-	1900 5150 1900 5350
-Text Label 1900 4150 3    50   ~ 0
+	2150 5150 2150 5350
+Text Label 2150 4150 3    50   ~ 0
 tr
 $Comp
 L Device:CP1 C?
 U 1 1 60BA2DB5
-P 2400 5000
+P 2650 5000
 AR Path="/6089D0C2/60BA2DB5" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60BA2DB5" Ref="C433"  Part="1" 
-F 0 "C433" H 2425 5100 50  0000 L CNN
-F 1 "1uF" H 2425 4900 50  0000 L CNN
-F 2 "" H 2400 5000 50  0001 C CNN
-F 3 "~" H 2400 5000 50  0001 C CNN
-	1    2400 5000
+F 0 "C433" H 2675 5100 50  0000 L CNN
+F 1 "1uF" H 2675 4900 50  0000 L CNN
+F 2 "" H 2650 5000 50  0001 C CNN
+F 3 "~" H 2650 5000 50  0001 C CNN
+	1    2650 5000
 	1    0    0    -1  
 $EndComp
-Text Label 2400 5350 1    50   ~ 0
+Text Label 2650 5350 1    50   ~ 0
 GND
-Text Label 2400 4150 3    50   ~ 0
+Text Label 2650 4150 3    50   ~ 0
 volt_bias
 Wire Wire Line
-	1900 4150 1900 4650
+	2150 4150 2150 4650
 Wire Wire Line
-	2400 4150 2400 4650
+	2650 4150 2650 4650
 Wire Wire Line
-	2400 5150 2400 5350
+	2650 5150 2650 5350
 $Comp
 L Device:R_Small_US R?
 U 1 1 60BA5CF6
-P 2150 4650
+P 2400 4650
 AR Path="/608A2359/60BA5CF6" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60BA5CF6" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60BA5CF6" Ref="R?"  Part="1" 
@@ -300,74 +300,74 @@ AR Path="/60AD8617/60BA5CF6" Ref="R?"  Part="1"
 AR Path="/60AD332C/60BA5CF6" Ref="R?"  Part="1" 
 AR Path="/60AD33B6/60BA5CF6" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60BA5CF6" Ref="R471"  Part="1" 
-F 0 "R471" V 2050 4650 50  0000 C CNN
-F 1 "47K" V 2250 4650 50  0000 C CNN
-F 2 "" H 2150 4650 50  0001 C CNN
-F 3 "~" H 2150 4650 50  0001 C CNN
-	1    2150 4650
+F 0 "R471" V 2300 4650 50  0000 C CNN
+F 1 "47K" V 2500 4650 50  0000 C CNN
+F 2 "" H 2400 4650 50  0001 C CNN
+F 3 "~" H 2400 4650 50  0001 C CNN
+	1    2400 4650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2250 4650 2400 4650
-Connection ~ 2400 4650
+	2500 4650 2650 4650
+Connection ~ 2650 4650
 Wire Wire Line
-	2400 4650 2400 4850
+	2650 4650 2650 4850
 Wire Wire Line
-	2050 4650 1900 4650
-Connection ~ 1900 4650
+	2300 4650 2150 4650
+Connection ~ 2150 4650
 Wire Wire Line
-	1900 4650 1900 4850
+	2150 4650 2150 4850
 $Comp
 L Device:CP1 C?
 U 1 1 60BABB58
-P 2900 5000
+P 3150 5000
 AR Path="/6089D0C2/60BABB58" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60BABB58" Ref="C420"  Part="1" 
-F 0 "C420" H 2925 5100 50  0000 L CNN
-F 1 "15uF" H 2925 4900 50  0000 L CNN
-F 2 "" H 2900 5000 50  0001 C CNN
-F 3 "~" H 2900 5000 50  0001 C CNN
-	1    2900 5000
+F 0 "C420" H 3175 5100 50  0000 L CNN
+F 1 "15uF" H 3175 4900 50  0000 L CNN
+F 2 "" H 3150 5000 50  0001 C CNN
+F 3 "~" H 3150 5000 50  0001 C CNN
+	1    3150 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 4850 2900 4350
+	3150 4850 3150 4350
 $Comp
 L Device:CP1 C?
 U 1 1 60BAD9D9
-P 3400 5000
+P 3650 5000
 AR Path="/6089D0C2/60BAD9D9" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60BAD9D9" Ref="C424"  Part="1" 
-F 0 "C424" H 3425 5100 50  0000 L CNN
-F 1 "15uF" H 3425 4900 50  0000 L CNN
-F 2 "" H 3400 5000 50  0001 C CNN
-F 3 "~" H 3400 5000 50  0001 C CNN
-	1    3400 5000
+F 0 "C424" H 3675 5100 50  0000 L CNN
+F 1 "15uF" H 3675 4900 50  0000 L CNN
+F 2 "" H 3650 5000 50  0001 C CNN
+F 3 "~" H 3650 5000 50  0001 C CNN
+	1    3650 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 4850 3400 4350
+	3650 4850 3650 4350
 $Comp
 L Device:CP1 C?
 U 1 1 60BAE7BB
-P 3900 5000
+P 4150 5000
 AR Path="/6089D0C2/60BAE7BB" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60BAE7BB" Ref="C426"  Part="1" 
-F 0 "C426" H 3925 5100 50  0000 L CNN
-F 1 "15uF" H 3925 4900 50  0000 L CNN
-F 2 "" H 3900 5000 50  0001 C CNN
-F 3 "~" H 3900 5000 50  0001 C CNN
-	1    3900 5000
+F 0 "C426" H 4175 5100 50  0000 L CNN
+F 1 "15uF" H 4175 4900 50  0000 L CNN
+F 2 "" H 4150 5000 50  0001 C CNN
+F 3 "~" H 4150 5000 50  0001 C CNN
+	1    4150 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 4850 3900 4350
+	4150 4850 4150 4350
 Wire Wire Line
-	2900 5150 2900 5300
+	3150 5150 3150 5300
 Wire Wire Line
-	3400 5150 3400 5300
+	3650 5150 3650 5300
 Wire Wire Line
-	3900 5150 3900 5300
+	4150 5150 4150 5300
 Wire Wire Line
 	2650 3300 3100 3300
 Wire Wire Line
@@ -380,16 +380,16 @@ Text Label 2650 3400 0    50   ~ 0
 green
 Text Label 2650 3500 0    50   ~ 0
 blue
-Text Label 2900 4350 3    50   ~ 0
+Text Label 3150 4350 3    50   ~ 0
 red
-Text Label 3400 4350 3    50   ~ 0
+Text Label 3650 4350 3    50   ~ 0
 green
-Text Label 3900 4350 3    50   ~ 0
+Text Label 4150 4350 3    50   ~ 0
 blue
 $Comp
 L Device:C C?
 U 1 1 60BB5F14
-P 4400 5000
+P 4650 5000
 AR Path="/60786F27/6078774E/60BB5F14" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60BB5F14" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60BB5F14" Ref="C?"  Part="1" 
@@ -400,38 +400,38 @@ AR Path="/60AD8617/60BB5F14" Ref="C?"  Part="1"
 AR Path="/60AD332C/60BB5F14" Ref="C?"  Part="1" 
 AR Path="/60AD33B6/60BB5F14" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60BB5F14" Ref="C427"  Part="1" 
-F 0 "C427" H 4425 5100 50  0000 L CNN
-F 1 "0.001uF" H 4425 4900 50  0000 L CNN
-F 2 "" H 4438 4850 50  0001 C CNN
-F 3 "~" H 4400 5000 50  0001 C CNN
-	1    4400 5000
+F 0 "C427" H 4675 5100 50  0000 L CNN
+F 1 "0.001uF" H 4675 4900 50  0000 L CNN
+F 2 "" H 4688 4850 50  0001 C CNN
+F 3 "~" H 4650 5000 50  0001 C CNN
+	1    4650 5000
 	1    0    0    -1  
 $EndComp
-Text Label 4400 6200 1    50   ~ 0
+Text Label 4650 6200 1    50   ~ 0
 GND
 Wire Wire Line
-	4400 6000 4400 6200
+	4650 6000 4650 6200
 $Comp
 L Device:R_Small_US R?
 U 1 1 60BC29D2
-P 4400 5900
+P 4650 5900
 AR Path="/60B3D9E3/60BC29D2" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60BC29D2" Ref="R470"  Part="1" 
-F 0 "R470" H 4430 5920 50  0000 L CNN
-F 1 "1K" H 4430 5860 50  0000 L CNN
-F 2 "" H 4400 5900 50  0001 C CNN
-F 3 "~" H 4400 5900 50  0001 C CNN
-	1    4400 5900
+F 0 "R470" H 4680 5920 50  0000 L CNN
+F 1 "1K" H 4680 5860 50  0000 L CNN
+F 2 "" H 4650 5900 50  0001 C CNN
+F 3 "~" H 4650 5900 50  0001 C CNN
+	1    4650 5900
 	1    0    0    -1  
 $EndComp
-Text Label 4400 4350 3    50   ~ 0
+Text Label 4650 4350 3    50   ~ 0
 osc_in
 Wire Wire Line
-	4400 4350 4400 4850
+	4650 4350 4650 4850
 $Comp
 L Device:R_Small_US R?
 U 1 1 60BC845F
-P 4150 5650
+P 4400 5650
 AR Path="/608A2359/60BC845F" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60BC845F" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60BC845F" Ref="R?"  Part="1" 
@@ -440,45 +440,44 @@ AR Path="/60AD332C/60BC845F" Ref="R?"  Part="1"
 AR Path="/60AD33B6/60BC845F" Ref="R?"  Part="1" 
 AR Path="/60B3D9E3/60BC845F" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60BC845F" Ref="R469"  Part="1" 
-F 0 "R469" V 4050 5650 50  0000 C CNN
-F 1 "5K6" V 4250 5650 50  0000 C CNN
-F 2 "" H 4150 5650 50  0001 C CNN
-F 3 "~" H 4150 5650 50  0001 C CNN
-	1    4150 5650
+F 0 "R469" V 4300 5650 50  0000 C CNN
+F 1 "5K6" V 4500 5650 50  0000 C CNN
+F 2 "" H 4400 5650 50  0001 C CNN
+F 3 "~" H 4400 5650 50  0001 C CNN
+	1    4400 5650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4250 5650 4400 5650
+	4500 5650 4650 5650
 Wire Wire Line
-	4400 5650 4400 5150
+	4650 5650 4650 5150
 Wire Wire Line
-	4400 5650 4400 5800
-Connection ~ 4400 5650
-Text Label 6900 5350 1    50   ~ 0
+	4650 5650 4650 5800
+Text Label 7150 5350 1    50   ~ 0
 GND
 $Comp
 L Device:R_Small_US R?
 U 1 1 60BCE8E6
-P 6900 5000
+P 7150 5000
 AR Path="/60B3D9E3/60BCE8E6" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60BCE8E6" Ref="R459"  Part="1" 
-F 0 "R459" H 6930 5020 50  0000 L CNN
-F 1 "0" H 6930 4960 50  0000 L CNN
-F 2 "" H 6900 5000 50  0001 C CNN
-F 3 "~" H 6900 5000 50  0001 C CNN
-	1    6900 5000
+F 0 "R459" H 7180 5020 50  0000 L CNN
+F 1 "0" H 7180 4960 50  0000 L CNN
+F 2 "" H 7150 5000 50  0001 C CNN
+F 3 "~" H 7150 5000 50  0001 C CNN
+	1    7150 5000
 	1    0    0    -1  
 $EndComp
-Text Label 6900 4350 3    50   ~ 0
+Text Label 7150 4350 3    50   ~ 0
 ntsc_select
 Wire Wire Line
-	6900 4350 6900 4900
-Text GLabel 3450 5950 0    50   Input ~ 0
+	7150 4350 7150 4900
+Text GLabel 3700 5950 0    50   Input ~ 0
 SHIFTER_COLOR
 $Comp
 L Device:R_Small_US R?
 U 1 1 60BA2863
-P 3700 5950
+P 3950 5950
 AR Path="/608A2359/60BA2863" Ref="R?"  Part="1" 
 AR Path="/60A1445F/60BA2863" Ref="R?"  Part="1" 
 AR Path="/60A73CDE/60BA2863" Ref="R?"  Part="1" 
@@ -487,30 +486,30 @@ AR Path="/60AD332C/60BA2863" Ref="R?"  Part="1"
 AR Path="/60AD33B6/60BA2863" Ref="R?"  Part="1" 
 AR Path="/60B3D9E3/60BA2863" Ref="R?"  Part="1" 
 AR Path="/60B8B7AD/60BA2863" Ref="R405"  Part="1" 
-F 0 "R405" V 3600 5950 50  0000 C CNN
-F 1 "0" V 3800 5950 50  0000 C CNN
-F 2 "" H 3700 5950 50  0001 C CNN
-F 3 "~" H 3700 5950 50  0001 C CNN
-	1    3700 5950
+F 0 "R405" V 3850 5950 50  0000 C CNN
+F 1 "0" V 4050 5950 50  0000 C CNN
+F 2 "" H 3950 5950 50  0001 C CNN
+F 3 "~" H 3950 5950 50  0001 C CNN
+	1    3950 5950
 	0    1    1    0   
 $EndComp
-Text Notes 2800 6100 0    50   ~ 0
+Text Notes 3050 6100 0    50   ~ 0
 NTSC clock
 Wire Wire Line
-	3450 5950 3600 5950
+	3700 5950 3850 5950
 Wire Wire Line
-	3800 5950 3900 5950
+	4050 5950 4150 5950
 Wire Wire Line
-	3900 5950 3900 5650
+	4150 5950 4150 5650
 Wire Wire Line
-	3750 5650 3900 5650
-Text Notes 2800 5700 0    50   ~ 0
+	4000 5650 4150 5650
+Text Notes 3050 5700 0    50   ~ 0
 PAL carrier clock
-Text GLabel 3750 5650 0    50   Input ~ 0
+Text GLabel 4000 5650 0    50   Input ~ 0
 CCLK
 Wire Wire Line
-	3900 5650 4050 5650
-Connection ~ 3900 5650
+	4150 5650 4300 5650
+Connection ~ 4150 5650
 NoConn ~ 4900 3300
 $Comp
 L Transistor_BJT:2N3904 Q?
@@ -616,7 +615,7 @@ Connection ~ 5900 7050
 Wire Wire Line
 	5900 7050 5900 7200
 Wire Wire Line
-	6900 5100 6900 5350
+	7150 5100 7150 5350
 Wire Wire Line
 	5900 6000 5900 6200
 $Comp
@@ -697,7 +696,7 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 60C12DB0
-P 1400 5000
+P 1150 5000
 AR Path="/60786F27/6078774E/60C12DB0" Ref="C?"  Part="1" 
 AR Path="/60786F27/607875AF/60C12DB0" Ref="C?"  Part="1" 
 AR Path="/6089D0BA/60C12DB0" Ref="C?"  Part="1" 
@@ -709,17 +708,17 @@ AR Path="/60AD332C/60C12DB0" Ref="C?"  Part="1"
 AR Path="/60AD33B6/60C12DB0" Ref="C?"  Part="1" 
 AR Path="/60B3D9E3/60C12DB0" Ref="C?"  Part="1" 
 AR Path="/60B8B7AD/60C12DB0" Ref="C422"  Part="1" 
-F 0 "C422" H 1425 5100 50  0000 L CNN
-F 1 "0.1uF" H 1425 4900 50  0000 L CNN
-F 2 "" H 1438 4850 50  0001 C CNN
-F 3 "~" H 1400 5000 50  0001 C CNN
-	1    1400 5000
+F 0 "C422" H 1175 5100 50  0000 L CNN
+F 1 "0.1uF" H 1175 4900 50  0000 L CNN
+F 2 "" H 1188 4850 50  0001 C CNN
+F 3 "~" H 1150 5000 50  0001 C CNN
+	1    1150 5000
 	1    0    0    -1  
 $EndComp
-Text Label 1400 5350 1    50   ~ 0
+Text Label 1150 5350 1    50   ~ 0
 GND
 Wire Wire Line
-	1400 5150 1400 5350
+	1150 5150 1150 5350
 Wire Wire Line
 	1500 1400 1500 1200
 Text Label 1500 1200 3    50   ~ 0
@@ -897,10 +896,10 @@ Text Label 1500 1850 1    50   ~ 0
 fvcc
 Wire Wire Line
 	1500 1850 1500 1600
-Text Label 1400 4600 3    50   ~ 0
+Text Label 1150 4600 3    50   ~ 0
 fvcc
 Wire Wire Line
-	1400 4600 1400 4850
+	1150 4600 1150 4850
 Text Notes 700  9900 0    50   ~ 0
 About L403 and DL1 : I made custom symbols to match the pins written on the schematics.\n\nFor DL1 : \n\nI compared with the schematics of the Atari MegaSTe rev C and of the Falcon030. Pin 12 appears grounded on the former ; on the later, pin 9, 10 and 12 appears grounded, \nwith pin 10 taking the central position, while pin 3 and 6 are bridged together. \n\nIn the gerber of the sparrow (found as 'Falcon Gerber' on the Atari Document Archive site), pin 2 and 7 are wired as expected in the schematics, and the pin 3 and 6 are bridged \nlike on the schematics of the Falcon. The pins 9, 10, 12 seems bridged with a fine line (1 mil width).\n\nIn the end, I create a symbol with all the pin, and marked to not connect pins that are not of the STe schematics.\n\nI created the footprint of L403 and DL1 after the gerber.\n\nI wish you good luck if you need to replace those components or remake this part of the pcb !\n
 $Comp
@@ -928,9 +927,9 @@ Wire Wire Line
 	5900 8050 6600 8050
 Wire Wire Line
 	6450 8150 6600 8150
-Text Notes 3600 6250 0    50   ~ 0
+Text Notes 3850 6250 0    50   ~ 0
 Remove\nfor PAL
-Text Notes 6950 5250 0    50   ~ 0
+Text Notes 7200 5250 0    50   ~ 0
 Remove\nfor PAL
 Text Notes 700  8600 0    50   ~ 0
 Change values for PAL (I took them from the Falcon030 service manual\nafter checking that this part of the schematics is the same as the\nSTe - lucky me)\n\n* C421 : 100pF\n* DL1  : 4.43MHz\n* L403 : 14uH\n* R451 : 22\n* R456 : 1K8 (PAL-I) ; 2K7 (PAL-B)\n* R463 : 1K2\n\nDid you know there was several PAL variant ? \n* PAL-I is for UK/Ireland\n* PAL-B is for Western Europe, Australia and New Zealand
@@ -1069,24 +1068,24 @@ Wire Wire Line
 $Comp
 L Device:CP1 C?
 U 1 1 60CE2AD4
-P 4250 1850
+P 1650 5000
 AR Path="/6089D0C2/60CE2AD4" Ref="C?"  Part="1" 
-AR Path="/60B8B7AD/60CE2AD4" Ref="C432"  Part="1" 
-F 0 "C432" H 4275 1950 50  0000 L CNN
-F 1 "100uF" H 4275 1750 50  0000 L CNN
-F 2 "" H 4250 1850 50  0001 C CNN
-F 3 "~" H 4250 1850 50  0001 C CNN
-	1    4250 1850
+AR Path="/60B8B7AD/60CE2AD4" Ref="C423"  Part="1" 
+F 0 "C423" H 1675 5100 50  0000 L CNN
+F 1 "100uF" H 1675 4900 50  0000 L CNN
+F 2 "" H 1650 5000 50  0001 C CNN
+F 3 "~" H 1650 5000 50  0001 C CNN
+	1    1650 5000
 	1    0    0    -1  
 $EndComp
-Text Label 4250 1450 3    50   ~ 0
+Text Label 1650 4600 3    50   ~ 0
 fvcc
 Wire Wire Line
-	4250 1700 4250 1450
-Text Label 4250 2200 1    50   ~ 0
+	1650 4850 1650 4600
+Text Label 1650 5350 1    50   ~ 0
 GND
 Wire Wire Line
-	4250 2000 4250 2200
+	1650 5150 1650 5350
 Text Notes 1150 750  0    118  ~ 0
 Common
 $Comp
@@ -1123,4 +1122,5 @@ Wire Notes Line
 	1150 6200 1800 6200
 Wire Notes Line
 	2150 6550 2550 6550
+Connection ~ 4650 5650
 $EndSCHEMATC
