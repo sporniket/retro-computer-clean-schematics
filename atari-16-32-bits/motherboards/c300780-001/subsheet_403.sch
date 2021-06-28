@@ -904,10 +904,10 @@ Wire Wire Line
 Text Notes 700  9900 0    50   ~ 0
 About L403 and DL1 : I made custom symbols to match the pins written on the schematics.\n\nFor DL1 : \n\nI compared with the schematics of the Atari MegaSTe rev C and of the Falcon030. Pin 12 appears grounded on the former ; on the later, pin 9, 10 and 12 appears grounded, \nwith pin 10 taking the central position, while pin 3 and 6 are bridged together. \n\nIn the gerber of the sparrow (found as 'Falcon Gerber' on the Atari Document Archive site), pin 2 and 7 are wired as expected in the schematics, and the pin 3 and 6 are bridged \nlike on the schematics of the Falcon. The pins 9, 10, 12 seems bridged with a fine line (1 mil width).\n\nIn the end, I create a symbol with all the pin, and marked to not connect pins that are not of the STe schematics.\n\nI created the footprint of L403 and DL1 after the gerber.\n\nI wish you good luck if you need to replace those components or remake this part of the pcb !\n
 $Comp
-L Connector_Generic_Shielded:Conn_01x03_Shielded MOD
+L Connector_Generic_Shielded:Conn_01x03_Shielded MOD1
 U 1 1 60C184D5
 P 6800 8050
-F 0 "MOD" H 6810 8240 50  0000 C CNN
+F 0 "MOD1" H 6810 8240 50  0000 C CNN
 F 1 "ST Modulator" H 6840 7860 50  0000 L CNN
 F 2 "" H 6800 8050 50  0001 C CNN
 F 3 "~" H 6800 8050 50  0001 C CNN
