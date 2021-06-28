@@ -140,7 +140,7 @@ Wire Wire Line
 Connection ~ 3850 2250
 Wire Wire Line
 	3850 2250 3850 2450
-Text GLabel 5000 8000 0    50   Input ~ 0
+Text GLabel 5000 8200 0    50   Input ~ 0
 +8.2V
 Wire Wire Line
 	5200 8300 5000 8300
@@ -649,7 +649,7 @@ Text GLabel 4350 3400 0    50   Input ~ 0
 V_AUD-
 Text GLabel 1000 2550 0    50   Input ~ 0
 V_AUD-
-Text GLabel 5000 9300 0    50   Input ~ 0
+Text GLabel 5000 9100 0    50   Input ~ 0
 V_AUD-
 Text GLabel 3100 9200 3    50   Input ~ 0
 V_AUD-
@@ -1138,12 +1138,12 @@ Wire Wire Line
 $Comp
 L lf347:LF347N_mu U504
 U 5 1 60D8A5C4
-P 5600 7900
-F 0 "U504" H 5500 8200 50  0000 L TNN
-F 1 "LF347N_mu" H 5500 8100 50  0000 L TNB
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5100 8300 50  0001 L TNN
-F 3 "" H 5100 8400 50  0001 L TNN
-	5    5600 7900
+P 5600 8100
+F 0 "U504" H 5500 8400 50  0000 L TNN
+F 1 "LF347N_mu" H 5500 8300 50  0000 L TNB
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5100 8500 50  0001 L TNN
+F 3 "" H 5100 8600 50  0001 L TNN
+	5    5600 8100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1160,9 +1160,9 @@ $EndComp
 Wire Wire Line
 	5000 9000 5200 9000
 Wire Wire Line
-	5000 9300 5200 9300
+	5000 9100 5200 9100
 Wire Wire Line
-	5000 8000 5200 8000
+	5000 8200 5200 8200
 $Comp
 L Regulator_Linear:LM78L05_TO92 Q?
 U 1 1 60E5577E

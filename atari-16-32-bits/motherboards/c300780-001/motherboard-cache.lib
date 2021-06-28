@@ -1491,7 +1491,7 @@ ENDDEF
 #
 # lf347_LF347N_mu
 #
-DEF lf347_LF347N_mu U 0 50 Y Y 5 L N
+DEF lf347_LF347N_mu U 0 50 Y Y 6 L N
 F0 "U" -500 300 50 H V L TNN
 F1 "lf347_LF347N_mu" -500 200 50 H V L TNB
 F2 "Package_DIP:DIP-14_W7.62mm_LongPads" -500 400 50 H I L TNN
@@ -1502,12 +1502,14 @@ T 0 -500 100 50 1 1 0 "Operational Amplifier 1" Normal 0 L T
 T 0 -500 100 50 1 2 0 "Operational Amplifier 2" Normal 0 L T
 T 0 -500 100 50 1 3 0 "Operational Amplifier 3" Normal 0 L T
 T 0 -500 100 50 1 4 0 "Operational Amplifier 4" Normal 0 L T
-T 0 -500 100 50 1 5 0 "Power supply" Normal 0 L T
+T 0 -500 100 50 1 5 0 "Voltage reference" Normal 0 L T
+T 0 -500 100 50 1 6 0 "Power supply" Normal 0 L T
 S -250 0 250 -300 1 0 10 f
 S -250 0 250 -300 2 0 10 f
 S -250 0 250 -300 3 0 10 f
 S -250 0 250 -300 4 0 10 f
-S -100 0 100 -500 5 0 10 f
+S -100 0 100 -300 5 0 10 f
+S -50 0 50 -100 6 0 10 f
 X OUT1 1 550 -100 300 L 50 50 1 0 O
 X IN1- 2 -550 -100 300 R 50 50 1 0 I
 X IN1+ 3 -550 -200 300 R 50 50 1 0 I
@@ -1520,8 +1522,8 @@ X IN3- 9 -550 -100 300 R 50 50 3 0 I
 X IN4+ 12 -550 -100 300 R 50 50 4 0 I
 X IN4- 13 -550 -200 300 R 50 50 4 0 I
 X OUT4 14 550 -100 300 L 50 50 4 0 O
-X V- 11 -400 -400 300 R 50 50 5 0 W
-X V+ 4 -400 -100 300 R 50 50 5 0 W
+X V- 11 -400 -200 300 R 50 50 5 0 I
+X V+ 4 -400 -100 300 R 50 50 5 0 I
 ENDDRAW
 ENDDEF
 #
