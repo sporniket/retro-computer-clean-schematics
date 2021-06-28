@@ -292,21 +292,21 @@ Wire Wire Line
 Wire Wire Line
 	6100 2800 5900 2800
 Text Label 6100 2200 0    50   ~ 0
-d8
+D8
 Text Label 4500 2200 2    50   ~ 0
-d9
+D9
 Text Label 6100 2400 0    50   ~ 0
-d10
+D10
 Text Label 4500 2400 2    50   ~ 0
-d11
+D11
 Text Label 6100 2600 0    50   ~ 0
-d12
+D12
 Text Label 4500 2600 2    50   ~ 0
-d13
+D13
 Text Label 6100 2800 0    50   ~ 0
-d14
+D14
 Text Label 4500 2800 2    50   ~ 0
-d15
+D15
 Wire Wire Line
 	5900 2100 6200 2100
 $Comp
