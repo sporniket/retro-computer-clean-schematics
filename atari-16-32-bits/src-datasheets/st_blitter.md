@@ -40,7 +40,7 @@
 |23|/AS|O|BUSCTL||
 |24|/UDS|O|BUSCTL||
 |25|/LDS|O|BUSCTL||
-|26|R /W|O|BUSCTL|High=Read ; Low=Write|
+|26|R /W|O3|BUSCTL|High=Read ; Low=Write|
 |27|/DTACK|O|BUSCTL||
 |28|/BGI|I|BUSARB||
 |29|/BGACK|O|BUSARB||
