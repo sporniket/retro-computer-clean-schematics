@@ -542,7 +542,7 @@ HSYNC
 Text GLabel 2550 1850 1    50   Output ~ 0
 VSYNC
 Text GLabel 2650 1850 1    50   Output ~ 0
-MCU_DE
+DE
 Text GLabel 2750 1850 1    50   Output ~ 0
 MCU_BLANK
 Text GLabel 2850 1850 1    50   Output ~ 0
