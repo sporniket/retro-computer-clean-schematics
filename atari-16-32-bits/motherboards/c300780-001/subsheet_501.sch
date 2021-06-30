@@ -428,7 +428,7 @@ JOY0_1
 Text GLabel 4300 4700 2    50   Output ~ 0
 JOY1_1
 Text GLabel 4300 5000 2    50   Output ~ 0
-JOY0_2
+JOY1_2
 Text GLabel 4300 5100 2    50   Output ~ 0
 JOY1_3
 Text GLabel 4300 5400 2    50   Output ~ 0
@@ -520,7 +520,7 @@ JOY0_1
 Text GLabel 5650 3950 0    50   BiDi ~ 0
 JOY1_1
 Text GLabel 5650 4150 0    50   BiDi ~ 0
-JOY0_2
+JOY1_2
 Text GLabel 5650 4350 0    50   BiDi ~ 0
 JOY1_3
 Text GLabel 5650 4550 0    50   BiDi ~ 0
