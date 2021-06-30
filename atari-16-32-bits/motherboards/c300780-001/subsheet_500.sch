@@ -57,28 +57,26 @@ F 3 "~" H 3850 1800 50  0001 C CNN
 	1    3850 1800
 	1    0    0    -1  
 $EndComp
-Text Label 3250 1100 0    50   ~ 0
-joy0_1
 Text Label 3250 1200 0    50   ~ 0
-joy0_2
+j0_2
 Text Label 3250 1400 0    50   ~ 0
-joy0_4
+j0_4
 Text Label 3250 1600 0    50   ~ 0
-joy0_6
+j0_6
 Text Label 3250 1700 0    50   ~ 0
-joy0_7
+j0_7
 Text Label 3250 2000 0    50   ~ 0
-joy0_10
+j0_10
 Text Label 3250 2100 0    50   ~ 0
-joy0_11
+j0_11
 Text Label 3250 2200 0    50   ~ 0
-joy0_12
+j0_12
 Text Label 3250 2300 0    50   ~ 0
-joy0_13
+j0_13
 Text Label 3250 2400 0    50   ~ 0
-joy0_14
+j0_14
 Text Label 1500 2500 0    50   ~ 0
-joy0_15
+j0_15
 Text Label 3400 1900 0    50   ~ 0
 GND
 Wire Wire Line
@@ -107,31 +105,31 @@ Wire Wire Line
 	3400 1900 3650 1900
 NoConn ~ 3650 1800
 Text Label 6250 1100 0    50   ~ 0
-joy1_1
+j1_1
 Text Label 6250 1200 0    50   ~ 0
-joy1_2
+j1_2
 Text Label 6250 1300 0    50   ~ 0
-joy1_3
+j1_3
 Text Label 6250 1400 0    50   ~ 0
-joy1_4
+j1_4
 Text Label 4500 1500 0    50   ~ 0
-joy1_5
+j1_5
 Text Label 6250 1600 0    50   ~ 0
-joy1_6
+j1_6
 Text Label 6250 1700 0    50   ~ 0
-joy1_7
+j1_7
 Text Label 6250 2000 0    50   ~ 0
-joy1_10
+j1_10
 Text Label 6250 2100 0    50   ~ 0
-joy1_11
+j1_11
 Text Label 6250 2200 0    50   ~ 0
-joy1_12
+j1_12
 Text Label 6250 2300 0    50   ~ 0
-joy1_13
+j1_13
 Text Label 6250 2400 0    50   ~ 0
-joy1_14
+j1_14
 Text Label 4500 2500 0    50   ~ 0
-joy1_15
+j1_15
 Wire Wire Line
 	6250 1100 6650 1100
 Wire Wire Line
@@ -468,7 +466,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 1500 2150 1500
 Text Label 1500 1500 0    50   ~ 0
-joy0_5
+j0_5
 Wire Wire Line
 	1500 1500 1850 1500
 Connection ~ 1850 1500
@@ -506,13 +504,13 @@ Wire Wire Line
 Wire Wire Line
 	3350 3800 3250 3800
 Text Label 3700 3700 2    50   ~ 0
-joy0_5
+j0_5
 Text Label 1000 3600 0    50   ~ 0
-joy0_15
+j0_15
 Text Label 4500 3600 0    50   ~ 0
-joy1_5
+j1_5
 Text Label 7200 3700 2    50   ~ 0
-joy1_15
+j1_15
 Wire Wire Line
 	1000 3600 1350 3600
 Connection ~ 1350 3600
@@ -733,17 +731,17 @@ $EndComp
 Text Label 2250 7400 0    50   ~ 0
 GND
 Text Label 3350 5700 2    50   ~ 0
-joy0_1
+j0_1
 Text Label 3350 6000 2    50   ~ 0
-joy0_2
+j0_2
 Text Label 3250 1300 0    50   ~ 0
-joy0_3
+j0_3
 Text Label 3350 6300 2    50   ~ 0
-joy0_3
+j0_3
 Text Label 3350 6600 2    50   ~ 0
-joy0_4
+j0_4
 Text Label 3350 7200 2    50   ~ 0
-joy0_7
+j0_7
 Wire Wire Line
 	3050 6000 3350 6000
 Wire Wire Line
@@ -1020,35 +1018,35 @@ Wire Wire Line
 Wire Wire Line
 	6550 8400 6850 8400
 Text Label 3350 7500 2    50   ~ 0
-joy0_10
+j0_10
 Text Label 3350 7800 2    50   ~ 0
-joy0_11
+j0_11
 Text Label 3350 8100 2    50   ~ 0
-joy0_12
+j0_12
 Text Label 3350 8700 2    50   ~ 0
-joy0_14
+j0_14
 Text Label 3350 8400 2    50   ~ 0
-joy0_13
+j0_13
 Text Label 6850 5700 2    50   ~ 0
-joy1_1
+j1_1
 Text Label 6850 6000 2    50   ~ 0
-joy1_2
+j1_2
 Text Label 6850 6300 2    50   ~ 0
-joy1_3
+j1_3
 Text Label 6850 6600 2    50   ~ 0
-joy1_4
+j1_4
 Text Label 6850 7200 2    50   ~ 0
-joy1_7
+j1_7
 Text Label 6850 7500 2    50   ~ 0
-joy1_10
+j1_10
 Text Label 6850 7800 2    50   ~ 0
-joy1_11
+j1_11
 Text Label 6850 8100 2    50   ~ 0
-joy1_12
+j1_12
 Text Label 6850 8400 2    50   ~ 0
-joy1_13
+j1_13
 Text Label 6850 8700 2    50   ~ 0
-joy1_14
+j1_14
 $Comp
 L Device:EMI_Filter_LCL L?
 U 1 1 61B1BA82
@@ -1067,7 +1065,7 @@ $EndComp
 Text Label 5750 7100 0    50   ~ 0
 GND
 Text Label 6850 6900 2    50   ~ 0
-joy1_6
+j1_6
 Wire Wire Line
 	2550 5700 3350 5700
 Wire Wire Line
@@ -1142,7 +1140,7 @@ F 3 "~" H 2450 6900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 3350 6900 2    50   ~ 0
-joy0_6
+j0_6
 Text GLabel 1750 6900 0    50   BiDi ~ 0
 XPEN
 Wire Wire Line
@@ -1269,4 +1267,6 @@ Wire Wire Line
 	6700 4400 6700 4600
 Wire Wire Line
 	6700 4900 6700 5100
+Text Label 3250 1100 0    50   ~ 0
+j0_1
 $EndSCHEMATC
