@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name variable_coil_shielded)(type KiCad)(uri ${KIPRJMOD}/libs.local/variable_coil_shielded.pretty)(options "")(descr ""))
   (lib (name Delay_Line_Custom_Atari_ST)(type KiCad)(uri ${KIPRJMOD}/libs.local/Delay_Line_Custom_Atari_ST.pretty)(options "")(descr ""))
+  (lib (name pcb-masks)(type KiCad)(uri ${KIPRJMOD}/pcb-masks.pretty)(options "")(descr ""))
 )
