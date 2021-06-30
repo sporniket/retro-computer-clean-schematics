@@ -44,7 +44,7 @@
 |27|A8|I|ADDR||
 |28|A13|I|ADDR||
 |29|A14|I|ADDR||
-|30|NC|DNC|||
+|30|NC|I||Should be DNC but the socket may host a 28 pins eprom instead|
 |31|/P|I|SYSCTL|Pulse low to program|
 |32|Vcc|PWR|||
 
