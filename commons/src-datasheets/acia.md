@@ -21,7 +21,7 @@
 |4|RXCLK|ICLK|CLKSYS|Receive clock|
 |5|/RTS|O|MDMCTL|Request To Send|
 |6|TXDAT|O|SERLNK|Transmit data|
-|7|/IRQ|O|MPUIO|Interrupt Request|
+|7|/IRQ|OCOL|MPUIO|Interrupt Request|
 |8|CS0|I|MPUIO|Chip select|
 |9|/CS2|I|MPUIO|Chip select|
 |10|CS1|I|MPUIO|Chip select|
