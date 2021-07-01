@@ -433,8 +433,8 @@ Wire Wire Line
 	3600 1950 3850 1950
 Wire Wire Line
 	3600 2050 3850 2050
-Text GLabel 5500 1000 2    50   BiDi ~ 0
-SD[O..7]
+Text GLabel 5500 1000 2    50   Output ~ 0
+SD[0..7]
 Wire Bus Line
 	5250 1000 5500 1000
 Text Label 5250 1000 2    50   ~ 0
