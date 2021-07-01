@@ -569,7 +569,7 @@ acsi_7
 Text Label 3750 7750 2    50   ~ 0
 acsi_8
 Text Label 3200 2400 2    50   ~ 0
-acsi_12_reset
+acsi_12
 Text Label 2250 6000 0    50   ~ 0
 HD0
 Text Label 2250 6250 0    50   ~ 0
