@@ -45,6 +45,7 @@ class PinWriter:
         'O3' : 'T',
         'OCOL' : 'C',
         'OEMT' : 'E',
+        'OPSV' : 'P',
         'OPWR' : 'w',
         'B3' : 'T',
         'B' : 'B'
@@ -62,6 +63,7 @@ class PinWriter:
         'O3' : '',
         'OCOL' : '',
         'OEMT' : '',
+        'OPSV' : '',
         'OPWR' : '',
         'B3' : '',
         'B' : ''
