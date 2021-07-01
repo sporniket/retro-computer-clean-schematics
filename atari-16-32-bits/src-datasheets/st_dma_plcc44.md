@@ -21,43 +21,43 @@
 |2|A1|I|REGSEL||
 |3|/FCS|I|SYSCTL|Chip select by the Host|
 |4|GND|GND|||
-|5|D0|B|DATA||
-|6|D1|B|DATA||
-|7|D2|B|DATA||
-|8|D3|B|DATA||
-|9|D4|B|DATA||
-|10|D5|B|DATA||
-|11|D6|B|DATA||
-|12|D7|B|DATA||
-|13|D8|B|DATA||
-|14|D9|B|DATA||
-|15|D10|B|DATA||
-|16|D11|B|DATA||
-|17|D12|B|DATA||
-|18|D13|B|DATA||
-|19|D14|B|DATA||
-|20|D15|B|DATA||
+|5|D0|B3|DATA||
+|6|D1|B3|DATA||
+|7|D2|B3|DATA||
+|8|D3|B3|DATA||
+|9|D4|B3|DATA||
+|10|D5|B3|DATA||
+|11|D6|B3|DATA||
+|12|D7|B3|DATA||
+|13|D8|B3|DATA||
+|14|D9|B3|DATA||
+|15|D10|B3|DATA||
+|16|D11|B3|DATA||
+|17|D12|B3|DATA||
+|18|D13|B3|DATA||
+|19|D14|B3|DATA||
+|20|D15|B3|DATA||
 |21|Vcc|PWR|||
 |22|GND|GND|||
 |23|FDRQ|I|FDCTL|Asserted by the floppy drive controller to request the device data bus|
-|24|/FDCS|O|FDCTL|Asserted to select the floppy drive controller|
+|24|/FDCS|OCOL|FDCTL|Asserted to select the floppy drive controller|
 |25|HDRQ|I|HDCTL|Asserted by the ACSI device to request the device data bus|
-|26|/HDCS|O|HDCTL|Asserted to select the ACSI devices|
-|27|CR /W|O|DEVCTL|Defines the current device bus cycle as read (high) or a write (low) cycle|
-|28|CA1|O|DRGSEL||
-|29|CA2|O|DRGSEL||
+|26|/HDCS|OCOL|HDCTL|Asserted to select the ACSI devices|
+|27|CR /W|OCOL|DEVCTL|Defines the current device bus cycle as read (high) or a write (low) cycle|
+|28|CA1|O3|DRGSEL||
+|29|CA2|O3|DRGSEL||
 |30|TESTIN|I|TEST|Test pin|
-|31|CD7|B|DEVDATA||
+|31|CD7|B3|DEVDATA||
 |32|GND|GND|||
-|33|CD6|B|DEVDATA||
-|34|CD5|B|DEVDATA||
-|35|CD4|B|DEVDATA||
-|36|CD3|B|DEVDATA||
-|37|CD2|B|DEVDATA||
-|38|CD1|B|DEVDATA||
-|39|CD0|B|DEVDATA||
-|40|/ACK|O|DEVCTL|Acknowledge to ACSI devices that Data has bean read/written|
-|41|RDY|O|SYSCTL|Sent to the Host to request the data bus|
+|33|CD6|B3|DEVDATA||
+|34|CD5|B3|DEVDATA||
+|35|CD4|B3|DEVDATA||
+|36|CD3|B3|DEVDATA||
+|37|CD2|B3|DEVDATA||
+|38|CD1|B3|DEVDATA||
+|39|CD0|B3|DEVDATA||
+|40|/ACK|OCOL|DEVCTL|Acknowledge to ACSI devices that Data has bean read/written|
+|41|RDY|O3|SYSCTL|Sent to the Host to request the data bus|
 |42|GND|GND|||
 |43|CLK|ICLK|CLKSYS||
 |44|Vcc|PWR|||
