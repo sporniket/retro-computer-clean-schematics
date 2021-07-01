@@ -621,4 +621,12 @@ Wire Wire Line
 Wire Wire Line
 	3950 5550 3700 5550
 Connection ~ 3700 5550
+Text Label 5750 2350 1    50   ~ 0
+GND
+Wire Wire Line
+	5750 2150 5750 2350
+Text Label 6750 2350 1    50   ~ 0
+GND
+Wire Wire Line
+	6750 2150 6750 2350
 $EndSCHEMATC
