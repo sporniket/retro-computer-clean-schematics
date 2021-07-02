@@ -51,8 +51,8 @@
 |32|VCC|PWR|||
 |33|SCLK|ICLK|SNDCTL|Sound clock|
 |34|FCLK|OCLK|SNDCTL|Audio filter clock|
-|35|/SLOAD|OCLK|SNDCTL|Sound Load signal|
-|36|SREQ|I|SNDCTL|Sound Request signal|
+|35|/SLOAD|I|SNDCTL|Sound Load signal|
+|36|SREQ|O|SNDCTL|Sound Request signal|
 |37|/LOAD|I|SYSCTL||
 |38|R3|O|RED||
 |39|R2|O|RED||
