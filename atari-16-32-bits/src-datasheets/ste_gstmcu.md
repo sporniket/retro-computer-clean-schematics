@@ -45,7 +45,7 @@
 |26|/BGACK|O|BUSARB|Bus Grant ACKnowledge|
 |27|/BGO|O|BUSARB|Bus Grant Output|
 |28|/BGI|I|BUSARB|Bus Grant Input|
-|29|/BR|O|BUSARB|Bus Request|
+|29|/BR|O3|BUSARB|Bus Request|
 |30|/EINT3|I|EXTINT||
 |31|/EINT5|I|EXTINT||
 |32|/EINT7|I|EXTINT||
