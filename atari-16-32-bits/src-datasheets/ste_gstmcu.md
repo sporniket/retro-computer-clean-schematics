@@ -87,7 +87,7 @@
 |68|/UDS|I|BUSCTL||
 |69|/LDS|I|BUSCTL||
 |70|R /W|I|BUSCTL||
-|71|/DTACK|O|BUSCTL||
+|71|/DTACK|O3|BUSCTL||
 |72|VCC|PWR|||
 |73|GND|GND|||
 |74|TEST|I?|TEST|Unused, test circuit|
