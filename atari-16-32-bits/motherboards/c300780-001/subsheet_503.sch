@@ -629,8 +629,6 @@ Text GLabel 1600 8000 1    50   Input ~ 0
 V_AUD+
 Text GLabel 2350 8000 1    50   Input ~ 0
 V_AUD+
-Text GLabel 3300 2350 2    50   Input ~ 0
-V_AUD+
 Text GLabel 6650 3200 2    50   Input ~ 0
 V_AUD+
 Text GLabel 3100 8000 1    50   Input ~ 0
@@ -646,8 +644,6 @@ V_AUD-
 Text GLabel 5000 8300 0    50   Input ~ 0
 V_AUD-
 Text GLabel 4350 3400 0    50   Input ~ 0
-V_AUD-
-Text GLabel 1000 2550 0    50   Input ~ 0
 V_AUD-
 Text GLabel 5000 9100 0    50   Input ~ 0
 V_AUD-
@@ -1246,4 +1242,8 @@ Wire Wire Line
 Connection ~ 6350 800 
 Wire Wire Line
 	6350 800  6850 800 
+Text GLabel 1000 2550 0    50   Input ~ 0
+V_AUD-
+Text GLabel 3300 2350 2    50   Input ~ 0
+V_AUD+
 $EndSCHEMATC

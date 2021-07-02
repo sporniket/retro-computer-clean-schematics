@@ -783,8 +783,6 @@ Text Label 1000 3650 3    50   ~ 0
 VCC
 Text Label 7250 3650 3    50   ~ 0
 VCC
-Text GLabel 3400 1500 2    50   Output ~ 0
-V_AUD+
 Wire Wire Line
 	2000 1500 2400 1500
 Wire Wire Line
@@ -796,10 +794,6 @@ Wire Wire Line
 	2900 1600 2900 1500
 Connection ~ 2900 1500
 Wire Wire Line
-	2900 1500 3400 1500
-Text GLabel 6400 1500 2    50   Output ~ 0
-V_AUD-
-Wire Wire Line
 	5000 1500 5400 1500
 Wire Wire Line
 	5400 1600 5400 1500
@@ -810,7 +804,7 @@ Wire Wire Line
 	5900 1600 5900 1500
 Connection ~ 5900 1500
 Wire Wire Line
-	5900 1500 6400 1500
+	5900 1500 6300 1500
 Text Notes 1050 2500 0    71   ~ 0
 Ground plane this area
 Text GLabel 2350 7900 3    50   Input ~ 0
@@ -927,4 +921,38 @@ Wire Wire Line
 	1850 8200 2250 8200
 Wire Wire Line
 	5350 8200 5750 8200
+$Comp
+L vref:VREF+ #PWR0104
+U 1 1 60E05E7B
+P 3300 1500
+F 0 "#PWR0104" H 3300 1350 50  0001 C CNN
+F 1 "VREF+" H 3300 1640 50  0000 C CNN
+F 2 "" H 3300 1500 50  0001 C CNN
+F 3 "" H 3300 1500 50  0001 C CNN
+	1    3300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L vref:VREF- #PWR0105
+U 1 1 60E067FA
+P 6300 1500
+F 0 "#PWR0105" H 6300 1350 50  0001 C CNN
+F 1 "VREF-" H 6300 1640 50  0000 C CNN
+F 2 "" H 6300 1500 50  0001 C CNN
+F 3 "" H 6300 1500 50  0001 C CNN
+	1    6300 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 6400 1500 2    50   Output ~ 0
+V_AUD-
+Text GLabel 3400 1500 2    50   Output ~ 0
+V_AUD+
+Connection ~ 3300 1500
+Wire Wire Line
+	3300 1500 3400 1500
+Wire Wire Line
+	2900 1500 3300 1500
+Connection ~ 6300 1500
+Wire Wire Line
+	6300 1500 6400 1500
 $EndSCHEMATC

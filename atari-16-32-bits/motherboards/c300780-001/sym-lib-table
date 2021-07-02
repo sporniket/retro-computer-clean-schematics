@@ -34,4 +34,5 @@
   (lib (name simm-30)(type Legacy)(uri ${KIPRJMOD}/libs.local/simm-30.lib)(options "")(descr ""))
   (lib (name variable_coil_shielded)(type Legacy)(uri ${KIPRJMOD}/libs.local/variable_coil_shielded.lib)(options "")(descr ""))
   (lib (name Delay_Line_Custom_Atari_ST)(type Legacy)(uri ${KIPRJMOD}/libs.local/Delay_Line_Custom_Atari_ST.lib)(options "")(descr ""))
+  (lib (name vref)(type Legacy)(uri ${KIPRJMOD}/vref.lib)(options "")(descr ""))
 )
