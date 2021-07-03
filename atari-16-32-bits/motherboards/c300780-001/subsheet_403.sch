@@ -519,7 +519,7 @@ AR Path="/60B3D9E3/60BD3717" Ref="Q?"  Part="1"
 AR Path="/60B8B7AD/60BD3717" Ref="Q404"  Part="1" 
 F 0 "Q404" H 5500 6700 50  0000 L CNN
 F 1 "2N3904" H 5450 6600 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5500 6625 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 5500 6625 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 5300 6700 50  0001 L CNN
 	1    5300 6700
 	1    0    0    -1  
@@ -945,7 +945,7 @@ AR Path="/60B3D9E3/60C878BF" Ref="Q?"  Part="1"
 AR Path="/60B8B7AD/60C878BF" Ref="Q405"  Part="1" 
 F 0 "Q405" H 6350 1550 50  0000 L CNN
 F 1 "2N3904" H 6300 1450 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6350 1475 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 6350 1475 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 6150 1550 50  0001 L CNN
 	1    6150 1550
 	1    0    0    -1  
@@ -1094,7 +1094,7 @@ U 1 1 60C25168
 P 4900 7650
 F 0 "L403" H 4900 7825 50  0000 C CNN
 F 1 "Variable Coil 24uH" H 4900 7450 50  0000 C CNN
-F 2 "" H 4900 7650 50  0001 C CNN
+F 2 "variable_coil_shielded:Variable_Coil_Shielded_7x7mm_5_6" H 4900 7650 50  0001 C CNN
 F 3 "~" H 4900 7650 50  0001 C CNN
 	1    4900 7650
 	-1   0    0    1   

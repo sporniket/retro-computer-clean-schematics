@@ -1167,7 +1167,7 @@ AR Path="/60CD36E9/60E5577E" Ref="Q?"  Part="1"
 AR Path="/60CC3B10/60E5577E" Ref="Q500"  Part="1" 
 F 0 "Q500" H 5700 925 50  0000 C CNN
 F 1 "LM78L82_TO92" H 5850 925 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5850 1025 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 5850 1025 50  0001 C CIN
 F 3 "https://www.onsemi.com/pub/Collateral/MC78L06A-D.pdf" H 5850 750 50  0001 C CNN
 	1    5850 800 
 	1    0    0    -1  

@@ -83,7 +83,7 @@ U 1 1 60D60721
 P 2000 2000
 F 0 "E0" H 2000 2080 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2000 1900 50  0000 C CNN
-F 2 "" H 2000 2000 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2000 2000 50  0001 C CNN
 F 3 "~" H 2000 2000 50  0001 C CNN
 	1    2000 2000
 	1    0    0    -1  
@@ -94,7 +94,7 @@ U 1 1 60D62449
 P 2000 2500
 F 0 "E1" H 2000 2580 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2000 2400 50  0000 C CNN
-F 2 "" H 2000 2500 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2000 2500 50  0001 C CNN
 F 3 "~" H 2000 2500 50  0001 C CNN
 	1    2000 2500
 	1    0    0    -1  
@@ -117,7 +117,7 @@ U 1 1 60D6675A
 P 2000 3000
 F 0 "E2" H 2000 3080 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2000 2900 50  0000 C CNN
-F 2 "" H 2000 3000 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2000 3000 50  0001 C CNN
 F 3 "~" H 2000 3000 50  0001 C CNN
 	1    2000 3000
 	1    0    0    -1  
@@ -134,7 +134,7 @@ U 1 1 60D66E2F
 P 2000 3500
 F 0 "E3" H 2000 3580 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2000 3400 50  0000 C CNN
-F 2 "" H 2000 3500 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2000 3500 50  0001 C CNN
 F 3 "~" H 2000 3500 50  0001 C CNN
 	1    2000 3500
 	1    0    0    -1  
@@ -151,7 +151,7 @@ U 1 1 60D67D7A
 P 2000 4000
 F 0 "E4" H 2000 4080 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2000 3900 50  0000 C CNN
-F 2 "" H 2000 4000 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2000 4000 50  0001 C CNN
 F 3 "~" H 2000 4000 50  0001 C CNN
 	1    2000 4000
 	1    0    0    -1  
@@ -168,7 +168,7 @@ U 1 1 60D686EE
 P 2000 4500
 F 0 "E5" H 2000 4580 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2000 4400 50  0000 C CNN
-F 2 "" H 2000 4500 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2000 4500 50  0001 C CNN
 F 3 "~" H 2000 4500 50  0001 C CNN
 	1    2000 4500
 	1    0    0    -1  
@@ -185,7 +185,7 @@ U 1 1 60D69665
 P 2000 5000
 F 0 "E6" H 2000 5080 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2000 4900 50  0000 C CNN
-F 2 "" H 2000 5000 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2000 5000 50  0001 C CNN
 F 3 "~" H 2000 5000 50  0001 C CNN
 	1    2000 5000
 	1    0    0    -1  
@@ -202,7 +202,7 @@ U 1 1 60D69C34
 P 2000 5500
 F 0 "E7" H 2000 5580 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2000 5400 50  0000 C CNN
-F 2 "" H 2000 5500 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2000 5500 50  0001 C CNN
 F 3 "~" H 2000 5500 50  0001 C CNN
 	1    2000 5500
 	1    0    0    -1  
