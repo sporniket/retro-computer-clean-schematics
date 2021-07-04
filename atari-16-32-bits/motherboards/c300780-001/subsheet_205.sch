@@ -436,7 +436,7 @@ U 1 1 60A37D1D
 P 5750 6250
 F 0 "C216" H 5775 6350 50  0000 L CNN
 F 1 "470uF" H 5775 6150 50  0000 L CNN
-F 2 "" H 5750 6250 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_polarized_W10.16mm_L27.94mm" H 5750 6250 50  0001 C CNN
 F 3 "~" H 5750 6250 50  0001 C CNN
 	1    5750 6250
 	1    0    0    -1  

@@ -30,7 +30,7 @@ U 1 1 6079D92A
 P 2500 2000
 F 0 "C103" H 2525 2100 50  0000 L CNN
 F 1 "4700uF" H 2525 1900 50  0000 L CNN
-F 2 "" H 2500 2000 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_polarized_W16.51mm_L45.72mm" H 2500 2000 50  0001 C CNN
 F 3 "~" H 2500 2000 50  0001 C CNN
 	1    2500 2000
 	1    0    0    -1  
