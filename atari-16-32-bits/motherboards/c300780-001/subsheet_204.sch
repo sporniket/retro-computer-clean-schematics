@@ -277,7 +277,7 @@ AR Path="/608EA3C9/609FB314" Ref="L?"  Part="1"
 AR Path="/609B5A51/609FB314" Ref="L219"  Part="1" 
 F 0 "L219" H 4000 5875 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 4000 5800 50  0000 C CNN
-F 2 "" V 4000 5600 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 4000 5600 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4000 5600 50  0001 C CNN
 	1    4000 5600
 	1    0    0    -1  
@@ -294,7 +294,7 @@ AR Path="/608EA3C9/609FCBFE" Ref="L?"  Part="1"
 AR Path="/609B5A51/609FCBFE" Ref="L220"  Part="1" 
 F 0 "L220" H 3250 6125 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 3250 6050 50  0000 C CNN
-F 2 "" V 3250 5850 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 3250 5850 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3250 5850 50  0001 C CNN
 	1    3250 5850
 	1    0    0    -1  
@@ -313,7 +313,7 @@ AR Path="/608EA3C9/609FDFCE" Ref="L?"  Part="1"
 AR Path="/609B5A51/609FDFCE" Ref="L221"  Part="1" 
 F 0 "L221" H 4000 6375 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 4000 6300 50  0000 C CNN
-F 2 "" V 4000 6100 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 4000 6100 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4000 6100 50  0001 C CNN
 	1    4000 6100
 	1    0    0    -1  
@@ -330,7 +330,7 @@ AR Path="/608EA3C9/609FFCE9" Ref="L?"  Part="1"
 AR Path="/609B5A51/609FFCE9" Ref="L222"  Part="1" 
 F 0 "L222" H 3250 6625 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 3250 6550 50  0000 C CNN
-F 2 "" V 3250 6350 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 3250 6350 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3250 6350 50  0001 C CNN
 	1    3250 6350
 	1    0    0    -1  
@@ -349,7 +349,7 @@ AR Path="/608EA3C9/60A01C8C" Ref="L?"  Part="1"
 AR Path="/609B5A51/60A01C8C" Ref="L223"  Part="1" 
 F 0 "L223" H 4000 6875 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 4000 6800 50  0000 C CNN
-F 2 "" V 4000 6600 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 4000 6600 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4000 6600 50  0001 C CNN
 	1    4000 6600
 	1    0    0    -1  
@@ -366,7 +366,7 @@ AR Path="/608EA3C9/60A04176" Ref="L?"  Part="1"
 AR Path="/609B5A51/60A04176" Ref="L224"  Part="1" 
 F 0 "L224" H 3250 7125 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 3250 7050 50  0000 C CNN
-F 2 "" V 3250 6850 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 3250 6850 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3250 6850 50  0001 C CNN
 	1    3250 6850
 	1    0    0    -1  
@@ -385,7 +385,7 @@ AR Path="/608EA3C9/60A06530" Ref="L?"  Part="1"
 AR Path="/609B5A51/60A06530" Ref="L225"  Part="1" 
 F 0 "L225" H 4000 7375 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 4000 7300 50  0000 C CNN
-F 2 "" V 4000 7100 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 4000 7100 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4000 7100 50  0001 C CNN
 	1    4000 7100
 	1    0    0    -1  

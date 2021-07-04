@@ -419,7 +419,7 @@ AR Path="/608A2359/60AA515E" Ref="R?"  Part="1"
 AR Path="/60A1445F/60AA515E" Ref="R303"  Part="1" 
 F 0 "R303" V 4150 2000 50  0000 C CNN
 F 1 "1K" V 4350 2000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4250 2000 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 4250 2000 50  0001 C CNN
 F 3 "~" H 4250 2000 50  0001 C CNN
 	1    4250 2000
 	0    1    1    0   

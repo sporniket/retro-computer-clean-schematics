@@ -119,7 +119,7 @@ AR Path="/60A1445F/60A7941B" Ref="R?"  Part="1"
 AR Path="/60A73CDE/60A7941B" Ref="R323"  Part="1" 
 F 0 "R323" V 2650 6000 50  0000 C CNN
 F 1 "68" V 2850 6000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2750 6000 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 2750 6000 50  0001 C CNN
 F 3 "~" H 2750 6000 50  0001 C CNN
 	1    2750 6000
 	0    1    1    0   
@@ -135,7 +135,7 @@ AR Path="/60A1445F/60A846FA" Ref="R?"  Part="1"
 AR Path="/60A73CDE/60A846FA" Ref="R321"  Part="1" 
 F 0 "R321" V 2650 6500 50  0000 C CNN
 F 1 "68" V 2850 6500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2750 6500 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 2750 6500 50  0001 C CNN
 F 3 "~" H 2750 6500 50  0001 C CNN
 	1    2750 6500
 	0    1    1    0   
@@ -151,7 +151,7 @@ AR Path="/60A1445F/60A848BE" Ref="R?"  Part="1"
 AR Path="/60A73CDE/60A848BE" Ref="R319"  Part="1" 
 F 0 "R319" V 2650 7000 50  0000 C CNN
 F 1 "68" V 2850 7000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2750 7000 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 2750 7000 50  0001 C CNN
 F 3 "~" H 2750 7000 50  0001 C CNN
 	1    2750 7000
 	0    1    1    0   
@@ -167,7 +167,7 @@ AR Path="/60A1445F/60A85538" Ref="R?"  Part="1"
 AR Path="/60A73CDE/60A85538" Ref="R317"  Part="1" 
 F 0 "R317" V 2650 7500 50  0000 C CNN
 F 1 "68" V 2850 7500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2750 7500 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 2750 7500 50  0001 C CNN
 F 3 "~" H 2750 7500 50  0001 C CNN
 	1    2750 7500
 	0    1    1    0   
@@ -183,7 +183,7 @@ AR Path="/60A1445F/60A85540" Ref="R?"  Part="1"
 AR Path="/60A73CDE/60A85540" Ref="R315"  Part="1" 
 F 0 "R315" V 2650 8000 50  0000 C CNN
 F 1 "68" V 2850 8000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2750 8000 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 2750 8000 50  0001 C CNN
 F 3 "~" H 2750 8000 50  0001 C CNN
 	1    2750 8000
 	0    1    1    0   
@@ -199,7 +199,7 @@ AR Path="/60A1445F/60A85548" Ref="R?"  Part="1"
 AR Path="/60A73CDE/60A85548" Ref="R313"  Part="1" 
 F 0 "R313" V 2650 8500 50  0000 C CNN
 F 1 "68" V 2850 8500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2750 8500 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 2750 8500 50  0001 C CNN
 F 3 "~" H 2750 8500 50  0001 C CNN
 	1    2750 8500
 	0    1    1    0   
@@ -215,7 +215,7 @@ AR Path="/60A1445F/60A864FD" Ref="R?"  Part="1"
 AR Path="/60A73CDE/60A864FD" Ref="R322"  Part="1" 
 F 0 "R322" V 3150 6250 50  0000 C CNN
 F 1 "68" V 3350 6250 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3250 6250 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 3250 6250 50  0001 C CNN
 F 3 "~" H 3250 6250 50  0001 C CNN
 	1    3250 6250
 	0    1    1    0   
@@ -231,7 +231,7 @@ AR Path="/60A1445F/60A86505" Ref="R?"  Part="1"
 AR Path="/60A73CDE/60A86505" Ref="R320"  Part="1" 
 F 0 "R320" V 3150 6750 50  0000 C CNN
 F 1 "68" V 3350 6750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3250 6750 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 3250 6750 50  0001 C CNN
 F 3 "~" H 3250 6750 50  0001 C CNN
 	1    3250 6750
 	0    1    1    0   
@@ -247,7 +247,7 @@ AR Path="/60A1445F/60A8650D" Ref="R?"  Part="1"
 AR Path="/60A73CDE/60A8650D" Ref="R318"  Part="1" 
 F 0 "R318" V 3150 7250 50  0000 C CNN
 F 1 "68" V 3350 7250 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3250 7250 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 3250 7250 50  0001 C CNN
 F 3 "~" H 3250 7250 50  0001 C CNN
 	1    3250 7250
 	0    1    1    0   
@@ -263,7 +263,7 @@ AR Path="/60A1445F/60A87953" Ref="R?"  Part="1"
 AR Path="/60A73CDE/60A87953" Ref="R316"  Part="1" 
 F 0 "R316" V 3150 7750 50  0000 C CNN
 F 1 "68" V 3350 7750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3250 7750 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 3250 7750 50  0001 C CNN
 F 3 "~" H 3250 7750 50  0001 C CNN
 	1    3250 7750
 	0    1    1    0   
@@ -279,7 +279,7 @@ AR Path="/60A1445F/60A8795B" Ref="R?"  Part="1"
 AR Path="/60A73CDE/60A8795B" Ref="R314"  Part="1" 
 F 0 "R314" V 3150 8250 50  0000 C CNN
 F 1 "68" V 3350 8250 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3250 8250 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 3250 8250 50  0001 C CNN
 F 3 "~" H 3250 8250 50  0001 C CNN
 	1    3250 8250
 	0    1    1    0   
@@ -293,7 +293,7 @@ AR Path="/60A1445F/60A87963" Ref="R?"  Part="1"
 AR Path="/60A73CDE/60A87963" Ref="R312"  Part="1" 
 F 0 "R312" V 3150 8750 50  0000 C CNN
 F 1 "68" V 3350 8750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3250 8750 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 3250 8750 50  0001 C CNN
 F 3 "~" H 3250 8750 50  0001 C CNN
 	1    3250 8750
 	0    1    1    0   

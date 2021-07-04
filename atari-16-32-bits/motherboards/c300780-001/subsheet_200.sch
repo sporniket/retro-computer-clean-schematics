@@ -202,7 +202,7 @@ U 1 1 608C6C78
 P 4800 6400
 F 0 "D202" V 4750 6200 50  0000 C CNN
 F 1 "1N914" V 4850 6200 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4800 6400 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_diode_W2.54mm_L12.70mm" H 4800 6400 50  0001 C CNN
 F 3 "~" H 4800 6400 50  0001 C CNN
 	1    4800 6400
 	0    1    1    0   
@@ -221,7 +221,7 @@ U 1 1 608F0CAD
 P 2700 4400
 F 0 "R200" V 2650 4250 50  0000 C CNN
 F 1 "220" V 2750 4250 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2700 4400 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 2700 4400 50  0001 C CNN
 F 3 "~" H 2700 4400 50  0001 C CNN
 	1    2700 4400
 	0    1    1    0   
@@ -232,7 +232,7 @@ U 1 1 608F1C5A
 P 2700 4650
 F 0 "R205" V 2650 4500 50  0000 C CNN
 F 1 "220" V 2750 4500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2700 4650 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 2700 4650 50  0001 C CNN
 F 3 "~" H 2700 4650 50  0001 C CNN
 	1    2700 4650
 	0    1    1    0   
@@ -243,7 +243,7 @@ U 1 1 608F1FF8
 P 2700 4900
 F 0 "R202" V 2650 4750 50  0000 C CNN
 F 1 "220" V 2750 4750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2700 4900 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 2700 4900 50  0001 C CNN
 F 3 "~" H 2700 4900 50  0001 C CNN
 	1    2700 4900
 	0    1    1    0   
@@ -254,7 +254,7 @@ U 1 1 608F24EF
 P 2700 5150
 F 0 "R204" V 2650 5000 50  0000 C CNN
 F 1 "220" V 2750 5000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2700 5150 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 2700 5150 50  0001 C CNN
 F 3 "~" H 2700 5150 50  0001 C CNN
 	1    2700 5150
 	0    1    1    0   
@@ -275,7 +275,7 @@ U 1 1 608C9942
 P 6000 3250
 F 0 "R218" H 5850 3200 50  0000 C CNN
 F 1 "4K7" H 5850 3300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6000 3250 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 6000 3250 50  0001 C CNN
 F 3 "~" H 6000 3250 50  0001 C CNN
 	1    6000 3250
 	-1   0    0    1   
@@ -288,7 +288,7 @@ U 1 1 608CBCCA
 P 6500 3250
 F 0 "R219" H 6350 3200 50  0000 C CNN
 F 1 "4K7" H 6350 3300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6500 3250 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 6500 3250 50  0001 C CNN
 F 3 "~" H 6500 3250 50  0001 C CNN
 	1    6500 3250
 	-1   0    0    1   
@@ -348,7 +348,7 @@ U 1 1 608CB580
 P 3300 4500
 F 0 "L200" H 3300 4775 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 3300 4700 50  0000 C CNN
-F 2 "" V 3300 4500 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 3300 4500 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3300 4500 50  0001 C CNN
 	1    3300 4500
 	1    0    0    -1  
@@ -361,7 +361,7 @@ U 1 1 608F28E5
 P 4050 4750
 F 0 "L201" H 4050 5025 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 4050 4950 50  0000 C CNN
-F 2 "" V 4050 4750 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 4050 4750 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4050 4750 50  0001 C CNN
 	1    4050 4750
 	1    0    0    -1  
@@ -372,7 +372,7 @@ U 1 1 608F52CA
 P 3300 5000
 F 0 "L202" H 3300 5275 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 3300 5200 50  0000 C CNN
-F 2 "" V 3300 5000 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 3300 5000 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3300 5000 50  0001 C CNN
 	1    3300 5000
 	1    0    0    -1  
@@ -385,7 +385,7 @@ U 1 1 608F7E74
 P 4050 5250
 F 0 "L204" H 4050 5525 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 4050 5450 50  0000 C CNN
-F 2 "" V 4050 5250 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 4050 5250 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4050 5250 50  0001 C CNN
 	1    4050 5250
 	1    0    0    -1  
@@ -408,7 +408,7 @@ U 1 1 60927CA7
 P 4300 6150
 F 0 "R207" V 4200 6150 50  0000 C CNN
 F 1 "220" V 4400 6150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4300 6150 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 4300 6150 50  0001 C CNN
 F 3 "~" H 4300 6150 50  0001 C CNN
 	1    4300 6150
 	0    1    1    0   
@@ -419,7 +419,7 @@ U 1 1 60927CAE
 P 5300 6250
 F 0 "L205" H 5300 6525 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 5300 6450 50  0000 C CNN
-F 2 "" V 5300 6250 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 5300 6250 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5300 6250 50  0001 C CNN
 	1    5300 6250
 	1    0    0    -1  
@@ -432,7 +432,7 @@ U 1 1 609336A0
 P 5300 6750
 F 0 "L206" H 5300 7025 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 5300 6950 50  0000 C CNN
-F 2 "" V 5300 6750 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_EMI_filter_W5.08mm_L7.62mm" V 5300 6750 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5300 6750 50  0001 C CNN
 	1    5300 6750
 	1    0    0    -1  
@@ -517,7 +517,7 @@ U 1 1 608C885E
 P 5500 3250
 F 0 "R201" H 5350 3200 50  0000 C CNN
 F 1 "4K7" H 5350 3300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5500 3250 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 5500 3250 50  0001 C CNN
 F 3 "~" H 5500 3250 50  0001 C CNN
 	1    5500 3250
 	-1   0    0    1   
