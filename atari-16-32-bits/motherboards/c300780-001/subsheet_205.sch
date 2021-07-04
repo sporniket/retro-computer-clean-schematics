@@ -57,7 +57,7 @@ AR Path="/609B5A51/609CF391" Ref="C?"  Part="1"
 AR Path="/609D3E52/609CF391" Ref="C207"  Part="1" 
 F 0 "C207" H 5425 1700 50  0000 L CNN
 F 1 "0.1uF" H 5425 1500 50  0000 L CNN
-F 2 "" H 5438 1450 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 5438 1450 50  0001 C CNN
 F 3 "~" H 5400 1600 50  0001 C CNN
 	1    5400 1600
 	1    0    0    -1  
@@ -111,7 +111,7 @@ AR Path="/609B5A51/609E47F8" Ref="C?"  Part="1"
 AR Path="/609D3E52/609E47F8" Ref="C209"  Part="1" 
 F 0 "C209" H 5925 1700 50  0000 L CNN
 F 1 "330pF" H 5925 1500 50  0000 L CNN
-F 2 "" H 5938 1450 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_W2.54mm_L10.16mm" H 5938 1450 50  0001 C CNN
 F 3 "~" H 5900 1600 50  0001 C CNN
 	1    5900 1600
 	1    0    0    -1  
@@ -167,7 +167,7 @@ U 1 1 609F4921
 P 5450 2850
 F 0 "C205" H 5475 2950 50  0000 L CNN
 F 1 "4.7uF" H 5475 2750 50  0000 L CNN
-F 2 "" H 5450 2850 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_polarized_W5.08mm_L17.78mm" H 5450 2850 50  0001 C CNN
 F 3 "~" H 5450 2850 50  0001 C CNN
 	1    5450 2850
 	1    0    0    -1  
@@ -178,7 +178,7 @@ U 1 1 609F43AA
 P 5450 3700
 F 0 "C204" H 5475 3800 50  0000 L CNN
 F 1 "4.7uF" H 5475 3600 50  0000 L CNN
-F 2 "" H 5450 3700 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_polarized_W5.08mm_L17.78mm" H 5450 3700 50  0001 C CNN
 F 3 "~" H 5450 3700 50  0001 C CNN
 	1    5450 3700
 	1    0    0    -1  
@@ -226,7 +226,7 @@ U 1 1 609EE420
 P 4350 4050
 F 0 "C202" V 4200 4000 50  0000 L CNN
 F 1 "4.7uF" V 4500 3950 50  0000 L CNN
-F 2 "" H 4350 4050 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_polarized_W5.08mm_L17.78mm" H 4350 4050 50  0001 C CNN
 F 3 "~" H 4350 4050 50  0001 C CNN
 	1    4350 4050
 	0    -1   -1   0   
@@ -271,7 +271,7 @@ AR Path="/609B5A51/609DEB1E" Ref="C?"  Part="1"
 AR Path="/609D3E52/609DEB1E" Ref="C208"  Part="1" 
 F 0 "C208" H 2975 4500 50  0000 L CNN
 F 1 "150pF" H 2975 4300 50  0000 L CNN
-F 2 "" H 2988 4250 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_W2.54mm_L10.16mm" H 2988 4250 50  0001 C CNN
 F 3 "~" H 2950 4400 50  0001 C CNN
 	1    2950 4400
 	1    0    0    -1  
@@ -345,7 +345,7 @@ AR Path="/609B5A51/60A305BB" Ref="C?"  Part="1"
 AR Path="/609D3E52/60A305BB" Ref="C217"  Part="1" 
 F 0 "C217" H 6275 6350 50  0000 L CNN
 F 1 "0.1uF" H 6275 6150 50  0000 L CNN
-F 2 "" H 6288 6100 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 6288 6100 50  0001 C CNN
 F 3 "~" H 6250 6250 50  0001 C CNN
 	1    6250 6250
 	1    0    0    -1  
@@ -366,7 +366,7 @@ AR Path="/609B5A51/60A305C5" Ref="C?"  Part="1"
 AR Path="/609D3E52/60A305C5" Ref="C218"  Part="1" 
 F 0 "C218" H 6775 6350 50  0000 L CNN
 F 1 "270pF" H 6775 6150 50  0000 L CNN
-F 2 "" H 6788 6100 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_W2.54mm_L10.16mm" H 6788 6100 50  0001 C CNN
 F 3 "~" H 6750 6250 50  0001 C CNN
 	1    6750 6250
 	1    0    0    -1  
@@ -410,7 +410,7 @@ U 1 1 60A33402
 P 5250 6250
 F 0 "C215" H 5275 6350 50  0000 L CNN
 F 1 "4.7uF" H 5275 6150 50  0000 L CNN
-F 2 "" H 5250 6250 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_polarized_W5.08mm_L17.78mm" H 5250 6250 50  0001 C CNN
 F 3 "~" H 5250 6250 50  0001 C CNN
 	1    5250 6250
 	1    0    0    -1  

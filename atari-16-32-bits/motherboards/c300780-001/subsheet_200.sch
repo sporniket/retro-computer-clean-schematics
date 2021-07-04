@@ -309,7 +309,7 @@ AR Path="/6089D0BA/608CEFE6" Ref="C?"  Part="1"
 AR Path="/608A2359/608CEFE6" Ref="C200"  Part="1" 
 F 0 "C200" H 7025 3350 50  0000 L CNN
 F 1 "0.1uF" H 7025 3150 50  0000 L CNN
-F 2 "" H 7038 3100 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 7038 3100 50  0001 C CNN
 F 3 "~" H 7000 3250 50  0001 C CNN
 	1    7000 3250
 	1    0    0    -1  
@@ -467,7 +467,7 @@ AR Path="/6089D0BA/608CAEAC" Ref="C?"  Part="1"
 AR Path="/608A2359/608CAEAC" Ref="C201"  Part="1" 
 F 0 "C201" H 1275 3350 50  0000 L CNN
 F 1 "0.1uF" H 1275 3150 50  0000 L CNN
-F 2 "" H 1288 3100 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 1288 3100 50  0001 C CNN
 F 3 "~" H 1250 3250 50  0001 C CNN
 	1    1250 3250
 	1    0    0    -1  
@@ -492,7 +492,7 @@ AR Path="/6089D0BA/609493A9" Ref="C?"  Part="1"
 AR Path="/608A2359/609493A9" Ref="C227"  Part="1" 
 F 0 "C227" H 7125 2250 50  0000 L CNN
 F 1 "0.1uF" H 7125 2050 50  0000 L CNN
-F 2 "" H 7138 2000 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 7138 2000 50  0001 C CNN
 F 3 "~" H 7100 2150 50  0001 C CNN
 	1    7100 2150
 	1    0    0    -1  

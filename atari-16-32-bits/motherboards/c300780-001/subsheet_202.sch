@@ -470,7 +470,7 @@ AR Path="/608C2344/60A22D53" Ref="C?"  Part="1"
 AR Path="/608EA3C9/60A22D53" Ref="C214"  Part="1" 
 F 0 "C214" H 5825 2100 50  0000 L CNN
 F 1 "0.1uF" H 5825 1900 50  0000 L CNN
-F 2 "" H 5838 1850 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 5838 1850 50  0001 C CNN
 F 3 "~" H 5800 2000 50  0001 C CNN
 	1    5800 2000
 	1    0    0    -1  
