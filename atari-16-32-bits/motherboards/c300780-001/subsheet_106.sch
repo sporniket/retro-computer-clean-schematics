@@ -143,7 +143,7 @@ U 1 1 6087218B
 P 2000 5250
 F 0 "C117" H 2025 5175 50  0000 L CNN
 F 1 "2.7–10pF" H 2025 5100 50  0000 L CNN
-F 2 "" H 2000 5250 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_variable_capacitor_rad_D7.62mm_P5.08mm" H 2000 5250 50  0001 C CNN
 F 3 "~" H 2000 5250 50  0001 C CNN
 	1    2000 5250
 	1    0    0    -1  
