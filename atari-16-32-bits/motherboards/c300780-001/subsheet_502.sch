@@ -169,7 +169,7 @@ AR Path="/60B8B7AD/60CB5FED" Ref="C?"  Part="1"
 AR Path="/60C95DE8/60CB5FED" Ref="C558"  Part="1" 
 F 0 "C558" H 2425 1850 50  0000 L CNN
 F 1 "100uF" H 2425 1650 50  0000 L CNN
-F 2 "" H 2400 1750 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_polarized_W6.35mm_L20.32mm" H 2400 1750 50  0001 C CNN
 F 3 "~" H 2400 1750 50  0001 C CNN
 	1    2400 1750
 	1    0    0    -1  
@@ -213,7 +213,7 @@ AR Path="/60B8B7AD/60CB9C69" Ref="C?"  Part="1"
 AR Path="/60C95DE8/60CB9C69" Ref="C561"  Part="1" 
 F 0 "C561" H 5425 1850 50  0000 L CNN
 F 1 "100uF" H 5425 1650 50  0000 L CNN
-F 2 "" H 5400 1750 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_polarized_W6.35mm_L20.32mm" H 5400 1750 50  0001 C CNN
 F 3 "~" H 5400 1750 50  0001 C CNN
 	1    5400 1750
 	1    0    0    -1  
@@ -313,7 +313,7 @@ AR Path="/60B8B7AD/60D016E1" Ref="C?"  Part="1"
 AR Path="/60C95DE8/60D016E1" Ref="C503"  Part="1" 
 F 0 "C503" H 1675 6000 50  0000 L CNN
 F 1 "0.01uF" H 1675 5800 50  0000 L CNN
-F 2 "" H 1688 5750 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_W2.54mm_L10.16mm" H 1688 5750 50  0001 C CNN
 F 3 "~" H 1650 5900 50  0001 C CNN
 	1    1650 5900
 	1    0    0    -1  
@@ -622,7 +622,7 @@ AR Path="/60B8B7AD/60D927B5" Ref="C?"  Part="1"
 AR Path="/60C95DE8/60D927B5" Ref="C515"  Part="1" 
 F 0 "C515" H 5175 6000 50  0000 L CNN
 F 1 "0.01uF" H 5175 5800 50  0000 L CNN
-F 2 "" H 5188 5750 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_W2.54mm_L10.16mm" H 5188 5750 50  0001 C CNN
 F 3 "~" H 5150 5900 50  0001 C CNN
 	1    5150 5900
 	1    0    0    -1  

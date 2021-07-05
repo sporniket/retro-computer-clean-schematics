@@ -506,7 +506,7 @@ AR Path="/60C451BA/60D380D6" Ref="C?"  Part="1"
 AR Path="/60CE6C60/60D380D6" Ref="C633"  Part="1" 
 F 0 "C633" H 1275 3600 50  0000 L CNN
 F 1 "0.22uF" H 1275 3400 50  0000 L CNN
-F 2 "" H 1288 3350 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L10.16mm" H 1288 3350 50  0001 C CNN
 F 3 "~" H 1250 3500 50  0001 C CNN
 	1    1250 3500
 	1    0    0    -1  
@@ -536,7 +536,7 @@ AR Path="/60C451BA/60D3CB45" Ref="C?"  Part="1"
 AR Path="/60CE6C60/60D3CB45" Ref="C635"  Part="1" 
 F 0 "C635" H 7025 3600 50  0000 L CNN
 F 1 "0.22uF" H 7025 3400 50  0000 L CNN
-F 2 "" H 7038 3350 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L10.16mm" H 7038 3350 50  0001 C CNN
 F 3 "~" H 7000 3500 50  0001 C CNN
 	1    7000 3500
 	1    0    0    -1  
@@ -566,7 +566,7 @@ AR Path="/60C451BA/60D415A6" Ref="C?"  Part="1"
 AR Path="/60CE6C60/60D415A6" Ref="C634"  Part="1" 
 F 0 "C634" H 1275 7600 50  0000 L CNN
 F 1 "0.22uF" H 1275 7400 50  0000 L CNN
-F 2 "" H 1288 7350 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L10.16mm" H 1288 7350 50  0001 C CNN
 F 3 "~" H 1250 7500 50  0001 C CNN
 	1    1250 7500
 	1    0    0    -1  
@@ -596,7 +596,7 @@ AR Path="/60C451BA/60D4612B" Ref="C?"  Part="1"
 AR Path="/60CE6C60/60D4612B" Ref="C636"  Part="1" 
 F 0 "C636" H 7025 7600 50  0000 L CNN
 F 1 "0.22uF" H 7025 7400 50  0000 L CNN
-F 2 "" H 7038 7350 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L10.16mm" H 7038 7350 50  0001 C CNN
 F 3 "~" H 7000 7500 50  0001 C CNN
 	1    7000 7500
 	1    0    0    -1  
@@ -621,7 +621,7 @@ AR Path="/60CD36E9/60D4F85E" Ref="C?"  Part="1"
 AR Path="/60CE6C60/60D4F85E" Ref="C600"  Part="1" 
 F 0 "C600" H 4300 1600 50  0000 L CNN
 F 1 "100uF" H 4300 1400 50  0000 L CNN
-F 2 "" H 4250 1500 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_polarized_W6.35mm_L20.32mm" H 4250 1500 50  0001 C CNN
 F 3 "~" H 4250 1500 50  0001 C CNN
 	1    4250 1500
 	1    0    0    -1  

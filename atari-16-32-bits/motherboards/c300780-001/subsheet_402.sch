@@ -644,7 +644,7 @@ U 1 1 60BDD743
 P 1550 1600
 F 0 "C416" V 1700 1550 50  0000 L CNN
 F 1 "47uF" V 1400 1500 50  0000 L CNN
-F 2 "" H 1550 1600 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_polarized_rad_D5.08mm_P2.54mm_H12.70mm" H 1550 1600 50  0001 C CNN
 F 3 "~" H 1550 1600 50  0001 C CNN
 	1    1550 1600
 	0    -1   -1   0   
