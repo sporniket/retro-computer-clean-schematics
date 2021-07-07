@@ -167,7 +167,7 @@ U 1 1 608C05EE
 P 2100 1700
 F 0 "S100" H 2100 1870 50  0000 C CNN
 F 1 "RESET switch" H 2100 1500 50  0000 C CNN
-F 2 "" H 2100 1700 50  0001 C CNN
+F 2 "atari-interconnect:switch-spdt-momentary-action_Reset_pushbutton" H 2100 1700 50  0001 C CNN
 F 3 "~" H 2100 1700 50  0001 C CNN
 	1    2100 1700
 	-1   0    0    -1  
