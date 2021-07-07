@@ -483,7 +483,7 @@ U 1 1 60D9C5BA
 P 1750 8000
 F 0 "J502" V 1900 8000 50  0000 C CNN
 F 1 "Phono LEFT" V 2000 8000 50  0000 C CNN
-F 2 "" H 1750 8000 50  0001 C CNN
+F 2 "atari-interconnect:socket-rca-5-pins" H 1750 8000 50  0001 C CNN
 F 3 " ~" H 1750 8000 50  0001 C CNN
 	1    1750 8000
 	0    1    1    0   
@@ -587,7 +587,7 @@ U 1 1 60DBE1A1
 P 6500 8000
 F 0 "J503" V 6650 8000 50  0000 C CNN
 F 1 "Phono RIGHT" V 6750 8000 50  0000 C CNN
-F 2 "" H 6500 8000 50  0001 C CNN
+F 2 "atari-interconnect:socket-rca-5-pins" H 6500 8000 50  0001 C CNN
 F 3 " ~" H 6500 8000 50  0001 C CNN
 	1    6500 8000
 	0    1    1    0   

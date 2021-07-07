@@ -857,7 +857,7 @@ U 1 1 60B2F41A
 P 6500 8000
 F 0 "J304" H 6500 8700 50  0000 C CNN
 F 1 "DIN 14 — External FDD Port" H 6500 7200 50  0000 C CNN
-F 2 "" H 6500 8000 50  0001 C CNN
+F 2 "atari-interconnect:socket-din-14" H 6500 8000 50  0001 C CNN
 F 3 "~" H 6500 8000 50  0001 C CNN
 	1    6500 8000
 	1    0    0    -1  

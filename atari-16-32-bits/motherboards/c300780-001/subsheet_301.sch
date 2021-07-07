@@ -304,7 +304,7 @@ U 1 1 60A88574
 P 5650 7300
 F 0 "J301" H 5650 8300 50  0000 C CNN
 F 1 "DB-19S ACSI Port" H 5650 6300 50  0000 C CNN
-F 2 "" H 5650 7300 50  0001 C CNN
+F 2 "atari-interconnect:DSUB-19_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 5650 7300 50  0001 C CNN
 F 3 "~" H 5650 7300 50  0001 C CNN
 	1    5650 7300
 	1    0    0    -1  

@@ -216,7 +216,7 @@ U 1 1 6109B27E
 P 5000 3900
 F 0 "J103" H 5000 5900 50  0000 C CNN
 F 1 "Cartridge Port" H 5000 1800 50  0000 C CNN
-F 2 "" H 5000 3900 50  0001 C CNN
+F 2 "atari-interconnect:socket-edge-pcb_40p_P2.01mm" H 5000 3900 50  0001 C CNN
 F 3 "~" H 5000 3900 50  0001 C CNN
 	1    5000 3900
 	1    0    0    -1  
