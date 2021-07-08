@@ -19,7 +19,7 @@ U 1 1 60B3F5D5
 P 6350 1900
 F 0 "J400" H 6350 2600 50  0000 C CNN
 F 1 "DIN 13 — Video Port" H 6350 1200 50  0000 C CNN
-F 2 "" H 6350 1900 50  0001 C CNN
+F 2 "atari-interconnect:socket-din-13" H 6350 1900 50  0001 C CNN
 F 3 "~" H 6350 1900 50  0001 C CNN
 	1    6350 1900
 	1    0    0    -1  
