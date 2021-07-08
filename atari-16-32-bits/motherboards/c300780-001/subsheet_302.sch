@@ -852,11 +852,11 @@ F 3 "~" H 5950 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x14 J304
+L Connector_Generic_Shielded:Conn_01x14_Shielded J304
 U 1 1 60B2F41A
 P 6500 8000
 F 0 "J304" H 6500 8700 50  0000 C CNN
-F 1 "DIN 14 — External FDD Port" H 6500 7200 50  0000 C CNN
+F 1 "DIN-14S — External FDD Port" H 6500 8800 50  0000 C CNN
 F 2 "atari-interconnect:socket-din-14" H 6500 8000 50  0001 C CNN
 F 3 "~" H 6500 8000 50  0001 C CNN
 	1    6500 8000
@@ -1099,4 +1099,8 @@ Wire Wire Line
 Connection ~ 1450 9250
 Wire Wire Line
 	1200 9050 1550 9050
+Text Label 6500 9100 1    50   ~ 0
+GND
+Wire Wire Line
+	6500 9100 6500 8900
 $EndSCHEMATC

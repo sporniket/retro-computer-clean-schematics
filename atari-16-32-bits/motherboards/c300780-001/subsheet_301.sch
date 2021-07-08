@@ -299,11 +299,11 @@ F 3 "~" H 3250 8750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x19 J301
+L Connector_Generic_Shielded:Conn_01x19_Shielded J301
 U 1 1 60A88574
 P 5650 7300
 F 0 "J301" H 5650 8300 50  0000 C CNN
-F 1 "DB-19S ACSI Port" H 5650 6300 50  0000 C CNN
+F 1 "DB-19S ACSI Port" H 5650 8400 50  0000 C CNN
 F 2 "atari-interconnect:DSUB-19_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 5650 7300 50  0001 C CNN
 F 3 "~" H 5650 7300 50  0001 C CNN
 	1    5650 7300
@@ -692,4 +692,8 @@ Wire Wire Line
 	2250 8750 3150 8750
 Wire Wire Line
 	3350 8750 3750 8750
+Text Label 5650 8600 1    50   ~ 0
+GND
+Wire Wire Line
+	5650 8600 5650 8400
 $EndSCHEMATC

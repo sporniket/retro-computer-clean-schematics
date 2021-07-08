@@ -538,11 +538,11 @@ Wire Wire Line
 Wire Wire Line
 	2800 5150 3750 5150
 $Comp
-L Connector_Generic:Conn_01x05 J200
+L Connector_Generic_Shielded:Conn_01x05_Shielded J200
 U 1 1 611055AA
 P 6250 4750
 F 0 "J200" H 6250 5050 50  0000 C CNN
-F 1 "DIN5 — MIDI OUT/THRU" H 6250 4450 50  0000 C CNN
+F 1 "DIN-5S — MIDI OUT/THRU" H 6250 5150 50  0000 C CNN
 F 2 "commons-interconnect_THT:socket-din-5" H 6250 4750 50  0001 C CNN
 F 3 "~" H 6250 4750 50  0001 C CNN
 	1    6250 4750
@@ -577,11 +577,11 @@ Wire Wire Line
 Wire Wire Line
 	4050 6250 4050 6650
 $Comp
-L Connector_Generic:Conn_01x05 J201
+L Connector_Generic_Shielded:Conn_01x05_Shielded J201
 U 1 1 61143C4D
 P 6250 6050
 F 0 "J201" H 6250 6350 50  0000 C CNN
-F 1 "DIN5 — MIDI IN" H 6250 5750 50  0000 C CNN
+F 1 "DIN-5S — MIDI IN" H 6250 6450 50  0000 C CNN
 F 2 "commons-interconnect_THT:socket-din-5" H 6250 6050 50  0001 C CNN
 F 3 "~" H 6250 6050 50  0001 C CNN
 	1    6250 6050
@@ -614,4 +614,12 @@ Wire Wire Line
 	6000 2900 6000 3150
 Wire Wire Line
 	6500 2900 6500 3150
+Text Label 6250 5350 1    50   ~ 0
+GND
+Wire Wire Line
+	6250 5350 6250 5150
+Text Label 6250 6650 1    50   ~ 0
+GND
+Wire Wire Line
+	6250 6650 6250 6450
 $EndSCHEMATC

@@ -14,11 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x13 J400
+L Connector_Generic_Shielded:Conn_01x13_Shielded J400
 U 1 1 60B3F5D5
 P 6350 1900
 F 0 "J400" H 6350 2600 50  0000 C CNN
-F 1 "DIN 13 — Video Port" H 6350 1200 50  0000 C CNN
+F 1 "DIN-13S — Video Port" H 6350 2700 50  0000 C CNN
 F 2 "atari-interconnect:socket-din-13" H 6350 1900 50  0001 C CNN
 F 3 "~" H 6350 1900 50  0001 C CNN
 	1    6350 1900
@@ -974,4 +974,8 @@ Text GLabel 2950 6550 2    50   Output ~ 0
 B
 Text Notes 4300 7650 0    50   ~ 0
 It may also be a 74F257
+Text Label 6350 2900 1    50   ~ 0
+GND
+Wire Wire Line
+	6350 2900 6350 2700
 $EndSCHEMATC

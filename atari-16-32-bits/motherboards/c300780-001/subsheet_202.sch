@@ -358,11 +358,11 @@ Wire Wire Line
 Wire Wire Line
 	2700 7250 2950 7250
 $Comp
-L Connector_Generic:Conn_01x25 J203
+L Connector_Generic_Shielded:Conn_01x25_Shielded J203
 U 1 1 60964926
 P 5950 6300
 F 0 "J203" H 5950 7600 50  0000 C CNN
-F 1 "DB-25S Parallel port" H 5950 5000 50  0000 C CNN
+F 1 "DB-25S Parallel port" H 5950 7700 50  0000 C CNN
 F 2 "Connector_Dsub:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 5950 6300 50  0001 C CNN
 F 3 "~" H 5950 6300 50  0001 C CNN
 	1    5950 6300
@@ -589,4 +589,8 @@ Text Notes 1500 7650 0    55   ~ 0
 To MFP
 Text Notes 2200 2250 0    55   ~ 0
 To LMC1992
+Text Label 5950 7900 1    50   ~ 0
+GND
+Wire Wire Line
+	5950 7900 5950 7700
 $EndSCHEMATC

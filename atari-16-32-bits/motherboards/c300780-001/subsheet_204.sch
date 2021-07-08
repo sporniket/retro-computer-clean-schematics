@@ -514,14 +514,18 @@ Wire Wire Line
 Wire Wire Line
 	3550 5750 4550 5750
 $Comp
-L Connector_Generic:Conn_01x25 J204
+L Connector_Generic_Shielded:Conn_01x25_Shielded J204
 U 1 1 609B5CCF
 P 6000 6350
 F 0 "J204" H 6000 7650 50  0000 C CNN
-F 1 "DB-25P Serial Port RS-232" H 6000 5050 50  0000 C CNN
+F 1 "DB-25P Serial Port RS-232" H 6000 7750 50  0000 C CNN
 F 2 "Connector_Dsub:DSUB-25_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 6000 6350 50  0001 C CNN
 F 3 "~" H 6000 6350 50  0001 C CNN
 	1    6000 6350
 	1    0    0    -1  
 $EndComp
+Text Label 6000 7950 1    50   ~ 0
+GND
+Wire Wire Line
+	6000 7950 6000 7750
 $EndSCHEMATC

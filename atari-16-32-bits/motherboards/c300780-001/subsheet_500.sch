@@ -36,22 +36,22 @@ F 3 "http://www.applelogic.org/files/LM556.pdf" H 5250 4700 50  0001 L TNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x15 J501
+L Connector_Generic_Shielded:Conn_01x15_Shielded J501
 U 1 1 60C69D74
 P 6850 1800
 F 0 "J501" H 6850 2600 50  0000 C CNN
-F 1 "DM-15S — JOY1" H 6850 1000 50  0000 C CNN
+F 1 "DM-15S — JOY1" H 6850 2700 50  0000 C CNN
 F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset3.03mm_Housed_MountingHolesOffset4.94mm" H 6850 1800 50  0001 C CNN
 F 3 "~" H 6850 1800 50  0001 C CNN
 	1    6850 1800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x15 J500
+L Connector_Generic_Shielded:Conn_01x15_Shielded J500
 U 1 1 60C6DE62
 P 3850 1800
 F 0 "J500" H 3850 2600 50  0000 C CNN
-F 1 "DM-15S — JOY0" H 3850 1000 50  0000 C CNN
+F 1 "DM-15S — JOY0" H 3850 2700 50  0000 C CNN
 F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset3.03mm_Housed_MountingHolesOffset4.94mm" H 3850 1800 50  0001 C CNN
 F 3 "~" H 3850 1800 50  0001 C CNN
 	1    3850 1800
@@ -1269,4 +1269,12 @@ Wire Wire Line
 	6700 4900 6700 5100
 Text Label 3250 1100 0    50   ~ 0
 j0_1
+Text Label 3850 2900 1    50   ~ 0
+GND
+Wire Wire Line
+	3850 2900 3850 2700
+Text Label 6850 2900 1    50   ~ 0
+GND
+Wire Wire Line
+	6850 2900 6850 2700
 $EndSCHEMATC
