@@ -162,11 +162,11 @@ Connection ~ 6500 1700
 Wire Wire Line
 	6500 1700 6500 1900
 $Comp
-L Switch:SW_SPDT S100
+L reset-switch:SW_SPDT_Reset_switch S100
 U 1 1 608C05EE
 P 2100 1700
-F 0 "S100" H 2100 1870 50  0000 C CNN
-F 1 "RESET switch" H 2100 1500 50  0000 C CNN
+F 0 "S100" H 2000 2200 50  0000 L CNN
+F 1 "RESET switch" H 1850 2100 50  0000 L CNN
 F 2 "atari-interconnect:switch-spdt-momentary-action_Reset_pushbutton" H 2100 1700 50  0001 C CNN
 F 3 "~" H 2100 1700 50  0001 C CNN
 	1    2100 1700
@@ -183,4 +183,8 @@ Wire Wire Line
 	3000 1700 4100 1700
 Wire Wire Line
 	3850 1800 4100 1800
+Text Label 2100 2200 1    50   ~ 0
+GND
+Wire Wire Line
+	2100 2000 2100 2200
 $EndSCHEMATC
