@@ -41,7 +41,7 @@ U 1 1 60C69D74
 P 6850 1800
 F 0 "J501" H 6850 2600 50  0000 C CNN
 F 1 "DM-15S — JOY1" H 6850 2700 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset3.03mm_Housed_MountingHolesOffset4.94mm" H 6850 1800 50  0001 C CNN
+F 2 "commons-interconnect_THT:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 6850 1800 50  0001 C CNN
 F 3 "~" H 6850 1800 50  0001 C CNN
 	1    6850 1800
 	1    0    0    -1  
@@ -52,7 +52,7 @@ U 1 1 60C6DE62
 P 3850 1800
 F 0 "J500" H 3850 2600 50  0000 C CNN
 F 1 "DM-15S — JOY0" H 3850 2700 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset3.03mm_Housed_MountingHolesOffset4.94mm" H 3850 1800 50  0001 C CNN
+F 2 "commons-interconnect_THT:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 3850 1800 50  0001 C CNN
 F 3 "~" H 3850 1800 50  0001 C CNN
 	1    3850 1800
 	1    0    0    -1  
