@@ -1093,7 +1093,7 @@ L variable_coil_shielded:Variable_Coil_Shielded L403
 U 1 1 60C25168
 P 4900 7650
 F 0 "L403" H 4900 7825 50  0000 C CNN
-F 1 "Variable Coil 24uH" H 4900 7450 50  0000 C CNN
+F 1 "Var. coil 24uH" H 4850 7900 50  0000 C CNN
 F 2 "variable_coil_shielded:Variable_Coil_Shielded_7x7mm_5_6" H 4900 7650 50  0001 C CNN
 F 3 "~" H 4900 7650 50  0001 C CNN
 	1    4900 7650
@@ -1123,4 +1123,8 @@ Wire Notes Line
 Wire Notes Line
 	2150 6550 2550 6550
 Connection ~ 4650 5650
+Wire Wire Line
+	4900 7350 5150 7350
+Text Label 5150 7350 2    50   ~ 0
+GND
 $EndSCHEMATC
