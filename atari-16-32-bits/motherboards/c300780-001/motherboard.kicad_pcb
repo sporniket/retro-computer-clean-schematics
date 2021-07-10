@@ -35,6 +35,8 @@
 
   (setup
     (last_trace_width 0.25)
+    (user_trace_width 0.508)
+    (user_trace_width 2.032)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
     (zone_45_only no)
@@ -43,6 +45,7 @@
     (via_drill 0.4)
     (via_min_size 0.4)
     (via_min_drill 0.3)
+    (user_via 0.762 0.381)
     (uvia_size 0.3)
     (uvia_drill 0.1)
     (uvias_allowed no)
