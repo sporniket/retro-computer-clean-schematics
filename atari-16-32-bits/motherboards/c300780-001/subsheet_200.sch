@@ -622,4 +622,25 @@ Text Label 6250 6650 1    50   ~ 0
 GND
 Wire Wire Line
 	6250 6650 6250 6450
+Text Label 4500 2900 3    50   ~ 0
+VCC
+$Comp
+L Device:R_Small_US R209
+U 1 1 60EF9181
+P 4500 3250
+F 0 "R209" H 4350 3200 50  0000 C CNN
+F 1 "1K" H 4350 3300 50  0000 C CNN
+F 2 "commons_passives_THT:Passive_THT_resistor_W2.54mm_L12.70mm" H 4500 3250 50  0001 C CNN
+F 3 "~" H 4500 3250 50  0001 C CNN
+	1    4500 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 2900 4500 3150
+Text GLabel 4400 3500 0    50   Output ~ 0
+ACIA_IRQ
+Wire Wire Line
+	4500 3350 4500 3500
+Wire Wire Line
+	4400 3500 4500 3500
 $EndSCHEMATC
