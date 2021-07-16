@@ -41,3 +41,6 @@ libs.local/
 *.zip
 *.tgz
 *.gz
+
+#screen casts
+*.mkv
