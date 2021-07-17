@@ -27,7 +27,7 @@
   (pad 6 thru_hole circle (at -2.2479 2.2479) (size 1.524 1.524) (drill 0.9652) (layers *.Cu *.Mask))
   (pad SH thru_hole circle (at -3.6957 0) (size 2.032 2.032) (drill 1.27) (layers *.Cu *.Mask))
   (pad SH thru_hole circle (at 3.6957 0) (size 2.032 2.032) (drill 1.27) (layers *.Cu *.Mask))
-  (model ${KIPRJMOD}/libs.local/Variable_Coil_Shielded_7x7mm_5_6.wrl
+  (model ${KIPRJMOD}/kicad-3dshapes-handmade/Variable_Coil_Shielded_7x7mm_5_6.wrl
     (at (xyz 0 0 0))
     (scale (xyz 0.3937 0.3937 0.3937))
     (rotate (xyz 0 0 0))

@@ -28,7 +28,7 @@
   (pad 9 thru_hole circle (at -1.0541 1.2446) (size 1.524 1.524) (drill 0.9652) (layers *.Cu *.Mask))
   (pad 10 thru_hole circle (at 1.0541 1.2446) (size 1.524 1.524) (drill 0.9652) (layers *.Cu *.Mask))
   (pad 12 thru_hole circle (at 4.5593 1.2446) (size 1.524 1.524) (drill 0.9652) (layers *.Cu *.Mask))
-  (model ${KIPRJMOD}/libs.local/Delay_Line_Custom_Atari_ST.wrl
+  (model ${KIPRJMOD}/kicad-3dshapes-handmade/Delay_Line_Custom_Atari_ST.wrl
     (at (xyz 0 0 0))
     (scale (xyz 0.3937 0.3937 0.3937))
     (rotate (xyz 0 0 180))
