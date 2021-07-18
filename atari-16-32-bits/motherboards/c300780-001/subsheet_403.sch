@@ -624,7 +624,7 @@ U 1 1 60C02EB9
 P 2000 6350
 F 0 "DL1" H 2050 6650 50  0000 L CNN
 F 1 "Delay Line 3.58MHz" H 2050 6050 50  0000 L CNN
-F 2 "Delay_Line_Custom_Atari_ST:Delay_Line_Custom_Atari_ST" H 2000 6350 50  0001 C CNN
+F 2 "atari-passives_THT:Atari_ST_THT_Delay_Line" H 2000 6350 50  0001 C CNN
 F 3 "~" H 2000 6350 50  0001 C CNN
 	1    2000 6350
 	1    0    0    -1  
@@ -1094,7 +1094,7 @@ U 1 1 60C25168
 P 4900 7650
 F 0 "L403" H 4900 7825 50  0000 C CNN
 F 1 "Var. coil 24uH" H 4850 7900 50  0000 C CNN
-F 2 "variable_coil_shielded:Variable_Coil_Shielded_7x7mm_5_6" H 4900 7650 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_variable_Coil_Shielded_7x7mm_5_of_6pins" H 4900 7650 50  0001 C CNN
 F 3 "~" H 4900 7650 50  0001 C CNN
 	1    4900 7650
 	-1   0    0    1   
