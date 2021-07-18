@@ -4,3 +4,6 @@
 [submodule "atari-16-32-bits/motherboards/c300780-001/kicad-footprints-handmade"]
 	path = atari-16-32-bits/motherboards/c300780-001/kicad-footprints-handmade
 	url = https://github.com/sporniket/kicad-footprints-handmade
+[submodule "atari-16-32-bits/motherboards/c300780-001/kicad-symbols-handmade"]
+	path = atari-16-32-bits/motherboards/c300780-001/kicad-symbols-handmade
+	url = https://github.com/sporniket/kicad-symbols-handmade
