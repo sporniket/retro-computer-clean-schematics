@@ -227,7 +227,7 @@ U 1 1 609C8B2A
 P 6900 3850
 F 0 "C228" H 6925 3950 50  0000 L CNN
 F 1 "0.1uF" H 6925 3750 50  0000 L CNN
-F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 6938 3700 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L7.62mm" H 6938 3700 50  0001 C CNN
 F 3 "~" H 6900 3850 50  0001 C CNN
 	1    6900 3850
 	1    0    0    -1  
@@ -254,7 +254,7 @@ U 1 1 609F5293
 P 6000 2050
 F 0 "C203" H 6025 2150 50  0000 L CNN
 F 1 "0.1uF" H 6025 1950 50  0000 L CNN
-F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 6038 1900 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L7.62mm" H 6038 1900 50  0001 C CNN
 F 3 "~" H 6000 2050 50  0001 C CNN
 	1    6000 2050
 	1    0    0    -1  
@@ -486,7 +486,7 @@ U 1 1 609CC7B6
 P 6500 2050
 F 0 "C206" H 6525 2150 50  0000 L CNN
 F 1 "0.1uF" H 6525 1950 50  0000 L CNN
-F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 6538 1900 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L7.62mm" H 6538 1900 50  0001 C CNN
 F 3 "~" H 6500 2050 50  0001 C CNN
 	1    6500 2050
 	1    0    0    -1  

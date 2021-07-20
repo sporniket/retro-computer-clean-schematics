@@ -279,7 +279,7 @@ AR Path="/60AD8617/60B1EACA" Ref="C?"  Part="1"
 AR Path="/60AD332C/60B1EACA" Ref="C402"  Part="1" 
 F 0 "C402" H 1125 7350 50  0000 L CNN
 F 1 "0.1uF" H 1125 7150 50  0000 L CNN
-F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 1138 7100 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L7.62mm" H 1138 7100 50  0001 C CNN
 F 3 "~" H 1100 7250 50  0001 C CNN
 	1    1100 7250
 	1    0    0    -1  
@@ -306,7 +306,7 @@ AR Path="/60AD8617/60B202CA" Ref="C?"  Part="1"
 AR Path="/60AD332C/60B202CA" Ref="C403"  Part="1" 
 F 0 "C403" H 1625 7350 50  0000 L CNN
 F 1 "0.1uF" H 1625 7150 50  0000 L CNN
-F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 1638 7100 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L7.62mm" H 1638 7100 50  0001 C CNN
 F 3 "~" H 1600 7250 50  0001 C CNN
 	1    1600 7250
 	1    0    0    -1  
@@ -333,7 +333,7 @@ AR Path="/60AD8617/60B21C56" Ref="C?"  Part="1"
 AR Path="/60AD332C/60B21C56" Ref="C404"  Part="1" 
 F 0 "C404" H 1125 8350 50  0000 L CNN
 F 1 "0.1uF" H 1125 8150 50  0000 L CNN
-F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 1138 8100 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L7.62mm" H 1138 8100 50  0001 C CNN
 F 3 "~" H 1100 8250 50  0001 C CNN
 	1    1100 8250
 	1    0    0    -1  
@@ -360,7 +360,7 @@ AR Path="/60AD8617/60B23717" Ref="C?"  Part="1"
 AR Path="/60AD332C/60B23717" Ref="C405"  Part="1" 
 F 0 "C405" H 1625 8350 50  0000 L CNN
 F 1 "0.1uF" H 1625 8150 50  0000 L CNN
-F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 1638 8100 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L7.62mm" H 1638 8100 50  0001 C CNN
 F 3 "~" H 1600 8250 50  0001 C CNN
 	1    1600 8250
 	1    0    0    -1  
@@ -387,7 +387,7 @@ AR Path="/60AD8617/60B252C8" Ref="C?"  Part="1"
 AR Path="/60AD332C/60B252C8" Ref="C406"  Part="1" 
 F 0 "C406" H 1125 9350 50  0000 L CNN
 F 1 "0.1uF" H 1125 9150 50  0000 L CNN
-F 2 "commons_passives_THT:Passive_THT_capacitor_ceramic_radial_W5.08mm_L6.35mm_X11.43mm" H 1138 9100 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L7.62mm" H 1138 9100 50  0001 C CNN
 F 3 "~" H 1100 9250 50  0001 C CNN
 	1    1100 9250
 	1    0    0    -1  

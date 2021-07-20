@@ -173,7 +173,7 @@ AR Path="/60786F27/607874AD/607ECFCE" Ref="C111"  Part="1"
 AR Path="/6089D0C6/607ECFCE" Ref="C111"  Part="1" 
 F 0 "C111" H 6775 1900 50  0000 L CNN
 F 1 "0.1uF" H 6775 1700 50  0000 L CNN
-F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L10.16mm" H 6788 1650 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L7.62mm" H 6788 1650 50  0001 C CNN
 F 3 "~" H 6750 1800 50  0001 C CNN
 	1    6750 1800
 	1    0    0    -1  
@@ -187,7 +187,7 @@ AR Path="/60786F27/607874AD/607ECFD4" Ref="C112"  Part="1"
 AR Path="/6089D0C6/607ECFD4" Ref="C112"  Part="1" 
 F 0 "C112" H 7275 1900 50  0000 L CNN
 F 1 "0.1uF" H 7275 1700 50  0000 L CNN
-F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L10.16mm" H 7288 1650 50  0001 C CNN
+F 2 "commons_passives_THT:Passive_THT_capacitor_mlcc_W2.54mm_L7.62mm" H 7288 1650 50  0001 C CNN
 F 3 "~" H 7250 1800 50  0001 C CNN
 	1    7250 1800
 	1    0    0    -1  
