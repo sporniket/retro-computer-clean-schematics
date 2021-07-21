@@ -9,7 +9,7 @@
 * Aliases : C398789-001
 * Reference : U
 * Datasheet : https://docs.dev-docs.org/htm/search.php?find=Atari+STBook+Schematic+
-* Footprint : Package_LCC:LCC-44_THT-Socket
+* Footprint : Package_LCC:PLCC-44_THT-Socket
 * Pins layout : LCC
 
 
