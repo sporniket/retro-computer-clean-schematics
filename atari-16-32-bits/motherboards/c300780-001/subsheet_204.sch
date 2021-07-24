@@ -263,8 +263,6 @@ Text Label 6000 2400 1    50   ~ 0
 GND
 Wire Wire Line
 	6000 2200 6000 2400
-Text Label 6000 1700 3    50   ~ 0
-VCC
 Wire Wire Line
 	6000 1700 6000 1900
 $Comp
@@ -528,4 +526,6 @@ Text Label 6000 7950 1    50   ~ 0
 GND
 Wire Wire Line
 	6000 7950 6000 7750
+Text GLabel 6000 1700 1    50   Input ~ 0
+-12V
 $EndSCHEMATC
